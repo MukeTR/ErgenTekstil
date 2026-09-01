@@ -28,7 +28,9 @@ export type BlogPost = {
   slug: string;
   title: string;
   image: string | null;
-  content: { tag: string; text: string }[];
+  content?: { tag: string; text: string }[];
+  code?: string | null;
+  features?: string[];
 };
 
 const products: Record<Locale, Product[]> = {

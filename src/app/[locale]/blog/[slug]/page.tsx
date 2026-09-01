@@ -29,17 +29,24 @@ export default async function BlogPostPage(
   if (!post) notFound();
 
   const t = await getTranslations({ locale, namespace: "blog" });
+  const tc = await getTranslations({ locale, namespace: "common" });
+  const tp = await getTranslations({ locale, namespace: "product" });
 
   return (
     <article className="mx-auto max-w-3xl px-4 py-12 sm:px-6 lg:px-8">
       <Link
         href="/blog"
-        className="inline-flex items-center gap-2 font-heading text-xs font-semibold uppercase tracking-wide text-brand-grey hover:text-brand-navy"
+        className="flex w-fit items-center gap-2 font-heading text-xs font-semibold uppercase tracking-wide text-brand-grey hover:text-brand-navy"
       >
         ← {t("backToBlog")}
       </Link>
 
-      <h1 className="mt-6 font-heading text-3xl font-extrabold text-brand-navy sm:text-4xl">
+      {post.code && (
+        <span className="mt-6 inline-block font-heading text-xs font-semibold uppercase tracking-widest text-brand-grey">
+          Code {post.code}
+        </span>
+      )}
+      <h1 className="mt-2 font-heading text-3xl font-extrabold text-brand-navy sm:text-4xl">
         {post.title}
       </h1>
 
@@ -49,17 +56,46 @@ export default async function BlogPostPage(
         </div>
       )}
 
-      <div className="prose-content mt-10 space-y-5">
-        {post.content.map((block, i) =>
-          block.tag === "li" ? (
-            <ListRun key={i} items={collectListRun(post.content, i)} />
-          ) : (
-            <p key={i} className="leading-relaxed text-brand-grey">
-              {block.text}
-            </p>
-          )
-        )}
-      </div>
+      {post.features ? (
+        <>
+          {post.features.length > 0 && (
+            <div className="mt-10">
+              <h2 className="font-heading text-xs font-semibold uppercase tracking-wide text-brand-grey">
+                {tc("features")}
+              </h2>
+              <ul className="mt-3 space-y-2">
+                {post.features.map((f) => (
+                  <li key={f} className="flex gap-3 text-sm text-brand-grey">
+                    <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-brand-navy" />
+                    <span>{f}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+          <div className="mt-10 rounded-2xl bg-brand-grey-light p-6">
+            <p className="text-sm text-brand-grey">{tp("quoteIntro")}</p>
+            <Link
+              href={{ pathname: "/iletisim", query: { urun: post.title } }}
+              className="mt-4 inline-block rounded-full bg-brand-navy px-7 py-3.5 font-heading text-sm font-semibold uppercase tracking-wide text-white transition hover:bg-black"
+            >
+              {tc("requestQuote")}
+            </Link>
+          </div>
+        </>
+      ) : (
+        <div className="prose-content mt-10 space-y-5">
+          {post.content?.map((block, i) =>
+            block.tag === "li" ? (
+              <ListRun key={i} items={collectListRun(post.content!, i)} />
+            ) : (
+              <p key={i} className="leading-relaxed text-brand-grey">
+                {block.text}
+              </p>
+            )
+          )}
+        </div>
+      )}
     </article>
   );
 }

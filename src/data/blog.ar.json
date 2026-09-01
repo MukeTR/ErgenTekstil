@@ -1,5 +1,46 @@
 [
   {
+    "slug": "fitilli-biker-sort-1525",
+    "title": "Fitilli Biker Şort 1525",
+    "code": "1525",
+    "image": "FAC_1152-1.webp",
+    "features": [
+      "90% بولي أميد",
+      "10% إيلاستين",
+      "ألوان موسمية",
+      "XS/S, M/L, L/XL",
+      "نظام حياكة بلا خياطة يحتضن الجسم",
+      "قماش قابل للتنفس ولا يظهر من تحت الملابس"
+    ]
+  },
+  {
+    "slug": "markalarimiz",
+    "title": "علاماتنا التجارية",
+    "image": "img-bg.webp",
+    "content": [
+      {
+        "tag": "p",
+        "text": "تقدّم أرجن تكستيل بكل فخر: FORMActive، علامة تجارية صُممت خصيصًا لكل من يتبنّى أسلوب حياة نشطًا. تنعكس الروح الريادية والمبتكرة لشركة أرجن تكستيل، التي تأسست عام 2004، في كل منتج من منتجات FORMActive."
+      },
+      {
+        "tag": "p",
+        "text": "تتميّز FORMActive بتصميمها العصري وراحتها الفائقة، وقد أصبحت الخيار الذي لا غنى عنه للرياضيين وأصحاب أسلوب الحياة النشط، من خلال تقديم تشكيلة واسعة من المنتجات تشمل الطماق والبستيير والشورت والأطقم والأوفرول، مع حلول تناسب جميع القوامات."
+      },
+      {
+        "tag": "p",
+        "text": "من أبرز مميزات علامتنا التجارية طماقنا بلا خياطة الداعمة للجسم، التي تدعم جسمك أثناء تعزيز أدائك، وتتيح لك حركة مريحة."
+      },
+      {
+        "tag": "p",
+        "text": "FORMActive ليست مجرد قطعة ملابس، بل أسلوب حياة. فكل منتج يجمع بين جودة أرجن تكستيل وابتكارها ليقدّم لعملائنا أفضل تجربة ممكنة."
+      },
+      {
+        "tag": "p",
+        "text": "بالنسبة لعشّاق الرياضة النشطة، تقف FORMActive جاهزة لمرافقتك في كل مكان، من صالة الألعاب الرياضية إلى الشارع. وبضمان أرجن تكستيل، نحن هنا لنقدّم لك دعمًا مثاليًا في كل خطوة."
+      }
+    ]
+  },
+  {
     "slug": "uretimde-mukemmellik-ergen-tekstilin-kalite-standartlari",
     "title": "التميّز في الإنتاج: معايير الجودة لدى أرجن تكستيل",
     "image": "uretim-1.webp",
@@ -211,30 +252,1155 @@
     ]
   },
   {
-    "slug": "markalarimiz",
-    "title": "علاماتنا التجارية",
-    "image": "img-bg.webp",
+    "slug": "online-katalog",
+    "title": "Online Katalog",
+    "image": "pdf.webp",
     "content": [
       {
         "tag": "p",
-        "text": "تقدّم أرجن تكستيل بكل فخر: FORMActive، علامة تجارية صُممت خصيصًا لكل من يتبنّى أسلوب حياة نشطًا. تنعكس الروح الريادية والمبتكرة لشركة أرجن تكستيل، التي تأسست عام 2004، في كل منتج من منتجات FORMActive."
-      },
-      {
-        "tag": "p",
-        "text": "تتميّز FORMActive بتصميمها العصري وراحتها الفائقة، وقد أصبحت الخيار الذي لا غنى عنه للرياضيين وأصحاب أسلوب الحياة النشط، من خلال تقديم تشكيلة واسعة من المنتجات تشمل الطماق والبستيير والشورت والأطقم والأوفرول، مع حلول تناسب جميع القوامات."
-      },
-      {
-        "tag": "p",
-        "text": "من أبرز مميزات علامتنا التجارية طماقنا بلا خياطة الداعمة للجسم، التي تدعم جسمك أثناء تعزيز أدائك، وتتيح لك حركة مريحة."
-      },
-      {
-        "tag": "p",
-        "text": "FORMActive ليست مجرد قطعة ملابس، بل أسلوب حياة. فكل منتج يجمع بين جودة أرجن تكستيل وابتكارها ليقدّم لعملائنا أفضل تجربة ممكنة."
-      },
-      {
-        "tag": "p",
-        "text": "بالنسبة لعشّاق الرياضة النشطة، تقف FORMActive جاهزة لمرافقتك في كل مكان، من صالة الألعاب الرياضية إلى الشارع. وبضمان أرجن تكستيل، نحن هنا لنقدّم لك دعمًا مثاليًا في كل خطوة."
+        "text": "Ürün kataloğumuzu incelemek için bizimle iletişime geçin."
       }
+    ]
+  },
+  {
+    "slug": "melanjli-sort-1710",
+    "title": "Melanjlı Şort 1725",
+    "code": "1725",
+    "image": null,
+    "features": [
+      "90% بولي أميد",
+      "10% إيلاستين",
+      "متوفر بألوان كحلي وأبيض وأسود",
+      "XS/S, M/L",
+      "نظام حياكة بلا خياطة يحتضن الجسم",
+      "قماش قابل للتنفس ولا يظهر من تحت الملابس"
+    ]
+  },
+  {
+    "slug": "melanjli-tayt-1700",
+    "title": "Melanjlı Tayt 1700",
+    "code": "1700",
+    "image": "ATOS0814-1.webp",
+    "features": [
+      "90% بولي أميد",
+      "10% إيلاستين",
+      "متوفر بألوان كحلي وأبيض وأسود",
+      "XS/S, M/L",
+      "نظام حياكة بلا خياطة يحتضن الجسم",
+      "قماش قابل للتنفس ولا يظهر من تحت الملابس"
+    ]
+  },
+  {
+    "slug": "melanjli-bustiyer-1710",
+    "title": "Melanjlı Büstiyer 1710",
+    "code": "1710",
+    "image": "ATOS0848-1.webp",
+    "features": [
+      "90% بولي أميد",
+      "10% إيلاستين",
+      "متوفر بألوان كحلي وأسود وأبيض",
+      "XS/S, M/L",
+      "نظام حياكة بلا خياطة يحتضن الجسم",
+      "قماش قابل للتنفس ولا يظهر من تحت الملابس"
+    ]
+  },
+  {
+    "slug": "yuksek-bel-korse-tayt-1452",
+    "title": "Agraflı Yüksek Bel Korse Tayt 1452",
+    "code": "1452",
+    "image": "FAC_1175.webp",
+    "features": [
+      "82% بولي أميد",
+      "18% إيلاستين",
+      "خصر عالٍ للغاية",
+      "S, M, L, XL, XXL و 3XL",
+      "لون أسود",
+      "شريط سيليكون مضاد للانزلاق"
+    ]
+  },
+  {
+    "slug": "agrafli-bel-korse-1052",
+    "title": "Agraflı Bel Korse  1052",
+    "code": "1052",
+    "image": "FAC_1175.webp",
+    "features": [
+      "82% بولي أميد",
+      "18% إيلاستين",
+      "تأثير مشدّ وموحّد للجسم",
+      "S, M, L, XL, XXL و 3XL",
+      "أسود وبيج",
+      "شريط سيليكون مضاد للانزلاق"
+    ]
+  },
+  {
+    "slug": "agrafli-yuksek-bel-slip-korse-1032",
+    "title": "Agraflı Yüksek Bel Slip Korse 1032",
+    "code": "1032",
+    "image": "FAC_1175.webp",
+    "features": [
+      "82% بولي أميد",
+      "18% إيلاستين",
+      "خصر عالٍ للغاية",
+      "S, M, L, XL, XXL و 3XL",
+      "أسود وبيج",
+      "شريط سيليكون مضاد للانزلاق"
+    ]
+  },
+  {
+    "slug": "yuksek-bel-uzun-pacali-agrafli-korse-1022",
+    "title": "Yüksek Bel Uzun Paçalı Agraflı Korse 1022",
+    "code": "1022",
+    "image": "FAC_1175.webp",
+    "features": [
+      "82% بولي أميد",
+      "18% إيلاستين",
+      "خصر عالٍ للغاية",
+      "مقاسات S, M, L, XL, XXL و 3XL",
+      "بدائل الألوان الأسود والبيج",
+      "نسيج سيليكون مضاد للانزلاق"
+    ]
+  },
+  {
+    "slug": "agrafli-toparlayici-korse-1011",
+    "title": "Agraflı Toparlayıcı Korse 1011",
+    "code": "1011",
+    "image": "MTD_8155.webp",
+    "features": [
+      "80% بولي أميد",
+      "20% إيلاستين",
+      "S-M-L-XL-XXL-3XL",
+      "أسود، بيج",
+      "تأثير رافع",
+      "مشدّ بخصر عالٍ وتأثير شدّ إضافي"
+    ]
+  },
+  {
+    "slug": "capraz-detayli-dikissiz-bustiyer-1610",
+    "title": "Çapraz Detaylı Dikişsiz Büstiyer-1610",
+    "code": "1610",
+    "image": "ATOS0889-1.webp",
+    "features": [
+      "90% بولي أميد",
+      "10% إيلاستين",
+      "بألوان موسمية",
+      "XS/S, M/L",
+      "نظام حياكة بلا خياطة يحتضن الجسم",
+      "قماش قابل للتنفس ولا يظهر من تحت الملابس"
+    ]
+  },
+  {
+    "slug": "cift-katli-toparlayici-fitilli-crop-top-1510",
+    "title": "Fitilli Crop-Top 1510",
+    "code": "1510",
+    "image": null,
+    "features": [
+      "90% بولي أميد",
+      "10% إيلاستين",
+      "بألوان موسمية",
+      "XS/S, M/L",
+      "نظام حياكة بلا خياطة يحتضن الجسم",
+      "قماش قابل للتنفس ولا يظهر من تحت الملابس"
+    ]
+  },
+  {
+    "slug": "seamless-cift-katli-fititlli-tayt1550",
+    "title": "Çift Katlı Toparlayıcı Fitilli Tayt 1550",
+    "code": "1550",
+    "image": null,
+    "features": [
+      "90% بولي أميد",
+      "10% إيلاستين",
+      "بألوان موسمية",
+      "XS/S, M/L, L/XL",
+      "نظام حياكة بلا خياطة يحتضن الجسم",
+      "قماش قابل للتنفس ولا يظهر من تحت الملابس"
+    ]
+  },
+  {
+    "slug": "cift-kat-etkili-korse-atlet-4600-2",
+    "title": "Çift Kat Etkili Korse Atlet 4600",
+    "code": "4600",
+    "image": null,
+    "features": [
+      "منتج أصلي 100%",
+      "82% بولي أميد ميكروفايبر",
+      "18% إيلاستين",
+      "تأثير شدّ",
+      "مقاسات S, M, L, XL و XXL"
+    ]
+  },
+  {
+    "slug": "ekstra-etkili-korse-atlet-4800-2",
+    "title": "Ekstra Etkili Korse Atlet 4800",
+    "code": "4800",
+    "image": "ATOS0923.jpg",
+    "features": [
+      "منتج أصلي 100%",
+      "82% بولي أميد ميكروفايبر",
+      "18% إيلاستين",
+      "تأثير شدّ",
+      "مقاسات S, M, L, XL, XXL و 3XL",
+      "بلونين أبيض وأسود"
+    ]
+  },
+  {
+    "slug": "erkek-korse-atlet-4500",
+    "title": "Erkek Korse Atlet 4500",
+    "code": "4500",
+    "image": null,
+    "features": [
+      "منتج أصلي 100%",
+      "82% بولي أميد ميكروفايبر",
+      "18% إيلاستين",
+      "تأثير شدّ",
+      "مقاسات S, M, L, XL و XXL"
+    ]
+  },
+  {
+    "slug": "erkek-boxer-4400",
+    "title": "Erkek Boxer 4400",
+    "code": "4400",
+    "image": null,
+    "features": [
+      "82% بولي أميد",
+      "18% إيلاستين",
+      "S, M, L, XL و XXL"
+    ]
+  },
+  {
+    "slug": "bamboo-boxer-4000-2",
+    "title": "Bamboo Boxer 4000",
+    "code": "4000",
+    "image": null,
+    "features": [
+      "82% بولي أميد",
+      "18% إيلاستين",
+      "S, M, L, XL و XXL"
+    ]
+  },
+  {
+    "slug": "straplez-kombinezon-korse-1170",
+    "title": "Straplez Kombinezon Korse 1170",
+    "code": "1170",
+    "image": "FAC_1222.webp",
+    "features": [
+      "82% بولي أميد",
+      "18% إيلاستين",
+      "حمالات قابلة للإزالة",
+      "S, M, L, XL و XXL",
+      "أسود وأبيض وبيج",
+      "تشكيل مضاعف بضغط موضعي"
+    ]
+  },
+  {
+    "slug": "pacali-body-korse-1060",
+    "title": "Paçalı Body Korse 1060",
+    "code": "1060",
+    "image": "FAC_1175.webp",
+    "features": [
+      "82% بولي أميد",
+      "18% إيلاستين",
+      "حمالات قابلة للإزالة",
+      "S, M, L, XL و XXL",
+      "أسود وأبيض وبيج",
+      "تشكيل مضاعف بضغط موضعي"
+    ]
+  },
+  {
+    "slug": "pop-up-slip-1000",
+    "title": "Pop-up Slip 1000",
+    "code": "1000",
+    "image": null,
+    "features": [
+      "90% بولي أميد",
+      "10% إيلاستين",
+      "حشوة مبطنة",
+      "S, M, L",
+      "بديل الألوان أسود وأبيض وبيج",
+      "جيب قطني"
+    ]
+  },
+  {
+    "slug": "uzun-pacali-boxer-1410",
+    "title": "Uzun Paçalı Boxer 1410",
+    "code": "1410",
+    "image": null,
+    "features": [
+      "90% بولي أميد",
+      "10% إيلاستين",
+      "نظام حياكة محسّن",
+      "مقاسات S/M, M/L, L/XL",
+      "أسود، أبيض، بيج",
+      "ملمس حريري"
+    ]
+  },
+  {
+    "slug": "boxer-2040",
+    "title": "Boxer 2040",
+    "code": "2040",
+    "image": null,
+    "features": [
+      "90% بولي أميد",
+      "10% إيلاستين",
+      "ملمس حريري",
+      "S, M, L, XL",
+      "أسود وأبيض وبيج",
+      "لا يترك أثرًا."
+    ]
+  },
+  {
+    "slug": "bikini-slip-2055",
+    "title": "Bikini Slip 2055",
+    "code": "2055",
+    "image": null,
+    "features": [
+      "90% بولي أميد",
+      "10% إيلاستين",
+      "ملمس حريري",
+      "S/M, M/L, L/XL",
+      "أسود وأبيض وبيج",
+      "يحتضن الجسم."
+    ]
+  },
+  {
+    "slug": "slip-2050",
+    "title": "Slip 2050",
+    "code": "2050",
+    "image": null,
+    "features": [
+      "90% بولي أميد",
+      "10% إيلاستين",
+      "قماش قابل للتنفس",
+      "S/M, M/L, L/XL",
+      "أسود، أبيض، بيج",
+      "يحتضن الجسم"
+    ]
+  },
+  {
+    "slug": "bato-slip-2045",
+    "title": "Bato Slip 2045",
+    "code": "2045",
+    "image": null,
+    "features": [
+      "90% بولي أميد",
+      "10% إيلاستين",
+      "يحتضن الجسم.",
+      "S/M, M/L, L/XL",
+      "أسود، أبيض، بيج",
+      "ملمس حريري"
+    ]
+  },
+  {
+    "slug": "uzun-straplez-2025",
+    "title": "Uzun Straplez 2025",
+    "code": "2025",
+    "image": null,
+    "features": [
+      "90% بولي أميد",
+      "10% إيلاستين",
+      "يحتضن الجسم.",
+      "S/M, M/L, L/XL",
+      "أسود وأبيض وبيج",
+      "قماش قابل للتنفس"
+    ]
+  },
+  {
+    "slug": "citcitli-soft-body-2200",
+    "title": "Çıtçıtlı Soft Body 2200",
+    "code": "2200",
+    "image": null,
+    "features": [
+      "90% بولي أميد",
+      "10% إيلاستين",
+      "يحتضن الجسم.",
+      "S/M, M/L, L/XL",
+      "أسود وأبيض وبيج",
+      "سهل الاستخدام"
+    ]
+  },
+  {
+    "slug": "citcitli-korsajli-soft-body-2210",
+    "title": "Çıtçıtlı Korsajlı Soft Body 2210",
+    "code": "2210",
+    "image": null,
+    "features": [
+      "90% بولي أميد",
+      "10% إيلاستين",
+      "يحتضن الجسم.",
+      "S/M, M/L, L/XL",
+      "أسود وأبيض وبيج",
+      "حياكة خاصة مشدودة"
+    ]
+  },
+  {
+    "slug": "kalin-askili-atlet-2085",
+    "title": "Kalın Askılı Atlet 2085",
+    "code": "2085",
+    "image": null,
+    "features": [
+      "90% بولي أميد",
+      "10% إيلاستين",
+      "يحتضن الجسم.",
+      "S/M, M/L, L/XL",
+      "أسود وأبيض وبيج",
+      "ملمس حريري"
+    ]
+  },
+  {
+    "slug": "ip-askili-duz-atlet-2015",
+    "title": "İp Askılı Düz Atlet 2015",
+    "code": "2015",
+    "image": null,
+    "features": [
+      "82% بولي أميد",
+      "18% إيلاستين",
+      "بألوان موسمية",
+      "مقاسات S, M, L, XL و XXL",
+      "بدائل الألوان الأسود والأبيض والبيج",
+      "صناعة تركية"
+    ]
+  },
+  {
+    "slug": "ip-askili-korsajli-atlet-2010",
+    "title": "İp Askılı Korsajlı Atlet 2010",
+    "code": "2010",
+    "image": null,
+    "features": [
+      "90% بولي أميد",
+      "10% إيلاستين",
+      "حياكة مشدودة تحتضن الجسم",
+      "S/M, M/L, L/XL",
+      "أسود وأبيض وبيج",
+      "نسيج حريري"
+    ]
+  },
+  {
+    "slug": "kalin-askili-bustiyer-1400",
+    "title": "Kalın Askılı Büstiyer 1400",
+    "code": "1400",
+    "image": null,
+    "features": [
+      "90% بولي أميد",
+      "10% إيلاستين",
+      "لا يترك أثرًا.",
+      "S/M, M/L, L/XL",
+      "أسود وأبيض وبيج",
+      "ملمس حريري"
+    ]
+  },
+  {
+    "slug": "straplez-bondeo-2030",
+    "title": "Straplez/Bondeo 2030",
+    "code": "2030",
+    "image": null,
+    "features": [
+      "90% بولي أميد",
+      "10% إيلاستين",
+      "يحتضن الجسم.",
+      "S/M, M/L, L/XL",
+      "أسود وأبيض وبيج",
+      "ملمس حريري"
+    ]
+  },
+  {
+    "slug": "sporcu-bustiyer-2020",
+    "title": "Sporcu Büstiyer 2020",
+    "code": "2020",
+    "image": null,
+    "features": [
+      "90% بولي أميد",
+      "10% إيلاستين",
+      "يحتضن الجسم.",
+      "S/M, M/L, L/XL",
+      "أسود وأبيض وبيج",
+      "ملمس حريري"
+    ]
+  },
+  {
+    "slug": "ip-askili-bustiyer-2035",
+    "title": "İp Askılı Büstiyer 2035",
+    "code": "2035",
+    "image": "colors.webp",
+    "features": [
+      "90% بولي أميد",
+      "10% إيلاستين",
+      "يحتضن الجسم.",
+      "S/M, M/L, L/XL",
+      "أسود وأبيض وبيج",
+      "ملمس حريري"
+    ]
+  },
+  {
+    "slug": "kalin-askili-toparlayici-bustiyer-1085",
+    "title": "Kalın Askılı Toparlayıcı Büstiyer 1085",
+    "code": "1085",
+    "image": null,
+    "features": [
+      "82% بولي أميد",
+      "18% إيلاستين",
+      "تأثير شدّ وتشكيل",
+      "S, M, L, XL و XXL",
+      "أسود وأبيض وبيج",
+      "يحتضن الجسم."
+    ]
+  },
+  {
+    "slug": "ayar-askili-toparlayici-bustiyer-1095",
+    "title": "Ayar Askılı Toparlayıcı Büstiyer 1095",
+    "code": "1095",
+    "image": null,
+    "features": [
+      "82% بولي أميد",
+      "18% إيلاستين",
+      "تأثير شدّ وتشكيل",
+      "S, M, L, XL و XXL",
+      "أسود وأبيض وبيج",
+      "حمالات قابلة للإزالة"
+    ]
+  },
+  {
+    "slug": "sporcu-pedli-bustiyer-2135-2",
+    "title": "Sporcu Pedli Büstiyer 2135",
+    "code": "2135",
+    "image": null,
+    "features": [
+      "90% بولي أميد",
+      "10% إيلاستين",
+      "بألوان أسود وأبيض وبيج وألوان موسمية",
+      "S, M, L, XL",
+      "حشوة قابلة للإزالة",
+      "قماش رياضي تقني قابل للتنفس"
+    ]
+  },
+  {
+    "slug": "ayar-askili-pedli-bustiyer-1195",
+    "title": "Ayar Askılı Pedli Büstiyer 1195",
+    "code": "1195",
+    "image": null,
+    "features": [
+      "90% بولي أميد",
+      "10% إيلاستين",
+      "أسود، أبيض، بيج",
+      "S, M, L, XL",
+      "حشوة قابلة للإزالة",
+      "لا يترك أثرًا."
+    ]
+  },
+  {
+    "slug": "kalin-askili-pedli-bustiyer-1185",
+    "title": "Kalın Askılı Pedli Büstiyer 1185",
+    "code": "1185",
+    "image": null,
+    "features": [
+      "90% بولي أميد",
+      "10% إيلاستين",
+      "أسود، أبيض، بيج",
+      "S, M, L, XL",
+      "حشوة قابلة للإزالة",
+      "لا يترك أثرًا."
+    ]
+  },
+  {
+    "slug": "lazer-kesim-slip-3100",
+    "title": "Lazer Kesim Slip 3100",
+    "code": "3100",
+    "image": null,
+    "features": [
+      "80% بولي أميد",
+      "20% إيلاستين",
+      "إحساس بالخفة، لا يترك أثرًا.",
+      "S, M, L, XL",
+      "أسود وإكرو وبيج",
+      "قص ليزر، جيب قطني",
+      "حافة سيليكون مضادة للانزلاق"
+    ]
+  },
+  {
+    "slug": "lazer-kesim-pacali-body-korse-3065",
+    "title": "Lazer Kesim Paçalı Body Korse 3065",
+    "code": "3065",
+    "image": null,
+    "features": [
+      "70% بولي أميد",
+      "30% إيلاستين",
+      "مقاسات S, M, L, XL",
+      "أسود وبيج",
+      "قص ليزر، خياطة خاصة"
+    ]
+  },
+  {
+    "slug": "lazer-kesim-slip-body-korse-3045",
+    "title": "Lazer Kesim Slip Body Korse 3045",
+    "code": "3045",
+    "image": null,
+    "features": [
+      "70% بولي أميد",
+      "30% إيلاستين",
+      "S, M, L, XL",
+      "أسود وبيج",
+      "جيب قطني، حواف مقصوصة بالليزر لا تترك أثرًا.",
+      "سهل الاستخدام"
+    ]
+  },
+  {
+    "slug": "lazer-kesim-slip-korse-3030",
+    "title": "Lazer Kesim Slip Korse 3030",
+    "code": "3030",
+    "image": null,
+    "features": [
+      "70% بولي أميد",
+      "30% إيلاستين",
+      "S, M, L, XL",
+      "أسود وبيج",
+      "قص ليزر، خياطة خاصة",
+      "جيب قطني، لا يترك أثرًا.",
+      "شريط سيليكون مضاد للانزلاق"
+    ]
+  },
+  {
+    "slug": "lazer-kesim-pacali-korse-3020",
+    "title": "Lazer Kesim Paçalı Korse 3020",
+    "code": "3020",
+    "image": null,
+    "features": [
+      "70% بولي أميد",
+      "30% إيلاستين",
+      "S, M, L, XL",
+      "أسود وبيج",
+      "قص ليزر، خياطة خاصة",
+      "لا يترك أثرًا.",
+      "شريط سيليكون مضاد للانزلاق"
+    ]
+  },
+  {
+    "slug": "seamless-kapri-1435",
+    "title": "Seamless Kapri 1435",
+    "code": "1435",
+    "image": null,
+    "features": [
+      "90% بولي أميد",
+      "10% إيلاستين",
+      "بألوان موسمية",
+      "S/M, L/XL",
+      "نظام حياكة بلا خياطة يحتضن الجسم",
+      "قماش قابل للتنفس ولا يظهر من تحت الملابس"
+    ]
+  },
+  {
+    "slug": "seamless-tayt-1430",
+    "title": "Seamless Tayt 1430",
+    "code": "1430",
+    "image": "KIREMIT-5-1.webp",
+    "features": [
+      "90% بولي أميد",
+      "10% إيلاستين",
+      "بألوان موسمية",
+      "S/M, L/XL",
+      "نظام حياكة بلا خياطة يحتضن الجسم",
+      "قماش قابل للتنفس ولا يظهر من تحت الملابس"
+    ]
+  },
+  {
+    "slug": "sporcu-pedli-bustiyer-2135",
+    "title": "Sporcu Pedli Büstiyer 2135",
+    "code": "2135",
+    "image": "KIREMIT-5-1.webp",
+    "features": [
+      "90% بولي أميد",
+      "10% إيلاستين",
+      "بألوان أسود وأبيض وبيج وألوان موسمية",
+      "S, M, L, XL",
+      "حشوة قابلة للإزالة",
+      "قماش رياضي تقني قابل للتنفس"
+    ]
+  },
+  {
+    "slug": "1450-3",
+    "title": "Yüksek Bel Korse Tayt 1450",
+    "code": "1450",
+    "image": "FAC_1175.webp",
+    "features": [
+      "82% بولي أميد",
+      "18% إيلاستين",
+      "خصر عالٍ للغاية",
+      "S, M, L, XL و XXL",
+      "لون أسود",
+      "شريط سيليكون مضاد للانزلاق"
+    ]
+  },
+  {
+    "slug": "1065-2",
+    "title": "Göğüs Altı Paçalı Body korse 1065",
+    "code": "1065",
+    "image": "FAC_1175.webp",
+    "features": [
+      "82% بولي أميد",
+      "18% إيلاستين",
+      "حمالات قابلة للإزالة",
+      "S, M, L, XL و XXL",
+      "أسود وأبيض وبيج",
+      "تأثير تشكيل مضاعف موضعي"
+    ]
+  },
+  {
+    "slug": "emzirme-bustiyer-1220",
+    "title": "Bamboo Emzirme Büstiyer 1220",
+    "code": "1220",
+    "image": null,
+    "features": [
+      "90% بامبو",
+      "10% إيلاستين",
+      "إغلاق بخطاف سهل الفك",
+      "S/M, L/XL",
+      "خيار اللون: طبيعي",
+      "قماش عضوي"
+    ]
+  },
+  {
+    "slug": "emzirme-atlet-1230",
+    "title": "Bamboo Emzirme Atlet 1230",
+    "code": "1230",
+    "image": null,
+    "features": [
+      "90% بامبو",
+      "10% إيلاستين",
+      "عضوي، سهل الاستخدام",
+      "S/M, L/XL",
+      "خيار اللون: طبيعي",
+      "مشبك سهل الاستخدام"
+    ]
+  },
+  {
+    "slug": "hamile-atlet-1210",
+    "title": "Bamboo Hamile Atlet 1210",
+    "code": "1210",
+    "image": null,
+    "features": [
+      "90% بامبو",
+      "10% إيلاستين",
+      "حمالات قابلة للإزالة",
+      "خيار اللون: طبيعي",
+      "S/M, L/XL",
+      "قماش مريح يحتضن منطقة البطن"
+    ]
+  },
+  {
+    "slug": "hamile-slip-1200",
+    "title": "Bamboo Hamile Slip 1200",
+    "code": "1200",
+    "image": null,
+    "features": [
+      "90% بامبو",
+      "10% إيلاستين",
+      "خصر عالٍ للغاية",
+      "S/M, L/XL",
+      "خيار اللون: طبيعي"
+    ]
+  },
+  {
+    "slug": "hamile-tayt-1240",
+    "title": "Bamboo Hamile Tayt 1240",
+    "code": "1240",
+    "image": null,
+    "features": [
+      "90% بامبو",
+      "10% إيلاستين",
+      "حياكة مريحة تلتف حول منطقة البطن",
+      "S/M, M/L, L/XL",
+      "اللون: أسود",
+      "قماش عضوي يحتضن الجسم"
+    ]
+  },
+  {
+    "slug": "bayan-boxer-1300",
+    "title": "Bamboo Bayan Boxer 1300",
+    "code": "1300",
+    "image": null,
+    "features": [
+      "90% بامبو",
+      "10% إيلاستين",
+      "راحة مريحة",
+      "S/M, M/L, L/XL",
+      "أسود، أبيض، بيج",
+      "لا يترك أثرًا."
+    ]
+  },
+  {
+    "slug": "bayan-slip",
+    "title": "Bamboo Bayan Slip 1320",
+    "code": "1320",
+    "image": null,
+    "features": [
+      "90% بامبو",
+      "10% إيلاستين",
+      "لا يترك أثرًا.",
+      "S/M, M/L, L/XL",
+      "أسود وأبيض وبيج",
+      "ملمس حريري"
+    ]
+  },
+  {
+    "slug": "1330-3",
+    "title": "Bamboo Ayar Askılı Atlet 1310",
+    "code": "1310",
+    "image": null,
+    "features": [
+      "90% بامبو",
+      "10% إيلاستين",
+      "حمالات قابلة للإزالة",
+      "S/M, M/L, L/XL",
+      "أسود وأبيض وبيج",
+      "قماش بامبو طبيعي قابل للتنفس"
+    ]
+  },
+  {
+    "slug": "kalin-askili-atlet-1330",
+    "title": "Bamboo Kalın Askılı Atlet 1330",
+    "code": "1330",
+    "image": null,
+    "features": [
+      "90% بامبو",
+      "10% إيلاستين",
+      "يحتضن الجسم.",
+      "مقاسات S, M, L, XL و XXL",
+      "بدائل الألوان الأسود والأبيض والبيج",
+      "قماش بامبو حريري"
+    ]
+  },
+  {
+    "slug": "bel-korse-1140",
+    "title": "Bamboo Bel Korse 1140",
+    "code": "1140",
+    "image": null,
+    "features": [
+      "85% بامبو",
+      "15% إيلاستين",
+      "شريط سيليكون مضاد للانزلاق",
+      "مقاسات S, M, L, XL و XXL",
+      "خيار اللون: طبيعي",
+      "ملمس حريري بقماش البامبو الطبيعي"
+    ]
+  },
+  {
+    "slug": "pacali-body-korse",
+    "title": "Bamboo Paçalı Body Korse 1160",
+    "code": "1160",
+    "image": null,
+    "features": [
+      "85% بامبو",
+      "15% إيلاستين",
+      "تأثير مضاعف موضعي",
+      "مقاسات S, M, L, XL و XXL",
+      "خيار اللون: طبيعي",
+      "ملمس حريري بفضل قماش البامبو الطبيعي"
+    ]
+  },
+  {
+    "slug": "citcitli-body-korse-1130",
+    "title": "Bamboo Çıtçıtlı Body Korse 1130",
+    "code": "1130",
+    "image": null,
+    "features": [
+      "85% بامبو",
+      "15% إيلاستين",
+      "خياطة خاصة لا تترك أثرًا",
+      "مقاسات S, M, L, XL و XXL",
+      "خيار اللون: طبيعي",
+      "ملمس حريري بقماش البامبو الطبيعي"
+    ]
+  },
+  {
+    "slug": "yuksek-bel-toparlayici-korse-1120",
+    "title": "Bamboo Yüksek Bel Toparlayıcı Korse 1120",
+    "code": "1120",
+    "image": null,
+    "features": [
+      "85% بامبو",
+      "15% إيلاستين",
+      "شريط سيليكون مضاد للانزلاق",
+      "مقاسات S, M, L, XL و XXL",
+      "خيار اللون: طبيعي",
+      "ملمس حريري بقماش البامبو الطبيعي"
+    ]
+  },
+  {
+    "slug": "yuksek-bel-slip-korse-1100",
+    "title": "Bamboo Yüksek Bel Slip Korse 1100",
+    "code": "1100",
+    "image": null,
+    "features": [
+      "85% بامبو",
+      "15% إيلاستين",
+      "شريط سيليكون مضاد للانزلاق",
+      "مقاسات S, M, L, XL و XXL",
+      "خيار اللون: طبيعي",
+      "ملمس حريري بقماش البامبو الطبيعي"
+    ]
+  },
+  {
+    "slug": "yuksek-bel-uzun-pacali-korse-1110",
+    "title": "Yüksek Bel Uzun Paçalı Korse 1110",
+    "code": "1110",
+    "image": "1110-scaled.webp",
+    "features": [
+      "82% بولي أميد",
+      "18% إيلاستين",
+      "خصر عالٍ للغاية",
+      "مقاسات S, M, L, XL و XXL",
+      "بدائل الألوان الأسود والأبيض والبيج",
+      "صناعة تركية"
+    ]
+  },
+  {
+    "slug": "2060-2",
+    "title": "Slip Soft Korse 2060",
+    "code": "2060",
+    "image": "FAC_1175.webp",
+    "features": [
+      "90% بولي أميد",
+      "10% إيلاستين",
+      "شريط سيليكون مضاد للانزلاق",
+      "S, M, L, XL",
+      "ألوان أسود وأبيض وبيج",
+      "مناسب للاستخدام اليومي"
+    ]
+  },
+  {
+    "slug": "2065-2",
+    "title": "Yüksek Bel Slip Soft korse 2065",
+    "code": "2065",
+    "image": "FAC_1175.webp",
+    "features": [
+      "90% بولي أميد",
+      "10% إيلاستين",
+      "شريط سيليكون مضاد للانزلاق",
+      "S, M, L, XL",
+      "ألوان أسود وأبيض وبيج",
+      "خصر عالٍ جدًا"
+    ]
+  },
+  {
+    "slug": "2070-2",
+    "title": "Yüksek Bel Paçalı Soft Korse 2070",
+    "code": "2070",
+    "image": "FAC_1175.webp",
+    "features": [
+      "90% بولي أميد",
+      "10% إيلاستين",
+      "شريط سيليكون مضاد للانزلاق",
+      "S, M, L, XL",
+      "ألوان أسود وأبيض وبيج",
+      "مناسب للاستخدام اليومي"
+    ]
+  },
+  {
+    "slug": "1190-2",
+    "title": "Yüksek Bel Jüpon Korse 1090",
+    "code": "1090",
+    "image": "FAC_1175.webp",
+    "features": [
+      "82% بولي أميد",
+      "18% إيلاستين",
+      "خصر عالٍ للغاية",
+      "S, M, L, XL",
+      "أسود وأبيض وبيج",
+      "نسيج سيليكون مضاد للانزلاق"
+    ]
+  },
+  {
+    "slug": "1180-2",
+    "title": "Atlet Korse 1180",
+    "code": "1180",
+    "image": "FAC_1175.webp",
+    "features": [
+      "82% بولي أميد",
+      "18% إيلاستين",
+      "تشكيل مضاعف موضعي",
+      "S, M, L, XL",
+      "أسود وأبيض وبيج",
+      "قماش قابل للتنفس"
+    ]
+  },
+  {
+    "slug": "1450-2",
+    "title": "Göğüs altı Çıtçıtlı Body Korse 1045",
+    "code": "1045",
+    "image": "FAC_1175.webp",
+    "features": [
+      "82% بولي أميد",
+      "18% إيلاستين",
+      "خصر عالٍ للغاية",
+      "مقاسات S, M, L, XL و XXL",
+      "بدائل الألوان الأسود والأبيض والبيج",
+      "صناعة تركية"
+    ]
+  },
+  {
+    "slug": "yuksek-bel-string-korse-1025",
+    "title": "Yüksek Bel String Korse 1025",
+    "code": "1025",
+    "image": "FAC_1175.webp",
+    "features": [
+      "82% بولي أميد",
+      "18% إيلاستين",
+      "S-M-L-XL",
+      "أسود وأبيض وبيج",
+      "شريط سيليكون مضاد للانزلاق",
+      "خصر عالٍ"
+    ]
+  },
+  {
+    "slug": "yuksek-bel-acik-push-up-korse-1015",
+    "title": "Yüksek Bel Açık Push-up Korse 1015",
+    "code": "1015",
+    "image": "FAC_1175.webp",
+    "features": [
+      "82% بولي أميد",
+      "18% إيلاستين",
+      "S-M-L-XL-XXL",
+      "أسود وأبيض وبيج",
+      "تأثير رفع إضافي",
+      "شريط سيليكون مضاد للانزلاق"
+    ]
+  },
+  {
+    "slug": "yuksek-bel-slipkorse-1030",
+    "title": "Yüksek Bel Slip Korse 1030",
+    "code": "1030",
+    "image": "FAC_1175.webp",
+    "features": [
+      "82% بولي أميد",
+      "18% إيلاستين",
+      "خصر عالٍ للغاية",
+      "S, M, L, XL و XXL",
+      "أسود وأبيض وبيج",
+      "شريط سيليكون مضاد للانزلاق"
+    ]
+  },
+  {
+    "slug": "yuksek-bel-uzun-pacali-korse-1020",
+    "title": "Yüksek Bel Uzun Paçalı Korse 1020",
+    "code": "1020",
+    "image": "FAC_1175.webp",
+    "features": [
+      "82% بولي أميد",
+      "18% إيلاستين",
+      "خصر عالٍ للغاية",
+      "مقاسات S, M, L, XL و XXL",
+      "بدائل الألوان الأسود والأبيض والبيج",
+      "نسيج سيليكون مضاد للانزلاق"
+    ]
+  },
+  {
+    "slug": "duble-etkili-gogus-alti-citcitli-slip-body-korse-1011",
+    "title": "Kısa Paçalı Toparlayıcı Korse   1011",
+    "code": "1011",
+    "image": "FAC_1175.webp",
+    "features": [
+      "82% بولي أميد",
+      "18% إيلاستين",
+      "S-M-L-XL-XXL",
+      "أسود وأبيض وبيج",
+      "شريط سيليكون مضاد للانزلاق",
+      "تأثير رافع"
+    ]
+  },
+  {
+    "slug": "ornek-hamak-urunu-2",
+    "title": "Duble Etkili Çıtçıtlı Slip Boy Korse 1040",
+    "code": "1040",
+    "image": "FAC_1175.webp",
+    "features": [
+      "82% بولي أميد",
+      "18% إيلاستين",
+      "S-M-L-XL-XXL",
+      "أسود وأبيض وبيج",
+      "قماش قابل للتنفس",
+      "حمالات قابلة للإزالة"
+    ]
+  },
+  {
+    "slug": "duble-etkili-bel-korse-1050",
+    "title": "Duble Etkili Bel Korse  1050",
+    "code": "1050",
+    "image": "FAC_1175.webp",
+    "features": [
+      "82% بولي أميد",
+      "18% إيلاستين",
+      "تأثير مشدّ وموحّد للجسم",
+      "S, M, L, XL و XXL",
+      "أسود وأبيض وبيج",
+      "شريط سيليكون مضاد للانزلاق"
+    ]
+  },
+  {
+    "slug": "mikromasaj-pacali-korse-1005",
+    "title": "Mikromasaj Paçalı Korse 1005",
+    "code": "1005",
+    "image": "FAC_1175.webp",
+    "features": [
+      "80% بولي أميد",
+      "20% إيلاستين",
+      "S-M-L-XL-XXL",
+      "أسود، أبيض، بيج",
+      "نسيج سيليكون مضاد للانزلاق",
+      "نظام حياكة خاص بوظيفة تدليك دقيق"
+    ]
+  },
+  {
+    "slug": "uzun-pacali-toparlayici-korse-1010",
+    "title": "Uzun Paçalı Toparlayıcı Korse 1010",
+    "code": "1010",
+    "image": "FAC_1175.webp",
+    "features": [
+      "80% بولي أميد",
+      "20% إيلاستين",
+      "S-M-L-XL-XXL",
+      "أسود، أبيض، بيج",
+      "تأثير رافع",
+      "مشدّ بخصر عالٍ وتأثير شدّ إضافي"
+    ]
+  },
+  {
+    "slug": "duble-etkili-agrafli-bel-korse-1052",
+    "title": "Duble Etkili Ağraflı Bel Korse 1052",
+    "code": "1052",
+    "image": "FAC_1175.webp",
+    "features": [
+      "82% بولي أميد",
+      "20% إيلاستين",
+      "شريط سيليكون مزدوج الجهة",
+      "إغلاق قابل للتعديل بالخطاف",
+      "S-M-L-XL-XXL",
+      "بيج / أبيض / أسود",
+      "قماشه الرقيق لا يترك أثرًا تحت الملابس."
+    ]
+  },
+  {
+    "slug": "ornek-cadir-urunu-4",
+    "title": "Duble Etkili Mini Boxer Korse 1055",
+    "code": "1055",
+    "image": "FAC_1175.webp",
+    "features": [
+      "82% بولي أميد",
+      "18% إيلاستين",
+      "S-M-L-XL",
+      "أسود، أبيض، بيج",
+      "شريط سيليكون مضاد للانزلاق"
+    ]
+  },
+  {
+    "slug": "straplez-atlet-korse-1070",
+    "title": "Straplez Atlet Korse 1070",
+    "code": "1070",
+    "image": "FAC_1175.webp",
+    "features": [
+      "82% بولي أميد",
+      "18% إيلاستين",
+      "شريط سيليكون مضاد للانزلاق",
+      "S-M-L-XL",
+      "أسود، أبيض، بيج",
+      "ملمس حريري"
     ]
   }
 ]

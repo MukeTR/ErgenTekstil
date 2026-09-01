@@ -1,5 +1,46 @@
 [
   {
+    "slug": "fitilli-biker-sort-1525",
+    "title": "Fitilli Biker Şort 1525",
+    "code": "1525",
+    "image": "FAC_1152-1.webp",
+    "features": [
+      "%90 Polyamid",
+      "%10 Elastan",
+      "Sezon renkler",
+      "XS/S, M/L, L/XL",
+      "Vücudu saran dikişsiz örgü sistemi",
+      "Nefes alabilen iç göstermez kumaş"
+    ]
+  },
+  {
+    "slug": "markalarimiz",
+    "title": "Markalarımız",
+    "image": "img-bg.webp",
+    "content": [
+      {
+        "tag": "p",
+        "text": "Ergen Tekstil’in gururla sunar: FORMActive, aktif yaşam tarzını benimseyen herkes için özel olarak tasarlanmış bir markadır. 2004 yılında kurulan Ergen Tekstil’in öncü ve yenilikçi ruhu, FORMActive’in her ürününde hissedilir."
+      },
+      {
+        "tag": "p",
+        "text": "FORMActive, modern tasarımı ve üstün konforuyla dikkat çeker. Sporcuların ve hareketli yaşam tarzına sahip olanların vazgeçilmez tercihi haline gelmiştir. Tayt, büstiyer, ort, takım, tulum gibi geniş bir ürün yelpazesi sunarak, her bedene uygun çözümler sunar."
+      },
+      {
+        "tag": "p",
+        "text": "Markamızın öne çıkan özelliklerinden biri, ekipman toparlayıcı dikişsiz taytlardır. Performansınızı artırırken vücudunuzu destekler, rahat bir hareket sağlar."
+      },
+      {
+        "tag": "p",
+        "text": "FORMActive, yalnızca bir giysi değil, aynı zamanda bir yaşam tarzıdır. Her bir ürün, Ergen Tekstil’in kalite ve yenilikçiliğiyle birleşerek, müşterilerimize en iyi deneyimi sunmayı hedefler."
+      },
+      {
+        "tag": "p",
+        "text": "Aktif spor tutkunları için FORMActive, spor salonundan sokaklara, her yerde size eşlik etmeye hazırdır. Ergen Tekstil güvencesiyle, her adımda size mükemmel destek sağlamak için buradayız."
+      }
+    ]
+  },
+  {
     "slug": "uretimde-mukemmellik-ergen-tekstilin-kalite-standartlari",
     "title": "Üretimde Mükemmellik: Ergen Tekstil’in Kalite Standartları",
     "image": "uretim-1.webp",
@@ -211,30 +252,1155 @@
     ]
   },
   {
-    "slug": "markalarimiz",
-    "title": "Markalarımız",
-    "image": "img-bg.webp",
+    "slug": "online-katalog",
+    "title": "Online Katalog",
+    "image": "pdf.webp",
     "content": [
       {
         "tag": "p",
-        "text": "Ergen Tekstil’in gururla sunar: FORMActive, aktif yaşam tarzını benimseyen herkes için özel olarak tasarlanmış bir markadır. 2004 yılında kurulan Ergen Tekstil’in öncü ve yenilikçi ruhu, FORMActive’in her ürününde hissedilir."
-      },
-      {
-        "tag": "p",
-        "text": "FORMActive, modern tasarımı ve üstün konforuyla dikkat çeker. Sporcuların ve hareketli yaşam tarzına sahip olanların vazgeçilmez tercihi haline gelmiştir. Tayt, büstiyer, ort, takım, tulum gibi geniş bir ürün yelpazesi sunarak, her bedene uygun çözümler sunar."
-      },
-      {
-        "tag": "p",
-        "text": "Markamızın öne çıkan özelliklerinden biri, ekipman toparlayıcı dikişsiz taytlardır. Performansınızı artırırken vücudunuzu destekler, rahat bir hareket sağlar."
-      },
-      {
-        "tag": "p",
-        "text": "FORMActive, yalnızca bir giysi değil, aynı zamanda bir yaşam tarzıdır. Her bir ürün, Ergen Tekstil’in kalite ve yenilikçiliğiyle birleşerek, müşterilerimize en iyi deneyimi sunmayı hedefler."
-      },
-      {
-        "tag": "p",
-        "text": "Aktif spor tutkunları için FORMActive, spor salonundan sokaklara, her yerde size eşlik etmeye hazırdır. Ergen Tekstil güvencesiyle, her adımda size mükemmel destek sağlamak için buradayız."
+        "text": "Ürün kataloğumuzu incelemek için bizimle iletişime geçin."
       }
+    ]
+  },
+  {
+    "slug": "melanjli-sort-1710",
+    "title": "Melanjlı Şort 1725",
+    "code": "1725",
+    "image": null,
+    "features": [
+      "%90 Polyamid",
+      "%10 Elastan",
+      "Lacivert, Beyaz, Siyah renkler",
+      "XS/S. M/L",
+      "Vücudu saran dikişsiz örgü sistemi",
+      "Nefes alabilen iç göstermez kumaş"
+    ]
+  },
+  {
+    "slug": "melanjli-tayt-1700",
+    "title": "Melanjlı Tayt 1700",
+    "code": "1700",
+    "image": "ATOS0814-1.webp",
+    "features": [
+      "%90 Polyamid",
+      "%10 Elastan",
+      "Lacivert, Beyaz, Siyah renkler",
+      "XS/S. M/L",
+      "Vücudu saran dikişsiz örgü sistemi",
+      "Nefes alabilen iç göstermez kumaş"
+    ]
+  },
+  {
+    "slug": "melanjli-bustiyer-1710",
+    "title": "Melanjlı Büstiyer 1710",
+    "code": "1710",
+    "image": "ATOS0848-1.webp",
+    "features": [
+      "%90 Polyamide",
+      "%10 Elastan",
+      "Lacivert, Siyah ve Beyaz renkler",
+      "XS/S,  M/L",
+      "Vücudu saran dikişsiz örgü sistemi",
+      "Nefes alabilen iç göstermez kumaş"
+    ]
+  },
+  {
+    "slug": "yuksek-bel-korse-tayt-1452",
+    "title": "Agraflı Yüksek Bel Korse Tayt 1452",
+    "code": "1452",
+    "image": "FAC_1175.webp",
+    "features": [
+      "%82 Polyamid",
+      "%18 Elastan",
+      "Ultra yüksek bel",
+      "S, M, L, XL, XXL ve 3XL",
+      "Siyah renk",
+      "Kaymayı önleyen silikon şerit"
+    ]
+  },
+  {
+    "slug": "agrafli-bel-korse-1052",
+    "title": "Agraflı Bel Korse  1052",
+    "code": "1052",
+    "image": "FAC_1175.webp",
+    "features": [
+      "%82 Polyamid",
+      "%18 Elastan",
+      "Sıklaştırıcı ve toparlayıcı etki",
+      "S, M, L, XL, XXL ve 3XL",
+      "Siyah ve Ten",
+      "Kaymayı önleyen silikon şerit"
+    ]
+  },
+  {
+    "slug": "agrafli-yuksek-bel-slip-korse-1032",
+    "title": "Agraflı Yüksek Bel Slip Korse 1032",
+    "code": "1032",
+    "image": "FAC_1175.webp",
+    "features": [
+      "%82 Polyamid",
+      "%18 Elastan",
+      "Ultra yüksek bel",
+      "S, M, L, XL, XXL ve 3XL",
+      "Siyah ve Ten",
+      "Kaymayı önleyen silikon serit"
+    ]
+  },
+  {
+    "slug": "yuksek-bel-uzun-pacali-agrafli-korse-1022",
+    "title": "Yüksek Bel Uzun Paçalı Agraflı Korse 1022",
+    "code": "1022",
+    "image": "FAC_1175.webp",
+    "features": [
+      "%82 Polyamid",
+      "%18 Elastan",
+      "Ultra yüksek bel",
+      "S, M, L, XL, XXL ve 3XL  beden seçenekleri",
+      "Siyah ve Ten rengi alternatifleri",
+      "Kaymayı önleyen silikon doku"
+    ]
+  },
+  {
+    "slug": "agrafli-toparlayici-korse-1011",
+    "title": "Agraflı Toparlayıcı Korse 1011",
+    "code": "1011",
+    "image": "MTD_8155.webp",
+    "features": [
+      "%80 Polyamid",
+      "%20 Elastan",
+      "S-M-L-XL-XXL-3XL",
+      "Siyah, Ten",
+      "Push up etkili",
+      "Yüksek bel extra sıkılaştırıcı korse"
+    ]
+  },
+  {
+    "slug": "capraz-detayli-dikissiz-bustiyer-1610",
+    "title": "Çapraz Detaylı Dikişsiz Büstiyer-1610",
+    "code": "1610",
+    "image": "ATOS0889-1.webp",
+    "features": [
+      "%90 Polyamide",
+      "%10 Elastan",
+      "Sezon Renkleri İle",
+      "XS/S. M/L",
+      "Vücudu saran dikişsiz örgü sistemi",
+      "Nefes alabilen iç göstermez kumaş"
+    ]
+  },
+  {
+    "slug": "cift-katli-toparlayici-fitilli-crop-top-1510",
+    "title": "Fitilli Crop-Top 1510",
+    "code": "1510",
+    "image": null,
+    "features": [
+      "%90 Polyamide",
+      "%10 Elastan",
+      "Sezon Renkleri İle",
+      "XS/S. M/L",
+      "Vücudu saran dikişsiz örgü sistemi",
+      "Nefes alabilen iç göstermez kumaş"
+    ]
+  },
+  {
+    "slug": "seamless-cift-katli-fititlli-tayt1550",
+    "title": "Çift Katlı Toparlayıcı Fitilli Tayt 1550",
+    "code": "1550",
+    "image": null,
+    "features": [
+      "%90 Polyamide",
+      "%10 Elastan",
+      "Sezon Renkleri İle",
+      "XS/S,  M/L,  L/XL",
+      "Vücudu saran dikişsiz örgü sistemi",
+      "Nefes alabilen iç göstermez kumaş"
+    ]
+  },
+  {
+    "slug": "cift-kat-etkili-korse-atlet-4600-2",
+    "title": "Çift Kat Etkili Korse Atlet 4600",
+    "code": "4600",
+    "image": null,
+    "features": [
+      "%100 Orijinal Ürün",
+      "%82 Mikrofiber Polyamid",
+      "%18 Elastan",
+      "Toparlayıcı etki",
+      "S, M, L, XL ve XXL beden seçenekleri"
+    ]
+  },
+  {
+    "slug": "ekstra-etkili-korse-atlet-4800-2",
+    "title": "Ekstra Etkili Korse Atlet 4800",
+    "code": "4800",
+    "image": "ATOS0923.jpg",
+    "features": [
+      "%100 Orijinal Ürün",
+      "%82 Mikrofiber Polyamid",
+      "%18 Elastan",
+      "Toparlayıcı etki",
+      "S, M, L, XL, XXL  ve 3XL beden seçenekleri",
+      "Beyaz ve Siyah renkleriyle"
+    ]
+  },
+  {
+    "slug": "erkek-korse-atlet-4500",
+    "title": "Erkek Korse Atlet 4500",
+    "code": "4500",
+    "image": null,
+    "features": [
+      "%100 Orijinal Ürün",
+      "%82 Mikrofiber Polyamid",
+      "%18 Elastan",
+      "Toparlayıcı etki",
+      "S, M, L, XL ve XXL beden seçenekleri"
+    ]
+  },
+  {
+    "slug": "erkek-boxer-4400",
+    "title": "Erkek Boxer 4400",
+    "code": "4400",
+    "image": null,
+    "features": [
+      "%82 Polyamid",
+      "%18 Elastan",
+      "S, M, L, XL ve XXL"
+    ]
+  },
+  {
+    "slug": "bamboo-boxer-4000-2",
+    "title": "Bamboo Boxer 4000",
+    "code": "4000",
+    "image": null,
+    "features": [
+      "%82 Polyamid",
+      "%18 Elastan",
+      "S, M, L, XL ve XXL"
+    ]
+  },
+  {
+    "slug": "straplez-kombinezon-korse-1170",
+    "title": "Straplez Kombinezon Korse 1170",
+    "code": "1170",
+    "image": "FAC_1222.webp",
+    "features": [
+      "%82 Polyamid",
+      "%18 Elastan",
+      "Çıkarılabilir askı",
+      "S, M, L, XL ve XXL",
+      "Siyah, Beyaz ve Ten",
+      "Bölgesel baskıyla duble etkili şekillenme"
+    ]
+  },
+  {
+    "slug": "pacali-body-korse-1060",
+    "title": "Paçalı Body Korse 1060",
+    "code": "1060",
+    "image": "FAC_1175.webp",
+    "features": [
+      "%82 Polyamid",
+      "%18 Elastan",
+      "Çıkarılabilir askı",
+      "S, M, L, XL ve XXL",
+      "Siyah, Beyaz ve Ten",
+      "Bölgesel baskıyla duble etkili şekillenme"
+    ]
+  },
+  {
+    "slug": "pop-up-slip-1000",
+    "title": "Pop-up Slip 1000",
+    "code": "1000",
+    "image": null,
+    "features": [
+      "%90 Polyamid",
+      "%10 Elastan",
+      "Dolgun sünger",
+      "S, M, L",
+      "Siyah, Beyaz ve Ten renk alternatifi",
+      "Pamuk ağ"
+    ]
+  },
+  {
+    "slug": "uzun-pacali-boxer-1410",
+    "title": "Uzun Paçalı Boxer 1410",
+    "code": "1410",
+    "image": null,
+    "features": [
+      "%90 Polyamid",
+      "%10 Elastan",
+      "Geliştirilmiş örgü sistemi",
+      "S/M,  M/L,  L/XL  beden seçenekleri",
+      "Siyah, Beyaz, Ten",
+      "İpeksi dokunuş"
+    ]
+  },
+  {
+    "slug": "boxer-2040",
+    "title": "Boxer 2040",
+    "code": "2040",
+    "image": null,
+    "features": [
+      "%90 Polyamid",
+      "%10 Elastan",
+      "İpeksi dokunuş",
+      "S, M, L, XL",
+      "Siyah, Beyaz ve Ten",
+      "iz yapmaz."
+    ]
+  },
+  {
+    "slug": "bikini-slip-2055",
+    "title": "Bikini Slip 2055",
+    "code": "2055",
+    "image": null,
+    "features": [
+      "%90 Polyamid",
+      "%10 Elastan",
+      "ipeksi dokunuş",
+      "S/M, M/L, L/XL",
+      "Siyah, Beyaz ve Ten",
+      "vücudu sarar."
+    ]
+  },
+  {
+    "slug": "slip-2050",
+    "title": "Slip 2050",
+    "code": "2050",
+    "image": null,
+    "features": [
+      "%90 Polyamid",
+      "%10 Elastan",
+      "Nefes alabilen kumaş",
+      "S/M, M/L, L/XL",
+      "Siyah, Beyaz, Ten",
+      "Vucudu sarar"
+    ]
+  },
+  {
+    "slug": "bato-slip-2045",
+    "title": "Bato Slip 2045",
+    "code": "2045",
+    "image": null,
+    "features": [
+      "%90 Polyamid",
+      "%10 Elastan",
+      "Vücudu sarar.",
+      "S/M, M/L. L/XL",
+      "Siyah, Beyaz, Ten",
+      "İpeksi dokunuş"
+    ]
+  },
+  {
+    "slug": "uzun-straplez-2025",
+    "title": "Uzun Straplez 2025",
+    "code": "2025",
+    "image": null,
+    "features": [
+      "%90 Polyamid",
+      "%10 Elastan",
+      "Vücudu sarar.",
+      "S/M, M/L, L/XL",
+      "Siyah, Beyaz ve Ten",
+      "Nefes alabilen kumaş"
+    ]
+  },
+  {
+    "slug": "citcitli-soft-body-2200",
+    "title": "Çıtçıtlı Soft Body 2200",
+    "code": "2200",
+    "image": null,
+    "features": [
+      "%90 Polyamid",
+      "%10 Elastan",
+      "Vücudu sarar.",
+      "S/M, M/L, L/XL",
+      "Siyah, Beyaz ve Ten",
+      "Kolay kullanım"
+    ]
+  },
+  {
+    "slug": "citcitli-korsajli-soft-body-2210",
+    "title": "Çıtçıtlı Korsajlı Soft Body 2210",
+    "code": "2210",
+    "image": null,
+    "features": [
+      "%90 Polyamid",
+      "%10 Elastan",
+      "Vücudu sarar.",
+      "S/M, M/L, L/XL",
+      "Siyah, Beyaz ve Ten",
+      "Özel korsajlı örgü"
+    ]
+  },
+  {
+    "slug": "kalin-askili-atlet-2085",
+    "title": "Kalın Askılı Atlet 2085",
+    "code": "2085",
+    "image": null,
+    "features": [
+      "%90 Polyamid",
+      "%10 Elastan",
+      "Vücudu sarar.",
+      "S/M, M/L, L/XL",
+      "Siyah, Beyaz ve Ten",
+      "İpeksi dokunuş"
+    ]
+  },
+  {
+    "slug": "ip-askili-duz-atlet-2015",
+    "title": "İp Askılı Düz Atlet 2015",
+    "code": "2015",
+    "image": null,
+    "features": [
+      "%82 Polyamid",
+      "%18 Elastan",
+      "Sezon Renkleri ile",
+      "S, M, L, XL ve XXL  beden seçenekleri",
+      "Siyah, Beyaz ve Ten rengi alternatifleri",
+      "Yerli Üretim"
+    ]
+  },
+  {
+    "slug": "ip-askili-korsajli-atlet-2010",
+    "title": "İp Askılı Korsajlı Atlet 2010",
+    "code": "2010",
+    "image": null,
+    "features": [
+      "%90 Polyamid",
+      "%10 Elastan",
+      "Vücudu saran korsajlı örgü",
+      "S/M, M/L, L/XL",
+      "Siyah, Beyaz ve Ten",
+      "İpeksi doku"
+    ]
+  },
+  {
+    "slug": "kalin-askili-bustiyer-1400",
+    "title": "Kalın Askılı Büstiyer 1400",
+    "code": "1400",
+    "image": null,
+    "features": [
+      "%90 Polyamid",
+      "%10 Elastan",
+      "İz yapmaz.",
+      "S/M, M/L, L/XL",
+      "Siyah, Beyaz ve Ten",
+      "İpeksi dokunuş"
+    ]
+  },
+  {
+    "slug": "straplez-bondeo-2030",
+    "title": "Straplez/Bondeo 2030",
+    "code": "2030",
+    "image": null,
+    "features": [
+      "%90 Polyamid",
+      "%10 Elastan",
+      "Vücudu sarar.",
+      "S/M, M/L, L/XL",
+      "Siyah, Beyaz ve Ten",
+      "İpeksi dokunuş"
+    ]
+  },
+  {
+    "slug": "sporcu-bustiyer-2020",
+    "title": "Sporcu Büstiyer 2020",
+    "code": "2020",
+    "image": null,
+    "features": [
+      "%90 Polyamid",
+      "%10 Elastan",
+      "Vücudu sarar.",
+      "S/M, M/L, L/XL",
+      "Siyah, Beyaz ve Ten",
+      "İpeksi dokunuş"
+    ]
+  },
+  {
+    "slug": "ip-askili-bustiyer-2035",
+    "title": "İp Askılı Büstiyer 2035",
+    "code": "2035",
+    "image": "colors.webp",
+    "features": [
+      "%90 Polyamid",
+      "%10 Elastan",
+      "Vücudu sarar.",
+      "S/M, M/L, L/XL",
+      "Siyah, Beyaz ve Ten",
+      "İpeksi dokunuş"
+    ]
+  },
+  {
+    "slug": "kalin-askili-toparlayici-bustiyer-1085",
+    "title": "Kalın Askılı Toparlayıcı Büstiyer 1085",
+    "code": "1085",
+    "image": null,
+    "features": [
+      "%82 Polyamid",
+      "%18 Elastan",
+      "Toparlatıcı ve şekillendirici etki",
+      "S, M, L, XL ve XXL",
+      "Siyah, Beyaz ve Ten",
+      "Vücudu sarar."
+    ]
+  },
+  {
+    "slug": "ayar-askili-toparlayici-bustiyer-1095",
+    "title": "Ayar Askılı Toparlayıcı Büstiyer 1095",
+    "code": "1095",
+    "image": null,
+    "features": [
+      "%82 Polyamid",
+      "%18 Elastan",
+      "Toparlatıcı ve şekillendirici etki",
+      "S, M, L, XL ve XXL",
+      "Siyah, Beyaz ve Ten",
+      "Çıkarılabilir askı"
+    ]
+  },
+  {
+    "slug": "sporcu-pedli-bustiyer-2135-2",
+    "title": "Sporcu Pedli Büstiyer 2135",
+    "code": "2135",
+    "image": null,
+    "features": [
+      "%90 Polyamid",
+      "%10 Elastan",
+      "Siyah, Beyaz, Ten ve sezon renkleriyle",
+      "S, M, L, XL",
+      "Çıkarılabilen sünger",
+      "Nefes alabilen özel spor kumaş"
+    ]
+  },
+  {
+    "slug": "ayar-askili-pedli-bustiyer-1195",
+    "title": "Ayar Askılı Pedli Büstiyer 1195",
+    "code": "1195",
+    "image": null,
+    "features": [
+      "%90 Polyamid",
+      "%10 Elastan",
+      "Siyah, Beyaz, Ten",
+      "S, M, L, XL",
+      "Çıkarılabilen sünger",
+      "iz yapmaz."
+    ]
+  },
+  {
+    "slug": "kalin-askili-pedli-bustiyer-1185",
+    "title": "Kalın Askılı Pedli Büstiyer 1185",
+    "code": "1185",
+    "image": null,
+    "features": [
+      "%90 Polyamid",
+      "%10 Elastan",
+      "Siyah, Beyaz, Ten",
+      "S, M, L, XL",
+      "Çıkarılabilen sünger",
+      "İz yapmaz."
+    ]
+  },
+  {
+    "slug": "lazer-kesim-slip-3100",
+    "title": "Lazer Kesim Slip 3100",
+    "code": "3100",
+    "image": null,
+    "features": [
+      "%80 Polyamid",
+      "%20 Elastan",
+      "Yok hissi, iz yapmaz.",
+      "S, M, L, XL",
+      "Siyah, Ekru ve Ten",
+      "LAZER KESİM, Pamuk ağ",
+      "Kaymayı önleyen çevre silikon"
+    ]
+  },
+  {
+    "slug": "lazer-kesim-pacali-body-korse-3065",
+    "title": "Lazer Kesim Paçalı Body Korse 3065",
+    "code": "3065",
+    "image": null,
+    "features": [
+      "%70 Polyamid",
+      "%30 Elastan",
+      "S, M, L, XL  beden seçenekleri",
+      "Siyah ve Ten",
+      "Lazer kesim, özel dikiş"
+    ]
+  },
+  {
+    "slug": "lazer-kesim-slip-body-korse-3045",
+    "title": "Lazer Kesim Slip Body Korse 3045",
+    "code": "3045",
+    "image": null,
+    "features": [
+      "%70 Polyamid",
+      "%30 Elastan",
+      "S, M, L, XL",
+      "Siyah ve Ten",
+      "Pamuk ağ, LAZER kesim iz yapmaz.",
+      "Kolay kullanım"
+    ]
+  },
+  {
+    "slug": "lazer-kesim-slip-korse-3030",
+    "title": "Lazer Kesim Slip Korse 3030",
+    "code": "3030",
+    "image": null,
+    "features": [
+      "%70 Polyamid",
+      "%30 Elastan",
+      "S, M, L, XL",
+      "Siyah ve Ten",
+      "LAZER kesim, özel dikiş",
+      "pamuk ağ, iz yapmaz.",
+      "Kaymayı önleyen silikon şerit"
+    ]
+  },
+  {
+    "slug": "lazer-kesim-pacali-korse-3020",
+    "title": "Lazer Kesim Paçalı Korse 3020",
+    "code": "3020",
+    "image": null,
+    "features": [
+      "%70 Polyamid",
+      "%30 Elastan",
+      "S, M, L, XL",
+      "Siyah ve Ten",
+      "LAZER kesim, özel dikiş",
+      "İz yapmaz.",
+      "Kaymayı önleyen silikon şerit"
+    ]
+  },
+  {
+    "slug": "seamless-kapri-1435",
+    "title": "Seamless Kapri 1435",
+    "code": "1435",
+    "image": null,
+    "features": [
+      "%90 Polyamide",
+      "%10 Elastan",
+      "Sezon Renkleri İle",
+      "S/M. L/XL",
+      "Vücudu saran dikişsiz örgü sistemi",
+      "Nefes alabilen iç göstermez kumaş"
+    ]
+  },
+  {
+    "slug": "seamless-tayt-1430",
+    "title": "Seamless Tayt 1430",
+    "code": "1430",
+    "image": "KIREMIT-5-1.webp",
+    "features": [
+      "%90 Polyamide",
+      "%10 Elastan",
+      "Sezon Renkleri İle",
+      "S/M. L/XL",
+      "Vücudu saran dikişsiz örgü sistemi",
+      "Nefes alabilen iç göstermez kumaş"
+    ]
+  },
+  {
+    "slug": "sporcu-pedli-bustiyer-2135",
+    "title": "Sporcu Pedli Büstiyer 2135",
+    "code": "2135",
+    "image": "KIREMIT-5-1.webp",
+    "features": [
+      "%90 Polyamid",
+      "%10 Elastan",
+      "Siyah, Beyaz, Ten ve sezon renkleriyle",
+      "S, M, L, XL",
+      "Çıkarılabilen sünger",
+      "Nefes alabilen özel spor kumaş"
+    ]
+  },
+  {
+    "slug": "1450-3",
+    "title": "Yüksek Bel Korse Tayt 1450",
+    "code": "1450",
+    "image": "FAC_1175.webp",
+    "features": [
+      "%82 Polyamid",
+      "%18 Elastan",
+      "Ultra yüksek bel",
+      "S, M, L, XL ve XXL",
+      "Siyah renk",
+      "Kaymayı önleyen silikon şerit"
+    ]
+  },
+  {
+    "slug": "1065-2",
+    "title": "Göğüs Altı Paçalı Body korse 1065",
+    "code": "1065",
+    "image": "FAC_1175.webp",
+    "features": [
+      "%82 Polyamid",
+      "%18 Elastan",
+      "Çıkarılabilir askı",
+      "S, M, L, XL ve XXL",
+      "Siyah, Beyaz ve Ten",
+      "Bölgesel duble şekillendirici etki"
+    ]
+  },
+  {
+    "slug": "emzirme-bustiyer-1220",
+    "title": "Bamboo Emzirme Büstiyer 1220",
+    "code": "1220",
+    "image": null,
+    "features": [
+      "%90 Bamboo",
+      "%10 Elastan",
+      "Kolay çıkarılabilen ağraf",
+      "S/M, L/XL",
+      "Renk seçeneği; Natural",
+      "Organik kumaş"
+    ]
+  },
+  {
+    "slug": "emzirme-atlet-1230",
+    "title": "Bamboo Emzirme Atlet 1230",
+    "code": "1230",
+    "image": null,
+    "features": [
+      "%90 Bamboo",
+      "%10 Elastan",
+      "Organik, pratik kullanım",
+      "S/M, L/XL",
+      "Renk seçeneği; Natural",
+      "Kolay kullanılabilen kopça"
+    ]
+  },
+  {
+    "slug": "hamile-atlet-1210",
+    "title": "Bamboo Hamile Atlet 1210",
+    "code": "1210",
+    "image": null,
+    "features": [
+      "%90 Bamboo",
+      "%10 Elastan",
+      "Çıkarılabilir askı",
+      "Renk seçeneği; Natural",
+      "S/M, L/XL",
+      "Göbeği kavrayan ergonomik kumaş"
+    ]
+  },
+  {
+    "slug": "hamile-slip-1200",
+    "title": "Bamboo Hamile Slip 1200",
+    "code": "1200",
+    "image": null,
+    "features": [
+      "%90 Bamboo",
+      "%10 Elastan",
+      "Ultra yüksek bel",
+      "S/M, L/XL",
+      "Renk seçenekleri; Natural"
+    ]
+  },
+  {
+    "slug": "hamile-tayt-1240",
+    "title": "Bamboo Hamile Tayt 1240",
+    "code": "1240",
+    "image": null,
+    "features": [
+      "%90 Bamboo",
+      "%10 Elastan",
+      "Göbeği saran ergonomik örgü",
+      "S/M, M/L, L/XL",
+      "Renk; Siyah",
+      "Vücudu saran organik kumaş"
+    ]
+  },
+  {
+    "slug": "bayan-boxer-1300",
+    "title": "Bamboo Bayan Boxer 1300",
+    "code": "1300",
+    "image": null,
+    "features": [
+      "%90 Bamcoo",
+      "%10 Elastan",
+      "Rahat, konforu",
+      "S/M, M/L, L/XL",
+      "Siyah, Beyaz, Ten",
+      "İz yapmaz."
+    ]
+  },
+  {
+    "slug": "bayan-slip",
+    "title": "Bamboo Bayan Slip 1320",
+    "code": "1320",
+    "image": null,
+    "features": [
+      "%90 Bamboo",
+      "%10 Elastan",
+      "İz yapmaz.",
+      "S/M, M/L, L/XL",
+      "Siyah, Beyaz ve Ten",
+      "İpeksi dokunuş"
+    ]
+  },
+  {
+    "slug": "1330-3",
+    "title": "Bamboo Ayar Askılı Atlet 1310",
+    "code": "1310",
+    "image": null,
+    "features": [
+      "%90 Bamboo",
+      "%10 Elastan",
+      "Çıkarılabilir askı",
+      "S/M, M/L, L/XL",
+      "Siyah, Beyaz ve Ten",
+      "Nefes alabilen doğal bamboo kumaş"
+    ]
+  },
+  {
+    "slug": "kalin-askili-atlet-1330",
+    "title": "Bamboo Kalın Askılı Atlet 1330",
+    "code": "1330",
+    "image": null,
+    "features": [
+      "%90 Bamboo",
+      "%10 Elastan",
+      "Vücudu sarar.",
+      "S, M, L, XL ve XXL  beden seçenekleri",
+      "Siyah, Beyaz ve Ten rengi alternatifleri",
+      "İpeksi bamboo kumaş"
+    ]
+  },
+  {
+    "slug": "bel-korse-1140",
+    "title": "Bamboo Bel Korse 1140",
+    "code": "1140",
+    "image": null,
+    "features": [
+      "%85 Bamboo",
+      "%15 Elastan",
+      "Kaymayı önleyen silikon bant",
+      "S, M, L, XL ve XXL  beden seçenekleri",
+      "Renk seçeneği; Natural",
+      "Doğal bamboo kumaşıyla ipeksi dokunuş"
+    ]
+  },
+  {
+    "slug": "pacali-body-korse",
+    "title": "Bamboo Paçalı Body Korse 1160",
+    "code": "1160",
+    "image": null,
+    "features": [
+      "%85 Bamboo",
+      "%15 Elastan",
+      "Bölgesel duble etki",
+      "S, M, L, XL ve XXL beden seçenekleri",
+      "Renk seçeneği; Natural",
+      "Doğal bamboo kumaş sayesinde ipeksi dokunuş"
+    ]
+  },
+  {
+    "slug": "citcitli-body-korse-1130",
+    "title": "Bamboo Çıtçıtlı Body Korse 1130",
+    "code": "1130",
+    "image": null,
+    "features": [
+      "%85 Bamboo",
+      "%15 Elastan",
+      "İz yapmayan özel dikiş",
+      "S, M, L, XL ve XXL beden seçenekleri",
+      "Renk seçeneği; Natural",
+      "Doğal bamboo kumaşıyla ipeksi dokunuş"
+    ]
+  },
+  {
+    "slug": "yuksek-bel-toparlayici-korse-1120",
+    "title": "Bamboo Yüksek Bel Toparlayıcı Korse 1120",
+    "code": "1120",
+    "image": null,
+    "features": [
+      "%85 Bamboo",
+      "%15 Elastan",
+      "Kaymayı önleyen silikon bant",
+      "S, M, L, XL ve XXL beden seçenekleri",
+      "Renk seçeneği; Natural",
+      "Doğal bamboo kumaşıyla ipeksi dokunuş"
+    ]
+  },
+  {
+    "slug": "yuksek-bel-slip-korse-1100",
+    "title": "Bamboo Yüksek Bel Slip Korse 1100",
+    "code": "1100",
+    "image": null,
+    "features": [
+      "%85 Bamboo",
+      "%15 Elastan",
+      "Kaymayı önleyen silikon bant",
+      "S, M, L, XL ve XXL beden seçenekleri",
+      "Renk seçeneği; Natural",
+      "Doğal bamboo kumaşıyla ipeksi dokunuş"
+    ]
+  },
+  {
+    "slug": "yuksek-bel-uzun-pacali-korse-1110",
+    "title": "Yüksek Bel Uzun Paçalı Korse 1110",
+    "code": "1110",
+    "image": "1110-scaled.webp",
+    "features": [
+      "%82 Polyamid",
+      "%18 Elastan",
+      "Ultra yüksek bel",
+      "S, M, L, XL ve XXL  beden seçenekleri",
+      "Siyah, Beyaz ve Ten rengi alternatifleri",
+      "Yerli Üretim"
+    ]
+  },
+  {
+    "slug": "2060-2",
+    "title": "Slip Soft Korse 2060",
+    "code": "2060",
+    "image": "FAC_1175.webp",
+    "features": [
+      "%90 Polyamid",
+      "%10 Elastan",
+      "Kaymayı önleyen silikon bant",
+      "S, M, L, XL",
+      "Siyah, Beyaz ve Ten renkleri",
+      "Günlük kullanıma uygun"
+    ]
+  },
+  {
+    "slug": "2065-2",
+    "title": "Yüksek Bel Slip Soft korse 2065",
+    "code": "2065",
+    "image": "FAC_1175.webp",
+    "features": [
+      "%90 Polyamid",
+      "%10 Elastan",
+      "Kaymayı önleyen silikon bant",
+      "S, M, L, XL",
+      "Siyah, Beyaz ve Ten renkleri",
+      "Ekstra yüksek bel"
+    ]
+  },
+  {
+    "slug": "2070-2",
+    "title": "Yüksek Bel Paçalı Soft Korse 2070",
+    "code": "2070",
+    "image": "FAC_1175.webp",
+    "features": [
+      "%90 Polyamid",
+      "%10 Elastan",
+      "Kaymayı önleyen silikon bant",
+      "S, M, L, XL",
+      "Siyah, Beyaz ve Ten renkleri",
+      "Günlük kullanıma uygun"
+    ]
+  },
+  {
+    "slug": "1190-2",
+    "title": "Yüksek Bel Jüpon Korse 1090",
+    "code": "1090",
+    "image": "FAC_1175.webp",
+    "features": [
+      "%82 Polyamid",
+      "%18 Elastan",
+      "Ultra yüksek bel",
+      "S, M, L, XL",
+      "Siyah, Beyaz ve Ten",
+      "Kaymayı önleyen silikon doku"
+    ]
+  },
+  {
+    "slug": "1180-2",
+    "title": "Atlet Korse 1180",
+    "code": "1180",
+    "image": "FAC_1175.webp",
+    "features": [
+      "%82 Polyamid",
+      "%18 Elastan",
+      "Bölgesel duble etkili sekillendirme",
+      "S, M, L, XL",
+      "Siyah, Beyaz ve Ten",
+      "Nefes alabilen kumaş"
+    ]
+  },
+  {
+    "slug": "1450-2",
+    "title": "Göğüs altı Çıtçıtlı Body Korse 1045",
+    "code": "1045",
+    "image": "FAC_1175.webp",
+    "features": [
+      "%82 Polyamid",
+      "%18 Elastan",
+      "Ultra yüksek bel",
+      "S, M, L, XL ve XXL  beden seçenekleri",
+      "Siyah, Beyaz ve Ten rengi alternatifleri",
+      "Yerli Üretim"
+    ]
+  },
+  {
+    "slug": "yuksek-bel-string-korse-1025",
+    "title": "Yüksek Bel String Korse 1025",
+    "code": "1025",
+    "image": "FAC_1175.webp",
+    "features": [
+      "%82 Polyamid",
+      "%18 Elastan",
+      "S-M-L-XL",
+      "Siyah, Beyaz ve Ten",
+      "Kaymayı önleyen silikon bant",
+      "yüksek bel"
+    ]
+  },
+  {
+    "slug": "yuksek-bel-acik-push-up-korse-1015",
+    "title": "Yüksek Bel Açık Push-up Korse 1015",
+    "code": "1015",
+    "image": "FAC_1175.webp",
+    "features": [
+      "%82 Polyamid",
+      "%18 Elastan",
+      "S-M-L-XL-XXL",
+      "Siyah, Beyaz ve Ten",
+      "Ekstra push-up özelliği",
+      "Kaymayı önleyen silikon bant"
+    ]
+  },
+  {
+    "slug": "yuksek-bel-slipkorse-1030",
+    "title": "Yüksek Bel Slip Korse 1030",
+    "code": "1030",
+    "image": "FAC_1175.webp",
+    "features": [
+      "%82 Polyamid",
+      "%18 Elastan",
+      "Ultra yüksek bel",
+      "S, M, L, XL ve XXL",
+      "Siyah, Beyaz ve Ten",
+      "Kaymayı önleyen silikon serit"
+    ]
+  },
+  {
+    "slug": "yuksek-bel-uzun-pacali-korse-1020",
+    "title": "Yüksek Bel Uzun Paçalı Korse 1020",
+    "code": "1020",
+    "image": "FAC_1175.webp",
+    "features": [
+      "%82 Polyamid",
+      "%18 Elastan",
+      "Ultra yüksek bel",
+      "S, M, L, XL ve XXL  beden seçenekleri",
+      "Siyah, Beyaz ve Ten rengi alternatifleri",
+      "Kaymayı önleyen silikon doku"
+    ]
+  },
+  {
+    "slug": "duble-etkili-gogus-alti-citcitli-slip-body-korse-1011",
+    "title": "Kısa Paçalı Toparlayıcı Korse   1011",
+    "code": "1011",
+    "image": "FAC_1175.webp",
+    "features": [
+      "%82 Polyamid",
+      "%18 Elastan",
+      "S-M-L-XL-XXL",
+      "Siyah, Beyaz ve Ten",
+      "Kaymayı Öneleyen silikon bant",
+      "Push-up etkisi"
+    ]
+  },
+  {
+    "slug": "ornek-hamak-urunu-2",
+    "title": "Duble Etkili Çıtçıtlı Slip Boy Korse 1040",
+    "code": "1040",
+    "image": "FAC_1175.webp",
+    "features": [
+      "%82 Polyamid",
+      "%18 Elastan",
+      "S-M-L-XL-XXL",
+      "Siyah, Beyaz ve Ten",
+      "Nefes alabilen kumaş",
+      "Çıkarılabilir askı"
+    ]
+  },
+  {
+    "slug": "duble-etkili-bel-korse-1050",
+    "title": "Duble Etkili Bel Korse  1050",
+    "code": "1050",
+    "image": "FAC_1175.webp",
+    "features": [
+      "%82 Polyamid",
+      "%18 Elastan",
+      "Sıklaştırıcı ve toparlayıcı etki",
+      "S, M, L, XL ve XXL",
+      "Siyah, Beyaz ve Ten",
+      "Kaymayı önleyen silikon şerit"
+    ]
+  },
+  {
+    "slug": "mikromasaj-pacali-korse-1005",
+    "title": "Mikromasaj Paçalı Korse 1005",
+    "code": "1005",
+    "image": "FAC_1175.webp",
+    "features": [
+      "%80 Polyamid",
+      "%20 Elastan",
+      "S-M-L-XL-XXL",
+      "Siyah, Beyaz, Ten",
+      "Kaymayı önleyen silikon doku",
+      "Micromasaj fonksiyonlu özel örme sistemi"
+    ]
+  },
+  {
+    "slug": "uzun-pacali-toparlayici-korse-1010",
+    "title": "Uzun Paçalı Toparlayıcı Korse 1010",
+    "code": "1010",
+    "image": "FAC_1175.webp",
+    "features": [
+      "%80 Polyamid",
+      "%20 Elastan",
+      "S-M-L-XL-XXL",
+      "Siyah, Beyaz, Ten",
+      "Push etkili",
+      "Yüksek bel extra sıkılaştırıcı korse"
+    ]
+  },
+  {
+    "slug": "duble-etkili-agrafli-bel-korse-1052",
+    "title": "Duble Etkili Ağraflı Bel Korse 1052",
+    "code": "1052",
+    "image": "FAC_1175.webp",
+    "features": [
+      "% 82 Polyamid",
+      "% 20 Elastan",
+      "Çift taraflı silikon bant",
+      "Ayarlanabilir ağraf",
+      "S-M-L-XL-XXL",
+      "Ten /Beyaz / Siyah",
+      "İnce kumaşı sayesinde iz yapmaz."
+    ]
+  },
+  {
+    "slug": "ornek-cadir-urunu-4",
+    "title": "Duble Etkili Mini Boxer Korse 1055",
+    "code": "1055",
+    "image": "FAC_1175.webp",
+    "features": [
+      "%82 Polyamid",
+      "%18 Elastan",
+      "S-M-L-XL",
+      "Siyah, Beyaz, Ten",
+      "Kaymayı önleyen silikon serit"
+    ]
+  },
+  {
+    "slug": "straplez-atlet-korse-1070",
+    "title": "Straplez Atlet Korse 1070",
+    "code": "1070",
+    "image": "FAC_1175.webp",
+    "features": [
+      "%82 Polyamid",
+      "%18 Elastan",
+      "Kaymayı engelleyen slikon bant",
+      "S-M-L-XL",
+      "Siyah, Beyaz, Ten",
+      "İpeksi dokunuş"
     ]
   }
 ]
