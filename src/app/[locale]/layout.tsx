@@ -6,6 +6,7 @@ import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import WhatsAppButton from "@/components/WhatsAppButton";
 import "../globals.css";
 
 const montserrat = Montserrat({
@@ -70,6 +71,7 @@ export default async function LocaleLayout(props: LayoutProps<"/[locale]">) {
           <Header locale={locale} />
           <main className="flex-1">{props.children}</main>
           <Footer locale={locale} />
+          <WhatsAppButton locale={locale} />
         </NextIntlClientProvider>
       </body>
     </html>
