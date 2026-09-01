@@ -1,0 +1,119 @@
+{
+  "home": {
+    "heroTitle": "Dikişsiz Giyim Teknolojisi",
+    "heroSubtitle": "Spor, İç, Günlük, Termal ve Şekillendirici Giyim için imalat yapıyor, üç kıtaya ihraç ediyoruz.",
+    "heroBadge": "Yüksek Kalite",
+    "heroText": "Spor giyim, iç giyim ve şekillendirici giyim ürünlerinde yüksek kalite ve iddialı tasarımlarımız ile yüksek pazar payımız ile hizmet veriyoruz.",
+    "heroTagline": "Kendine Güven, Rahat Hisset",
+    "heroTaglineSub": "Kusursuz Kalıplar, Şık Tasarımlar, Rahat Dokularla İç Giyimin En Güzel Hali",
+    "aboutBadge": "20 YILLIK TECRÜBE",
+    "aboutTitle": "Geniş Üretim ve Ulusal Destek Ağı",
+    "aboutText": "Ergen Tekstil, 2004 yılında dikişsiz giyim üretimi yapmak üzere örgü ve konfeksiyon tesisleri ile entegre olarak kurulan bir firmadır. Bugün 100.000 parça/ay üretim kapasitesi ile kendi alanındaki kaliteli üreticilerden biridir. Teknolojinin etkin kullanımı ve yenilikçi yaklaşımı ile, değişen dünya dinamiklerine hızlı uyum sağlamanın ve yenilikçiliğin öncelikli değerler olduğunun bilincindeyiz.",
+    "processSteps": ["Örgü", "Boyama", "Dikim", "Paketleme"],
+    "processTitle": "Süreçlerimiz",
+    "processText": "Seamless tekstil üretimi, kesintisiz ve tek parça kumaşların üretimini sağlayan bir yöntemdir. Bu tür bir üretim süreci, geleneksel dikiş yöntemlerinden farklıdır ve belirli bir takım süreçleri içerir.",
+    "collectionsTitle": "Koleksiyonlar",
+    "collections": ["Spor Giyim", "İç Giyim", "Şekillendirici Giyim", "Günlük Giyim", "Termal Giyim"],
+    "processListTitle": "Süreçlerimiz",
+    "processList": ["Dikişsiz Örme", "Dikim", "Ütü ve Paketleme", "Ar-Ge", "Boyama", "Kalite Kontrol"],
+    "cataloguesTitle": "Ürün Katalogları",
+    "catalogues": ["Aktif Spor Ürün Kataloğu", "Korse Ürün Kataloğu", "FORMactive Ürün Kataloğu"],
+    "colorTitle": "Herkesin Bir Rengi Var!",
+    "colorText": "Farklı renk seçenekleri ile her kesin zevkine uygun ürünler üretiyoruz.",
+    "yarnTitle": "İplikler ve Teknoloji",
+    "yarns": [
+      "Merinos (ZQ veya Yün)",
+      "Karışık Yün",
+      "Geri Dönüştürülmüş Poliamid",
+      "Geri Dönüştürülmüş Polyester",
+      "Poliproplin",
+      "Modal, Bambu, Asetat, Karbon İplikler vb.",
+      "Pamuk (Organik veya Normal)",
+      "Kozmetik Poliamid (Q10, Emana vb.)",
+      "Gümüş Kaplamalı Poliamid",
+      "Sürdürülebilir İplik Aralığı"
+    ],
+    "yarnFeatures": [
+      "Nem Yönetimi", "Anti Statik", "Anti Bakteriyel (Hijyen)", "UV Koruması",
+      "Koku Kontrolü", "Yangın Geciktirici", "Yumuşak Dokunuş", "Ekstra Esneme",
+      "Mikro Kapsül Uygulamaları"
+    ],
+    "valuesBadge": "20 YILLIK TECRÜBE",
+    "valuesText": "Ergen Tekstil olarak, kurumsal hizmet anlayışımızla müşteri memnuniyetini en üst seviyede tutmayı amaçlıyoruz.",
+    "values": [
+      { "title": "Yenilikçi Fikirler", "text": "Ar-Ge ekibimiz, en yeni moda ve en iyi ürünlerle buluşmanızı sağlamak için sürekli olarak yenilikçi fikirler geliştirmektedir." },
+      { "title": "Müşteri Memnuniyeti", "text": "\"Memnun etmek görevimiz, teşekkür almak hedefimiz\" ilkesiyle müşterilerimizin talep, öneri ve geri bildirimlerini etkili bir şekilde değerlendirerek memnuniyetlerini sağlamak öncelikli amacımızdır." },
+      { "title": "Uygun Fiyatlar", "text": "Ürünlerimizde en iyi kaliteyi ve en uygun fiyatı sunarak müşterilerimize değer ve ekonomik çözümler sunmayı amaçlıyoruz." },
+      { "title": "Ulusal Destek Ağı", "text": "Müşteri temsilcilerimiz, müşterilerimizle gerçekleştirdikleri görüşmelerde, sorunları en kısa sürede çözerek ulusal destek ağımızı kullanarak sizlere daha iyi hizmet vermeye odaklanmaktadır." }
+    ]
+  },
+  "about": {
+    "title": "Hakkımızda",
+    "badge": "Üç Kıtaya İhracat",
+    "intro": "Ergen Tekstil, 2004 yılında kurulmuş, birçok özel marka giyim ürününün küresel üreticisidir. Merkezi İstanbul'da bulunan şirket Avrupa, Afrika ve Asya pazarlarında birçok markanın üretimini gerçekleştiriyor.",
+    "missionTitle": "Misyonumuz",
+    "missionText": "Ergen Tekstil, 2004 yılında dikişsiz giyim üretimi yapmak üzere örgü ve konfeksiyon tesisleri ile entegre olarak kurulan bir firmadır. Bugün 100.000 parça/ay üretim kapasitesi ile kendi alanındaki kaliteli üreticilerden biridir. Teknolojinin etkin kullanımı ve yenilikçi yaklaşımı ile, değişen dünya dinamiklerine hızlı uyum sağlamanın ve yenilikçiliğin öncelikli değerler olduğunun bilincindeyiz.",
+    "visionTitle": "Vizyonumuz",
+    "visionText": "Büyüme hedefleri doğrultusunda Tekirdağ Kapaklı Organize Sanayi bölgesi içerisinde başladığımız fabrika inşaat çalışmaları hızla ilerlemekte ve şirketimize ait olan fabrika inşaatımızın tamamlanması ile hem kapasitemiz artacak hem de uluslararası yeni pazarlara açılma hedefimize bir adım daha yaklaşacağız. Üretici bir marka olarak, Ergen Tekstil, üretimde etkili markalaşma ile küresel rekabetçileri arasında konumunu yükseltmeyi hedefliyor. Şirket sürekli öğrenme ve gelişmeyi, kendisine adanmış ekibi ile gerçekleştiriyor. Sürdürülebilir üretim yöntemlerine öncelik verirken, iş ortakları ile etkili iletişimi önemsiyor ve takım üyeleri arasında sahiplik duygusu, özgüven ve mutluluk kültürünü geliştiriyor.",
+    "principlesTitle": "Ergen Tekstil'i yönlendiren temel prensipler şunlardır:",
+    "principles": [
+      "Takım üyelerinin işlerine sahip olma hissini güçlendirmek.",
+      "Müşteri ihtiyaçlarını ve beklentilerini karşılayarak aidiyet ve memnuniyet duygusu oluşturmak.",
+      "Yasalara ve yönetmeliklere uygun olarak şeffaf ve adil yönetim uygulamalarına sadık kalmak.",
+      "Gelecek nesillere ve çevreye olan sorumluluğunu yerine getirmek için yeşil fabrikasında sürdürülebilir üretimi önceliklendirmek.",
+      "Yönetim ve işletme alanlarında dijitalleşmeyi ve verimli üretim yöntemlerini benimsemek.",
+      "Tüm girişimlerde samimiyet, dürüstlük ve kalite değerlerini korumak."
+    ]
+  },
+  "process": {
+    "title": "Süreçlerimiz",
+    "intro": "Seamless tekstil üretimi, kesintisiz ve tek parça kumaşların üretimini sağlayan bir yöntemdir. Bu tür bir üretim süreci, geleneksel dikiş yöntemlerinden farklıdır ve belirli bir takım süreçleri içerir. İşte baştan sona seamless tekstil üretimi için gerçekleşmesi gereken temel süreçler:",
+    "steps": [
+      { "title": "Tasarım ve Geliştirme", "text": "İlk aşamada, tasarım ekibi müşteri taleplerini ve trendleri göz önünde bulundurarak ürün konseptlerini oluşturur. Tekstil mühendisleri, bu konseptleri teknik olarak değerlendirir ve üretilebilirliklerini belirler." },
+      { "title": "Örme Teknolojisi", "text": "Seamless üretim için genellikle dairesel örme makineleri kullanılır. Bu makineler, tek parça kumaş üretimine olanak tanır. Tekstil mühendisleri, örme makinelerinin ayarlarını ve parametrelerini optimize eder." },
+      { "title": "Malzeme Seçimi ve Hazırlık", "text": "Uygun liflerin ve ipliklerin seçilmesi, ürünün kalitesini belirleyen önemli bir adımdır. İpliklerin düzgün bir şekilde hazırlanması ve örme makinelerine beslenmesi gerekir." },
+      { "title": "Örme İşlemi", "text": "Örme makineleri, tasarlanan desene göre kumaşı tek parça halinde üretir. Bu süreçte, makine operatörleri ve bakım personeli gözetim altında çalışır." },
+      { "title": "Kalite Kontrol", "text": "Üretilen kumaşlar, kalite standartlarına uygunluğu kontrol etmek için detaylı bir kalite kontrol sürecinden geçer. Herhangi bir kusur tespit edildiğinde, sorunlu parçalar düzeltilir veya reddedilir." },
+      { "title": "Boyama ve Terbiye", "text": "Kumaşlar, istenilen renk ve desenlere boyanır ve terbiye edilir. Bu adım, ürünün estetik ve fonksiyonel özelliklerini iyileştirir." },
+      { "title": "Kesim ve Dikişsiz İmalat", "text": "Üretilen kumaşlar, tasarım gereksinimlerine göre kesilir ve şekillendirilir. Dikişsiz üretim için, kesilen parçalar özel makinelerde bir araya getirilir veya birleştirilir." },
+      { "title": "Ambalaj ve Dağıtım", "text": "Ürünler, müşteri taleplerine göre uygun şekilde paketlenir ve sevkiyat için hazırlanır. Dağıtım aşamasında, lojistik süreçlerin optimize edilmesi önemlidir." }
+    ],
+    "outro": "Seamless tekstil üretimi, bu süreçlerin titizlikle takip edilmesini gerektirir ve genellikle modern teknolojilerin kullanımını içerir. Kalite, verimlilik ve müşteri memnuniyeti sağlamak için süreçlerin her adımı önemlidir.",
+    "statsTitle": "Rakamlarla Ergen Tekstil",
+    "statsText": "Sürekli güncel teknoloji ve trendleri takip ederek müşterilerimizin ihtiyaçlarına yönelik çözümler ortaya koyuyoruz.",
+    "stats": [
+      { "value": 20, "suffix": "", "label": "Yıllık Tecrübe" },
+      { "value": 100000, "suffix": "", "label": "Parça Üretim Kapasitesi" },
+      { "value": 3, "suffix": "", "label": "Kıtaya İhracat" }
+    ]
+  },
+  "contact": {
+    "title": "İletişim",
+    "headOfficeTitle": "Ergen Tekstil Genel Merkezi",
+    "headOfficeAddress": "Karaağaç OSB. Eski Bağlar Cad. No:6 59510 Kapaklı / TEKİRDAĞ",
+    "phones": ["+90 534 593 68 91", "+90 216 420 49 84"],
+    "email": "info@ergentekstil.com",
+    "socialTitle": "Bizi Sosyal Medyadan takip edin",
+    "branchTitle": "Şube",
+    "branchAddress": "Yeşildirek, Suriçi Mahallesi, Sultan Mektep Sk. No:13/A, 34120 Fatih",
+    "branchPhone": "(0216) 420 49 84",
+    "formTitle": "Bize Ulaşın",
+    "formFields": {
+      "fullName": "İsim Soyisim",
+      "firstName": "Ad",
+      "lastName": "Soyad",
+      "email": "E-posta",
+      "subject": "Konu",
+      "message": "Mesajınız",
+      "product": "İlgilendiğiniz Ürün",
+      "submit": "Gönder"
+    }
+  },
+  "footer": {
+    "productsTitle": "Ürün ve Hizmetler",
+    "aboutLinks": ["Hakkımızda", "Tasarım", "Tedarik", "Kesim", "Yıkama"],
+    "contactTitle": "Bize Ulaşın",
+    "address": "Karaağaç OSB. Eski Bağlar Caddesi No:6 59510 Kapaklı / TEKİRDAĞ",
+    "copyright": "Ergen Tekstil"
+  }
+}

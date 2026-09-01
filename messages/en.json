@@ -1,0 +1,51 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "process": "Our Processes",
+    "catalog": "Catalogue",
+    "blog": "Blog",
+    "contact": "Contact"
+  },
+  "common": {
+    "readMore": "Read More",
+    "learnMore": "Learn More",
+    "requestQuote": "Request a Quote",
+    "viewProduct": "View Product",
+    "allProducts": "All Products",
+    "colors": "Colour Options",
+    "features": "Product Features",
+    "brand": "Formactive",
+    "company": "Ergen Tekstil",
+    "scroll": "Scroll",
+    "whatsapp": "Message us on WhatsApp"
+  },
+  "catalog": {
+    "title": "Catalogue",
+    "subtitle": "Our sportswear, underwear and shapewear collections made with seamless technology",
+    "categories": {
+      "all": "All",
+      "Tayt": "Leggings",
+      "Korse": "Shapewear",
+      "Şort": "Shorts",
+      "Genel": "General"
+    }
+  },
+  "product": {
+    "notFound": "Product not found",
+    "backToCatalog": "Back to Catalogue",
+    "quoteIntro": "Would you like a wholesale price quote for this product?"
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "News, production processes and sustainability stories from Ergen Tekstil",
+    "backToBlog": "Back to Blog"
+  },
+  "contactForm": {
+    "success": "Thank you for your message, we'll get back to you shortly.",
+    "required": "required field"
+  },
+  "footer": {
+    "rights": "All rights reserved."
+  }
+}

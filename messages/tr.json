@@ -1,0 +1,51 @@
+{
+  "nav": {
+    "home": "Ana Sayfa",
+    "about": "Hakkımızda",
+    "process": "Süreçlerimiz",
+    "catalog": "Katalog",
+    "blog": "Blog",
+    "contact": "İletişim"
+  },
+  "common": {
+    "readMore": "Devamı",
+    "learnMore": "Daha Fazlası",
+    "requestQuote": "Teklif Al",
+    "viewProduct": "Ürünü İncele",
+    "allProducts": "Tüm Ürünler",
+    "colors": "Renk Seçenekleri",
+    "features": "Ürün Özellikleri",
+    "brand": "Formactive",
+    "company": "Ergen Tekstil",
+    "scroll": "Kaydır",
+    "whatsapp": "WhatsApp'tan Yazın"
+  },
+  "catalog": {
+    "title": "Katalog",
+    "subtitle": "Dikişsiz teknolojisiyle üretilen spor, iç giyim ve şekillendirici koleksiyonlarımız",
+    "categories": {
+      "all": "Tümü",
+      "Tayt": "Tayt",
+      "Korse": "Korse",
+      "Şort": "Şort",
+      "Genel": "Genel"
+    }
+  },
+  "product": {
+    "notFound": "Ürün bulunamadı",
+    "backToCatalog": "Kataloğa Dön",
+    "quoteIntro": "Bu ürün için toptan fiyat teklifi almak ister misiniz?"
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Ergen Tekstil'den haberler, üretim süreçleri ve sürdürülebilirlik yazıları",
+    "backToBlog": "Blog'a Dön"
+  },
+  "contactForm": {
+    "success": "Mesajınız için teşekkür ederiz, en kısa sürede dönüş yapacağız.",
+    "required": "zorunlu alan"
+  },
+  "footer": {
+    "rights": "Tüm hakları saklıdır."
+  }
+}
