@@ -6,6 +6,8 @@ import { getContent, getProducts, productImageUrl } from "@/lib/data";
 import ProductCard from "@/components/ProductCard";
 import StatCounter from "@/components/StatCounter";
 
+export const revalidate = 60;
+
 export default async function HomePage(props: PageProps<"/[locale]">) {
   const { locale } = (await props.params) as { locale: Locale };
   setRequestLocale(locale);
@@ -13,7 +15,9 @@ export default async function HomePage(props: PageProps<"/[locale]">) {
   const c = getContent(locale).home;
   const process = getContent(locale).process;
   const tc = await getTranslations({ locale, namespace: "common" });
-  const products = getProducts(locale).slice(0, 4);
+  const allProducts = await getProducts(locale);
+  const products = allProducts.slice(0, 4);
+  const teaserImage = allProducts[0]?.images[1] ?? allProducts[0]?.images[0];
 
   return (
     <>
@@ -146,13 +150,15 @@ export default async function HomePage(props: PageProps<"/[locale]">) {
       {/* Process teaser */}
       <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
         <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
-          <div className="relative aspect-[4/3] overflow-hidden rounded-3xl">
-            <Image
-              src={productImageUrl(getProducts(locale)[0]?.images[1] ?? getProducts(locale)[0].images[0])}
-              alt={c.processTitle}
-              fill
-              className="object-cover"
-            />
+          <div className="relative aspect-[4/3] overflow-hidden rounded-3xl bg-brand-grey-light">
+            {teaserImage && (
+              <Image
+                src={productImageUrl(teaserImage)}
+                alt={c.processTitle}
+                fill
+                className="object-cover"
+              />
+            )}
           </div>
           <div>
             <h2 className="font-heading text-3xl font-extrabold text-brand-navy sm:text-4xl">

@@ -1,15 +1,20 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import type { Locale } from "@/i18n/routing";
-import { categoryKeys, getProducts } from "@/lib/data";
+import { getCategoryKeys, getProducts } from "@/lib/data";
 import PageHero from "@/components/PageHero";
 import CatalogGrid from "@/components/CatalogGrid";
+
+export const revalidate = 60;
 
 export default async function CatalogPage(props: PageProps<"/[locale]/katalog">) {
   const { locale } = (await props.params) as { locale: Locale };
   setRequestLocale(locale);
 
   const t = await getTranslations({ locale, namespace: "catalog" });
-  const products = getProducts(locale);
+  const [products, categoryKeys] = await Promise.all([
+    getProducts(locale),
+    getCategoryKeys(),
+  ]);
 
   const categoryLabels: Record<string, string> = {};
   for (const key of categoryKeys) {

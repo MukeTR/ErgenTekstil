@@ -1,4 +1,5 @@
 import createMiddleware from "next-intl/middleware";
+import { createServerClient } from "@supabase/ssr";
 import { NextResponse, type NextRequest } from "next/server";
 import { routing } from "./i18n/routing";
 import blogRedirects from "./data/blog-redirects.json";
@@ -9,7 +10,56 @@ const legacyRedirectMap = new Map(
   blogRedirects.map((r) => [r.source, r.destination])
 );
 
-export function proxy(request: NextRequest) {
+async function adminProxy(request: NextRequest) {
+  let response = NextResponse.next({ request });
+
+  const supabase = createServerClient(
+    process.env.NEXT_PUBLIC_SUPABASE_URL!,
+    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
+    {
+      cookies: {
+        getAll() {
+          return request.cookies.getAll();
+        },
+        setAll(cookiesToSet) {
+          for (const { name, value } of cookiesToSet) {
+            request.cookies.set(name, value);
+          }
+          response = NextResponse.next({ request });
+          for (const { name, value, options } of cookiesToSet) {
+            response.cookies.set(name, value, options);
+          }
+        },
+      },
+    }
+  );
+
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
+
+  const isLoginPage = request.nextUrl.pathname === "/admin/login";
+
+  if (!user && !isLoginPage) {
+    const url = request.nextUrl.clone();
+    url.pathname = "/admin/login";
+    return NextResponse.redirect(url);
+  }
+
+  if (user && isLoginPage) {
+    const url = request.nextUrl.clone();
+    url.pathname = "/admin";
+    return NextResponse.redirect(url);
+  }
+
+  return response;
+}
+
+export async function proxy(request: NextRequest) {
+  if (request.nextUrl.pathname.startsWith("/admin")) {
+    return adminProxy(request);
+  }
+
   const destination = legacyRedirectMap.get(request.nextUrl.pathname);
   if (destination) {
     const url = request.nextUrl.clone();

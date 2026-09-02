@@ -1,22 +1,18 @@
 import { notFound } from "next/navigation";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
-import { routing, type Locale } from "@/i18n/routing";
-import { getProduct, getProducts } from "@/lib/data";
+import type { Locale } from "@/i18n/routing";
+import { getProduct } from "@/lib/data";
 import ProductGallery from "@/components/ProductGallery";
 import ColorSwatches from "@/components/ColorSwatches";
 
-export function generateStaticParams() {
-  return routing.locales.flatMap((locale) =>
-    getProducts(locale).map((p) => ({ locale, slug: p.slug }))
-  );
-}
+export const revalidate = 60;
 
 export async function generateMetadata(
   props: PageProps<"/[locale]/katalog/[slug]">
 ) {
   const { locale, slug } = (await props.params) as { locale: Locale; slug: string };
-  const product = getProduct(locale, slug);
+  const product = await getProduct(locale, slug);
   return { title: product?.name ?? "Ergen Tekstil" };
 }
 
@@ -26,7 +22,7 @@ export default async function ProductPage(
   const { locale, slug } = (await props.params) as { locale: Locale; slug: string };
   setRequestLocale(locale);
 
-  const product = getProduct(locale, slug);
+  const product = await getProduct(locale, slug);
   if (!product) notFound();
 
   const t = await getTranslations({ locale, namespace: "product" });

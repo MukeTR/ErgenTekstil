@@ -1,7 +1,8 @@
 "use client";
 
-import { useSearchParams } from "next/navigation";
+import { useParams, useSearchParams } from "next/navigation";
 import { useState } from "react";
+import { submitLead } from "@/lib/actions/submit-lead";
 
 type Fields = {
   fullName: string;
@@ -22,10 +23,13 @@ export default function ContactForm({
   successMessage: string;
 }) {
   const searchParams = useSearchParams();
+  const params = useParams();
+  const locale = (params.locale as string) ?? "tr";
   const prefillProduct = searchParams.get("urun") ?? "";
   const [sent, setSent] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
 
-  function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     const form = new FormData(e.currentTarget);
     const name = form.get("name") as string;
@@ -33,6 +37,18 @@ export default function ContactForm({
     const subject = form.get("subject") as string;
     const message = form.get("message") as string;
     const product = form.get("product") as string;
+
+    setSubmitting(true);
+    await submitLead({
+      fullName: name,
+      email,
+      subject: subject || fields.subject,
+      message,
+      productName: product || undefined,
+      locale,
+    });
+    setSubmitting(false);
+    setSent(true);
 
     const body = [
       `${fields.fullName}: ${name}`,
@@ -47,7 +63,6 @@ export default function ContactForm({
     window.location.href = `mailto:${targetEmail}?subject=${encodeURIComponent(
       subject || fields.subject
     )}&body=${encodeURIComponent(body)}`;
-    setSent(true);
   }
 
   return (
@@ -115,7 +130,8 @@ export default function ContactForm({
 
       <button
         type="submit"
-        className="rounded-full bg-brand-navy px-8 py-3.5 font-heading text-sm font-semibold uppercase tracking-wide text-white transition hover:bg-black"
+        disabled={submitting}
+        className="rounded-full bg-brand-navy px-8 py-3.5 font-heading text-sm font-semibold uppercase tracking-wide text-white transition hover:bg-black disabled:opacity-60"
       >
         {fields.submit}
       </button>
