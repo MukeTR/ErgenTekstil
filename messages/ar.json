@@ -19,7 +19,8 @@
     "brand": "Formactive",
     "company": "أرجن تكستيل",
     "scroll": "مرّر للأسفل",
-    "whatsapp": "راسلنا عبر واتساب"
+    "whatsapp": "راسلنا عبر واتساب",
+    "viewCollection": "استعرض"
   },
   "catalog": {
     "title": "الكتالوج",
@@ -45,6 +46,16 @@
   "contactForm": {
     "success": "شكرًا لرسالتك، سنتواصل معك في أقرب وقت ممكن.",
     "required": "حقل مطلوب"
+  },
+  "catalogues": {
+    "title": "كتالوجات المنتجات",
+    "emailPlaceholder": "بريدك الإلكتروني",
+    "download": "تحميل",
+    "success": "شكرًا لك، سنرسل الكتالوج إلى بريدك الإلكتروني قريبًا."
+  },
+  "homeBlog": {
+    "title": "المدونة",
+    "viewAll": "جميع المقالات"
   },
   "footer": {
     "rights": "جميع الحقوق محفوظة."

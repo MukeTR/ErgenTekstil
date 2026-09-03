@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { setRequestLocale } from "next-intl/server";
 import type { Locale } from "@/i18n/routing";
 import { getContent } from "@/lib/data";
@@ -13,21 +14,29 @@ export default async function ProcessPage(props: PageProps<"/[locale]/sureclerim
     <>
       <PageHero title={c.title} subtitle={c.intro} />
 
-      <section className="mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
-        <ol className="space-y-10">
-          {c.steps.map((s: { title: string; text: string }, i: number) => (
-            <li key={s.title} className="flex gap-6">
-              <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-brand-navy font-heading text-lg font-bold text-white">
-                {i + 1}
-              </span>
-              <div>
-                <h2 className="font-heading text-lg font-bold text-brand-navy">{s.title}</h2>
-                <p className="mt-2 leading-relaxed text-brand-grey">{s.text}</p>
+      <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+        <div className="grid gap-x-8 gap-y-12 sm:grid-cols-2 lg:grid-cols-4">
+          {c.steps.map((s: { title: string; text: string; image: string | null }) => (
+            <div key={s.title}>
+              <div className="relative aspect-[4/3] overflow-hidden rounded-2xl bg-brand-grey-light">
+                {s.image && (
+                  <Image
+                    src={`/sureclerimiz/${s.image}`}
+                    alt={s.title}
+                    fill
+                    sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
+                    className="object-cover"
+                  />
+                )}
               </div>
-            </li>
+              <h2 className="mt-5 font-heading text-lg font-bold uppercase text-brand-grey">
+                {s.title}
+              </h2>
+              <p className="mt-3 text-sm leading-relaxed text-brand-grey">{s.text}</p>
+            </div>
           ))}
-        </ol>
-        <p className="mt-12 rounded-2xl bg-brand-grey-light p-6 leading-relaxed text-brand-grey">
+        </div>
+        <p className="mt-14 rounded-2xl bg-brand-grey-light p-6 leading-relaxed text-brand-grey">
           {c.outro}
         </p>
       </section>

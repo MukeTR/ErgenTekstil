@@ -19,7 +19,8 @@
     "brand": "Formactive",
     "company": "Ergen Tekstil",
     "scroll": "Kaydır",
-    "whatsapp": "WhatsApp'tan Yazın"
+    "whatsapp": "WhatsApp'tan Yazın",
+    "viewCollection": "İnceleyin"
   },
   "catalog": {
     "title": "Katalog",
@@ -45,6 +46,16 @@
   "contactForm": {
     "success": "Mesajınız için teşekkür ederiz, en kısa sürede dönüş yapacağız.",
     "required": "zorunlu alan"
+  },
+  "catalogues": {
+    "title": "Ürün Katalogları",
+    "emailPlaceholder": "E-posta adresiniz",
+    "download": "İndir",
+    "success": "Teşekkürler, kataloğu e-posta adresinize en kısa sürede göndereceğiz."
+  },
+  "homeBlog": {
+    "title": "Blog",
+    "viewAll": "Tüm Yazılar"
   },
   "footer": {
     "rights": "Tüm hakları saklıdır."

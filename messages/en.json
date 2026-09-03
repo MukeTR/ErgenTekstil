@@ -19,7 +19,8 @@
     "brand": "Formactive",
     "company": "Ergen Tekstil",
     "scroll": "Scroll",
-    "whatsapp": "Message us on WhatsApp"
+    "whatsapp": "Message us on WhatsApp",
+    "viewCollection": "View Collection"
   },
   "catalog": {
     "title": "Catalogue",
@@ -45,6 +46,16 @@
   "contactForm": {
     "success": "Thank you for your message, we'll get back to you shortly.",
     "required": "required field"
+  },
+  "catalogues": {
+    "title": "Product Catalogues",
+    "emailPlaceholder": "Your email address",
+    "download": "Download",
+    "success": "Thank you, we'll email the catalogue to you shortly."
+  },
+  "homeBlog": {
+    "title": "Blog",
+    "viewAll": "All Articles"
   },
   "footer": {
     "rights": "All rights reserved."

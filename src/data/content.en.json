@@ -8,16 +8,64 @@
     "heroTaglineSub": "The finest underwear, made with flawless patterns, stylish designs and comfortable fabrics",
     "aboutBadge": "20 YEARS OF EXPERIENCE",
     "aboutTitle": "Extensive Production and National Support Network",
-    "aboutText": "Ergen Tekstil is a company founded in 2004, integrating knitting and garment facilities to produce seamless apparel. Today, with a production capacity of 100,000 pieces/month, it is one of the leading quality manufacturers in its field. Through the effective use of technology and an innovative approach, we recognize that adapting quickly to a changing world and prioritizing innovation are essential values.",
-    "processSteps": ["Knitting", "Dyeing", "Sewing", "Packaging"],
+    "aboutText": "Ergen Tekstil is a company founded in 2004, integrating knitting and garment facilities to produce seamless apparel. Today, with a production capacity of 200,000 pieces/month, it is one of the leading quality manufacturers in its field. Through the effective use of technology and an innovative approach, we recognize that adapting quickly to a changing world and prioritizing innovation are essential values.",
+    "processSteps": [
+      "Knitting",
+      "Dyeing",
+      "Sewing",
+      "Packaging"
+    ],
     "processTitle": "Our Processes",
     "processText": "Seamless textile production is a method that enables the manufacture of continuous, single-piece fabrics. This production process differs from traditional sewing methods and involves a specific set of stages.",
     "collectionsTitle": "Collections",
-    "collections": ["Sportswear", "Underwear", "Shapewear", "Everyday Wear", "Thermal Wear"],
+    "collections": [
+      {
+        "icon": "shorts",
+        "title": "Active Wear",
+        "description": "Our activewear collection is designed to keep comfort and performance at their peak in every movement."
+      },
+      {
+        "icon": "bra",
+        "title": "Underwear",
+        "description": "Our underwear products bring together all-day comfort and elegance, making you feel special at every moment.",
+        "highlight": true
+      },
+      {
+        "icon": "corset",
+        "title": "Shapewear",
+        "description": "Our shapewear collection gives your body the perfect shape while offering all-day comfort and support."
+      },
+      {
+        "icon": "tank",
+        "title": "Women's Active Sportswear",
+        "description": "Our women's collection blends elegance and style with modern designs, created to add a touch of style to every moment."
+      },
+      {
+        "icon": "polo",
+        "title": "Men's Active Sportswear",
+        "description": "Our men's collection, with modern and stylish designs, helps you feel comfortable and confident in every setting."
+      },
+      {
+        "icon": "leggings",
+        "title": "Functional Textiles",
+        "description": "Our products are equipped with innovative technologies, offering both performance and comfort together."
+      }
+    ],
     "processListTitle": "Our Processes",
-    "processList": ["Seamless Knitting", "Sewing", "Ironing & Packaging", "R&D", "Dyeing", "Quality Control"],
+    "processList": [
+      "Seamless Knitting",
+      "Sewing",
+      "Ironing & Packaging",
+      "R&D",
+      "Dyeing",
+      "Quality Control"
+    ],
     "cataloguesTitle": "Product Catalogues",
-    "catalogues": ["Active Sportswear Catalogue", "Shapewear Catalogue", "FORMactive Product Catalogue"],
+    "catalogues": [
+      "Active Sportswear Catalogue",
+      "Shapewear Catalogue",
+      "FORMactive Product Catalogue"
+    ],
     "colorTitle": "There's a Colour for Everyone!",
     "colorText": "We produce products in a range of colours to suit every taste.",
     "yarnTitle": "Yarns and Technology",
@@ -34,17 +82,35 @@
       "Sustainable Yarn Range"
     ],
     "yarnFeatures": [
-      "Moisture Management", "Anti-Static", "Antibacterial (Hygiene)", "UV Protection",
-      "Odour Control", "Flame Retardant", "Soft Touch", "Extra Stretch",
+      "Moisture Management",
+      "Anti-Static",
+      "Antibacterial (Hygiene)",
+      "UV Protection",
+      "Odour Control",
+      "Flame Retardant",
+      "Soft Touch",
+      "Extra Stretch",
       "Micro-Capsule Applications"
     ],
     "valuesBadge": "20 YEARS OF EXPERIENCE",
     "valuesText": "At Ergen Tekstil, our corporate service approach is built around delivering the highest level of customer satisfaction.",
     "values": [
-      { "title": "Innovative Ideas", "text": "Our R&D team continuously develops innovative ideas to bring you the latest fashion and the best products." },
-      { "title": "Customer Satisfaction", "text": "With the principle \"Our duty is to satisfy, our goal is to earn thanks,\" our top priority is to evaluate our customers' requests, suggestions and feedback effectively to ensure their satisfaction." },
-      { "title": "Competitive Pricing", "text": "We aim to offer our customers value and economical solutions by providing the best quality at the most competitive prices." },
-      { "title": "National Support Network", "text": "Our customer representatives focus on resolving issues as quickly as possible in their conversations with clients, using our national support network to serve you better." }
+      {
+        "title": "Innovative Ideas",
+        "text": "Our R&D team continuously develops innovative ideas to bring you the latest fashion and the best products."
+      },
+      {
+        "title": "Customer Satisfaction",
+        "text": "With the principle \"Our duty is to satisfy, our goal is to earn thanks,\" our top priority is to evaluate our customers' requests, suggestions and feedback effectively to ensure their satisfaction."
+      },
+      {
+        "title": "Competitive Pricing",
+        "text": "We aim to offer our customers value and economical solutions by providing the best quality at the most competitive prices."
+      },
+      {
+        "title": "National Support Network",
+        "text": "Our customer representatives focus on resolving issues as quickly as possible in their conversations with clients, using our national support network to serve you better."
+      }
     ]
   },
   "about": {
@@ -52,7 +118,7 @@
     "badge": "Exporting to Three Continents",
     "intro": "Founded in 2004, Ergen Tekstil is a global manufacturer of numerous private-label apparel products. Headquartered in Istanbul, the company produces for many brands across the European, African and Asian markets.",
     "missionTitle": "Our Mission",
-    "missionText": "Ergen Tekstil was founded in 2004 as a company integrating knitting and garment facilities to manufacture seamless apparel. Today, with a production capacity of 100,000 pieces/month, it is one of the leading quality manufacturers in its field. Through the effective use of technology and an innovative approach, we recognize that adapting quickly to a changing world and prioritizing innovation are essential values.",
+    "missionText": "Ergen Tekstil was founded in 2004 as a company integrating knitting and garment facilities to manufacture seamless apparel. Today, with a production capacity of 200,000 pieces/month, it is one of the leading quality manufacturers in its field. Through the effective use of technology and an innovative approach, we recognize that adapting quickly to a changing world and prioritizing innovation are essential values.",
     "visionTitle": "Our Vision",
     "visionText": "In line with our growth targets, the construction of our own factory in the Tekirdağ Kapaklı Organized Industrial Zone is progressing rapidly. Once complete, it will both increase our capacity and bring us one step closer to our goal of expanding into new international markets. As a manufacturing brand, Ergen Tekstil aims to strengthen its position among global competitors through effective branding in production. The company continuously pursues learning and development with its dedicated team. While prioritizing sustainable production methods, we value effective communication with our business partners and foster a culture of ownership, confidence and happiness among our team members.",
     "principlesTitle": "The core principles that guide Ergen Tekstil are:",
@@ -69,29 +135,76 @@
     "title": "Our Processes",
     "intro": "Seamless textile production is a method that enables the manufacture of continuous, single-piece fabrics. This production process differs from traditional sewing methods and involves a specific set of stages. Here are the core processes required for seamless textile production, from start to finish:",
     "steps": [
-      { "title": "Design and Development", "text": "In the first stage, the design team creates product concepts based on customer requests and trends. Textile engineers technically evaluate these concepts and determine their manufacturability." },
-      { "title": "Knitting Technology", "text": "Circular knitting machines are generally used for seamless production. These machines allow for the production of single-piece fabric. Textile engineers optimize the settings and parameters of the knitting machines." },
-      { "title": "Material Selection and Preparation", "text": "Selecting suitable fibres and yarns is a critical step that determines product quality. Yarns must be properly prepared and fed into the knitting machines." },
-      { "title": "Knitting Process", "text": "Knitting machines produce the fabric as a single piece according to the designed pattern. During this process, machine operators and maintenance staff work under close supervision." },
-      { "title": "Quality Control", "text": "The fabrics produced undergo a detailed quality control process to verify compliance with quality standards. If any defect is detected, faulty parts are corrected or rejected." },
-      { "title": "Dyeing and Finishing", "text": "Fabrics are dyed and finished in the desired colours and patterns. This step improves the aesthetic and functional properties of the product." },
-      { "title": "Cutting and Seamless Manufacturing", "text": "The fabrics produced are cut and shaped according to design requirements. For seamless production, the cut pieces are assembled or joined using special machines." },
-      { "title": "Packaging and Distribution", "text": "Products are appropriately packaged according to customer requirements and prepared for shipment. Optimizing logistics processes is essential at the distribution stage." }
+      {
+        "title": "Design and Development",
+        "text": "In the first stage, the design team creates product concepts based on customer requests and trends. Textile engineers technically evaluate these concepts and determine their manufacturability.",
+        "image": "step-1-tasarim.webp"
+      },
+      {
+        "title": "Knitting Technology",
+        "text": "Circular knitting machines are generally used for seamless production. These machines allow for the production of single-piece fabric. Textile engineers optimize the settings and parameters of the knitting machines.",
+        "image": "step-2-orme-teknolojisi.webp"
+      },
+      {
+        "title": "Material Selection and Preparation",
+        "text": "Selecting suitable fibres and yarns is a critical step that determines product quality. Yarns must be properly prepared and fed into the knitting machines.",
+        "image": "step-3-malzeme.webp"
+      },
+      {
+        "title": "Knitting Process",
+        "text": "Knitting machines produce the fabric as a single piece according to the designed pattern. During this process, machine operators and maintenance staff work under close supervision.",
+        "image": "step-4-orme-islemi.webp"
+      },
+      {
+        "title": "Quality Control",
+        "text": "The fabrics produced undergo a detailed quality control process to verify compliance with quality standards. If any defect is detected, faulty parts are corrected or rejected.",
+        "image": "step-5-kalite.webp"
+      },
+      {
+        "title": "Dyeing and Finishing",
+        "text": "Fabrics are dyed and finished in the desired colours and patterns. This step improves the aesthetic and functional properties of the product.",
+        "image": "step-6-boyama.webp"
+      },
+      {
+        "title": "Cutting and Seamless Manufacturing",
+        "text": "The fabrics produced are cut and shaped according to design requirements. For seamless production, the cut pieces are assembled or joined using special machines.",
+        "image": "step-7-kesim.webp"
+      },
+      {
+        "title": "Packaging and Distribution",
+        "text": "Products are appropriately packaged according to customer requirements and prepared for shipment. Optimizing logistics processes is essential at the distribution stage.",
+        "image": "step-8-ambalaj.webp"
+      }
     ],
     "outro": "Seamless textile production requires each of these processes to be followed meticulously and generally involves the use of modern technologies. Every step of the process matters in ensuring quality, efficiency and customer satisfaction.",
     "statsTitle": "Ergen Tekstil in Numbers",
     "statsText": "By continuously following up-to-date technology and trends, we develop solutions tailored to our customers' needs.",
     "stats": [
-      { "value": 20, "suffix": "", "label": "Years of Experience" },
-      { "value": 100000, "suffix": "", "label": "Pieces Production Capacity" },
-      { "value": 3, "suffix": "", "label": "Continents Exported To" }
+      {
+        "value": 20,
+        "suffix": "",
+        "label": "Years of Experience"
+      },
+      {
+        "value": 200000,
+        "suffix": "",
+        "label": "Pieces Production Capacity"
+      },
+      {
+        "value": 3,
+        "suffix": "",
+        "label": "Continents Exported To"
+      }
     ]
   },
   "contact": {
     "title": "Contact",
     "headOfficeTitle": "Ergen Tekstil Head Office",
     "headOfficeAddress": "Karaağaç OIZ, Eski Bağlar Cad. No:6 59510 Kapaklı / TEKİRDAĞ, Türkiye",
-    "phones": ["+90 534 593 68 91", "+90 216 420 49 84"],
+    "phones": [
+      "+90 534 593 68 91",
+      "+90 216 420 49 84"
+    ],
     "email": "info@ergentekstil.com",
     "socialTitle": "Follow us on social media",
     "branchTitle": "Branch Office",
@@ -111,7 +224,13 @@
   },
   "footer": {
     "productsTitle": "Products & Services",
-    "aboutLinks": ["About Us", "Design", "Sourcing", "Cutting", "Washing"],
+    "aboutLinks": [
+      "About Us",
+      "Design",
+      "Sourcing",
+      "Cutting",
+      "Washing"
+    ],
     "contactTitle": "Get in Touch",
     "address": "Karaağaç OIZ, Eski Bağlar Caddesi No:6 59510 Kapaklı / TEKİRDAĞ, Türkiye",
     "copyright": "Ergen Tekstil"
