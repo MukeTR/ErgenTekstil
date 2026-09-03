@@ -89,19 +89,50 @@ export default function CatalogGrid({
         ))}
       </div>
 
-      <div className="mt-10 grid grid-cols-2 gap-5 sm:grid-cols-3 lg:grid-cols-4">
+      <div className="mt-8 flex items-center justify-between gap-4 border-b border-black/5 pb-4 text-sm text-brand-grey">
+        <span>
+          <span className="font-semibold text-brand-navy">{filtered.length}</span> {t("productsCount")}
+        </span>
+        {totalPages > 1 && (
+          <span className="flex items-center gap-3">
+            <button
+              type="button"
+              onClick={() => goToPage(safePage - 1)}
+              disabled={safePage === 1}
+              aria-label={t("previous")}
+              className="flex h-8 w-8 items-center justify-center rounded-full bg-brand-grey-light text-brand-navy transition hover:bg-brand-navy/10 disabled:opacity-30"
+            >
+              ‹
+            </button>
+            <span className="font-heading text-xs font-semibold uppercase tracking-wide text-brand-navy">
+              {t("page", { current: safePage, total: totalPages })}
+            </span>
+            <button
+              type="button"
+              onClick={() => goToPage(safePage + 1)}
+              disabled={safePage === totalPages}
+              aria-label={t("next")}
+              className="flex h-8 w-8 items-center justify-center rounded-full bg-brand-grey-light text-brand-navy transition hover:bg-brand-navy/10 disabled:opacity-30"
+            >
+              ›
+            </button>
+          </span>
+        )}
+      </div>
+
+      <div className="mt-8 grid grid-cols-2 gap-5 sm:grid-cols-3 lg:grid-cols-4">
         {paginated.map((p) => (
           <ProductCard key={p.slug} product={p} />
         ))}
       </div>
 
       {totalPages > 1 && (
-        <div className="mt-12 flex flex-wrap items-center justify-center gap-2">
+        <div className="mt-14 flex flex-wrap items-center justify-center gap-2 border-t border-black/5 pt-10">
           <button
             type="button"
             onClick={() => goToPage(safePage - 1)}
             disabled={safePage === 1}
-            className="rounded-full px-4 py-2 font-heading text-xs font-semibold uppercase tracking-wide text-brand-navy transition hover:bg-brand-navy/10 disabled:cursor-not-allowed disabled:opacity-30"
+            className="rounded-full border border-brand-navy/20 px-5 py-2.5 font-heading text-xs font-semibold uppercase tracking-wide text-brand-navy transition hover:bg-brand-navy hover:text-white disabled:cursor-not-allowed disabled:opacity-30 disabled:hover:bg-transparent disabled:hover:text-brand-navy"
           >
             {t("previous")}
           </button>
@@ -117,7 +148,7 @@ export default function CatalogGrid({
                 type="button"
                 onClick={() => goToPage(p)}
                 aria-current={p === safePage ? "page" : undefined}
-                className={`flex h-9 w-9 items-center justify-center rounded-full font-heading text-xs font-semibold transition ${
+                className={`flex h-11 w-11 items-center justify-center rounded-full font-heading text-sm font-semibold transition ${
                   p === safePage
                     ? "bg-brand-navy text-white"
                     : "bg-brand-grey-light text-brand-navy hover:bg-brand-navy/10"
@@ -132,7 +163,7 @@ export default function CatalogGrid({
             type="button"
             onClick={() => goToPage(safePage + 1)}
             disabled={safePage === totalPages}
-            className="rounded-full px-4 py-2 font-heading text-xs font-semibold uppercase tracking-wide text-brand-navy transition hover:bg-brand-navy/10 disabled:cursor-not-allowed disabled:opacity-30"
+            className="rounded-full border border-brand-navy/20 px-5 py-2.5 font-heading text-xs font-semibold uppercase tracking-wide text-brand-navy transition hover:bg-brand-navy hover:text-white disabled:cursor-not-allowed disabled:opacity-30 disabled:hover:bg-transparent disabled:hover:text-brand-navy"
           >
             {t("next")}
           </button>

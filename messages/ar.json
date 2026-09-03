@@ -34,7 +34,8 @@
     },
     "previous": "السابق",
     "next": "التالي",
-    "page": "صفحة {current} من {total}"
+    "page": "صفحة {current} من {total}",
+    "productsCount": "منتج"
   },
   "product": {
     "notFound": "المنتج غير موجود",
