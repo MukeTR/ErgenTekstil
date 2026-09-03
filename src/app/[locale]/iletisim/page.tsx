@@ -1,4 +1,3 @@
-import { Suspense } from "react";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import type { Locale } from "@/i18n/routing";
 import { getContent } from "@/lib/data";
@@ -7,6 +6,7 @@ import ContactForm from "@/components/ContactForm";
 
 export default async function ContactPage(props: PageProps<"/[locale]/iletisim">) {
   const { locale } = (await props.params) as { locale: Locale };
+  const searchParams = (await props.searchParams) as { urun?: string };
   setRequestLocale(locale);
 
   const t = await getTranslations({ locale, namespace: "contactForm" });
@@ -60,13 +60,12 @@ export default async function ContactPage(props: PageProps<"/[locale]/iletisim">
           <div>
             <h2 className="font-heading text-lg font-bold text-brand-navy">{c.formTitle}</h2>
             <div className="mt-6">
-              <Suspense fallback={null}>
-                <ContactForm
-                  fields={c.formFields}
-                  targetEmail={c.email}
-                  successMessage={t("success")}
-                />
-              </Suspense>
+              <ContactForm
+                fields={c.formFields}
+                targetEmail={c.email}
+                successMessage={t("success")}
+                prefillProduct={searchParams.urun ?? ""}
+              />
             </div>
           </div>
         </div>
