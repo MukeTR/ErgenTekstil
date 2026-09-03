@@ -5,6 +5,7 @@ import type { Locale } from "@/i18n/routing";
 import { getProduct } from "@/lib/data";
 import ProductGallery from "@/components/ProductGallery";
 import ColorSwatches from "@/components/ColorSwatches";
+import MetaViewContent from "@/components/MetaViewContent";
 
 export const revalidate = 60;
 
@@ -30,6 +31,11 @@ export default async function ProductPage(
 
   return (
     <section className="mx-auto max-w-6xl px-4 py-12 sm:px-6 lg:px-8">
+      <MetaViewContent
+        contentId={product.slug}
+        contentName={product.name}
+        category={product.categoryKeys[0]}
+      />
       <Link
         href="/katalog"
         className="inline-flex items-center gap-2 font-heading text-xs font-semibold uppercase tracking-wide text-brand-grey hover:text-brand-navy"

@@ -31,7 +31,10 @@
       "Korse": "Korse",
       "Şort": "Şort",
       "Genel": "Genel"
-    }
+    },
+    "previous": "Önceki",
+    "next": "Sonraki",
+    "page": "Sayfa {current} / {total}"
   },
   "product": {
     "notFound": "Ürün bulunamadı",

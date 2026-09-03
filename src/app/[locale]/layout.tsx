@@ -3,10 +3,12 @@ import { Montserrat, Roboto, Roboto_Slab } from "next/font/google";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
-import { routing } from "@/i18n/routing";
+import { routing, type Locale } from "@/i18n/routing";
+import { SEO, SITE_URL } from "@/lib/seo";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import MetaPixel from "@/components/MetaPixel";
 import "../globals.css";
 
 const montserrat = Montserrat({
@@ -36,17 +38,31 @@ export async function generateMetadata(
 ): Promise<Metadata> {
   const { locale } = await props.params;
   const t = await getTranslations({ locale, namespace: "common" });
+  const seo = SEO[locale as Locale] ?? SEO.tr;
+
   return {
+    metadataBase: new URL(SITE_URL),
     title: {
-      default: `${t("company")} | ${t("brand")}`,
+      default: seo.title,
       template: `%s | ${t("company")}`,
     },
-    description:
-      locale === "tr"
-        ? "Ergen Tekstil, 2004'ten bu yana dikişsiz spor, iç ve şekillendirici giyim üretip üç kıtaya ihraç ediyor."
-        : locale === "ar"
-          ? "تُصنّع أرجن تكستيل منذ عام 2004 الملابس الرياضية والداخلية والمشكّلة للجسم بلا خياطة وتصدّرها إلى ثلاث قارات."
-          : "Since 2004, Ergen Tekstil has manufactured seamless sportswear, underwear and shapewear, exporting to three continents.",
+    description: seo.description,
+    keywords: seo.keywords,
+    openGraph: {
+      type: "website",
+      siteName: t("company"),
+      locale: seo.ogLocale,
+      url: `${SITE_URL}/${locale}`,
+      title: seo.title,
+      description: seo.description,
+      images: [{ url: "/images/factory-floor.webp", width: 1920, height: 800 }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: seo.title,
+      description: seo.description,
+    },
+    robots: { index: true, follow: true },
   };
 }
 
@@ -72,6 +88,7 @@ export default async function LocaleLayout(props: LayoutProps<"/[locale]">) {
           <main className="flex-1">{props.children}</main>
           <Footer locale={locale} />
           <WhatsAppButton locale={locale} />
+          <MetaPixel />
         </NextIntlClientProvider>
       </body>
     </html>

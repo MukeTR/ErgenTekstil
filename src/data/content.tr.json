@@ -111,7 +111,14 @@
         "title": "Ulusal Destek Ağı",
         "text": "Müşteri temsilcilerimiz, müşterilerimizle gerçekleştirdikleri görüşmelerde, sorunları en kısa sürede çözerek ulusal destek ağımızı kullanarak sizlere daha iyi hizmet vermeye odaklanmaktadır."
       }
-    ]
+    ],
+    "growthBadge": "GELECEĞE YATIRIM",
+    "growthLinkLabel": "Hakkımızda",
+    "newsletterTitle": "İlk Siz Haberdar Olun!",
+    "newsletterText": "E-posta listemize katılın, yeni koleksiyonlardan ve toptan fırsatlardan ilk siz haberdar olun.",
+    "newsletterPlaceholder": "E-posta adresiniz",
+    "newsletterButton": "Abone Ol",
+    "newsletterSuccess": "Teşekkürler! Listemize eklendiniz."
   },
   "about": {
     "title": "Hakkımızda",

@@ -3,6 +3,7 @@
 import { useParams } from "next/navigation";
 import { useState } from "react";
 import { submitLead } from "@/lib/actions/submit-lead";
+import { trackMetaEvent } from "@/lib/meta/pixel";
 
 type Fields = {
   fullName: string;
@@ -39,6 +40,10 @@ export default function ContactForm({
     const product = form.get("product") as string;
 
     setSubmitting(true);
+    const metaEventId = trackMetaEvent("Lead", {
+      content_name: product || subject || fields.subject,
+      content_category: "wholesale_quote",
+    });
     await submitLead({
       fullName: name,
       email,
@@ -46,6 +51,9 @@ export default function ContactForm({
       message,
       productName: product || undefined,
       locale,
+      metaEventId,
+      metaEventName: "Lead",
+      sourceUrl: window.location.href,
     });
     setSubmitting(false);
     setSent(true);

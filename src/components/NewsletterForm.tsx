@@ -5,13 +5,11 @@ import { useParams } from "next/navigation";
 import { submitLead } from "@/lib/actions/submit-lead";
 import { trackMetaEvent } from "@/lib/meta/pixel";
 
-export default function CatalogueDownloadForm({
-  catalogueName,
+export default function NewsletterForm({
   placeholder,
   buttonLabel,
   successMessage,
 }: {
-  catalogueName: string;
   placeholder: string;
   buttonLabel: string;
   successMessage: string;
@@ -25,19 +23,15 @@ export default function CatalogueDownloadForm({
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     setSubmitting(true);
-    const metaEventId = trackMetaEvent("Lead", {
-      content_name: catalogueName,
-      content_category: "catalogue_download",
-    });
+    const metaEventId = trackMetaEvent("Subscribe", { content_name: "newsletter" });
     await submitLead({
       fullName: email,
       email,
-      subject: `Katalog Talebi: ${catalogueName}`,
-      message: `${catalogueName} için katalog talebi.`,
-      productName: catalogueName,
+      subject: "Bülten Aboneliği",
+      message: "E-posta bültenine abone olmak istiyor.",
       locale,
       metaEventId,
-      metaEventName: "Lead",
+      metaEventName: "Subscribe",
       sourceUrl: window.location.href,
     });
     setSubmitting(false);
@@ -45,15 +39,15 @@ export default function CatalogueDownloadForm({
   }
 
   if (sent) {
-    return <p className="mt-4 text-sm text-white/80">{successMessage}</p>;
+    return <p className="mt-6 text-sm font-medium text-brand-navy">{successMessage}</p>;
   }
 
   return (
     <form
       onSubmit={handleSubmit}
-      toolname={`request_catalogue_${catalogueName.toLowerCase().replace(/[^a-z0-9]+/g, "_")}`}
-      tooldescription={`Request the ${catalogueName} PDF catalogue by email.`}
-      className="mt-4 flex gap-2"
+      toolname="subscribe_newsletter"
+      tooldescription="Subscribe to the Ergen Tekstil email newsletter for new collections and wholesale updates."
+      className="mt-6 flex w-full max-w-md gap-2"
     >
       <input
         required
@@ -61,13 +55,13 @@ export default function CatalogueDownloadForm({
         value={email}
         onChange={(e) => setEmail(e.target.value)}
         placeholder={placeholder}
-        toolparamdescription="Email address to send the catalogue PDF to"
-        className="min-w-0 flex-1 rounded-full border border-white/20 bg-white/10 px-4 py-2.5 text-sm text-white placeholder:text-white/50 outline-none focus:border-white/50"
+        toolparamdescription="Email address to subscribe to the newsletter"
+        className="min-w-0 flex-1 rounded-full border border-brand-navy/15 bg-white px-4 py-3 text-sm text-brand-navy placeholder:text-brand-grey outline-none focus:border-brand-navy/50"
       />
       <button
         type="submit"
         disabled={submitting}
-        className="shrink-0 rounded-full bg-white px-5 py-2.5 font-heading text-xs font-semibold uppercase tracking-wide text-brand-navy transition hover:bg-white/90 disabled:opacity-60"
+        className="shrink-0 rounded-full bg-brand-navy px-6 py-3 font-heading text-xs font-semibold uppercase tracking-wide text-white transition hover:bg-black disabled:opacity-60"
       >
         {buttonLabel}
       </button>

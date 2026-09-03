@@ -31,7 +31,10 @@
       "Korse": "مشدّات",
       "Şort": "شورت",
       "Genel": "عام"
-    }
+    },
+    "previous": "السابق",
+    "next": "التالي",
+    "page": "صفحة {current} من {total}"
   },
   "product": {
     "notFound": "المنتج غير موجود",

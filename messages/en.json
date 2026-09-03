@@ -31,7 +31,10 @@
       "Korse": "Shapewear",
       "Şort": "Shorts",
       "Genel": "General"
-    }
+    },
+    "previous": "Previous",
+    "next": "Next",
+    "page": "Page {current} of {total}"
   },
   "product": {
     "notFound": "Product not found",

@@ -111,7 +111,14 @@
         "title": "National Support Network",
         "text": "Our customer representatives focus on resolving issues as quickly as possible in their conversations with clients, using our national support network to serve you better."
       }
-    ]
+    ],
+    "growthBadge": "INVESTING IN THE FUTURE",
+    "growthLinkLabel": "About Us",
+    "newsletterTitle": "Be the First to Know",
+    "newsletterText": "Join our mailing list to be the first to hear about new collections and wholesale opportunities.",
+    "newsletterPlaceholder": "Your email address",
+    "newsletterButton": "Subscribe",
+    "newsletterSuccess": "Thank you! You've been added to our list."
   },
   "about": {
     "title": "About Us",

@@ -1,4 +1,6 @@
 import Image from "next/image";
+import type { Metadata } from "next";
+import { SEO, SITE_URL, languageAlternates } from "@/lib/seo";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import type { Locale } from "@/i18n/routing";
@@ -7,6 +9,50 @@ import ProductCard from "@/components/ProductCard";
 import StatCounter from "@/components/StatCounter";
 import CollectionIcon from "@/components/CollectionIcon";
 import CatalogueDownloadForm from "@/components/CatalogueDownloadForm";
+import NewsletterForm from "@/components/NewsletterForm";
+import HeroSlider, { type HeroSlide } from "@/components/HeroSlider";
+
+const HERO_PRODUCT_IMAGE_BASE =
+  "https://mxjyyywiooxikcwfylys.supabase.co/storage/v1/object/public/product-images";
+
+function buildHeroSlides(c: {
+  heroTitle: string;
+  heroSubtitle: string;
+  heroBadge: string;
+  heroText: string;
+  heroTagline: string;
+  heroTaglineSub: string;
+}): HeroSlide[] {
+  return [
+    {
+      title: c.heroTitle,
+      subtitle: c.heroSubtitle,
+      images: [
+        "/sureclerimiz/step-4-orme-islemi.webp",
+        "/sureclerimiz/step-7-kesim.webp",
+        "/sureclerimiz/step-2-orme-teknolojisi.webp",
+      ],
+    },
+    {
+      title: c.heroBadge,
+      subtitle: c.heroText,
+      images: [
+        `${HERO_PRODUCT_IMAGE_BASE}/1700/0-ATOS0799.jpg.webp`,
+        `${HERO_PRODUCT_IMAGE_BASE}/1550/0-ATOS6988.jpg.webp`,
+        `${HERO_PRODUCT_IMAGE_BASE}/1725/0-ATOS0946.jpg.webp`,
+      ],
+    },
+    {
+      title: c.heroTagline,
+      subtitle: c.heroTaglineSub,
+      images: [
+        `${HERO_PRODUCT_IMAGE_BASE}/1022/0-NRC12729.JPG.webp`,
+        `${HERO_PRODUCT_IMAGE_BASE}/1032/0-NRC12856.JPG.webp`,
+        `${HERO_PRODUCT_IMAGE_BASE}/1012/0-_u_ig__.JPG.webp`,
+      ],
+    },
+  ];
+}
 
 const PROCESS_VIDEOS = [
   "/video/process-1.mp4",
@@ -17,12 +63,24 @@ const PROCESS_VIDEOS = [
 
 export const revalidate = 60;
 
+export async function generateMetadata(props: PageProps<"/[locale]">): Promise<Metadata> {
+  const { locale } = (await props.params) as { locale: Locale };
+  const seo = SEO[locale] ?? SEO.tr;
+  const alt = languageAlternates();
+  return {
+    title: { absolute: seo.title },
+    description: seo.description,
+    alternates: { canonical: `${SITE_URL}/${locale}`, languages: alt.languages },
+  };
+}
+
 export default async function HomePage(props: PageProps<"/[locale]">) {
   const { locale } = (await props.params) as { locale: Locale };
   setRequestLocale(locale);
 
   const c = getContent(locale).home;
   const process = getContent(locale).process;
+  const about = getContent(locale).about;
   const tc = await getTranslations({ locale, namespace: "common" });
   const tcat = await getTranslations({ locale, namespace: "catalogues" });
   const tblog = await getTranslations({ locale, namespace: "homeBlog" });
@@ -33,41 +91,11 @@ export default async function HomePage(props: PageProps<"/[locale]">) {
   return (
     <>
       {/* Hero */}
-      <section className="relative flex min-h-[86vh] items-center overflow-hidden bg-brand-navy text-white">
-        <video
-          autoPlay
-          muted
-          loop
-          playsInline
-          className="absolute inset-0 h-full w-full object-cover opacity-40"
-        >
-          <source src="/video/hero.mp4" type="video/mp4" />
-        </video>
-        <div className="absolute inset-0 bg-gradient-to-t from-brand-navy via-brand-navy/70 to-brand-navy/40" />
-        <div className="relative mx-auto max-w-7xl px-4 py-24 sm:px-6 lg:px-8">
-          <span className="inline-block rounded-full border border-white/30 px-4 py-1.5 font-heading text-xs font-semibold uppercase tracking-widest text-white/80">
-            {c.heroBadge}
-          </span>
-          <h1 className="mt-6 max-w-3xl font-heading text-4xl font-extrabold leading-[1.1] sm:text-5xl lg:text-6xl">
-            {c.heroTitle}
-          </h1>
-          <p className="mt-6 max-w-xl text-lg text-white/75">{c.heroSubtitle}</p>
-          <div className="mt-10 flex flex-wrap gap-4">
-            <Link
-              href="/katalog"
-              className="rounded-full bg-white px-7 py-3.5 font-heading text-sm font-semibold uppercase tracking-wide text-brand-navy transition hover:bg-white/90"
-            >
-              {tc("allProducts")}
-            </Link>
-            <Link
-              href="/iletisim"
-              className="rounded-full border border-white/40 px-7 py-3.5 font-heading text-sm font-semibold uppercase tracking-wide text-white transition hover:border-white"
-            >
-              {tc("requestQuote")}
-            </Link>
-          </div>
-        </div>
-      </section>
+      <HeroSlider
+        slides={buildHeroSlides(c)}
+        allProductsLabel={tc("allProducts")}
+        requestQuoteLabel={tc("requestQuote")}
+      />
 
       {/* About / experience */}
       <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
@@ -299,7 +327,7 @@ export default async function HomePage(props: PageProps<"/[locale]">) {
             {c.yarnTitle}
           </h2>
         </div>
-        <div className="mx-auto mt-10 grid max-w-5xl gap-x-10 gap-y-6 bg-white px-4 py-10 sm:grid-cols-2 sm:px-6 lg:px-8">
+        <div className="mx-auto mt-10 grid max-w-5xl gap-x-10 gap-y-6 rounded-3xl bg-white px-4 py-10 sm:grid-cols-2 sm:px-6 lg:px-8">
           <div className="space-y-3">
             {c.yarns.map((yarn: string) => (
               <div key={yarn} className="flex gap-3 text-sm text-brand-grey">
@@ -343,6 +371,48 @@ export default async function HomePage(props: PageProps<"/[locale]">) {
               <p className="mt-3 text-sm leading-relaxed text-brand-grey">{v.text}</p>
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* Growth / Vision */}
+      <section className="relative overflow-hidden bg-brand-navy py-24 text-white">
+        <Image
+          src="/images/factory-floor.webp"
+          alt=""
+          fill
+          className="object-cover opacity-45"
+          sizes="100vw"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-brand-navy via-brand-navy/90 to-brand-navy/30" />
+        <div className="relative mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+          <span className="font-heading text-xs font-bold uppercase tracking-widest text-white/60">
+            {c.growthBadge}
+          </span>
+          <h2 className="mt-4 font-heading text-3xl font-extrabold sm:text-4xl">
+            {about.visionTitle}
+          </h2>
+          <p className="mt-6 leading-relaxed text-white/75">{about.visionText}</p>
+          <Link
+            href="/hakkimizda"
+            className="mt-8 inline-block rounded-full border border-white/30 px-7 py-3.5 font-heading text-sm font-semibold uppercase tracking-wide text-white transition hover:border-white"
+          >
+            {c.growthLinkLabel}
+          </Link>
+        </div>
+      </section>
+
+      {/* Newsletter */}
+      <section className="bg-brand-grey-light py-20">
+        <div className="mx-auto flex max-w-3xl flex-col items-center px-4 text-center sm:px-6 lg:px-8">
+          <h2 className="font-heading text-2xl font-extrabold text-brand-navy sm:text-3xl">
+            {c.newsletterTitle}
+          </h2>
+          <p className="mt-4 max-w-xl text-brand-grey">{c.newsletterText}</p>
+          <NewsletterForm
+            placeholder={c.newsletterPlaceholder}
+            buttonLabel={c.newsletterButton}
+            successMessage={c.newsletterSuccess}
+          />
         </div>
       </section>
 
