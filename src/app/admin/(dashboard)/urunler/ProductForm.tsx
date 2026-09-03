@@ -9,6 +9,7 @@ import { saveProduct, uploadProductImage } from "../actions";
 type ProductFormValues = {
   id?: string;
   slug: string;
+  legacy_id?: string | null;
   name: { tr: string; en: string; ar: string };
   category_keys: string[];
   color_keys: string[];
@@ -58,16 +59,29 @@ export default function ProductForm({
           Temel Bilgiler
         </h2>
         <div className="mt-4 grid gap-4">
-          <div>
-            <label className="text-xs font-semibold text-brand-grey">
-              Slug (URL) — örn. yeni-korse-modeli-1234
-            </label>
-            <input
-              name="slug"
-              required
-              defaultValue={initial?.slug}
-              className="mt-1 w-full rounded-lg border border-black/10 px-3 py-2 text-sm outline-none focus:border-brand-navy"
-            />
+          <div className="grid gap-4 sm:grid-cols-2">
+            <div>
+              <label className="text-xs font-semibold text-brand-grey">
+                Slug (URL) — örn. yeni-korse-modeli-1234
+              </label>
+              <input
+                name="slug"
+                required
+                defaultValue={initial?.slug}
+                className="mt-1 w-full rounded-lg border border-black/10 px-3 py-2 text-sm outline-none focus:border-brand-navy"
+              />
+            </div>
+            <div>
+              <label className="text-xs font-semibold text-brand-grey">
+                Ürün Kodu — fabrika/foto klasörü referansı, sadece sen görürsün
+              </label>
+              <input
+                name="legacy_id"
+                defaultValue={initial?.legacy_id ?? ""}
+                placeholder="örn. 1810"
+                className="mt-1 w-full rounded-lg border border-black/10 px-3 py-2 text-sm outline-none focus:border-brand-navy"
+              />
+            </div>
           </div>
           <div className="grid gap-4 sm:grid-cols-3">
             <div>

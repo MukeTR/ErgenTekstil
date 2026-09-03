@@ -35,6 +35,7 @@ export default async function AdminProductsPage() {
           <thead className="border-b border-black/5 text-xs uppercase tracking-wide text-brand-grey">
             <tr>
               <th className="px-4 py-3">Görsel</th>
+              <th className="px-4 py-3">Kod</th>
               <th className="px-4 py-3">İsim (TR)</th>
               <th className="px-4 py-3">Kategori</th>
               <th className="px-4 py-3">Durum</th>
@@ -57,6 +58,9 @@ export default async function AdminProductsPage() {
                   ) : (
                     <div className="h-14 w-11 rounded-lg bg-brand-grey-light" />
                   )}
+                </td>
+                <td className="px-4 py-3 font-mono text-xs text-brand-grey">
+                  {p.legacy_id || "—"}
                 </td>
                 <td className="px-4 py-3 font-medium">{p.name.tr}</td>
                 <td className="px-4 py-3 text-brand-grey">

@@ -19,8 +19,11 @@ export async function saveProduct(formData: FormData) {
   const id = formData.get("id") as string | null;
   const slug = (formData.get("slug") as string).trim();
 
+  const legacyId = (formData.get("legacy_id") as string | null)?.trim() || null;
+
   const payload = {
     slug,
+    legacy_id: legacyId,
     name: {
       tr: (formData.get("name_tr") as string).trim(),
       en: (formData.get("name_en") as string).trim(),
