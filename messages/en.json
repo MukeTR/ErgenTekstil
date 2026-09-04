@@ -63,5 +63,34 @@
   },
   "footer": {
     "rights": "All rights reserved."
+  },
+  "quoteList": {
+    "title": "Quote List",
+    "add": "Add to List",
+    "added": "Added ✓",
+    "inList": "In list",
+    "qty": "Quantity",
+    "pcs": "pcs",
+    "products": "products",
+    "remove": "Remove",
+    "clear": "Clear list",
+    "close": "Close",
+    "emptyTitle": "Your list is empty",
+    "emptyText": "Add products from the catalogue and request a wholesale quote for all of them at once.",
+    "browse": "Browse Catalogue",
+    "formTitle": "Request Wholesale Quote",
+    "name": "Full Name",
+    "company": "Company",
+    "email": "Email",
+    "phone": "Phone",
+    "note": "Note",
+    "notePlaceholder": "Sizes, colours, delivery country, target date…",
+    "submit": "Request Quote",
+    "sending": "Sending…",
+    "subject": "Wholesale Quote Request",
+    "sentTitle": "Request received!",
+    "sentText": "We'll get back to you shortly with a price quote for the products in your list.",
+    "error": "Could not send, please try again.",
+    "requestNow": "Request quote"
   }
 }

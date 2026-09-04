@@ -63,5 +63,34 @@
   },
   "footer": {
     "rights": "Tüm hakları saklıdır."
+  },
+  "quoteList": {
+    "title": "Teklif Listesi",
+    "add": "Listeye Ekle",
+    "added": "Eklendi ✓",
+    "inList": "Listede",
+    "qty": "Adet",
+    "pcs": "adet",
+    "products": "ürün",
+    "remove": "Kaldır",
+    "clear": "Listeyi temizle",
+    "close": "Kapat",
+    "emptyTitle": "Listeniz boş",
+    "emptyText": "Katalogdan istediğiniz ürünleri ekleyin, hepsi için tek seferde toptan fiyat teklifi isteyin.",
+    "browse": "Kataloğa Git",
+    "formTitle": "Toptan Teklif İste",
+    "name": "Ad Soyad",
+    "company": "Firma",
+    "email": "E-posta",
+    "phone": "Telefon",
+    "note": "Not",
+    "notePlaceholder": "Beden, renk, teslimat ülkesi, hedef tarih…",
+    "submit": "Teklif İste",
+    "sending": "Gönderiliyor…",
+    "subject": "Toptan Teklif Talebi",
+    "sentTitle": "Talebiniz alındı!",
+    "sentText": "Listenizdeki ürünler için en kısa sürede fiyat teklifiyle dönüş yapacağız.",
+    "error": "Gönderilemedi, lütfen tekrar deneyin.",
+    "requestNow": "Teklif iste"
   }
 }

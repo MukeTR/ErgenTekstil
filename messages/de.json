@@ -63,5 +63,34 @@
   },
   "footer": {
     "rights": "Alle Rechte vorbehalten."
+  },
+  "quoteList": {
+    "title": "Angebotsliste",
+    "add": "Zur Liste hinzufügen",
+    "added": "Hinzugefügt ✓",
+    "inList": "In der Liste",
+    "qty": "Menge",
+    "pcs": "Stk.",
+    "products": "Produkte",
+    "remove": "Entfernen",
+    "clear": "Liste leeren",
+    "close": "Schließen",
+    "emptyTitle": "Ihre Liste ist leer",
+    "emptyText": "Fügen Sie Produkte aus dem Katalog hinzu und fordern Sie für alle auf einmal ein Großhandelsangebot an.",
+    "browse": "Zum Katalog",
+    "formTitle": "Großhandelsangebot anfordern",
+    "name": "Vor- und Nachname",
+    "company": "Firma",
+    "email": "E-Mail",
+    "phone": "Telefon",
+    "note": "Hinweis",
+    "notePlaceholder": "Größen, Farben, Lieferland, Zieltermin…",
+    "submit": "Angebot anfordern",
+    "sending": "Wird gesendet…",
+    "subject": "Großhandels-Angebotsanfrage",
+    "sentTitle": "Anfrage erhalten!",
+    "sentText": "Wir melden uns in Kürze mit einem Preisangebot für die Produkte in Ihrer Liste.",
+    "error": "Senden fehlgeschlagen, bitte erneut versuchen.",
+    "requestNow": "Angebot anfordern"
   }
 }

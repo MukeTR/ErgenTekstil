@@ -3,13 +3,20 @@ import { Link } from "@/i18n/navigation";
 import type { Product } from "@/lib/data";
 import { productImageUrl } from "@/lib/data";
 import ColorSwatches from "./ColorSwatches";
+import AddToQuoteButton from "./quote/AddToQuoteButton";
 
 export default function ProductCard({ product }: { product: Product }) {
   return (
-    <Link
-      href={`/katalog/${product.slug}`}
-      className="group block overflow-hidden rounded-2xl bg-brand-grey-light transition hover:shadow-lg"
-    >
+    <div className="group relative overflow-hidden rounded-2xl bg-brand-grey-light transition hover:shadow-lg">
+      <AddToQuoteButton
+        product={{
+          slug: product.slug,
+          name: product.name,
+          image: product.images[0] ?? null,
+          category: product.categories[0],
+        }}
+      />
+      <Link href={`/katalog/${product.slug}`} className="block">
       <div className="relative aspect-[3/4] overflow-hidden bg-white">
         <Image
           src={productImageUrl(product.images[0])}
@@ -34,6 +41,7 @@ export default function ProductCard({ product }: { product: Product }) {
           </div>
         )}
       </div>
-    </Link>
+      </Link>
+    </div>
   );
 }

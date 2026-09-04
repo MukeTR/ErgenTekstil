@@ -4,6 +4,7 @@ import { Link } from "@/i18n/navigation";
 import type { Locale } from "@/i18n/routing";
 import MobileNav from "./MobileNav";
 import LanguageSwitcher from "./LanguageSwitcher";
+import { QuoteListHeaderButton } from "./quote/QuoteListButton";
 
 export default async function Header({ locale }: { locale: Locale }) {
   const t = await getTranslations({ locale, namespace: "nav" });
@@ -48,6 +49,7 @@ export default async function Header({ locale }: { locale: Locale }) {
         </nav>
 
         <div className="hidden items-center gap-3 xl:flex">
+          <QuoteListHeaderButton />
           <LanguageSwitcher locale={locale} />
           <Link
             href="/iletisim"
@@ -57,7 +59,10 @@ export default async function Header({ locale }: { locale: Locale }) {
           </Link>
         </div>
 
-        <MobileNav links={links} locale={locale} ctaLabel={tc("requestQuote")} />
+        <div className="flex items-center gap-2 xl:hidden">
+          <QuoteListHeaderButton />
+          <MobileNav links={links} locale={locale} ctaLabel={tc("requestQuote")} />
+        </div>
       </div>
     </header>
   );

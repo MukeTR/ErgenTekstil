@@ -9,6 +9,9 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import MetaPixel from "@/components/MetaPixel";
+import { QuoteListProvider } from "@/components/quote/QuoteListProvider";
+import QuoteListDrawer from "@/components/quote/QuoteListDrawer";
+import { QuoteListFloatingButton } from "@/components/quote/QuoteListButton";
 import "../globals.css";
 
 const montserrat = Montserrat({
@@ -84,11 +87,15 @@ export default async function LocaleLayout(props: LayoutProps<"/[locale]">) {
     >
       <body className="min-h-screen flex flex-col bg-white text-brand-navy antialiased">
         <NextIntlClientProvider>
-          <Header locale={locale} />
-          <main className="flex-1">{props.children}</main>
-          <Footer locale={locale} />
-          <WhatsAppButton locale={locale} />
-          <MetaPixel />
+          <QuoteListProvider>
+            <Header locale={locale} />
+            <main className="flex-1">{props.children}</main>
+            <Footer locale={locale} />
+            <WhatsAppButton locale={locale} />
+            <QuoteListFloatingButton />
+            <QuoteListDrawer />
+            <MetaPixel />
+          </QuoteListProvider>
         </NextIntlClientProvider>
       </body>
     </html>

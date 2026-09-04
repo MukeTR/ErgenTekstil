@@ -6,6 +6,7 @@ import { getProduct } from "@/lib/data";
 import ProductGallery from "@/components/ProductGallery";
 import ColorSwatches from "@/components/ColorSwatches";
 import MetaViewContent from "@/components/MetaViewContent";
+import AddToQuoteButton from "@/components/quote/AddToQuoteButton";
 
 export const revalidate = 60;
 
@@ -85,11 +86,22 @@ export default async function ProductPage(
 
           <div className="mt-10 rounded-2xl bg-brand-grey-light p-6">
             <p className="text-sm text-brand-grey">{t("quoteIntro")}</p>
+            <div className="mt-4">
+              <AddToQuoteButton
+                variant="full"
+                product={{
+                  slug: product.slug,
+                  name: product.name,
+                  image: product.images[0] ?? null,
+                  category: product.categories[0],
+                }}
+              />
+            </div>
             <Link
               href={{ pathname: "/iletisim", query: { urun: product.name } }}
-              className="mt-4 inline-block rounded-full bg-brand-navy px-7 py-3.5 font-heading text-sm font-semibold uppercase tracking-wide text-white transition hover:bg-black"
+              className="mt-4 inline-block font-heading text-xs font-semibold uppercase tracking-wide text-brand-navy underline underline-offset-4"
             >
-              {tc("requestQuote")}
+              {tc("requestQuote")} →
             </Link>
           </div>
         </div>
