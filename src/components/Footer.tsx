@@ -4,6 +4,14 @@ import { Link } from "@/i18n/navigation";
 import type { Locale } from "@/i18n/routing";
 import { getContent } from "@/lib/data";
 
+const LEGAL_LABELS: Record<Locale, { privacy: string; cookies: string; terms: string }> = {
+  tr: { privacy: "Gizlilik Politikası", cookies: "Çerez Politikası", terms: "Kullanım Koşulları" },
+  en: { privacy: "Privacy Policy", cookies: "Cookie Policy", terms: "Terms of Use" },
+  ar: { privacy: "سياسة الخصوصية", cookies: "سياسة ملفات الارتباط", terms: "شروط الاستخدام" },
+  de: { privacy: "Datenschutzerklärung", cookies: "Cookie-Richtlinie", terms: "Nutzungsbedingungen" },
+  ru: { privacy: "Политика конфиденциальности", cookies: "Политика cookie", terms: "Условия использования" },
+};
+
 export default async function Footer({ locale }: { locale: Locale }) {
   const t = await getTranslations({ locale, namespace: "nav" });
   const tf = await getTranslations({ locale, namespace: "footer" });
@@ -94,13 +102,13 @@ export default async function Footer({ locale }: { locale: Locale }) {
           </p>
           <div className="flex gap-5">
             <Link href="/gizlilik-politikasi" className="hover:text-white">
-              {locale === "tr" ? "Gizlilik Politikası" : locale === "ar" ? "سياسة الخصوصية" : "Privacy Policy"}
+              {LEGAL_LABELS[locale].privacy}
             </Link>
             <Link href="/cerez-politikasi" className="hover:text-white">
-              {locale === "tr" ? "Çerez Politikası" : locale === "ar" ? "سياسة ملفات الارتباط" : "Cookie Policy"}
+              {LEGAL_LABELS[locale].cookies}
             </Link>
             <Link href="/kullanim-kosullari" className="hover:text-white">
-              {locale === "tr" ? "Kullanım Koşulları" : locale === "ar" ? "شروط الاستخدام" : "Terms of Use"}
+              {LEGAL_LABELS[locale].terms}
             </Link>
           </div>
         </div>

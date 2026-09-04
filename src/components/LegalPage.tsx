@@ -7,6 +7,8 @@ type LegalSlug = keyof typeof legal;
 const NOTICE: Record<Exclude<Locale, "tr">, string> = {
   en: "This policy is governed by Turkish data protection law (KVKK) and is provided in Turkish, its original legal language.",
   ar: "تخضع هذه السياسة لقانون حماية البيانات الشخصية التركي (KVKK) وتُقدَّم باللغة التركية، وهي لغتها القانونية الأصلية.",
+  de: "Diese Richtlinie unterliegt dem türkischen Datenschutzrecht (KVKK) und wird in ihrer rechtsverbindlichen Originalsprache Türkisch bereitgestellt.",
+  ru: "Настоящая политика регулируется турецким законом о защите персональных данных (KVKK) и предоставляется на турецком языке — её оригинальном юридическом языке.",
 };
 
 export default function LegalPage({ slug, locale }: { slug: LegalSlug; locale: Locale }) {

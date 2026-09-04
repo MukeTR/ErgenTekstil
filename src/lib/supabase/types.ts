@@ -1,5 +1,5 @@
-export type LocalizedText = { tr: string; en: string; ar: string };
-export type LocalizedList = { tr: string[]; en: string[]; ar: string[] };
+export type LocalizedText = { tr: string; en: string; ar: string; de?: string; ru?: string };
+export type LocalizedList = { tr: string[]; en: string[]; ar: string[]; de?: string[]; ru?: string[] };
 
 export type ProductRow = {
   id: string;

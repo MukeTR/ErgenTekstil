@@ -65,6 +65,40 @@ export const SEO: Record<
     ],
     ogLocale: "ar_AR",
   },
+  de: {
+    title: "Ergen Tekstil | Hersteller für Seamless-Leggings, Shapewear & Sportbekleidung",
+    description:
+      "Ergen Tekstil fertigt seit 2004 nahtlose (seamless) Leggings, Shapewear, Shorts, Sport- und Unterwäsche. 200.000 Teile/Monat, Private-Label-Produktion, Export auf drei Kontinente. Jetzt Großhandelsangebot anfordern.",
+    keywords: [
+      "Seamless Leggings Hersteller",
+      "nahtlose Sportbekleidung Hersteller",
+      "Shapewear Hersteller Türkei",
+      "Private Label Leggings",
+      "Leggings Großhandel Türkei",
+      "nahtlose Unterwäsche Hersteller",
+      "Seamless Textilfabrik Türkei",
+      "Ergen Tekstil",
+      "Formactive",
+    ],
+    ogLocale: "de_DE",
+  },
+  ru: {
+    title: "Ergen Tekstil | Производитель бесшовных леггинсов, корректирующего белья и спортивной одежды",
+    description:
+      "Ergen Tekstil с 2004 года производит бесшовные (seamless) леггинсы, корректирующее бельё, шорты, спортивную и нижнюю одежду. 200 000 изделий в месяц, производство под частной маркой, экспорт на три континента. Запросите оптовое предложение.",
+    keywords: [
+      "производитель бесшовных леггинсов",
+      "бесшовная спортивная одежда производитель",
+      "корректирующее бельё производитель Турция",
+      "леггинсы оптом Турция",
+      "производство под частной маркой Турция",
+      "бесшовное бельё производитель",
+      "фабрика бесшовного трикотажа Турция",
+      "Ergen Tekstil",
+      "Formactive",
+    ],
+    ogLocale: "ru_RU",
+  },
 };
 
 /** hreflang alternatifleri (next-intl localePrefix: "always") */
@@ -75,6 +109,8 @@ export function languageAlternates(path = "") {
       tr: `${SITE_URL}/tr${path}`,
       en: `${SITE_URL}/en${path}`,
       ar: `${SITE_URL}/ar${path}`,
+      de: `${SITE_URL}/de${path}`,
+      ru: `${SITE_URL}/ru${path}`,
       "x-default": `${SITE_URL}/tr${path}`,
     },
   };

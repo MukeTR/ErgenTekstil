@@ -20,7 +20,7 @@ export default async function Header({ locale }: { locale: Locale }) {
 
   return (
     <header className="sticky top-0 z-50 border-b border-black/5 bg-white/95 backdrop-blur">
-      <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-8">
+      <div className="mx-auto flex max-w-[90rem] items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-8">
         <Link href="/" className="flex shrink-0 items-center gap-3">
           <Image
             src="/marka/ergen-tekstil-logo.svg"
@@ -35,23 +35,23 @@ export default async function Header({ locale }: { locale: Locale }) {
           </span>
         </Link>
 
-        <nav className="hidden items-center gap-7 lg:flex">
+        <nav className="hidden items-center gap-5 xl:flex 2xl:gap-7">
           {links.map((l) => (
             <Link
               key={l.href}
               href={l.href}
-              className="font-heading text-[13px] font-semibold uppercase tracking-wide text-brand-navy/80 transition hover:text-brand-navy"
+              className="whitespace-nowrap font-heading text-[12px] font-semibold uppercase tracking-wide text-brand-navy/80 transition hover:text-brand-navy 2xl:text-[13px]"
             >
               {l.label}
             </Link>
           ))}
         </nav>
 
-        <div className="hidden items-center gap-4 lg:flex">
+        <div className="hidden items-center gap-3 xl:flex">
           <LanguageSwitcher locale={locale} />
           <Link
             href="/iletisim"
-            className="rounded-full bg-brand-navy px-5 py-2.5 font-heading text-[13px] font-semibold uppercase tracking-wide text-white transition hover:bg-black"
+            className="whitespace-nowrap rounded-full bg-brand-navy px-5 py-2.5 font-heading text-[12px] font-semibold uppercase tracking-wide text-white transition hover:bg-black"
           >
             {tc("requestQuote")}
           </Link>

@@ -1,0 +1,208 @@
+{
+  "home": {
+    "heroTitle": "Seamless-Bekleidungstechnologie",
+    "heroSubtitle": "Wir fertigen Sport-, Unter-, Alltags-, Thermo- und Shapewear-Bekleidung und exportieren auf drei Kontinente.",
+    "heroBadge": "Hohe Qualität",
+    "heroText": "Mit hoher Qualität und anspruchsvollen Designs in den Bereichen Sportbekleidung, Unterwäsche und Shapewear bedienen wir unsere Kunden mit einem starken Marktanteil.",
+    "heroTagline": "Selbstbewusst und wohlfühlen",
+    "heroTaglineSub": "Die schönste Seite der Unterwäsche – mit perfekten Schnitten, eleganten Designs und angenehmen Materialien",
+    "aboutBadge": "20 JAHRE ERFAHRUNG",
+    "aboutTitle": "Umfassende Produktion und nationales Servicenetz",
+    "aboutText": "Ergen Tekstil wurde 2004 als integrierter Betrieb mit Strick- und Konfektionsanlagen zur Herstellung von Seamless-Bekleidung gegründet. Heute zählt das Unternehmen mit einer Produktionskapazität von 200.000 Teilen/Monat zu den führenden Qualitätsherstellern seiner Branche. Durch den effektiven Einsatz von Technologie und einen innovativen Ansatz wissen wir, dass die schnelle Anpassung an eine sich wandelnde Welt und Innovation zu unseren wichtigsten Werten gehören.",
+    "processSteps": ["Stricken", "Färben", "Nähen", "Verpacken"],
+    "processTitle": "Unsere Prozesse",
+    "processText": "Die Seamless-Textilproduktion ist ein Verfahren zur Herstellung durchgehender, einteiliger Stoffe. Dieser Produktionsprozess unterscheidet sich von herkömmlichen Nähverfahren und umfasst eine Reihe spezifischer Schritte.",
+    "collectionsTitle": "Kollektionen",
+    "collections": [
+      {
+        "icon": "shorts",
+        "title": "Active Wear",
+        "description": "Unsere Activewear-Kollektion ist so konzipiert, dass Komfort und Leistung bei jeder Bewegung auf höchstem Niveau bleiben."
+      },
+      {
+        "icon": "bra",
+        "title": "Unterwäsche",
+        "description": "Unsere Unterwäsche vereint ganztägigen Komfort mit Eleganz und lässt Sie sich in jedem Moment besonders fühlen.",
+        "highlight": true
+      },
+      {
+        "icon": "corset",
+        "title": "Shapewear",
+        "description": "Unsere Shapewear-Kollektion verleiht Ihrem Körper die perfekte Form und bietet zugleich ganztägigen Komfort und Halt."
+      },
+      {
+        "icon": "tank",
+        "title": "Aktive Sportbekleidung für Damen",
+        "description": "Unsere Damenkollektion verbindet Eleganz und Stil mit modernen Designs, die jedem Moment eine stilvolle Note verleihen."
+      },
+      {
+        "icon": "polo",
+        "title": "Aktive Sportbekleidung für Herren",
+        "description": "Unsere Herrenkollektion mit modernen, stilvollen Designs sorgt dafür, dass Sie sich in jeder Umgebung wohl und selbstbewusst fühlen."
+      },
+      {
+        "icon": "leggings",
+        "title": "Funktionstextilien",
+        "description": "Unsere Produkte sind mit innovativen Technologien ausgestattet und bieten Leistung und Komfort in einem."
+      }
+    ],
+    "processListTitle": "Unsere Prozesse",
+    "processList": ["Seamless-Stricken", "Nähen", "Bügeln & Verpacken", "F&E", "Färben", "Qualitätskontrolle"],
+    "cataloguesTitle": "Produktkataloge",
+    "catalogues": ["Katalog Aktive Sportbekleidung", "Katalog Shapewear", "FORMactive Produktkatalog"],
+    "colorTitle": "Für jeden die passende Farbe!",
+    "colorText": "Wir produzieren Produkte in einer Vielzahl von Farben für jeden Geschmack.",
+    "yarnTitle": "Garne und Technologie",
+    "yarns": [
+      "Merino (ZQ oder Wolle)",
+      "Wollmischungen",
+      "Recyceltes Polyamid",
+      "Recycelter Polyester",
+      "Polypropylen",
+      "Modal, Bambus, Acetat, Carbongarne usw.",
+      "Baumwolle (Bio oder konventionell)",
+      "Kosmetisches Polyamid (Q10, Emana usw.)",
+      "Silberbeschichtetes Polyamid",
+      "Nachhaltiges Garnsortiment"
+    ],
+    "yarnFeatures": [
+      "Feuchtigkeitsmanagement",
+      "Antistatisch",
+      "Antibakteriell (Hygiene)",
+      "UV-Schutz",
+      "Geruchskontrolle",
+      "Flammhemmend",
+      "Weicher Griff",
+      "Extra Dehnbarkeit",
+      "Mikrokapsel-Anwendungen"
+    ],
+    "valuesBadge": "20 JAHRE ERFAHRUNG",
+    "valuesText": "Bei Ergen Tekstil ist unser unternehmerisches Serviceverständnis darauf ausgerichtet, ein Höchstmaß an Kundenzufriedenheit zu erreichen.",
+    "values": [
+      {
+        "title": "Innovative Ideen",
+        "text": "Unser F&E-Team entwickelt kontinuierlich innovative Ideen, um Ihnen die neueste Mode und die besten Produkte zu bieten."
+      },
+      {
+        "title": "Kundenzufriedenheit",
+        "text": "Nach dem Grundsatz „Zufriedenheit ist unsere Pflicht, Dank ist unser Ziel“ werten wir die Wünsche, Anregungen und Rückmeldungen unserer Kunden sorgfältig aus, um ihre Zufriedenheit sicherzustellen."
+      },
+      {
+        "title": "Faire Preise",
+        "text": "Wir möchten unseren Kunden Mehrwert und wirtschaftliche Lösungen bieten, indem wir beste Qualität zum besten Preis liefern."
+      },
+      {
+        "title": "Nationales Servicenetz",
+        "text": "Unsere Kundenbetreuer konzentrieren sich darauf, Anliegen im Gespräch mit unseren Kunden schnellstmöglich zu lösen und Sie über unser nationales Servicenetz noch besser zu betreuen."
+      }
+    ],
+    "growthBadge": "INVESTITION IN DIE ZUKUNFT",
+    "growthLinkLabel": "Über uns",
+    "newsletterTitle": "Erfahren Sie es zuerst!",
+    "newsletterText": "Tragen Sie sich in unsere Mailingliste ein und erfahren Sie als Erste von neuen Kollektionen und Großhandelsangeboten.",
+    "newsletterPlaceholder": "Ihre E-Mail-Adresse",
+    "newsletterButton": "Abonnieren",
+    "newsletterSuccess": "Vielen Dank! Sie wurden in unsere Liste aufgenommen."
+  },
+  "about": {
+    "title": "Über uns",
+    "badge": "Export auf drei Kontinente",
+    "intro": "Ergen Tekstil wurde 2004 gegründet und ist ein globaler Hersteller zahlreicher Private-Label-Bekleidungsprodukte. Das Unternehmen mit Sitz in Istanbul produziert für viele Marken auf den europäischen, afrikanischen und asiatischen Märkten.",
+    "missionTitle": "Unsere Mission",
+    "missionText": "Ergen Tekstil wurde 2004 als integrierter Betrieb mit Strick- und Konfektionsanlagen zur Herstellung von Seamless-Bekleidung gegründet. Heute zählt das Unternehmen mit einer Produktionskapazität von 200.000 Teilen/Monat zu den führenden Qualitätsherstellern seiner Branche. Durch den effektiven Einsatz von Technologie und einen innovativen Ansatz wissen wir, dass die schnelle Anpassung an eine sich wandelnde Welt und Innovation zu unseren wichtigsten Werten gehören.",
+    "visionTitle": "Unsere Vision",
+    "visionText": "Im Einklang mit unseren Wachstumszielen schreitet der Bau unserer eigenen Fabrik im Industriegebiet Tekirdağ Kapaklı zügig voran. Nach der Fertigstellung wird sie sowohl unsere Kapazität erhöhen als auch unserem Ziel, neue internationale Märkte zu erschließen, einen Schritt näher bringen. Als produzierende Marke strebt Ergen Tekstil danach, seine Position unter den globalen Wettbewerbern durch wirksames Branding in der Produktion zu stärken. Das Unternehmen setzt mit seinem engagierten Team auf kontinuierliches Lernen und Weiterentwicklung. Wir priorisieren nachhaltige Produktionsmethoden, legen Wert auf eine effektive Kommunikation mit unseren Geschäftspartnern und fördern eine Kultur der Eigenverantwortung, des Selbstvertrauens und der Zufriedenheit in unserem Team.",
+    "principlesTitle": "Die Grundprinzipien, die Ergen Tekstil leiten:",
+    "principles": [
+      "Das Gefühl der Eigenverantwortung unserer Teammitglieder für ihre Arbeit stärken.",
+      "Durch die Erfüllung von Kundenbedürfnissen und -erwartungen ein Gefühl von Zugehörigkeit und Zufriedenheit schaffen.",
+      "Transparenten und fairen Managementpraktiken im Einklang mit Gesetzen und Vorschriften verpflichtet bleiben.",
+      "Nachhaltige Produktion in unserer grünen Fabrik priorisieren, um unserer Verantwortung gegenüber künftigen Generationen und der Umwelt gerecht zu werden.",
+      "Digitalisierung und effiziente Produktionsmethoden in Management und Betrieb umsetzen.",
+      "Die Werte Aufrichtigkeit, Ehrlichkeit und Qualität in allen Vorhaben wahren."
+    ]
+  },
+  "process": {
+    "title": "Unsere Prozesse",
+    "intro": "Die Seamless-Textilproduktion ist ein Verfahren zur Herstellung durchgehender, einteiliger Stoffe. Dieser Produktionsprozess unterscheidet sich von herkömmlichen Nähverfahren und umfasst eine Reihe spezifischer Schritte. Hier sind die wesentlichen Prozesse der Seamless-Textilproduktion von Anfang bis Ende:",
+    "steps": [
+      {
+        "title": "Design und Entwicklung",
+        "text": "In der ersten Phase erstellt das Designteam Produktkonzepte auf Basis von Kundenwünschen und Trends. Textilingenieure bewerten diese Konzepte technisch und prüfen ihre Herstellbarkeit.",
+        "image": "step-1-tasarim.webp"
+      },
+      {
+        "title": "Stricktechnologie",
+        "text": "Für die Seamless-Produktion werden in der Regel Rundstrickmaschinen eingesetzt. Diese Maschinen ermöglichen die Herstellung einteiliger Stoffe. Textilingenieure optimieren die Einstellungen und Parameter der Strickmaschinen.",
+        "image": "step-2-orme-teknolojisi.webp"
+      },
+      {
+        "title": "Materialauswahl und -vorbereitung",
+        "text": "Die Auswahl geeigneter Fasern und Garne ist ein entscheidender Schritt für die Produktqualität. Die Garne müssen sorgfältig vorbereitet und den Strickmaschinen zugeführt werden.",
+        "image": "step-3-malzeme.webp"
+      },
+      {
+        "title": "Strickprozess",
+        "text": "Die Strickmaschinen fertigen den Stoff nach dem entworfenen Muster in einem Stück. Während dieses Prozesses arbeiten Maschinenbediener und Wartungspersonal unter genauer Aufsicht.",
+        "image": "step-4-orme-islemi.webp"
+      },
+      {
+        "title": "Qualitätskontrolle",
+        "text": "Die produzierten Stoffe durchlaufen eine detaillierte Qualitätskontrolle, um die Einhaltung der Qualitätsstandards zu prüfen. Werden Mängel festgestellt, werden fehlerhafte Teile korrigiert oder aussortiert.",
+        "image": "step-5-kalite.webp"
+      },
+      {
+        "title": "Färben und Veredeln",
+        "text": "Die Stoffe werden in den gewünschten Farben und Mustern gefärbt und veredelt. Dieser Schritt verbessert die ästhetischen und funktionalen Eigenschaften des Produkts.",
+        "image": "step-6-boyama.webp"
+      },
+      {
+        "title": "Zuschnitt und Seamless-Fertigung",
+        "text": "Die produzierten Stoffe werden entsprechend den Designanforderungen zugeschnitten und geformt. Für die Seamless-Produktion werden die zugeschnittenen Teile mit Spezialmaschinen zusammengefügt.",
+        "image": "step-7-kesim.webp"
+      },
+      {
+        "title": "Verpackung und Vertrieb",
+        "text": "Die Produkte werden gemäß den Kundenanforderungen verpackt und versandfertig gemacht. In der Vertriebsphase ist die Optimierung der Logistikprozesse entscheidend.",
+        "image": "step-8-ambalaj.webp"
+      }
+    ],
+    "outro": "Die Seamless-Textilproduktion erfordert die sorgfältige Einhaltung jedes dieser Prozesse und umfasst in der Regel den Einsatz moderner Technologien. Jeder Schritt ist wichtig, um Qualität, Effizienz und Kundenzufriedenheit sicherzustellen.",
+    "statsTitle": "Ergen Tekstil in Zahlen",
+    "statsText": "Durch die kontinuierliche Beobachtung aktueller Technologien und Trends entwickeln wir Lösungen, die auf die Bedürfnisse unserer Kunden zugeschnitten sind.",
+    "stats": [
+      { "value": 20, "suffix": "", "label": "Jahre Erfahrung" },
+      { "value": 200000, "suffix": "", "label": "Teile Produktionskapazität" },
+      { "value": 3, "suffix": "", "label": "Export-Kontinente" }
+    ]
+  },
+  "contact": {
+    "title": "Kontakt",
+    "headOfficeTitle": "Ergen Tekstil Hauptsitz",
+    "headOfficeAddress": "Karaağaç OSB, Eski Bağlar Cad. No:6 59510 Kapaklı / TEKİRDAĞ, Türkei",
+    "phones": ["+90 534 593 68 91", "+90 216 420 49 84"],
+    "email": "info@ergentekstil.com",
+    "socialTitle": "Folgen Sie uns in den sozialen Medien",
+    "branchTitle": "Niederlassung",
+    "branchAddress": "Yeşildirek, Suriçi Mahallesi, Sultan Mektep Sk. No:13/A, 34120 Fatih, Istanbul, Türkei",
+    "branchPhone": "(0216) 420 49 84",
+    "formTitle": "Kontakt aufnehmen",
+    "formFields": {
+      "fullName": "Vor- und Nachname",
+      "firstName": "Vorname",
+      "lastName": "Nachname",
+      "email": "E-Mail",
+      "subject": "Betreff",
+      "message": "Ihre Nachricht",
+      "product": "Produkt von Interesse",
+      "submit": "Senden"
+    }
+  },
+  "footer": {
+    "productsTitle": "Produkte & Dienstleistungen",
+    "aboutLinks": ["Über uns", "Design", "Beschaffung", "Zuschnitt", "Waschen"],
+    "contactTitle": "Kontakt",
+    "address": "Karaağaç OSB, Eski Bağlar Caddesi No:6 59510 Kapaklı / TEKİRDAĞ, Türkei",
+    "copyright": "Ergen Tekstil"
+  }
+}

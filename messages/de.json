@@ -1,0 +1,67 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "about": "Über uns",
+    "process": "Unsere Prozesse",
+    "catalog": "Katalog",
+    "blog": "Blog",
+    "contact": "Kontakt"
+  },
+  "common": {
+    "readMore": "Weiterlesen",
+    "loadMore": "Mehr laden",
+    "learnMore": "Mehr erfahren",
+    "requestQuote": "Angebot anfordern",
+    "viewProduct": "Produkt ansehen",
+    "allProducts": "Alle Produkte",
+    "colors": "Farboptionen",
+    "features": "Produkteigenschaften",
+    "brand": "Formactive",
+    "company": "Ergen Tekstil",
+    "scroll": "Scrollen",
+    "whatsapp": "Schreiben Sie uns auf WhatsApp",
+    "viewCollection": "Kollektion ansehen"
+  },
+  "catalog": {
+    "title": "Katalog",
+    "subtitle": "Unsere Sportbekleidungs-, Wäsche- und Shapewear-Kollektionen in Seamless-Technologie",
+    "categories": {
+      "all": "Alle",
+      "Tayt": "Leggings",
+      "Korse": "Shapewear",
+      "Şort": "Shorts",
+      "Genel": "Allgemein"
+    },
+    "previous": "Zurück",
+    "next": "Weiter",
+    "page": "Seite {current} von {total}",
+    "productsCount": "Produkte"
+  },
+  "product": {
+    "notFound": "Produkt nicht gefunden",
+    "backToCatalog": "Zurück zum Katalog",
+    "quoteIntro": "Möchten Sie ein Großhandelsangebot für dieses Produkt erhalten?"
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Neuigkeiten, Produktionsprozesse und Nachhaltigkeitsgeschichten von Ergen Tekstil",
+    "backToBlog": "Zurück zum Blog"
+  },
+  "contactForm": {
+    "success": "Vielen Dank für Ihre Nachricht, wir melden uns in Kürze bei Ihnen.",
+    "required": "Pflichtfeld"
+  },
+  "catalogues": {
+    "title": "Produktkataloge",
+    "emailPlaceholder": "Ihre E-Mail-Adresse",
+    "download": "Herunterladen",
+    "success": "Vielen Dank, wir senden Ihnen den Katalog in Kürze per E-Mail."
+  },
+  "homeBlog": {
+    "title": "Blog",
+    "viewAll": "Alle Beiträge"
+  },
+  "footer": {
+    "rights": "Alle Rechte vorbehalten."
+  }
+}

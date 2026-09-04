@@ -13,19 +13,19 @@ import "../globals.css";
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",
-  subsets: ["latin"],
+  subsets: ["latin", "latin-ext", "cyrillic"],
   weight: ["500", "600", "700", "800"],
 });
 
 const roboto = Roboto({
   variable: "--font-roboto",
-  subsets: ["latin"],
+  subsets: ["latin", "latin-ext", "cyrillic"],
   weight: ["400", "500", "700"],
 });
 
 const robotoSlab = Roboto_Slab({
   variable: "--font-roboto-slab",
-  subsets: ["latin"],
+  subsets: ["latin", "latin-ext", "cyrillic"],
   weight: ["500", "700"],
 });
 

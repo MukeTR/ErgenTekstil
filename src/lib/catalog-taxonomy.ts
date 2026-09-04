@@ -12,6 +12,8 @@ const CATEGORY_LABELS: Record<Locale, Record<CategoryKey, string>> = {
   tr: { Tayt: "Tayt", Korse: "Korse", Şort: "Şort", Genel: "Genel" },
   en: { Tayt: "Leggings", Korse: "Shapewear", Şort: "Shorts", Genel: "General" },
   ar: { Tayt: "طماق", Korse: "مشدّات", Şort: "شورت", Genel: "عام" },
+  de: { Tayt: "Leggings", Korse: "Shapewear", Şort: "Shorts", Genel: "Allgemein" },
+  ru: { Tayt: "Леггинсы", Korse: "Корректирующее бельё", Şort: "Шорты", Genel: "Общее" },
 };
 
 export function categoryLabel(locale: Locale, key: string): string {
@@ -75,6 +77,24 @@ const COLOR_LABELS: Record<Locale, Record<ColorKey, string>> = {
     "Bebe Mavisi": "أزرق فاتح", "Buz Mavisi": "أزرق جليدي", Sarı: "أصفر",
     Haki: "كاكي", Gri: "رمادي", Camel: "جملي", Hardal: "خردلي", Lila: "بنفسجي فاتح",
     "Mint Yeşil": "أخضر نعناعي", "Koyu Yeşil": "أخضر غامق",
+  },
+  de: {
+    Siyah: "Schwarz", Beyaz: "Weiß", Ten: "Nude", Lacivert: "Marineblau",
+    Kırmızı: "Rot", Mavi: "Blau", Yeşil: "Grün", Pembe: "Rosa",
+    Turuncu: "Orange", Kremit: "Terrakotta", Vişne: "Bordeaux", İndigo: "Indigo",
+    Kahve: "Braun", "Koyu Kahve": "Dunkelbraun", Füme: "Rauchgrau", Antrasit: "Anthrazit",
+    "Bebe Mavisi": "Babyblau", "Buz Mavisi": "Eisblau", Sarı: "Gelb",
+    Haki: "Khaki", Gri: "Grau", Camel: "Camel", Hardal: "Senfgelb", Lila: "Flieder",
+    "Mint Yeşil": "Mintgrün", "Koyu Yeşil": "Dunkelgrün",
+  },
+  ru: {
+    Siyah: "Чёрный", Beyaz: "Белый", Ten: "Телесный", Lacivert: "Тёмно-синий",
+    Kırmızı: "Красный", Mavi: "Синий", Yeşil: "Зелёный", Pembe: "Розовый",
+    Turuncu: "Оранжевый", Kremit: "Терракотовый", Vişne: "Вишнёвый", İndigo: "Индиго",
+    Kahve: "Коричневый", "Koyu Kahve": "Тёмно-коричневый", Füme: "Дымчато-серый", Antrasit: "Антрацит",
+    "Bebe Mavisi": "Нежно-голубой", "Buz Mavisi": "Ледяной голубой", Sarı: "Жёлтый",
+    Haki: "Хаки", Gri: "Серый", Camel: "Кэмел", Hardal: "Горчичный", Lila: "Сиреневый",
+    "Mint Yeşil": "Мятный", "Koyu Yeşil": "Тёмно-зелёный",
   },
 };
 

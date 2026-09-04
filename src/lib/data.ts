@@ -10,6 +10,8 @@ import blogAr from "@/data/blog.ar.json";
 import contentTr from "@/data/content.tr.json";
 import contentEn from "@/data/content.en.json";
 import contentAr from "@/data/content.ar.json";
+import contentDe from "@/data/content.de.json";
+import contentRu from "@/data/content.ru.json";
 
 export type Product = {
   id: string;
@@ -32,10 +34,13 @@ export type BlogPost = {
   features?: string[];
 };
 
+// Blog yazıları henüz DE/RU'ya çevrilmedi; EN içerik gösterilir.
 const blogPosts: Record<Locale, BlogPost[]> = {
   tr: blogTr as BlogPost[],
   en: blogEn as BlogPost[],
   ar: blogAr as BlogPost[],
+  de: blogEn as BlogPost[],
+  ru: blogEn as BlogPost[],
 };
 
 export type SiteContent = typeof contentTr;
@@ -44,16 +49,22 @@ const content: Record<Locale, SiteContent> = {
   tr: contentTr,
   en: contentEn as SiteContent,
   ar: contentAr as SiteContent,
+  de: contentDe as SiteContent,
+  ru: contentRu as SiteContent,
 };
 
 function mapProduct(row: ProductRow, locale: Locale): Product {
   return {
     id: row.id,
     slug: row.slug,
-    name: row.name[locale] || row.name.tr,
+    name: row.name[locale] || row.name.en || row.name.tr,
     categoryKeys: row.category_keys,
     categories: row.category_keys.map((k) => categoryLabel(locale, k)),
-    features: row.features[locale]?.length ? row.features[locale] : row.features.tr,
+    features: row.features[locale]?.length
+      ? row.features[locale]
+      : row.features.en?.length
+        ? row.features.en
+        : row.features.tr,
     colorKeys: row.color_keys,
     colors: row.color_keys.map((k) => colorLabel(locale, k)),
     images: row.images,
