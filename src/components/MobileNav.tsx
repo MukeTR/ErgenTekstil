@@ -48,12 +48,12 @@ export default function MobileNav({
               </Link>
             ))}
           </nav>
-          <div className="mt-6 flex items-center justify-between gap-4">
-            <LanguageSwitcher locale={locale} />
+          <div className="mt-6 flex flex-col gap-4">
+            <LanguageSwitcher locale={locale} variant="mobile" />
             <Link
               href="/iletisim"
               onClick={() => setOpen(false)}
-              className="rounded-full bg-brand-navy px-5 py-2.5 font-heading text-[13px] font-semibold uppercase tracking-wide text-white"
+              className="rounded-full bg-brand-navy px-5 py-3 text-center font-heading text-[13px] font-semibold uppercase tracking-wide text-white"
             >
               {ctaLabel}
             </Link>
