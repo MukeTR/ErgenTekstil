@@ -61,7 +61,6 @@ const PROCESS_VIDEOS = [
   "/video/process-4.mp4",
 ];
 
-export const revalidate = 60;
 
 export async function generateMetadata(props: PageProps<"/[locale]">): Promise<Metadata> {
   const { locale } = (await props.params) as { locale: Locale };

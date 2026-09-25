@@ -6,7 +6,7 @@ import { useParams } from "next/navigation";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { productImageUrl } from "@/lib/data";
-import { submitLead } from "@/lib/actions/submit-lead";
+import { submitLead } from "@/lib/submit-lead";
 import { trackMetaEvent } from "@/lib/meta/pixel";
 import { useQuoteList } from "./QuoteListProvider";
 

@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { useParams } from "next/navigation";
-import { submitLead } from "@/lib/actions/submit-lead";
+import { submitLead } from "@/lib/submit-lead";
 import { trackMetaEvent } from "@/lib/meta/pixel";
 
 export default function CatalogueDownloadForm({

@@ -1,6 +1,5 @@
 import type { Locale } from "@/i18n/routing";
-import { supabasePublic } from "@/lib/supabase/public";
-import type { ProductRow } from "@/lib/supabase/types";
+import productRows from "@/data/products.json";
 import { categoryLabel, colorLabel } from "@/lib/catalog-taxonomy";
 
 import blogTr from "@/data/blog.tr.json";
@@ -53,6 +52,20 @@ const content: Record<Locale, SiteContent> = {
   ru: contentRu as SiteContent,
 };
 
+type LocalizedText = { tr: string; en: string; ar: string; de?: string; ru?: string };
+type LocalizedList = { tr: string[]; en: string[]; ar: string[]; de?: string[]; ru?: string[] };
+
+type ProductRow = {
+  id: string;
+  slug: string;
+  name: LocalizedText;
+  category_keys: string[];
+  color_keys: string[];
+  features: LocalizedList;
+  images: string[];
+  sort_order: number;
+};
+
 function mapProduct(row: ProductRow, locale: Locale): Product {
   return {
     id: row.id,
@@ -71,47 +84,28 @@ function mapProduct(row: ProductRow, locale: Locale): Product {
   };
 }
 
+// Katalog, Supabase'den alınmış statik anlık görüntüdür (src/data/products.json).
+// Güncellemek için: scripts/snapshot-products.py
+const rows = (productRows as ProductRow[]).slice().sort((a, b) => a.sort_order - b.sort_order);
+
 export async function getProducts(locale: Locale): Promise<Product[]> {
-  const { data, error } = await supabasePublic
-    .from("products")
-    .select("*")
-    .eq("active", true)
-    .order("sort_order", { ascending: true });
-
-  if (error) {
-    console.error("getProducts failed:", error.message);
-    return [];
-  }
-
-  return (data as ProductRow[]).map((row) => mapProduct(row, locale));
+  return rows.map((row) => mapProduct(row, locale));
 }
 
 export async function getProduct(
   locale: Locale,
   slug: string
 ): Promise<Product | undefined> {
-  const { data, error } = await supabasePublic
-    .from("products")
-    .select("*")
-    .eq("active", true)
-    .eq("slug", slug)
-    .maybeSingle();
+  const row = rows.find((r) => r.slug === slug);
+  return row ? mapProduct(row, locale) : undefined;
+}
 
-  if (error || !data) return undefined;
-  return mapProduct(data as ProductRow, locale);
+export function getProductSlugs(): string[] {
+  return rows.map((r) => r.slug);
 }
 
 export async function getCategoryKeys(): Promise<string[]> {
-  const { data, error } = await supabasePublic
-    .from("products")
-    .select("category_keys")
-    .eq("active", true);
-
-  if (error || !data) return [];
-  const all = (data as { category_keys: string[] }[]).flatMap(
-    (r) => r.category_keys
-  );
-  return Array.from(new Set(all));
+  return Array.from(new Set(rows.flatMap((r) => r.category_keys)));
 }
 
 export function getBlogPosts(locale: Locale): BlogPost[] {

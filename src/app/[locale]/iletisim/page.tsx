@@ -6,7 +6,6 @@ import ContactForm from "@/components/ContactForm";
 
 export default async function ContactPage(props: PageProps<"/[locale]/iletisim">) {
   const { locale } = (await props.params) as { locale: Locale };
-  const searchParams = (await props.searchParams) as { urun?: string };
   setRequestLocale(locale);
 
   const t = await getTranslations({ locale, namespace: "contactForm" });
@@ -64,7 +63,6 @@ export default async function ContactPage(props: PageProps<"/[locale]/iletisim">
                 fields={c.formFields}
                 targetEmail={c.email}
                 successMessage={t("success")}
-                prefillProduct={searchParams.urun ?? ""}
               />
             </div>
           </div>

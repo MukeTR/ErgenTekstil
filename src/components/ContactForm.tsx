@@ -1,8 +1,8 @@
 "use client";
 
 import { useParams } from "next/navigation";
-import { useState } from "react";
-import { submitLead } from "@/lib/actions/submit-lead";
+import { useEffect, useRef, useState } from "react";
+import { submitLead } from "@/lib/submit-lead";
 import { trackMetaEvent } from "@/lib/meta/pixel";
 
 type Fields = {
@@ -29,6 +29,15 @@ export default function ContactForm({
   const locale = (params.locale as string) ?? "tr";
   const [sent, setSent] = useState(false);
   const [submitting, setSubmitting] = useState(false);
+  const productRef = useRef<HTMLInputElement>(null);
+
+  // Statik sitede sorgu parametresi sunucuda okunamaz; ?urun=... burada doldurulur.
+  useEffect(() => {
+    const urun = new URLSearchParams(window.location.search).get("urun");
+    if (urun && productRef.current && !productRef.current.value) {
+      productRef.current.value = urun;
+    }
+  }, []);
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -113,6 +122,7 @@ export default function ContactForm({
         </label>
         <input
           name="product"
+          ref={productRef}
           type="text"
           defaultValue={prefillProduct}
           toolparamdescription="Name of the specific product this quote is for, if any (leave empty for a general inquiry)"

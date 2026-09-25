@@ -1,0 +1,200 @@
+# OTOMATİK ÜRETİLDİ — scripts/build-htaccess.py; elle düzenleme
+Options -Indexes -MultiViews
+DirectoryIndex index.html index.php
+ErrorDocument 404 /404.html
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+
+# Kanonik: https://www.ergentekstil.com (yalnız ana alan adında)
+RewriteCond %{HTTP_HOST} ^ergentekstil\.com$ [NC]
+RewriteRule ^ https://www.ergentekstil.com%{REQUEST_URI} [L,R=301]
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP_HOST} ^www\.ergentekstil\.com$ [NC]
+RewriteRule ^ https://www.ergentekstil.com%{REQUEST_URI} [L,R=301]
+
+# Eski WordPress sistem adresleri
+RewriteRule ^(feed|comments/feed|wp-json|xmlrpc\.php|wp-login\.php|wp-admin)(/.*)?$ - [G,L]
+RewriteCond %{QUERY_STRING} (^|&)p=\d+ [NC]
+RewriteRule ^$ /tr/? [L,R=301]
+
+# Kök → tarayıcı diline göre dil sürümü (varsayılan tr)
+RewriteCond %{HTTP:Accept-Language} ^en [NC]
+RewriteRule ^$ /en/ [L,R=302]
+RewriteCond %{HTTP:Accept-Language} ^ar [NC]
+RewriteRule ^$ /ar/ [L,R=302]
+RewriteCond %{HTTP:Accept-Language} ^de [NC]
+RewriteRule ^$ /de/ [L,R=302]
+RewriteCond %{HTTP:Accept-Language} ^ru [NC]
+RewriteRule ^$ /ru/ [L,R=302]
+RewriteRule ^$ /tr/ [L,R=302]
+
+# Eski WordPress adresleri → yeni site (143 kural)
+RewriteRule ^1065\-2/?$ /tr/blog/1065-2/ [L,R=301]
+RewriteRule ^1180\-2/?$ /tr/blog/1180-2/ [L,R=301]
+RewriteRule ^1190\-2/?$ /tr/blog/1190-2/ [L,R=301]
+RewriteRule ^1330\-3/?$ /tr/blog/1330-3/ [L,R=301]
+RewriteRule ^1450\-2/?$ /tr/blog/1450-2/ [L,R=301]
+RewriteRule ^1450\-3/?$ /tr/blog/1450-3/ [L,R=301]
+RewriteRule ^2060\-2/?$ /tr/blog/2060-2/ [L,R=301]
+RewriteRule ^2065\-2/?$ /tr/blog/2065-2/ [L,R=301]
+RewriteRule ^2070\-2/?$ /tr/blog/2070-2/ [L,R=301]
+RewriteRule ^agrafli\-bel\-korse\-1052/?$ /tr/blog/agrafli-bel-korse-1052/ [L,R=301]
+RewriteRule ^agrafli\-toparlayici\-korse\-1011/?$ /tr/blog/agrafli-toparlayici-korse-1011/ [L,R=301]
+RewriteRule ^agrafli\-yuksek\-bel\-slip\-korse\-1032/?$ /tr/blog/agrafli-yuksek-bel-slip-korse-1032/ [L,R=301]
+RewriteRule ^ayar\-askili\-pedli\-bustiyer\-1195/?$ /tr/blog/ayar-askili-pedli-bustiyer-1195/ [L,R=301]
+RewriteRule ^ayar\-askili\-toparlayici\-bustiyer\-1095/?$ /tr/blog/ayar-askili-toparlayici-bustiyer-1095/ [L,R=301]
+RewriteRule ^bamboo\-boxer\-4000\-2/?$ /tr/blog/bamboo-boxer-4000-2/ [L,R=301]
+RewriteRule ^bato\-slip\-2045/?$ /tr/blog/bato-slip-2045/ [L,R=301]
+RewriteRule ^bayan\-boxer\-1300/?$ /tr/blog/bayan-boxer-1300/ [L,R=301]
+RewriteRule ^bayan\-slip/?$ /tr/blog/bayan-slip/ [L,R=301]
+RewriteRule ^bel\-korse\-1140/?$ /tr/blog/bel-korse-1140/ [L,R=301]
+RewriteRule ^bikini\-slip\-2055/?$ /tr/blog/bikini-slip-2055/ [L,R=301]
+RewriteRule ^blog/?$ /tr/blog/ [L,R=301]
+RewriteRule ^boxer\-2040/?$ /tr/blog/boxer-2040/ [L,R=301]
+RewriteRule ^capraz\-detayli\-dikissiz\-bustiyer\-1610/?$ /tr/blog/capraz-detayli-dikissiz-bustiyer-1610/ [L,R=301]
+RewriteRule ^category/atlet/?$ /tr/blog/ [L,R=301]
+RewriteRule ^category/bamboo/?$ /tr/blog/ [L,R=301]
+RewriteRule ^category/basic/?$ /tr/blog/ [L,R=301]
+RewriteRule ^category/boxer/?$ /tr/blog/ [L,R=301]
+RewriteRule ^category/erkek/?$ /tr/blog/ [L,R=301]
+RewriteRule ^category/genel/?$ /tr/blog/ [L,R=301]
+RewriteRule ^category/korse/?$ /tr/blog/ [L,R=301]
+RewriteRule ^category/lazer\-kesim/?$ /tr/blog/ [L,R=301]
+RewriteRule ^category/spor/?$ /tr/blog/ [L,R=301]
+RewriteRule ^cerez\-politikasi/?$ /tr/cerez-politikasi/ [L,R=301]
+RewriteRule ^cift\-kat\-etkili\-korse\-atlet\-4600\-2/?$ /tr/blog/cift-kat-etkili-korse-atlet-4600-2/ [L,R=301]
+RewriteRule ^cift\-katli\-toparlayici\-fitilli\-crop\-top\-1510/?$ /tr/blog/cift-katli-toparlayici-fitilli-crop-top-1510/ [L,R=301]
+RewriteRule ^citcitli\-body\-korse\-1130/?$ /tr/blog/citcitli-body-korse-1130/ [L,R=301]
+RewriteRule ^citcitli\-korsajli\-soft\-body\-2210/?$ /tr/blog/citcitli-korsajli-soft-body-2210/ [L,R=301]
+RewriteRule ^citcitli\-soft\-body\-2200/?$ /tr/blog/citcitli-soft-body-2200/ [L,R=301]
+RewriteRule ^dikissiz\-teknolojinin\-gucu\-formactive\-ile\-tanisin/?$ /tr/blog/dikissiz-teknolojinin-gucu-formactive-ile-tanisin/ [L,R=301]
+RewriteRule ^duble\-etkili\-agrafli\-bel\-korse\-1052/?$ /tr/blog/duble-etkili-agrafli-bel-korse-1052/ [L,R=301]
+RewriteRule ^duble\-etkili\-bel\-korse\-1050/?$ /tr/blog/duble-etkili-bel-korse-1050/ [L,R=301]
+RewriteRule ^duble\-etkili\-gogus\-alti\-citcitli\-slip\-body\-korse\-1011/?$ /tr/blog/duble-etkili-gogus-alti-citcitli-slip-body-korse-1011/ [L,R=301]
+RewriteRule ^ekstra\-etkili\-korse\-atlet\-4800\-2/?$ /tr/blog/ekstra-etkili-korse-atlet-4800-2/ [L,R=301]
+RewriteRule ^elementor\-2902/?$ /tr/katalog/ [L,R=301]
+RewriteRule ^emzirme\-atlet\-1230/?$ /tr/blog/emzirme-atlet-1230/ [L,R=301]
+RewriteRule ^emzirme\-bustiyer\-1220/?$ /tr/blog/emzirme-bustiyer-1220/ [L,R=301]
+RewriteRule ^ergen\-tekstilden\-fuar\-haberleri\-istanbulda\-moda\-bulusmasi/?$ /tr/blog/ergen-tekstilden-fuar-haberleri-istanbulda-moda-bulusmasi/ [L,R=301]
+RewriteRule ^ergen\-tekstilin\-yenilikci\-urun\-tasarimlari/?$ /tr/blog/ergen-tekstilin-yenilikci-urun-tasarimlari/ [L,R=301]
+RewriteRule ^erkek\-boxer\-4400/?$ /tr/blog/erkek-boxer-4400/ [L,R=301]
+RewriteRule ^erkek\-korse\-atlet\-4500/?$ /tr/blog/erkek-korse-atlet-4500/ [L,R=301]
+RewriteRule ^fitilli\-biker\-sort\-1525/?$ /tr/blog/fitilli-biker-sort-1525/ [L,R=301]
+RewriteRule ^gizlilik\-politikasi/?$ /tr/gizlilik-politikasi/ [L,R=301]
+RewriteRule ^hakkimizda/?$ /tr/hakkimizda/ [L,R=301]
+RewriteRule ^hamile\-atlet\-1210/?$ /tr/blog/hamile-atlet-1210/ [L,R=301]
+RewriteRule ^hamile\-slip\-1200/?$ /tr/blog/hamile-slip-1200/ [L,R=301]
+RewriteRule ^hamile\-tayt\-1240/?$ /tr/blog/hamile-tayt-1240/ [L,R=301]
+RewriteRule ^iletisim/?$ /tr/iletisim/ [L,R=301]
+RewriteRule ^ip\-askili\-bustiyer\-2035/?$ /tr/blog/ip-askili-bustiyer-2035/ [L,R=301]
+RewriteRule ^ip\-askili\-duz\-atlet\-2015/?$ /tr/blog/ip-askili-duz-atlet-2015/ [L,R=301]
+RewriteRule ^ip\-askili\-korsajli\-atlet\-2010/?$ /tr/blog/ip-askili-korsajli-atlet-2010/ [L,R=301]
+RewriteRule ^kalin\-askili\-atlet\-1330/?$ /tr/blog/kalin-askili-atlet-1330/ [L,R=301]
+RewriteRule ^kalin\-askili\-atlet\-2085/?$ /tr/blog/kalin-askili-atlet-2085/ [L,R=301]
+RewriteRule ^kalin\-askili\-bustiyer\-1400/?$ /tr/blog/kalin-askili-bustiyer-1400/ [L,R=301]
+RewriteRule ^kalin\-askili\-pedli\-bustiyer\-1185/?$ /tr/blog/kalin-askili-pedli-bustiyer-1185/ [L,R=301]
+RewriteRule ^kalin\-askili\-toparlayici\-bustiyer\-1085/?$ /tr/blog/kalin-askili-toparlayici-bustiyer-1085/ [L,R=301]
+RewriteRule ^katalog/?$ /tr/katalog/ [L,R=301]
+RewriteRule ^kullanim\-kosullari/?$ /tr/kullanim-kosullari/ [L,R=301]
+RewriteRule ^lazer\-kesim\-pacali\-body\-korse\-3065/?$ /tr/blog/lazer-kesim-pacali-body-korse-3065/ [L,R=301]
+RewriteRule ^lazer\-kesim\-pacali\-korse\-3020/?$ /tr/blog/lazer-kesim-pacali-korse-3020/ [L,R=301]
+RewriteRule ^lazer\-kesim\-slip\-3100/?$ /tr/blog/lazer-kesim-slip-3100/ [L,R=301]
+RewriteRule ^lazer\-kesim\-slip\-body\-korse\-3045/?$ /tr/blog/lazer-kesim-slip-body-korse-3045/ [L,R=301]
+RewriteRule ^lazer\-kesim\-slip\-korse\-3030/?$ /tr/blog/lazer-kesim-slip-korse-3030/ [L,R=301]
+RewriteRule ^markalarimiz/?$ /tr/blog/markalarimiz/ [L,R=301]
+RewriteRule ^melanjli\-bustiyer\-1710/?$ /tr/blog/melanjli-bustiyer-1710/ [L,R=301]
+RewriteRule ^melanjli\-sort\-1710/?$ /tr/blog/melanjli-sort-1710/ [L,R=301]
+RewriteRule ^melanjli\-tayt\-1700/?$ /tr/blog/melanjli-tayt-1700/ [L,R=301]
+RewriteRule ^mikromasaj\-pacali\-korse\-1005/?$ /tr/blog/mikromasaj-pacali-korse-1005/ [L,R=301]
+RewriteRule ^online\-katalog/?$ /tr/blog/online-katalog/ [L,R=301]
+RewriteRule ^ornek\-cadir\-urunu\-4/?$ /tr/blog/ornek-cadir-urunu-4/ [L,R=301]
+RewriteRule ^ornek\-hamak\-urunu\-2/?$ /tr/blog/ornek-hamak-urunu-2/ [L,R=301]
+RewriteRule ^pacali\-body\-korse/?$ /tr/blog/pacali-body-korse/ [L,R=301]
+RewriteRule ^pacali\-body\-korse\-1060/?$ /tr/blog/pacali-body-korse-1060/ [L,R=301]
+RewriteRule ^pop\-up\-slip\-1000/?$ /tr/blog/pop-up-slip-1000/ [L,R=301]
+RewriteRule ^seamless\-cift\-katli\-fititlli\-tayt1550/?$ /tr/blog/seamless-cift-katli-fititlli-tayt1550/ [L,R=301]
+RewriteRule ^seamless\-kapri\-1435/?$ /tr/blog/seamless-kapri-1435/ [L,R=301]
+RewriteRule ^seamless\-tayt\-1430/?$ /tr/blog/seamless-tayt-1430/ [L,R=301]
+RewriteRule ^slip\-2050/?$ /tr/blog/slip-2050/ [L,R=301]
+RewriteRule ^sporcu\-bustiyer\-2020/?$ /tr/blog/sporcu-bustiyer-2020/ [L,R=301]
+RewriteRule ^sporcu\-pedli\-bustiyer\-2135/?$ /tr/blog/sporcu-pedli-bustiyer-2135/ [L,R=301]
+RewriteRule ^sporcu\-pedli\-bustiyer\-2135\-2/?$ /tr/blog/sporcu-pedli-bustiyer-2135-2/ [L,R=301]
+RewriteRule ^straplez\-atlet\-korse\-1070/?$ /tr/blog/straplez-atlet-korse-1070/ [L,R=301]
+RewriteRule ^straplez\-bondeo\-2030/?$ /tr/blog/straplez-bondeo-2030/ [L,R=301]
+RewriteRule ^straplez\-kombinezon\-korse\-1170/?$ /tr/blog/straplez-kombinezon-korse-1170/ [L,R=301]
+RewriteRule ^surdurulebilir\-modaya\-adim\-adim\-ergen\-tekstilin\-cevre\-dostu\-yaklasimi/?$ /tr/blog/surdurulebilir-modaya-adim-adim-ergen-tekstilin-cevre-dostu-yaklasimi/ [L,R=301]
+RewriteRule ^sureclerimiz/?$ /tr/sureclerimiz/ [L,R=301]
+RewriteRule ^uretimde\-mukemmellik\-ergen\-tekstilin\-kalite\-standartlari/?$ /tr/blog/uretimde-mukemmellik-ergen-tekstilin-kalite-standartlari/ [L,R=301]
+RewriteRule ^urun\-kategori/genel/?$ /tr/katalog/ [L,R=301]
+RewriteRule ^urun\-kategori/korse/?$ /tr/katalog/ [L,R=301]
+RewriteRule ^urun\-kategori/sort/?$ /tr/katalog/ [L,R=301]
+RewriteRule ^urun\-kategori/tayt/?$ /tr/katalog/ [L,R=301]
+RewriteRule ^urun/agrafli\-bel\-korse\-1052/?$ /tr/katalog/agrafli-bel-korse-1052/ [L,R=301]
+RewriteRule ^urun/agrafli\-yuksek\-bel\-korse\-tayt\-1452/?$ /tr/katalog/agrafli-yuksek-bel-korse-tayt-1452/ [L,R=301]
+RewriteRule ^urun/agrafli\-yuksek\-bel\-slip\-korse\-1032/?$ /tr/katalog/agrafli-yuksek-bel-slip-korse-1032/ [L,R=301]
+RewriteRule ^urun/atlet\-korse\-1180/?$ /tr/katalog/atlet-korse-1180/ [L,R=301]
+RewriteRule ^urun/bamboo\-yuksek\-bel\-slip\-korse\-1100/?$ /tr/katalog/bamboo-yuksek-bel-slip-korse-1100/ [L,R=301]
+RewriteRule ^urun/bamboo\-yuksek\-bel\-toparlayici\-korse\-1120/?$ /tr/katalog/bamboo-yuksek-bel-toparlayici-korse-1120/ [L,R=301]
+RewriteRule ^urun/duble\-etkili\-agrafli\-bel\-korse\-1052/?$ /tr/katalog/duble-etkili-agrafli-bel-korse-1052/ [L,R=301]
+RewriteRule ^urun/duble\-etkili\-bel\-korse\-1050/?$ /tr/katalog/duble-etkili-bel-korse-1050/ [L,R=301]
+RewriteRule ^urun/duble\-etkili\-citcitli\-slip\-boy\-korse\-1040/?$ /tr/katalog/duble-etkili-citcitli-slip-boy-korse-1040/ [L,R=301]
+RewriteRule ^urun/duble\-etkili\-mini\-boxer\-korse\-1055/?$ /tr/katalog/duble-etkili-mini-boxer-korse-1055/ [L,R=301]
+RewriteRule ^urun/fitilli\-biker\-sort\-1525/?$ /tr/katalog/fitilli-biker-sort-1525/ [L,R=301]
+RewriteRule ^urun/fitilli\-biker\-sort\-1525\-2/?$ /tr/katalog/fitilli-biker-sort-1525/ [L,R=301]
+RewriteRule ^urun/fitilli\-biker\-sort\-1525\-3/?$ /tr/katalog/fitilli-biker-sort-1525/ [L,R=301]
+RewriteRule ^urun/gogus\-alti\-citcitli\-body\-korse\-1045/?$ /tr/katalog/gogus-alti-citcitli-body-korse-1045/ [L,R=301]
+RewriteRule ^urun/kisa\-pacali\-toparlayici\-korse\-1011/?$ /tr/katalog/kisa-pacali-toparlayici-korse-1011/ [L,R=301]
+RewriteRule ^urun/melanjli\-bustiyer\-1710/?$ /tr/katalog/melanjli-bustiyer-1710/ [L,R=301]
+RewriteRule ^urun/melanjli\-sort\-1725/?$ /tr/katalog/melanjli-sort-1725/ [L,R=301]
+RewriteRule ^urun/melanjli\-tayt\-1700/?$ /tr/katalog/melanjli-tayt-1700/ [L,R=301]
+RewriteRule ^urun/mikromasaj\-pacali\-korse\-1005/?$ /tr/katalog/mikromasaj-pacali-korse-1005/ [L,R=301]
+RewriteRule ^urun/slip\-soft\-korse\-2060/?$ /tr/katalog/slip-soft-korse-2060/ [L,R=301]
+RewriteRule ^urun/straplez\-atlet\-korse\-1070/?$ /tr/katalog/straplez-atlet-korse-1070/ [L,R=301]
+RewriteRule ^urun/uzun\-pacali\-toparlayici\-korse\-1010/?$ /tr/katalog/uzun-pacali-toparlayici-korse-1010/ [L,R=301]
+RewriteRule ^urun/yuksek\-bel\-acik\-push\-up\-korse\-1015/?$ /tr/katalog/yuksek-bel-acik-push-up-korse-1015/ [L,R=301]
+RewriteRule ^urun/yuksek\-bel\-jupon\-korse\-1090/?$ /tr/katalog/yuksek-bel-jupon-korse-1090/ [L,R=301]
+RewriteRule ^urun/yuksek\-bel\-pacali\-soft\-korse\-2070/?$ /tr/katalog/yuksek-bel-pacali-soft-korse-2070/ [L,R=301]
+RewriteRule ^urun/yuksek\-bel\-slip\-korse\-1030/?$ /tr/katalog/yuksek-bel-slip-korse-1030/ [L,R=301]
+RewriteRule ^urun/yuksek\-bel\-slip\-soft\-korse\-2065/?$ /tr/katalog/yuksek-bel-slip-soft-korse-2065/ [L,R=301]
+RewriteRule ^urun/yuksek\-bel\-string\-korse\-1025/?$ /tr/katalog/yuksek-bel-string-korse-1025/ [L,R=301]
+RewriteRule ^urun/yuksek\-bel\-uzun\-pacali\-agrafli\-korse\-1022/?$ /tr/katalog/yuksek-bel-uzun-pacali-agrafli-korse-1022/ [L,R=301]
+RewriteRule ^urun/yuksek\-bel\-uzun\-pacali\-korse\-1020/?$ /tr/katalog/yuksek-bel-uzun-pacali-korse-1020/ [L,R=301]
+RewriteRule ^urun/yuksek\-bel\-uzun\-pacali\-korse\-1110/?$ /tr/katalog/yuksek-bel-uzun-pacali-korse-1110/ [L,R=301]
+RewriteRule ^uzun\-pacali\-boxer\-1410/?$ /tr/blog/uzun-pacali-boxer-1410/ [L,R=301]
+RewriteRule ^uzun\-pacali\-toparlayici\-korse\-1010/?$ /tr/blog/uzun-pacali-toparlayici-korse-1010/ [L,R=301]
+RewriteRule ^uzun\-straplez\-2025/?$ /tr/blog/uzun-straplez-2025/ [L,R=301]
+RewriteRule ^yuksek\-bel\-acik\-push\-up\-korse\-1015/?$ /tr/blog/yuksek-bel-acik-push-up-korse-1015/ [L,R=301]
+RewriteRule ^yuksek\-bel\-korse\-tayt\-1452/?$ /tr/blog/yuksek-bel-korse-tayt-1452/ [L,R=301]
+RewriteRule ^yuksek\-bel\-slip\-korse\-1100/?$ /tr/blog/yuksek-bel-slip-korse-1100/ [L,R=301]
+RewriteRule ^yuksek\-bel\-slipkorse\-1030/?$ /tr/blog/yuksek-bel-slipkorse-1030/ [L,R=301]
+RewriteRule ^yuksek\-bel\-string\-korse\-1025/?$ /tr/blog/yuksek-bel-string-korse-1025/ [L,R=301]
+RewriteRule ^yuksek\-bel\-toparlayici\-korse\-1120/?$ /tr/blog/yuksek-bel-toparlayici-korse-1120/ [L,R=301]
+RewriteRule ^yuksek\-bel\-uzun\-pacali\-agrafli\-korse\-1022/?$ /tr/blog/yuksek-bel-uzun-pacali-agrafli-korse-1022/ [L,R=301]
+RewriteRule ^yuksek\-bel\-uzun\-pacali\-korse\-1020/?$ /tr/blog/yuksek-bel-uzun-pacali-korse-1020/ [L,R=301]
+RewriteRule ^yuksek\-bel\-uzun\-pacali\-korse\-1110/?$ /tr/blog/yuksek-bel-uzun-pacali-korse-1110/ [L,R=301]
+
+# Sonda eğik çizgi eksikse ekle (/tr/katalog → /tr/katalog/)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_URI} !\.[a-zA-Z0-9]+$
+RewriteCond %{REQUEST_URI} !/$
+RewriteRule ^(.*)$ /$1/ [L,R=301]
+</IfModule>
+
+<IfModule mod_deflate.c>
+AddOutputFilterByType DEFLATE text/html text/css application/javascript application/json image/svg+xml text/plain text/xml
+</IfModule>
+
+<IfModule mod_headers.c>
+<FilesMatch "\.(js|css|woff2?)$">
+Header set Cache-Control "public, max-age=31536000, immutable"
+</FilesMatch>
+<FilesMatch "\.(webp|jpe?g|png|svg|ico|mp4)$">
+Header set Cache-Control "public, max-age=2592000"
+</FilesMatch>
+<FilesMatch "\.(html|txt)$">
+Header set Cache-Control "public, max-age=0, must-revalidate"
+</FilesMatch>
+Header always set X-Content-Type-Options "nosniff"
+Header always set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>

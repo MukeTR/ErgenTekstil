@@ -2,13 +2,20 @@ import { notFound } from "next/navigation";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import type { Locale } from "@/i18n/routing";
-import { getProduct } from "@/lib/data";
+import { getProduct, getProductSlugs } from "@/lib/data";
+import { routing } from "@/i18n/routing";
 import ProductGallery from "@/components/ProductGallery";
 import ColorSwatches from "@/components/ColorSwatches";
 import MetaViewContent from "@/components/MetaViewContent";
 import AddToQuoteButton from "@/components/quote/AddToQuoteButton";
 
-export const revalidate = 60;
+export const dynamicParams = false;
+
+export function generateStaticParams() {
+  return routing.locales.flatMap((locale) =>
+    getProductSlugs().map((slug) => ({ locale, slug }))
+  );
+}
 
 export async function generateMetadata(
   props: PageProps<"/[locale]/katalog/[slug]">

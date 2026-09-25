@@ -4,16 +4,13 @@ import createNextIntlPlugin from "next-intl/plugin";
 const withNextIntl = createNextIntlPlugin("./src/i18n/request.ts");
 
 const nextConfig: NextConfig = {
-  // cPanel Node.js App (Güzel Hosting) için tek klasörlük sunucu paketi
-  output: "standalone",
+  // Güzel Hosting (cPanel/Apache) için tamamen statik çıktı: out/ → public_html
+  output: "export",
+  // /tr/katalog → /tr/katalog/index.html; Apache dizin index'iyle doğal çalışır
+  trailingSlash: true,
   images: {
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "mxjyyywiooxikcwfylys.supabase.co",
-        pathname: "/storage/v1/object/public/**",
-      },
-    ],
+    // Görseller zaten webp; statik hostingde optimizasyon sunucusu yok
+    unoptimized: true,
   },
 };
 
