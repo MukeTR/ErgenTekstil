@@ -63,6 +63,8 @@ def url(locale: str, path: str) -> str:
 
 lines = [
     '<?xml version="1.0" encoding="UTF-8"?>',
+    # Tarayıcıda okunur tablo görünümü; xhtml:link yüzünden Chrome aksi halde düz metin gösterir
+    '<?xml-stylesheet type="text/xsl" href="/sitemap.xsl"?>',
     '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" '
     'xmlns:xhtml="http://www.w3.org/1999/xhtml">',
 ]
@@ -177,6 +179,8 @@ Details: [Our processes]({url('en', 'sureclerimiz')})
 """
 
 for target in (ROOT / "public", OUT):
+    if target == OUT:
+        (OUT / "sitemap.xsl").write_text((ROOT / "public/sitemap.xsl").read_text())
     (target / "sitemap.xml").write_text(sitemap)
     (target / "robots.txt").write_text(robots)
     (target / "llms.txt").write_text(llms)
