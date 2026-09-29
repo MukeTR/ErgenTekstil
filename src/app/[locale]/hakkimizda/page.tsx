@@ -46,7 +46,7 @@ export default async function AboutPage(props: PageProps<"/[locale]/hakkimizda">
           <div className="overflow-hidden rounded-3xl bg-white shadow-sm">
             <div className="relative aspect-[16/9]">
               <Image
-                src="/sureclerimiz/step-4-orme-islemi.webp"
+                src="/blog/Fuar-Blog.webp"
                 alt=""
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"

@@ -112,7 +112,8 @@
         "text": "Müşteri temsilcilerimiz, müşterilerimizle gerçekleştirdikleri görüşmelerde, sorunları en kısa sürede çözerek ulusal destek ağımızı kullanarak sizlere daha iyi hizmet vermeye odaklanmaktadır."
       }
     ],
-    "growthBadge": "GELECEĞE YATIRIM",
+    "growthBadge": "TEKİRDAĞ KAPAKLI OSB",
+    "growthTitle": "Artık kendi fabrikamızdayız",
     "growthLinkLabel": "Hakkımızda",
     "newsletterTitle": "İlk Siz Haberdar Olun!",
     "newsletterText": "E-posta listemize katılın, yeni koleksiyonlardan ve toptan fırsatlardan ilk siz haberdar olun.",
@@ -127,7 +128,7 @@
     "missionTitle": "Misyonumuz",
     "missionText": "Ergen Tekstil, 2004 yılında dikişsiz giyim üretimi yapmak üzere örgü ve konfeksiyon tesisleri ile entegre olarak kurulan bir firmadır. Bugün 200.000 parça/ay üretim kapasitesi ile kendi alanındaki kaliteli üreticilerden biridir. Teknolojinin etkin kullanımı ve yenilikçi yaklaşımı ile, değişen dünya dinamiklerine hızlı uyum sağlamanın ve yenilikçiliğin öncelikli değerler olduğunun bilincindeyiz.",
     "visionTitle": "Vizyonumuz",
-    "visionText": "Büyüme hedefleri doğrultusunda Tekirdağ Kapaklı Organize Sanayi bölgesi içerisinde başladığımız fabrika inşaat çalışmaları hızla ilerlemekte ve şirketimize ait olan fabrika inşaatımızın tamamlanması ile hem kapasitemiz artacak hem de uluslararası yeni pazarlara açılma hedefimize bir adım daha yaklaşacağız. Üretici bir marka olarak, Ergen Tekstil, üretimde etkili markalaşma ile küresel rekabetçileri arasında konumunu yükseltmeyi hedefliyor. Şirket sürekli öğrenme ve gelişmeyi, kendisine adanmış ekibi ile gerçekleştiriyor. Sürdürülebilir üretim yöntemlerine öncelik verirken, iş ortakları ile etkili iletişimi önemsiyor ve takım üyeleri arasında sahiplik duygusu, özgüven ve mutluluk kültürünü geliştiriyor.",
+    "visionText": "Tekirdağ Kapaklı Organize Sanayi Bölgesi'nde inşa ettiğimiz kendi fabrikamıza taşındık. Uzun süre bir hedef olarak anlattığımız bu yatırım bugün üretimimizin merkezi. Sıradaki hedefimiz, artan kapasitemizle uluslararası yeni pazarlarda üretici bir marka olarak daha güçlü yer almak. Bunu sürekli öğrenen ekibimizle, sürdürülebilir üretim yöntemleriyle ve iş ortaklarımızla açık iletişimle yapıyoruz; ekibimizde sahiplik duygusunu, özgüveni ve birlikte çalışmanın keyfini korumaya önem veriyoruz.",
     "principlesTitle": "Ergen Tekstil'i yönlendiren temel prensipler şunlardır:",
     "principles": [
       "Takım üyelerinin işlerine sahip olma hissini güçlendirmek.",
@@ -160,12 +161,12 @@
       {
         "title": "Örme İşlemi",
         "text": "Örme makineleri, tasarlanan desene göre kumaşı tek parça halinde üretir. Bu süreçte, makine operatörleri ve bakım personeli gözetim altında çalışır.",
-        "image": "step-4-orme-islemi.webp"
+        "image": "step-4-dikissiz-orme.webp"
       },
       {
         "title": "Kalite Kontrol",
         "text": "Üretilen kumaşlar, kalite standartlarına uygunluğu kontrol etmek için detaylı bir kalite kontrol sürecinden geçer. Herhangi bir kusur tespit edildiğinde, sorunlu parçalar düzeltilir veya reddedilir.",
-        "image": "step-5-kalite.webp"
+        "image": "step-5-kalite-kontrol.webp"
       },
       {
         "title": "Boyama ve Terbiye",
@@ -175,7 +176,7 @@
       {
         "title": "Kesim ve Dikişsiz İmalat",
         "text": "Üretilen kumaşlar, tasarım gereksinimlerine göre kesilir ve şekillendirilir. Dikişsiz üretim için, kesilen parçalar özel makinelerde bir araya getirilir veya birleştirilir.",
-        "image": "step-7-kesim.webp"
+        "image": "step-7-dikim.webp"
       },
       {
         "title": "Ambalaj ve Dağıtım",

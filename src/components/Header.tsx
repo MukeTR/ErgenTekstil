@@ -9,6 +9,7 @@ import { QuoteListHeaderButton } from "./quote/QuoteListButton";
 export default async function Header({ locale }: { locale: Locale }) {
   const t = await getTranslations({ locale, namespace: "nav" });
   const tc = await getTranslations({ locale, namespace: "common" });
+  const tq = await getTranslations({ locale, namespace: "quoteList" });
 
   const links = [
     { href: "/", label: t("home") },
@@ -60,8 +61,17 @@ export default async function Header({ locale }: { locale: Locale }) {
         </div>
 
         <div className="flex items-center gap-2 xl:hidden">
-          <QuoteListHeaderButton />
-          <MobileNav links={links} locale={locale} ctaLabel={tc("requestQuote")} />
+          <QuoteListHeaderButton hideWhenEmpty />
+          <MobileNav
+            links={links}
+            locale={locale}
+            ctaLabel={tc("requestQuote")}
+            menuLabel={t("menu")}
+            closeLabel={t("close")}
+            quoteListLabel={tq("title")}
+            cardTitle={t("menuCardTitle")}
+            cardText={t("menuCardText")}
+          />
         </div>
       </div>
     </header>

@@ -4,10 +4,13 @@ import { useTranslations } from "next-intl";
 import { useQuoteList } from "./QuoteListProvider";
 
 /** Header'daki liste ikonu (rozetli). */
-export function QuoteListHeaderButton() {
+export function QuoteListHeaderButton({ hideWhenEmpty = false }: { hideWhenEmpty?: boolean }) {
   const t = useTranslations("quoteList");
   const { items, toggle, hydrated } = useQuoteList();
   const count = hydrated ? items.length : 0;
+
+  // Mobilde boş liste ikonu menü düğmesiyle karışıyor; liste menünün içinde de var.
+  if (hideWhenEmpty && count === 0) return null;
 
   return (
     <button
