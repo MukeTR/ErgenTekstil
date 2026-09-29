@@ -5,7 +5,11 @@
     "process": "Süreçlerimiz",
     "catalog": "Katalog",
     "blog": "Blog",
-    "contact": "İletişim"
+    "contact": "İletişim",
+    "menu": "Menü",
+    "close": "Kapat",
+    "menuCardTitle": "Toptan üretim ve özel marka",
+    "menuCardText": "Tayt, korse ve spor giyimde toptan fiyat ya da kendi markanız için üretim teklifi isteyin."
   },
   "common": {
     "readMore": "Devamı",

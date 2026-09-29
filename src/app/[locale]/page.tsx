@@ -12,8 +12,8 @@ import CatalogueDownloadForm from "@/components/CatalogueDownloadForm";
 import NewsletterForm from "@/components/NewsletterForm";
 import HeroSlider, { type HeroSlide } from "@/components/HeroSlider";
 
-const HERO_PRODUCT_IMAGE_BASE =
-  "https://mxjyyywiooxikcwfylys.supabase.co/storage/v1/object/public/product-images";
+// Ürün görselleri sitenin kendi kopyasından (public/urunler/sb) gelir; Supabase'e bağımlı değil.
+const HERO_PRODUCT_IMAGE_BASE = "/urunler/sb";
 
 function buildHeroSlides(c: {
   heroTitle: string;
@@ -28,27 +28,27 @@ function buildHeroSlides(c: {
       title: c.heroTitle,
       subtitle: c.heroSubtitle,
       images: [
-        "/sureclerimiz/step-4-orme-islemi.webp",
-        "/sureclerimiz/step-7-kesim.webp",
-        "/sureclerimiz/step-2-orme-teknolojisi.webp",
+        "/images/factory-floor.webp",
+        "/blog/Fuar-Blog.webp",
+        "/sureclerimiz/step-7-dikim.webp",
       ],
     },
     {
       title: c.heroBadge,
       subtitle: c.heroText,
       images: [
-        `${HERO_PRODUCT_IMAGE_BASE}/1700/0-ATOS0799.jpg.webp`,
+        `${HERO_PRODUCT_IMAGE_BASE}/1510/0-Y1.png.webp`,
         `${HERO_PRODUCT_IMAGE_BASE}/1550/0-ATOS6988.jpg.webp`,
-        `${HERO_PRODUCT_IMAGE_BASE}/1725/0-ATOS0946.jpg.webp`,
+        `${HERO_PRODUCT_IMAGE_BASE}/1625/0-ATOS4165.jpg.webp`,
       ],
     },
     {
       title: c.heroTagline,
       subtitle: c.heroTaglineSub,
       images: [
-        `${HERO_PRODUCT_IMAGE_BASE}/1022/0-NRC12729.JPG.webp`,
-        `${HERO_PRODUCT_IMAGE_BASE}/1032/0-NRC12856.JPG.webp`,
-        `${HERO_PRODUCT_IMAGE_BASE}/1012/0-_u_ig__.JPG.webp`,
+        `${HERO_PRODUCT_IMAGE_BASE}/1060/0-FAC_2166.jpg.webp`,
+        `${HERO_PRODUCT_IMAGE_BASE}/2210/0-FAC_3357.jpg.webp`,
+        `${HERO_PRODUCT_IMAGE_BASE}/1040/0-FAC_1222.jpg.webp`,
       ],
     },
   ];
@@ -388,7 +388,7 @@ export default async function HomePage(props: PageProps<"/[locale]">) {
             {c.growthBadge}
           </span>
           <h2 className="mt-4 font-heading text-3xl font-extrabold sm:text-4xl">
-            {about.visionTitle}
+            {c.growthTitle}
           </h2>
           <p className="mt-6 leading-relaxed text-white/75">{about.visionText}</p>
           <Link

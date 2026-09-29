@@ -9,7 +9,12 @@
     "aboutBadge": "20 JAHRE ERFAHRUNG",
     "aboutTitle": "Umfassende Produktion und nationales Servicenetz",
     "aboutText": "Ergen Tekstil wurde 2004 als integrierter Betrieb mit Strick- und Konfektionsanlagen zur Herstellung von Seamless-Bekleidung gegründet. Heute zählt das Unternehmen mit einer Produktionskapazität von 200.000 Teilen/Monat zu den führenden Qualitätsherstellern seiner Branche. Durch den effektiven Einsatz von Technologie und einen innovativen Ansatz wissen wir, dass die schnelle Anpassung an eine sich wandelnde Welt und Innovation zu unseren wichtigsten Werten gehören.",
-    "processSteps": ["Stricken", "Färben", "Nähen", "Verpacken"],
+    "processSteps": [
+      "Stricken",
+      "Färben",
+      "Nähen",
+      "Verpacken"
+    ],
     "processTitle": "Unsere Prozesse",
     "processText": "Die Seamless-Textilproduktion ist ein Verfahren zur Herstellung durchgehender, einteiliger Stoffe. Dieser Produktionsprozess unterscheidet sich von herkömmlichen Nähverfahren und umfasst eine Reihe spezifischer Schritte.",
     "collectionsTitle": "Kollektionen",
@@ -47,9 +52,20 @@
       }
     ],
     "processListTitle": "Unsere Prozesse",
-    "processList": ["Seamless-Stricken", "Nähen", "Bügeln & Verpacken", "F&E", "Färben", "Qualitätskontrolle"],
+    "processList": [
+      "Seamless-Stricken",
+      "Nähen",
+      "Bügeln & Verpacken",
+      "F&E",
+      "Färben",
+      "Qualitätskontrolle"
+    ],
     "cataloguesTitle": "Produktkataloge",
-    "catalogues": ["Katalog Aktive Sportbekleidung", "Katalog Shapewear", "FORMactive Produktkatalog"],
+    "catalogues": [
+      "Katalog Aktive Sportbekleidung",
+      "Katalog Shapewear",
+      "FORMactive Produktkatalog"
+    ],
     "colorTitle": "Für jeden die passende Farbe!",
     "colorText": "Wir produzieren Produkte in einer Vielzahl von Farben für jeden Geschmack.",
     "yarnTitle": "Garne und Technologie",
@@ -96,7 +112,8 @@
         "text": "Unsere Kundenbetreuer konzentrieren sich darauf, Anliegen im Gespräch mit unseren Kunden schnellstmöglich zu lösen und Sie über unser nationales Servicenetz noch besser zu betreuen."
       }
     ],
-    "growthBadge": "INVESTITION IN DIE ZUKUNFT",
+    "growthBadge": "OIZ TEKIRDAĞ KAPAKLI",
+    "growthTitle": "Jetzt in unserer eigenen Fabrik",
     "growthLinkLabel": "Über uns",
     "newsletterTitle": "Erfahren Sie es zuerst!",
     "newsletterText": "Tragen Sie sich in unsere Mailingliste ein und erfahren Sie als Erste von neuen Kollektionen und Großhandelsangeboten.",
@@ -111,7 +128,7 @@
     "missionTitle": "Unsere Mission",
     "missionText": "Ergen Tekstil wurde 2004 als integrierter Betrieb mit Strick- und Konfektionsanlagen zur Herstellung von Seamless-Bekleidung gegründet. Heute zählt das Unternehmen mit einer Produktionskapazität von 200.000 Teilen/Monat zu den führenden Qualitätsherstellern seiner Branche. Durch den effektiven Einsatz von Technologie und einen innovativen Ansatz wissen wir, dass die schnelle Anpassung an eine sich wandelnde Welt und Innovation zu unseren wichtigsten Werten gehören.",
     "visionTitle": "Unsere Vision",
-    "visionText": "Im Einklang mit unseren Wachstumszielen schreitet der Bau unserer eigenen Fabrik im Industriegebiet Tekirdağ Kapaklı zügig voran. Nach der Fertigstellung wird sie sowohl unsere Kapazität erhöhen als auch unserem Ziel, neue internationale Märkte zu erschließen, einen Schritt näher bringen. Als produzierende Marke strebt Ergen Tekstil danach, seine Position unter den globalen Wettbewerbern durch wirksames Branding in der Produktion zu stärken. Das Unternehmen setzt mit seinem engagierten Team auf kontinuierliches Lernen und Weiterentwicklung. Wir priorisieren nachhaltige Produktionsmethoden, legen Wert auf eine effektive Kommunikation mit unseren Geschäftspartnern und fördern eine Kultur der Eigenverantwortung, des Selbstvertrauens und der Zufriedenheit in unserem Team.",
+    "visionText": "Wir sind in unsere eigene Fabrik in der Organisierten Industriezone Tekirdağ Kapaklı umgezogen. Die Investition, die wir lange als Ziel beschrieben haben, ist heute das Herz unserer Produktion. Unser nächstes Ziel: mit der größeren Kapazität als Herstellermarke in neuen internationalen Märkten stärker vertreten zu sein. Dafür arbeiten wir mit einem lernenden Team, nachhaltigen Produktionsmethoden und offener Kommunikation mit unseren Partnern – und pflegen eine Kultur von Verantwortung, Selbstvertrauen und Freude an der Zusammenarbeit.",
     "principlesTitle": "Die Grundprinzipien, die Ergen Tekstil leiten:",
     "principles": [
       "Das Gefühl der Eigenverantwortung unserer Teammitglieder für ihre Arbeit stärken.",
@@ -144,12 +161,12 @@
       {
         "title": "Strickprozess",
         "text": "Die Strickmaschinen fertigen den Stoff nach dem entworfenen Muster in einem Stück. Während dieses Prozesses arbeiten Maschinenbediener und Wartungspersonal unter genauer Aufsicht.",
-        "image": "step-4-orme-islemi.webp"
+        "image": "step-4-dikissiz-orme.webp"
       },
       {
         "title": "Qualitätskontrolle",
         "text": "Die produzierten Stoffe durchlaufen eine detaillierte Qualitätskontrolle, um die Einhaltung der Qualitätsstandards zu prüfen. Werden Mängel festgestellt, werden fehlerhafte Teile korrigiert oder aussortiert.",
-        "image": "step-5-kalite.webp"
+        "image": "step-5-kalite-kontrol.webp"
       },
       {
         "title": "Färben und Veredeln",
@@ -159,7 +176,7 @@
       {
         "title": "Zuschnitt und Seamless-Fertigung",
         "text": "Die produzierten Stoffe werden entsprechend den Designanforderungen zugeschnitten und geformt. Für die Seamless-Produktion werden die zugeschnittenen Teile mit Spezialmaschinen zusammengefügt.",
-        "image": "step-7-kesim.webp"
+        "image": "step-7-dikim.webp"
       },
       {
         "title": "Verpackung und Vertrieb",
@@ -171,16 +188,31 @@
     "statsTitle": "Ergen Tekstil in Zahlen",
     "statsText": "Durch die kontinuierliche Beobachtung aktueller Technologien und Trends entwickeln wir Lösungen, die auf die Bedürfnisse unserer Kunden zugeschnitten sind.",
     "stats": [
-      { "value": 20, "suffix": "", "label": "Jahre Erfahrung" },
-      { "value": 200000, "suffix": "", "label": "Teile Produktionskapazität" },
-      { "value": 3, "suffix": "", "label": "Export-Kontinente" }
+      {
+        "value": 20,
+        "suffix": "",
+        "label": "Jahre Erfahrung"
+      },
+      {
+        "value": 200000,
+        "suffix": "",
+        "label": "Teile Produktionskapazität"
+      },
+      {
+        "value": 3,
+        "suffix": "",
+        "label": "Export-Kontinente"
+      }
     ]
   },
   "contact": {
     "title": "Kontakt",
     "headOfficeTitle": "Ergen Tekstil Hauptsitz",
     "headOfficeAddress": "Karaağaç OSB, Eski Bağlar Cad. No:6 59510 Kapaklı / TEKİRDAĞ, Türkei",
-    "phones": ["+90 534 593 68 91", "+90 216 420 49 84"],
+    "phones": [
+      "+90 534 593 68 91",
+      "+90 216 420 49 84"
+    ],
     "email": "info@ergentekstil.com",
     "socialTitle": "Folgen Sie uns in den sozialen Medien",
     "branchTitle": "Niederlassung",
@@ -200,7 +232,13 @@
   },
   "footer": {
     "productsTitle": "Produkte & Dienstleistungen",
-    "aboutLinks": ["Über uns", "Design", "Beschaffung", "Zuschnitt", "Waschen"],
+    "aboutLinks": [
+      "Über uns",
+      "Design",
+      "Beschaffung",
+      "Zuschnitt",
+      "Waschen"
+    ],
     "contactTitle": "Kontakt",
     "address": "Karaağaç OSB, Eski Bağlar Caddesi No:6 59510 Kapaklı / TEKİRDAĞ, Türkei",
     "copyright": "Ergen Tekstil"

@@ -112,7 +112,8 @@
         "text": "Our customer representatives focus on resolving issues as quickly as possible in their conversations with clients, using our national support network to serve you better."
       }
     ],
-    "growthBadge": "INVESTING IN THE FUTURE",
+    "growthBadge": "TEKIRDAĞ KAPAKLI OIZ",
+    "growthTitle": "We are now in our own factory",
     "growthLinkLabel": "About Us",
     "newsletterTitle": "Be the First to Know",
     "newsletterText": "Join our mailing list to be the first to hear about new collections and wholesale opportunities.",
@@ -127,7 +128,7 @@
     "missionTitle": "Our Mission",
     "missionText": "Ergen Tekstil was founded in 2004 as a company integrating knitting and garment facilities to manufacture seamless apparel. Today, with a production capacity of 200,000 pieces/month, it is one of the leading quality manufacturers in its field. Through the effective use of technology and an innovative approach, we recognize that adapting quickly to a changing world and prioritizing innovation are essential values.",
     "visionTitle": "Our Vision",
-    "visionText": "In line with our growth targets, the construction of our own factory in the Tekirdağ Kapaklı Organized Industrial Zone is progressing rapidly. Once complete, it will both increase our capacity and bring us one step closer to our goal of expanding into new international markets. As a manufacturing brand, Ergen Tekstil aims to strengthen its position among global competitors through effective branding in production. The company continuously pursues learning and development with its dedicated team. While prioritizing sustainable production methods, we value effective communication with our business partners and foster a culture of ownership, confidence and happiness among our team members.",
+    "visionText": "We have moved into our own factory, built in the Tekirdağ Kapaklı Organized Industrial Zone. The investment we long described as a goal is now the heart of our production. Our next goal is to use this larger capacity to grow as a manufacturer brand in new international markets. We do this with a team that keeps learning, with sustainable production methods and with open communication with our partners, while protecting a culture of ownership, confidence and enjoying working together.",
     "principlesTitle": "The core principles that guide Ergen Tekstil are:",
     "principles": [
       "Strengthening our team members' sense of ownership over their work.",
@@ -160,12 +161,12 @@
       {
         "title": "Knitting Process",
         "text": "Knitting machines produce the fabric as a single piece according to the designed pattern. During this process, machine operators and maintenance staff work under close supervision.",
-        "image": "step-4-orme-islemi.webp"
+        "image": "step-4-dikissiz-orme.webp"
       },
       {
         "title": "Quality Control",
         "text": "The fabrics produced undergo a detailed quality control process to verify compliance with quality standards. If any defect is detected, faulty parts are corrected or rejected.",
-        "image": "step-5-kalite.webp"
+        "image": "step-5-kalite-kontrol.webp"
       },
       {
         "title": "Dyeing and Finishing",
@@ -175,7 +176,7 @@
       {
         "title": "Cutting and Seamless Manufacturing",
         "text": "The fabrics produced are cut and shaped according to design requirements. For seamless production, the cut pieces are assembled or joined using special machines.",
-        "image": "step-7-kesim.webp"
+        "image": "step-7-dikim.webp"
       },
       {
         "title": "Packaging and Distribution",

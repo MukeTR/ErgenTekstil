@@ -5,7 +5,11 @@
     "process": "Our Processes",
     "catalog": "Catalogue",
     "blog": "Blog",
-    "contact": "Contact"
+    "contact": "Contact",
+    "menu": "Menu",
+    "close": "Close",
+    "menuCardTitle": "Wholesale & private label",
+    "menuCardText": "Request a wholesale price or a private label production quote for leggings, shapewear and activewear."
   },
   "common": {
     "readMore": "Read More",
