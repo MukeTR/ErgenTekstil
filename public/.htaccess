@@ -6,8 +6,10 @@ ErrorDocument 404 /404.html
 <IfModule mod_rewrite.c>
 RewriteEngine On
 
-# Kanonik: https://www.ergentekstil.com (yalnız ana alan adında)
+# Kanonik: https://www.ergentekstil.com (yalnız ana alan adında).
+# www Cloudflare Worker'a geçince çıplak alan adı burada kalır: form e-postası (api/) ve eski WP görselleri yerinde sunulur.
 RewriteCond %{HTTP_HOST} ^ergentekstil\.com$ [NC]
+RewriteCond %{REQUEST_URI} !^/(api/|wp-content/uploads/)
 RewriteRule ^ https://www.ergentekstil.com%{REQUEST_URI} [L,R=301]
 RewriteCond %{HTTPS} off
 RewriteCond %{HTTP_HOST} ^www\.ergentekstil\.com$ [NC]
