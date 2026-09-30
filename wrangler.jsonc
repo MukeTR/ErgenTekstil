@@ -8,13 +8,17 @@
     "directory": ".open-next/assets",
     "binding": "ASSETS"
   },
-  "routes": [{ "pattern": "ergentekstil.altyapi.io", "custom_domain": true }],
+  "routes": [
+    { "pattern": "ergentekstil.altyapi.io", "custom_domain": true },
+    // www.ergentekstil.com: altyapi.io bölgesinde Cloudflare for SaaS özel alan adı (DNS Güzel Hosting'de, yalnız www CNAME).
+    // Bölgedeki */* (altyapi-edge-router) rotasından daha özel olduğu için bu Worker'a düşer.
+    { "pattern": "www.ergentekstil.com/*", "zone_name": "altyapi.io" }
+  ],
   "workers_dev": true,
   "observability": { "enabled": true },
   "vars": {
-    // Form talepleri Supabase'e yazıldıktan sonra e-posta + CSV için cPanel'deki uç noktaya da iletilir
-    "LEAD_MAIL_BRIDGE_URL": "https://www.ergentekstil.com/api/lead.php",
-    // ergentekstil.com canlı adres olduğu sürece alt alan adı arama motorlarına kapalı
-    "NOINDEX": "1"
+    // Form talepleri Supabase'e yazıldıktan sonra e-posta + CSV için cPanel'deki uç noktaya da iletilir.
+    // Çıplak alan adı Güzel Hosting'de kalır (www Worker'a geçse de).
+    "LEAD_MAIL_BRIDGE_URL": "https://ergentekstil.com/api/lead.php"
   }
 }
