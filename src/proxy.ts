@@ -38,7 +38,8 @@ async function adminProxy(request: NextRequest) {
     data: { user },
   } = await supabase.auth.getUser();
 
-  const isLoginPage = request.nextUrl.pathname === "/admin/login";
+  // trailingSlash açık: yol "/admin/login/" olarak gelir
+  const isLoginPage = request.nextUrl.pathname.replace(/\/$/, "") === "/admin/login";
 
   if (!user && !isLoginPage) {
     const url = request.nextUrl.clone();
@@ -67,7 +68,12 @@ export async function proxy(request: NextRequest) {
     return NextResponse.redirect(url, 308);
   }
 
-  return intlProxy(request);
+  const response = intlProxy(request);
+  // Canlı adres ergentekstil.com olduğu sürece Worker alan adları aramada çıkmasın
+  if (process.env.NOINDEX === "1") {
+    response.headers.set("X-Robots-Tag", "noindex, nofollow");
+  }
+  return response;
 }
 
 export const config = {

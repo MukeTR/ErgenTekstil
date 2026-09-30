@@ -4,7 +4,8 @@ import { getCategoryKeys, getProducts } from "@/lib/data";
 import PageHero from "@/components/PageHero";
 import CatalogGrid from "@/components/CatalogGrid";
 
-export const revalidate = 60;
+// Ürünler her istekte Supabase'den okunur: panelden yapılan değişiklik anında yansır
+export const dynamic = "force-dynamic";
 
 export default async function CatalogPage(props: PageProps<"/[locale]/katalog">) {
   const { locale } = (await props.params) as { locale: Locale };

@@ -12,8 +12,8 @@ import CatalogueDownloadForm from "@/components/CatalogueDownloadForm";
 import NewsletterForm from "@/components/NewsletterForm";
 import HeroSlider, { type HeroSlide } from "@/components/HeroSlider";
 
-// Ürün görselleri sitenin kendi kopyasından (public/urunler/sb) gelir; Supabase'e bağımlı değil.
-const HERO_PRODUCT_IMAGE_BASE = "/urunler/sb";
+const HERO_PRODUCT_IMAGE_BASE =
+  "https://mxjyyywiooxikcwfylys.supabase.co/storage/v1/object/public/product-images";
 
 function buildHeroSlides(c: {
   heroTitle: string;
@@ -61,7 +61,8 @@ const PROCESS_VIDEOS = [
   "/video/process-4.mp4",
 ];
 
-export const revalidate = 60;
+// Ürünler her istekte Supabase'den okunur: panelden yapılan değişiklik anında yansır
+export const dynamic = "force-dynamic";
 
 export async function generateMetadata(props: PageProps<"/[locale]">): Promise<Metadata> {
   const { locale } = (await props.params) as { locale: Locale };

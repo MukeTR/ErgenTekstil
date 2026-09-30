@@ -1,12 +1,15 @@
 import type { NextConfig } from "next";
 import createNextIntlPlugin from "next-intl/plugin";
+import { initOpenNextCloudflareForDev } from "@opennextjs/cloudflare";
 
 const withNextIntl = createNextIntlPlugin("./src/i18n/request.ts");
 
 const nextConfig: NextConfig = {
-  // cPanel Node.js App (Güzel Hosting) için tek klasörlük sunucu paketi
-  output: "standalone",
+  // Adresler ergentekstil.com'daki (ve sitemap'teki) gibi eğik çizgiyle biter
+  trailingSlash: true,
   images: {
+    // Görseller zaten küçük webp (Supabase + public); Workers'ta optimizasyon servisi yok
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: "https",
@@ -18,3 +21,5 @@ const nextConfig: NextConfig = {
 };
 
 export default withNextIntl(nextConfig);
+
+initOpenNextCloudflareForDev();

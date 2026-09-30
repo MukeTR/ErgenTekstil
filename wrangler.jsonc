@@ -1,0 +1,20 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "ergentekstil",
+  "main": ".open-next/worker.js",
+  "compatibility_date": "2026-09-01",
+  "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
+  "assets": {
+    "directory": ".open-next/assets",
+    "binding": "ASSETS"
+  },
+  "routes": [{ "pattern": "ergentekstil.altyapi.io", "custom_domain": true }],
+  "workers_dev": true,
+  "observability": { "enabled": true },
+  "vars": {
+    // Form talepleri Supabase'e yazıldıktan sonra e-posta + CSV için cPanel'deki uç noktaya da iletilir
+    "LEAD_MAIL_BRIDGE_URL": "https://www.ergentekstil.com/api/lead.php",
+    // ergentekstil.com canlı adres olduğu sürece alt alan adı arama motorlarına kapalı
+    "NOINDEX": "1"
+  }
+}

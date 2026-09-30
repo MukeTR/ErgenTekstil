@@ -8,7 +8,8 @@ import ColorSwatches from "@/components/ColorSwatches";
 import MetaViewContent from "@/components/MetaViewContent";
 import AddToQuoteButton from "@/components/quote/AddToQuoteButton";
 
-export const revalidate = 60;
+// Ürünler her istekte Supabase'den okunur: panelden yapılan değişiklik anında yansır
+export const dynamic = "force-dynamic";
 
 export async function generateMetadata(
   props: PageProps<"/[locale]/katalog/[slug]">
