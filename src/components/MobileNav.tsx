@@ -17,6 +17,7 @@ export default function MobileNav({
   quoteListLabel,
   cardTitle,
   cardText,
+  cardImage,
 }: {
   links: { href: string; label: string }[];
   locale: Locale;
@@ -26,6 +27,7 @@ export default function MobileNav({
   quoteListLabel: string;
   cardTitle: string;
   cardText: string;
+  cardImage: string;
 }) {
   const [open, setOpen] = useState(false);
   const [mounted, setMounted] = useState(false);
@@ -129,7 +131,7 @@ export default function MobileNav({
           className="relative mt-8 block overflow-hidden rounded-2xl bg-brand-navy text-white"
         >
           <Image
-            src="/blog/Fuar-Blog.webp"
+            src={cardImage}
             alt=""
             fill
             sizes="100vw"

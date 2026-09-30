@@ -11,10 +11,12 @@ import CollectionIcon from "@/components/CollectionIcon";
 import CatalogueDownloadForm from "@/components/CatalogueDownloadForm";
 import NewsletterForm from "@/components/NewsletterForm";
 import HeroSlider, { type HeroSlide } from "@/components/HeroSlider";
+import { getActiveHeroSlides, getSiteImages, localized } from "@/lib/site-media";
 
 const HERO_PRODUCT_IMAGE_BASE =
   "https://mxjyyywiooxikcwfylys.supabase.co/storage/v1/object/public/product-images";
 
+// Panelde (hero_slides) slayt yoksa kullanılan yedek: panel öncesi sabit slider
 function buildHeroSlides(c: {
   heroTitle: string;
   heroSubtitle: string;
@@ -88,14 +90,23 @@ export default async function HomePage(props: PageProps<"/[locale]">) {
   const allProducts = await getProducts(locale);
   const products = allProducts.slice(0, 4);
   const latestPosts = getBlogPosts(locale).slice(0, 3);
+  const [slideRows, images] = await Promise.all([getActiveHeroSlides(), getSiteImages()]);
+  const heroSlides: HeroSlide[] = slideRows.length
+    ? slideRows.map((s) => ({
+        title: localized(s.title, locale),
+        subtitle: localized(s.subtitle, locale),
+        images: s.images,
+      }))
+    : buildHeroSlides(c);
 
   return (
     <>
       {/* Hero */}
       <HeroSlider
-        slides={buildHeroSlides(c)}
+        slides={heroSlides}
         allProductsLabel={tc("allProducts")}
         requestQuoteLabel={tc("requestQuote")}
+        poster={images["home.heroPoster"]}
       />
 
       {/* About / experience */}
@@ -274,7 +285,7 @@ export default async function HomePage(props: PageProps<"/[locale]">) {
       {/* Colour */}
       <section className="relative overflow-hidden bg-brand-navy py-24 text-white">
         <Image
-          src="/marka/bg-sidea.webp"
+          src={images["home.color"]}
           alt=""
           fill
           className="object-cover opacity-20"
@@ -378,7 +389,7 @@ export default async function HomePage(props: PageProps<"/[locale]">) {
       {/* Growth / Vision */}
       <section className="relative overflow-hidden bg-brand-navy py-24 text-white">
         <Image
-          src="/images/factory-floor.webp"
+          src={images["home.growth"]}
           alt=""
           fill
           className="object-cover opacity-45"

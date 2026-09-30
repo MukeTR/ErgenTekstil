@@ -7,17 +7,20 @@ import { Link } from "@/i18n/navigation";
 export type HeroSlide = {
   title: string;
   subtitle: string;
-  images: [string, string, string];
+  /** Panelden yönetilir; 3 görsel beklenir */
+  images: string[];
 };
 
 export default function HeroSlider({
   slides,
   allProductsLabel,
   requestQuoteLabel,
+  poster,
 }: {
   slides: HeroSlide[];
   allProductsLabel: string;
   requestQuoteLabel: string;
+  poster: string;
 }) {
   const [active, setActive] = useState(0);
 
@@ -39,7 +42,7 @@ export default function HeroSlider({
         loop
         playsInline
         preload="auto"
-        poster="/images/factory-floor.webp"
+        poster={poster}
         src="/video/hero.mp4"
         className="absolute inset-0 h-full w-full object-cover"
       />

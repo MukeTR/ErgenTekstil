@@ -5,11 +5,13 @@ import type { Locale } from "@/i18n/routing";
 import MobileNav from "./MobileNav";
 import LanguageSwitcher from "./LanguageSwitcher";
 import { QuoteListHeaderButton } from "./quote/QuoteListButton";
+import { getSiteImages } from "@/lib/site-media";
 
 export default async function Header({ locale }: { locale: Locale }) {
   const t = await getTranslations({ locale, namespace: "nav" });
   const tc = await getTranslations({ locale, namespace: "common" });
   const tq = await getTranslations({ locale, namespace: "quoteList" });
+  const images = await getSiteImages();
 
   const links = [
     { href: "/", label: t("home") },
@@ -71,6 +73,7 @@ export default async function Header({ locale }: { locale: Locale }) {
             quoteListLabel={tq("title")}
             cardTitle={t("menuCardTitle")}
             cardText={t("menuCardText")}
+            cardImage={images["mobileNav.card"]}
           />
         </div>
       </div>

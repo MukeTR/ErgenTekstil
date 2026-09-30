@@ -19,6 +19,8 @@ export default async function DashboardLayout({
     { href: "/admin", label: "Panel" },
     { href: "/admin/urunler", label: "Ürünler" },
     { href: "/admin/pipeline", label: "Satış Pipeline" },
+    { href: "/admin/slider", label: "Slider" },
+    { href: "/admin/gorseller", label: "Görseller" },
   ];
 
   return (

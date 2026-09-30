@@ -4,24 +4,26 @@ import type { Locale } from "@/i18n/routing";
 import { getContent } from "@/lib/data";
 import PageHero from "@/components/PageHero";
 import StatCounter from "@/components/StatCounter";
+import { getSiteImages, type SiteImageKey } from "@/lib/site-media";
 
 export default async function ProcessPage(props: PageProps<"/[locale]/sureclerimiz">) {
   const { locale } = (await props.params) as { locale: Locale };
   setRequestLocale(locale);
   const c = getContent(locale).process;
+  const images = await getSiteImages();
 
   return (
     <>
-      <PageHero title={c.title} subtitle={c.intro} />
+      <PageHero title={c.title} subtitle={c.intro} image={images.pageHero} />
 
       <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
         <div className="grid gap-x-8 gap-y-12 sm:grid-cols-2 lg:grid-cols-4">
-          {c.steps.map((s: { title: string; text: string; image: string | null }) => (
+          {c.steps.map((s: { title: string; text: string; image: string | null }, i: number) => (
             <div key={s.title}>
               <div className="relative aspect-[4/3] overflow-hidden rounded-2xl bg-brand-grey-light">
                 {s.image && (
                   <Image
-                    src={`/sureclerimiz/${s.image}`}
+                    src={images[`process.step-${i + 1}` as SiteImageKey] ?? `/sureclerimiz/${s.image}`}
                     alt={s.title}
                     fill
                     sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"

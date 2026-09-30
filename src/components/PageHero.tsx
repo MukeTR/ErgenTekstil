@@ -1,15 +1,17 @@
 import Image from "next/image";
+import { getSiteImages } from "@/lib/site-media";
 
-export default function PageHero({
+export default async function PageHero({
   title,
   subtitle,
-  image = "/images/factory-floor.webp",
+  image: imageProp,
 }: {
   title: string;
   subtitle?: string;
-  /** Arka plan fotoğrafı; null verilirse düz lacivert */
+  /** Arka plan fotoğrafı; verilmezse panelden yönetilen ortak bant ("pageHero"), null verilirse düz lacivert */
   image?: string | null;
 }) {
+  const image = imageProp === undefined ? (await getSiteImages()).pageHero : imageProp;
   return (
     <section className="relative overflow-hidden bg-brand-navy py-20 text-white sm:py-28">
       {image && (

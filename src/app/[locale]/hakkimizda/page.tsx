@@ -5,6 +5,7 @@ import type { Locale } from "@/i18n/routing";
 import { getContent } from "@/lib/data";
 import PageHero from "@/components/PageHero";
 import StatCounter from "@/components/StatCounter";
+import { getSiteImages } from "@/lib/site-media";
 
 export default async function AboutPage(props: PageProps<"/[locale]/hakkimizda">) {
   const { locale } = (await props.params) as { locale: Locale };
@@ -12,10 +13,11 @@ export default async function AboutPage(props: PageProps<"/[locale]/hakkimizda">
   const c = getContent(locale).about;
   const process = getContent(locale).process;
   const tc = await getTranslations({ locale, namespace: "common" });
+  const images = await getSiteImages();
 
   return (
     <>
-      <PageHero title={c.title} subtitle={c.badge} />
+      <PageHero title={c.title} subtitle={c.badge} image={images.pageHero} />
 
       {/* Giriş + fotoğraf */}
       <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
@@ -30,7 +32,7 @@ export default async function AboutPage(props: PageProps<"/[locale]/hakkimizda">
           </div>
           <div className="relative aspect-[4/3] overflow-hidden rounded-3xl shadow-xl">
             <Image
-              src="/sureclerimiz/step-2-orme-teknolojisi.webp"
+              src={images["about.intro"]}
               alt=""
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"
@@ -46,7 +48,7 @@ export default async function AboutPage(props: PageProps<"/[locale]/hakkimizda">
           <div className="overflow-hidden rounded-3xl bg-white shadow-sm">
             <div className="relative aspect-[16/9]">
               <Image
-                src="/blog/Fuar-Blog.webp"
+                src={images["about.mission"]}
                 alt=""
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
@@ -63,7 +65,7 @@ export default async function AboutPage(props: PageProps<"/[locale]/hakkimizda">
           <div className="overflow-hidden rounded-3xl bg-white shadow-sm">
             <div className="relative aspect-[16/9]">
               <Image
-                src="/images/factory-floor.webp"
+                src={images["about.vision"]}
                 alt=""
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"

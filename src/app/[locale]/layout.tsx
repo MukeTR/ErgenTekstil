@@ -32,6 +32,9 @@ const robotoSlab = Roboto_Slab({
   weight: ["500", "700"],
 });
 
+// Başlık/mobil menü ve sayfa görselleri panelden (Supabase) okunur: değişiklik anında yansısın
+export const dynamic = "force-dynamic";
+
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
