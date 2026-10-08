@@ -363,8 +363,8 @@ export default async function HomePage(props: PageProps<"/[locale]">) {
       <section className="bg-brand-grey-light py-20">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-3 gap-6">
-            {process.stats.map((s: { value: number; label: string }) => (
-              <StatCounter key={s.label} value={s.value} label={s.label} />
+            {process.stats.map((s: { value: number; suffix?: string; label: string }) => (
+              <StatCounter key={s.label} value={s.value} suffix={s.suffix} label={s.label} />
             ))}
           </div>
         </div>

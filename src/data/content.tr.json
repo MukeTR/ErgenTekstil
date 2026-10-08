@@ -6,7 +6,7 @@
     "heroText": "Spor giyim, iç giyim ve şekillendirici giyim ürünlerinde yüksek kalite ve iddialı tasarımlarımız ile yüksek pazar payımız ile hizmet veriyoruz.",
     "heroTagline": "Kendine Güven, Rahat Hisset",
     "heroTaglineSub": "Kusursuz Kalıplar, Şık Tasarımlar, Rahat Dokularla İç Giyimin En Güzel Hali",
-    "aboutBadge": "20 YILLIK TECRÜBE",
+    "aboutBadge": "2004'TEN BERİ ÜRETİM",
     "aboutTitle": "Geniş Üretim ve Ulusal Destek Ağı",
     "aboutText": "Ergen Tekstil, 2004 yılında dikişsiz giyim üretimi yapmak üzere örgü ve konfeksiyon tesisleri ile entegre olarak kurulan bir firmadır. Bugün 200.000 parça/ay üretim kapasitesi ile kendi alanındaki kaliteli üreticilerden biridir. Teknolojinin etkin kullanımı ve yenilikçi yaklaşımı ile, değişen dünya dinamiklerine hızlı uyum sağlamanın ve yenilikçiliğin öncelikli değerler olduğunun bilincindeyiz.",
     "processSteps": [
@@ -92,7 +92,7 @@
       "Ekstra Esneme",
       "Mikro Kapsül Uygulamaları"
     ],
-    "valuesBadge": "20 YILLIK TECRÜBE",
+    "valuesBadge": "2004'TEN BERİ ÜRETİM",
     "valuesText": "Ergen Tekstil olarak, kurumsal hizmet anlayışımızla müşteri memnuniyetini en üst seviyede tutmayı amaçlıyoruz.",
     "values": [
       {
@@ -112,7 +112,7 @@
         "text": "Müşteri temsilcilerimiz, müşterilerimizle gerçekleştirdikleri görüşmelerde, sorunları en kısa sürede çözerek ulusal destek ağımızı kullanarak sizlere daha iyi hizmet vermeye odaklanmaktadır."
       }
     ],
-    "growthBadge": "TEKİRDAĞ KAPAKLI OSB",
+    "growthBadge": "ÇERKEZKÖY / TEKİRDAĞ",
     "growthTitle": "Artık kendi fabrikamızdayız",
     "growthLinkLabel": "Hakkımızda",
     "newsletterTitle": "İlk Siz Haberdar Olun!",
@@ -124,11 +124,11 @@
   "about": {
     "title": "Hakkımızda",
     "badge": "Üç Kıtaya İhracat",
-    "intro": "Ergen Tekstil, 2004 yılında kurulmuş, birçok özel marka giyim ürününün küresel üreticisidir. Merkezi İstanbul'da bulunan şirket Avrupa, Afrika ve Asya pazarlarında birçok markanın üretimini gerçekleştiriyor.",
+    "intro": "Ergen Tekstil, 2004 yılında kurulmuş, birçok özel marka giyim ürününün üreticisidir. Üretim ve genel merkezimiz Tekirdağ Çerkezköy'deki kendi fabrikamızda; satış ofisimiz (şube) İstanbul Sirkeci'de. Avrupa, Afrika ve Asya pazarlarında birçok markanın üretimini gerçekleştiriyoruz.",
     "missionTitle": "Misyonumuz",
     "missionText": "Ergen Tekstil, 2004 yılında dikişsiz giyim üretimi yapmak üzere örgü ve konfeksiyon tesisleri ile entegre olarak kurulan bir firmadır. Bugün 200.000 parça/ay üretim kapasitesi ile kendi alanındaki kaliteli üreticilerden biridir. Teknolojinin etkin kullanımı ve yenilikçi yaklaşımı ile, değişen dünya dinamiklerine hızlı uyum sağlamanın ve yenilikçiliğin öncelikli değerler olduğunun bilincindeyiz.",
     "visionTitle": "Vizyonumuz",
-    "visionText": "Tekirdağ Kapaklı Organize Sanayi Bölgesi'nde inşa ettiğimiz kendi fabrikamıza taşındık. Uzun süre bir hedef olarak anlattığımız bu yatırım bugün üretimimizin merkezi. Sıradaki hedefimiz, artan kapasitemizle uluslararası yeni pazarlarda üretici bir marka olarak daha güçlü yer almak. Bunu sürekli öğrenen ekibimizle, sürdürülebilir üretim yöntemleriyle ve iş ortaklarımızla açık iletişimle yapıyoruz; ekibimizde sahiplik duygusunu, özgüveni ve birlikte çalışmanın keyfini korumaya önem veriyoruz.",
+    "visionText": "Tekirdağ Çerkezköy'de inşa ettiğimiz kendi fabrikamıza taşındık. Uzun süre bir hedef olarak anlattığımız bu yatırım bugün üretimimizin merkezi. Sıradaki hedefimiz, artan kapasitemizle uluslararası yeni pazarlarda üretici bir marka olarak daha güçlü yer almak. Bunu sürekli öğrenen ekibimizle, sürdürülebilir üretim yöntemleriyle ve iş ortaklarımızla açık iletişimle yapıyoruz; ekibimizde sahiplik duygusunu, özgüveni ve birlikte çalışmanın keyfini korumaya önem veriyoruz.",
     "principlesTitle": "Ergen Tekstil'i yönlendiren temel prensipler şunlardır:",
     "principles": [
       "Takım üyelerinin işlerine sahip olma hissini güçlendirmek.",
@@ -190,7 +190,7 @@
     "stats": [
       {
         "value": 20,
-        "suffix": "",
+        "suffix": "+",
         "label": "Yıllık Tecrübe"
       },
       {
@@ -207,7 +207,7 @@
   },
   "contact": {
     "title": "İletişim",
-    "headOfficeTitle": "Ergen Tekstil Genel Merkezi",
+    "headOfficeTitle": "Genel Merkez ve Fabrika · Çerkezköy / Tekirdağ",
     "headOfficeAddress": "Karaağaç OSB. Eski Bağlar Cad. No:6 59510 Kapaklı / TEKİRDAĞ",
     "phones": [
       "+90 534 593 68 91",
@@ -215,8 +215,8 @@
     ],
     "email": "info@ergentekstil.com",
     "socialTitle": "Bizi Sosyal Medyadan takip edin",
-    "branchTitle": "Şube",
-    "branchAddress": "Yeşildirek, Suriçi Mahallesi, Sultan Mektep Sk. No:13/A, 34120 Fatih",
+    "branchTitle": "Satış Ofisi (Şube) · Sirkeci / İstanbul",
+    "branchAddress": "Yeşildirek, Suriçi Mahallesi, Sultan Mektep Sk. No:13/A, 34120 Fatih, Sirkeci, Fatih / İstanbul",
     "branchPhone": "(0216) 420 49 84",
     "formTitle": "Bize Ulaşın",
     "formFields": {

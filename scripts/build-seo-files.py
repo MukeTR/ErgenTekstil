@@ -137,8 +137,10 @@ llms = f"""# Ergen Tekstil
 - Capacity: {stats.get('Pieces Production Capacity', 200000):,} pieces/month
 - Markets: Europe, Africa and Asia (exports to three continents)
 - Own brand: Formactive
-- Head office: {contact['headOfficeAddress']}
-- Branch office: {contact['branchAddress']}
+- Head office and factory (own facility, Çerkezköy region of Tekirdağ; official district Kapaklı): {contact['headOfficeAddress']}
+- Sales office (branch), Sirkeci, Istanbul: {contact['branchAddress']}
+- In-house production at the factory: seamless knitting, dyeing, sewing, ironing, quality control and packaging
+- Minimum order quantity (MOQ), sampling and lead times: confirmed per product on request via the contact form or info@ergentekstil.com
 - Email: {contact['email']}
 - Phone: {', '.join(contact['phones'])}
 - Website languages: Turkish (default), English, Arabic, German, Russian

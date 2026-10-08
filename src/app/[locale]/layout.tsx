@@ -9,6 +9,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import MetaPixel from "@/components/MetaPixel";
+import OrganizationJsonLd from "@/components/OrganizationJsonLd";
 import { QuoteListProvider } from "@/components/quote/QuoteListProvider";
 import QuoteListDrawer from "@/components/quote/QuoteListDrawer";
 import { QuoteListFloatingButton } from "@/components/quote/QuoteListButton";
@@ -89,6 +90,7 @@ export default async function LocaleLayout(props: LayoutProps<"/[locale]">) {
       className={`${montserrat.variable} ${roboto.variable} ${robotoSlab.variable}`}
     >
       <body className="min-h-screen flex flex-col bg-white text-brand-navy antialiased">
+        <OrganizationJsonLd locale={locale} />
         <NextIntlClientProvider>
           <QuoteListProvider>
             <Header locale={locale} />

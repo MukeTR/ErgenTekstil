@@ -50,8 +50,8 @@ export default async function ProcessPage(props: PageProps<"/[locale]/sureclerim
           </h2>
           <p className="mx-auto mt-3 max-w-xl text-white/70">{c.statsText}</p>
           <div className="mt-10 grid grid-cols-3 gap-6 rounded-2xl bg-white p-8">
-            {c.stats.map((s: { value: number; label: string }) => (
-              <StatCounter key={s.label} value={s.value} label={s.label} />
+            {c.stats.map((s: { value: number; suffix?: string; label: string }) => (
+              <StatCounter key={s.label} value={s.value} suffix={s.suffix} label={s.label} />
             ))}
           </div>
         </div>

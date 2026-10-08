@@ -6,7 +6,7 @@
     "heroText": "Mit hoher Qualität und anspruchsvollen Designs in den Bereichen Sportbekleidung, Unterwäsche und Shapewear bedienen wir unsere Kunden mit einem starken Marktanteil.",
     "heroTagline": "Selbstbewusst und wohlfühlen",
     "heroTaglineSub": "Die schönste Seite der Unterwäsche – mit perfekten Schnitten, eleganten Designs und angenehmen Materialien",
-    "aboutBadge": "20 JAHRE ERFAHRUNG",
+    "aboutBadge": "PRODUKTION SEIT 2004",
     "aboutTitle": "Umfassende Produktion und nationales Servicenetz",
     "aboutText": "Ergen Tekstil wurde 2004 als integrierter Betrieb mit Strick- und Konfektionsanlagen zur Herstellung von Seamless-Bekleidung gegründet. Heute zählt das Unternehmen mit einer Produktionskapazität von 200.000 Teilen/Monat zu den führenden Qualitätsherstellern seiner Branche. Durch den effektiven Einsatz von Technologie und einen innovativen Ansatz wissen wir, dass die schnelle Anpassung an eine sich wandelnde Welt und Innovation zu unseren wichtigsten Werten gehören.",
     "processSteps": [
@@ -92,7 +92,7 @@
       "Extra Dehnbarkeit",
       "Mikrokapsel-Anwendungen"
     ],
-    "valuesBadge": "20 JAHRE ERFAHRUNG",
+    "valuesBadge": "PRODUKTION SEIT 2004",
     "valuesText": "Bei Ergen Tekstil ist unser unternehmerisches Serviceverständnis darauf ausgerichtet, ein Höchstmaß an Kundenzufriedenheit zu erreichen.",
     "values": [
       {
@@ -112,7 +112,7 @@
         "text": "Unsere Kundenbetreuer konzentrieren sich darauf, Anliegen im Gespräch mit unseren Kunden schnellstmöglich zu lösen und Sie über unser nationales Servicenetz noch besser zu betreuen."
       }
     ],
-    "growthBadge": "OIZ TEKIRDAĞ KAPAKLI",
+    "growthBadge": "ÇERKEZKÖY / TEKIRDAĞ",
     "growthTitle": "Jetzt in unserer eigenen Fabrik",
     "growthLinkLabel": "Über uns",
     "newsletterTitle": "Erfahren Sie es zuerst!",
@@ -124,11 +124,11 @@
   "about": {
     "title": "Über uns",
     "badge": "Export auf drei Kontinente",
-    "intro": "Ergen Tekstil wurde 2004 gegründet und ist ein globaler Hersteller zahlreicher Private-Label-Bekleidungsprodukte. Das Unternehmen mit Sitz in Istanbul produziert für viele Marken auf den europäischen, afrikanischen und asiatischen Märkten.",
+    "intro": "Ergen Tekstil wurde 2004 gegründet und produziert Bekleidung für zahlreiche Private-Label-Marken. Hauptsitz und Produktion befinden sich in unserer eigenen Fabrik in Çerkezköy (Tekirdağ); unser Verkaufsbüro (Niederlassung) ist in Sirkeci, Istanbul. Wir produzieren für viele Marken auf den europäischen, afrikanischen und asiatischen Märkten.",
     "missionTitle": "Unsere Mission",
     "missionText": "Ergen Tekstil wurde 2004 als integrierter Betrieb mit Strick- und Konfektionsanlagen zur Herstellung von Seamless-Bekleidung gegründet. Heute zählt das Unternehmen mit einer Produktionskapazität von 200.000 Teilen/Monat zu den führenden Qualitätsherstellern seiner Branche. Durch den effektiven Einsatz von Technologie und einen innovativen Ansatz wissen wir, dass die schnelle Anpassung an eine sich wandelnde Welt und Innovation zu unseren wichtigsten Werten gehören.",
     "visionTitle": "Unsere Vision",
-    "visionText": "Wir sind in unsere eigene Fabrik in der Organisierten Industriezone Tekirdağ Kapaklı umgezogen. Die Investition, die wir lange als Ziel beschrieben haben, ist heute das Herz unserer Produktion. Unser nächstes Ziel: mit der größeren Kapazität als Herstellermarke in neuen internationalen Märkten stärker vertreten zu sein. Dafür arbeiten wir mit einem lernenden Team, nachhaltigen Produktionsmethoden und offener Kommunikation mit unseren Partnern – und pflegen eine Kultur von Verantwortung, Selbstvertrauen und Freude an der Zusammenarbeit.",
+    "visionText": "Wir sind in unsere eigene Fabrik in Çerkezköy (Tekirdağ) umgezogen. Die Investition, die wir lange als Ziel beschrieben haben, ist heute das Herz unserer Produktion. Unser nächstes Ziel: mit der größeren Kapazität als Herstellermarke in neuen internationalen Märkten stärker vertreten zu sein. Dafür arbeiten wir mit einem lernenden Team, nachhaltigen Produktionsmethoden und offener Kommunikation mit unseren Partnern – und pflegen eine Kultur von Verantwortung, Selbstvertrauen und Freude an der Zusammenarbeit.",
     "principlesTitle": "Die Grundprinzipien, die Ergen Tekstil leiten:",
     "principles": [
       "Das Gefühl der Eigenverantwortung unserer Teammitglieder für ihre Arbeit stärken.",
@@ -190,7 +190,7 @@
     "stats": [
       {
         "value": 20,
-        "suffix": "",
+        "suffix": "+",
         "label": "Jahre Erfahrung"
       },
       {
@@ -207,7 +207,7 @@
   },
   "contact": {
     "title": "Kontakt",
-    "headOfficeTitle": "Ergen Tekstil Hauptsitz",
+    "headOfficeTitle": "Hauptsitz & Fabrik · Çerkezköy / Tekirdağ",
     "headOfficeAddress": "Karaağaç OSB, Eski Bağlar Cad. No:6 59510 Kapaklı / TEKİRDAĞ, Türkei",
     "phones": [
       "+90 534 593 68 91",
@@ -215,7 +215,7 @@
     ],
     "email": "info@ergentekstil.com",
     "socialTitle": "Folgen Sie uns in den sozialen Medien",
-    "branchTitle": "Niederlassung",
+    "branchTitle": "Verkaufsbüro (Niederlassung) · Sirkeci / Istanbul",
     "branchAddress": "Yeşildirek, Suriçi Mahallesi, Sultan Mektep Sk. No:13/A, 34120 Fatih, Istanbul, Türkei",
     "branchPhone": "(0216) 420 49 84",
     "formTitle": "Kontakt aufnehmen",
