@@ -83,7 +83,7 @@ export default function AddToQuoteButton({ product, variant = "icon" }: Props) {
       <button
         type="button"
         onClick={handleAdd}
-        className="rounded-full bg-brand-navy px-7 py-3.5 font-heading text-sm font-semibold uppercase tracking-wide text-white transition hover:bg-black"
+        className="rounded-sm bg-brand-navy px-7 py-3.5 font-heading text-sm font-semibold uppercase tracking-wide text-white transition hover:bg-black"
       >
         {justAdded ? t("added") : t("add")}
       </button>

@@ -45,7 +45,7 @@ export default function BlogGrid({
               )}
             </div>
             <div className="p-5">
-              <h2 className="font-heading text-base font-bold text-brand-navy">
+              <h2 className="text-2xl text-brand-navy">
                 {post.title}
               </h2>
               <span className="mt-3 inline-block font-heading text-xs font-semibold uppercase tracking-wide text-brand-navy/60">
@@ -61,7 +61,7 @@ export default function BlogGrid({
           <button
             type="button"
             onClick={() => setVisible((v) => v + PAGE_SIZE)}
-            className="rounded-full bg-brand-navy px-8 py-3.5 font-heading text-sm font-semibold uppercase tracking-wide text-white transition hover:bg-black"
+            className="rounded-sm bg-brand-navy px-8 py-3.5 font-heading text-sm font-semibold uppercase tracking-wide text-white transition hover:bg-black"
           >
             {loadMoreLabel}
           </button>

@@ -16,7 +16,7 @@ export default async function ProcessPage(props: PageProps<"/[locale]/sureclerim
 
       <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
         <div className="grid gap-x-8 gap-y-12 sm:grid-cols-2 lg:grid-cols-4">
-          {c.steps.map((s: { title: string; text: string; image: string | null }) => (
+          {c.steps.map((s: { title: string; text: string; image: string | null }, i: number) => (
             <div key={s.title}>
               <div className="relative aspect-[4/3] overflow-hidden rounded-2xl bg-brand-grey-light">
                 {s.image && (
@@ -29,27 +29,28 @@ export default async function ProcessPage(props: PageProps<"/[locale]/sureclerim
                   />
                 )}
               </div>
-              <h2 className="mt-5 font-heading text-lg font-bold uppercase text-brand-grey">
+              <h2 className="mt-5 flex items-baseline gap-3 text-3xl text-brand-navy">
+                <span className="text-brand-navy/25">{String(i + 1).padStart(2, "0")}</span>
                 {s.title}
               </h2>
               <p className="mt-3 text-sm leading-relaxed text-brand-grey">{s.text}</p>
             </div>
           ))}
         </div>
-        <p className="mt-14 rounded-2xl bg-brand-grey-light p-6 leading-relaxed text-brand-grey">
+        <p className="mt-14 border-s-4 border-brand-volt bg-brand-ink p-6 leading-relaxed text-white/80">
           {c.outro}
         </p>
       </section>
 
-      <section className="bg-brand-navy py-16">
+      <section className="ink-texture bg-brand-ink py-20">
         <div className="mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-8">
-          <h2 className="font-heading text-2xl font-extrabold text-white sm:text-3xl">
+          <h2 className="text-4xl text-white sm:text-6xl">
             {c.statsTitle}
           </h2>
           <p className="mx-auto mt-3 max-w-xl text-white/70">{c.statsText}</p>
-          <div className="mt-10 grid grid-cols-3 gap-6 rounded-2xl bg-white p-8">
+          <div className="mt-10 grid grid-cols-3 gap-6 border-t-4 border-brand-volt bg-white/5 p-8">
             {c.stats.map((s: { value: number; label: string }) => (
-              <StatCounter key={s.label} value={s.value} label={s.label} />
+              <StatCounter key={s.label} value={s.value} label={s.label} tone="dark" />
             ))}
           </div>
         </div>

@@ -56,12 +56,12 @@ export default function NewsletterForm({
         onChange={(e) => setEmail(e.target.value)}
         placeholder={placeholder}
         toolparamdescription="Email address to subscribe to the newsletter"
-        className="min-w-0 flex-1 rounded-full border border-brand-navy/15 bg-white px-4 py-3 text-sm text-brand-navy placeholder:text-brand-grey outline-none focus:border-brand-navy/50"
+        className="min-w-0 flex-1 rounded-sm border border-brand-navy/15 bg-white px-4 py-3 text-sm text-brand-navy placeholder:text-brand-grey outline-none focus:border-brand-navy/50"
       />
       <button
         type="submit"
         disabled={submitting}
-        className="shrink-0 rounded-full bg-brand-navy px-6 py-3 font-heading text-xs font-semibold uppercase tracking-wide text-white transition hover:bg-black disabled:opacity-60"
+        className="shrink-0 rounded-sm bg-brand-navy px-6 py-3 font-heading text-xs font-semibold uppercase tracking-wide text-white transition hover:bg-black disabled:opacity-60"
       >
         {buttonLabel}
       </button>

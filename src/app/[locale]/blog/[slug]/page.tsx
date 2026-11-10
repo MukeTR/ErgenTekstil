@@ -46,7 +46,7 @@ export default async function BlogPostPage(
           Code {post.code}
         </span>
       )}
-      <h1 className="mt-2 font-heading text-3xl font-extrabold text-brand-navy sm:text-4xl">
+      <h1 className="mt-3 text-4xl text-brand-navy sm:text-6xl">
         {post.title}
       </h1>
 
@@ -60,9 +60,9 @@ export default async function BlogPostPage(
         <>
           {post.features.length > 0 && (
             <div className="mt-10">
-              <h2 className="font-heading text-xs font-semibold uppercase tracking-wide text-brand-grey">
+              <p className="font-heading text-xs font-semibold uppercase tracking-wide text-brand-grey">
                 {tc("features")}
-              </h2>
+              </p>
               <ul className="mt-3 space-y-2">
                 {post.features.map((f) => (
                   <li key={f} className="flex gap-3 text-sm text-brand-grey">
@@ -77,7 +77,7 @@ export default async function BlogPostPage(
             <p className="text-sm text-brand-grey">{tp("quoteIntro")}</p>
             <Link
               href={{ pathname: "/iletisim", query: { urun: post.title } }}
-              className="mt-4 inline-block rounded-full bg-brand-navy px-7 py-3.5 font-heading text-sm font-semibold uppercase tracking-wide text-white transition hover:bg-black"
+              className="mt-4 inline-block rounded-sm bg-brand-navy px-7 py-3.5 font-heading text-sm font-semibold uppercase tracking-wide text-white transition hover:bg-black"
             >
               {tc("requestQuote")}
             </Link>

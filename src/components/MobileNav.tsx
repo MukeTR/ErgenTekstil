@@ -111,7 +111,7 @@ export default function MobileNav({
               {quoteListLabel}
             </span>
             {count > 0 && (
-              <span className="flex h-6 min-w-6 items-center justify-center rounded-full bg-brand-navy px-2 text-xs font-bold text-white">
+              <span className="flex h-6 min-w-6 items-center justify-center rounded-sm bg-brand-navy px-2 text-xs font-bold text-white">
                 {count}
               </span>
             )}
@@ -139,7 +139,7 @@ export default function MobileNav({
           <div className="relative flex min-h-56 flex-col justify-end p-6">
             <p className="font-heading text-lg font-extrabold">{cardTitle}</p>
             <p className="mt-2 text-sm leading-relaxed text-white/80">{cardText}</p>
-            <span className="mt-5 inline-flex w-fit rounded-full bg-white px-5 py-2.5 font-heading text-[13px] font-semibold uppercase tracking-wide text-brand-navy">
+            <span className="mt-5 inline-flex w-fit rounded-sm bg-white px-5 py-2.5 font-heading text-[13px] font-semibold uppercase tracking-wide text-brand-navy">
               {ctaLabel}
             </span>
           </div>

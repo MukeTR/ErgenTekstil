@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Montserrat, Roboto, Roboto_Slab } from "next/font/google";
+import { Montserrat, Roboto, Roboto_Slab, Sofia_Sans_Condensed } from "next/font/google";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
@@ -18,6 +18,14 @@ const montserrat = Montserrat({
   variable: "--font-montserrat",
   subsets: ["latin", "latin-ext", "cyrillic"],
   weight: ["500", "600", "700", "800"],
+});
+
+// Başlık yazı tipi: dar, kalın, eğik — spor dili (Kiril ve Türkçe destekli)
+const sofia = Sofia_Sans_Condensed({
+  variable: "--font-sofia",
+  subsets: ["latin", "latin-ext", "cyrillic"],
+  weight: ["700", "800", "900"],
+  style: ["italic"],
 });
 
 const roboto = Roboto({
@@ -83,7 +91,7 @@ export default async function LocaleLayout(props: LayoutProps<"/[locale]">) {
     <html
       lang={locale}
       dir={dir}
-      className={`${montserrat.variable} ${roboto.variable} ${robotoSlab.variable}`}
+      className={`${montserrat.variable} ${sofia.variable} ${roboto.variable} ${robotoSlab.variable}`}
     >
       <body className="min-h-screen flex flex-col bg-white text-brand-navy antialiased">
         <NextIntlClientProvider>

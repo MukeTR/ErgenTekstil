@@ -61,13 +61,13 @@ export default function CatalogGrid({
 
   return (
     <div>
-      <div ref={topRef} className="flex flex-wrap gap-2 scroll-mt-28">
+      <div ref={topRef} className="flex flex-wrap gap-2 scroll-mt-28 ps-2">
         <button
           type="button"
           onClick={() => selectCategory(null)}
-          className={`rounded-full px-4 py-2 font-heading text-xs font-semibold uppercase tracking-wide transition ${
+          className={`btn-sport px-5 py-2.5 font-heading text-xs font-bold uppercase tracking-wide transition ${
             active === null
-              ? "bg-brand-navy text-white"
+              ? "bg-brand-ink text-brand-volt"
               : "bg-brand-grey-light text-brand-navy hover:bg-brand-navy/10"
           }`}
         >
@@ -78,9 +78,9 @@ export default function CatalogGrid({
             key={key}
             type="button"
             onClick={() => selectCategory(key)}
-            className={`rounded-full px-4 py-2 font-heading text-xs font-semibold uppercase tracking-wide transition ${
+            className={`btn-sport px-5 py-2.5 font-heading text-xs font-bold uppercase tracking-wide transition ${
               active === key
-                ? "bg-brand-navy text-white"
+                ? "bg-brand-ink text-brand-volt"
                 : "bg-brand-grey-light text-brand-navy hover:bg-brand-navy/10"
             }`}
           >
@@ -132,7 +132,7 @@ export default function CatalogGrid({
             type="button"
             onClick={() => goToPage(safePage - 1)}
             disabled={safePage === 1}
-            className="rounded-full border border-brand-navy/20 px-5 py-2.5 font-heading text-xs font-semibold uppercase tracking-wide text-brand-navy transition hover:bg-brand-navy hover:text-white disabled:cursor-not-allowed disabled:opacity-30 disabled:hover:bg-transparent disabled:hover:text-brand-navy"
+            className="rounded-sm border border-brand-navy/20 px-5 py-2.5 font-heading text-xs font-semibold uppercase tracking-wide text-brand-navy transition hover:bg-brand-navy hover:text-white disabled:cursor-not-allowed disabled:opacity-30 disabled:hover:bg-transparent disabled:hover:text-brand-navy"
           >
             {t("previous")}
           </button>
@@ -163,7 +163,7 @@ export default function CatalogGrid({
             type="button"
             onClick={() => goToPage(safePage + 1)}
             disabled={safePage === totalPages}
-            className="rounded-full border border-brand-navy/20 px-5 py-2.5 font-heading text-xs font-semibold uppercase tracking-wide text-brand-navy transition hover:bg-brand-navy hover:text-white disabled:cursor-not-allowed disabled:opacity-30 disabled:hover:bg-transparent disabled:hover:text-brand-navy"
+            className="rounded-sm border border-brand-navy/20 px-5 py-2.5 font-heading text-xs font-semibold uppercase tracking-wide text-brand-navy transition hover:bg-brand-navy hover:text-white disabled:cursor-not-allowed disabled:opacity-30 disabled:hover:bg-transparent disabled:hover:text-brand-navy"
           >
             {t("next")}
           </button>

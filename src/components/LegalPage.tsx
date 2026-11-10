@@ -31,7 +31,7 @@ export default function LegalPage({ slug, locale }: { slug: LegalSlug; locale: L
                 <span>{b.text}</span>
               </p>
             ) : b.tag === "h2" || b.tag === "h3" ? (
-              <h2 key={i} className="pt-4 font-heading text-lg font-bold text-brand-navy">
+              <h2 key={i} className="pt-4 text-2xl text-brand-navy">
                 {b.text}
               </h2>
             ) : (

@@ -25,7 +25,7 @@ export function QuoteListHeaderButton({ hideWhenEmpty = false }: { hideWhenEmpty
         <path d="M4 6h.01M4 12h.01M4 18h.01" strokeWidth="2.6" />
       </svg>
       {count > 0 && (
-        <span className="absolute -end-1 -top-1 flex h-5 min-w-5 items-center justify-center rounded-full bg-brand-navy px-1 text-[10px] font-bold text-white">
+        <span className="absolute -end-1 -top-1 flex h-5 min-w-5 items-center justify-center rounded-sm bg-brand-navy px-1 text-[10px] font-bold text-white">
           {count}
         </span>
       )}
@@ -46,7 +46,7 @@ export function QuoteListFloatingButton() {
       onClick={open}
       className="fixed bottom-6 start-6 z-50 flex items-center gap-3 rounded-full bg-brand-navy py-3 pe-5 ps-4 text-white shadow-xl transition hover:bg-black"
     >
-      <span className="flex h-7 min-w-7 items-center justify-center rounded-full bg-white px-1.5 font-heading text-xs font-bold text-brand-navy">
+      <span className="flex h-7 min-w-7 items-center justify-center rounded-sm bg-white px-1.5 font-heading text-xs font-bold text-brand-navy">
         {items.length}
       </span>
       <span className="text-start leading-tight">

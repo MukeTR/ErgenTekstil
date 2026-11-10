@@ -62,12 +62,12 @@ export default function CatalogueDownloadForm({
         onChange={(e) => setEmail(e.target.value)}
         placeholder={placeholder}
         toolparamdescription="Email address to send the catalogue PDF to"
-        className="min-w-0 flex-1 rounded-full border border-white/20 bg-white/10 px-4 py-2.5 text-sm text-white placeholder:text-white/50 outline-none focus:border-white/50"
+        className="min-w-0 flex-1 rounded-sm border border-white/20 bg-white/10 px-4 py-2.5 text-sm text-white placeholder:text-white/50 outline-none focus:border-white/50"
       />
       <button
         type="submit"
         disabled={submitting}
-        className="shrink-0 rounded-full bg-white px-5 py-2.5 font-heading text-xs font-semibold uppercase tracking-wide text-brand-navy transition hover:bg-white/90 disabled:opacity-60"
+        className="shrink-0 rounded-sm bg-white px-5 py-2.5 font-heading text-xs font-semibold uppercase tracking-wide text-brand-navy transition hover:bg-white/90 disabled:opacity-60"
       >
         {buttonLabel}
       </button>

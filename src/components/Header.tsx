@@ -21,7 +21,7 @@ export default async function Header({ locale }: { locale: Locale }) {
   ];
 
   return (
-    <header className="sticky top-0 z-50 border-b border-black/5 bg-white/95 backdrop-blur">
+    <header className="sticky top-0 z-50 border-b-2 border-brand-ink bg-white/95 backdrop-blur">
       <div className="mx-auto flex max-w-[90rem] items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-8">
         <Link href="/" className="flex shrink-0 items-center gap-3">
           <Image
@@ -42,7 +42,7 @@ export default async function Header({ locale }: { locale: Locale }) {
             <Link
               key={l.href}
               href={l.href}
-              className="whitespace-nowrap font-heading text-[12px] font-semibold uppercase tracking-wide text-brand-navy/80 transition hover:text-brand-navy 2xl:text-[13px]"
+              className="whitespace-nowrap font-heading text-[12px] font-bold uppercase tracking-wide text-brand-navy/80 underline decoration-brand-volt decoration-[3px] underline-offset-8 decoration-transparent transition hover:text-brand-navy hover:decoration-brand-volt 2xl:text-[13px]"
             >
               {l.label}
             </Link>
@@ -54,7 +54,7 @@ export default async function Header({ locale }: { locale: Locale }) {
           <LanguageSwitcher locale={locale} />
           <Link
             href="/iletisim"
-            className="whitespace-nowrap rounded-full bg-brand-navy px-5 py-2.5 font-heading text-[12px] font-semibold uppercase tracking-wide text-white transition hover:bg-black"
+            className="btn-sport whitespace-nowrap bg-brand-ink px-6 py-2.5 font-heading text-[12px] font-bold uppercase tracking-wide text-white transition hover:bg-brand-volt hover:text-brand-ink"
           >
             {tc("requestQuote")}
           </Link>

@@ -56,19 +56,19 @@ export default async function ProductPage(
 
         <div>
           {product.categories[0] && (
-            <span className="font-heading text-xs font-semibold uppercase tracking-widest text-brand-grey">
+            <span className="tag-sport bg-brand-ink py-1 font-heading text-[11px] font-bold uppercase tracking-widest text-white">
               {product.categories[0]}
             </span>
           )}
-          <h1 className="mt-2 font-heading text-3xl font-extrabold text-brand-navy">
+          <h1 className="mt-3 text-4xl text-brand-navy sm:text-6xl">
             {product.name}
           </h1>
 
           {product.colors.length > 0 && (
             <div className="mt-6">
-              <h2 className="font-heading text-xs font-semibold uppercase tracking-wide text-brand-grey">
+              <p className="font-heading text-xs font-semibold uppercase tracking-wide text-brand-grey">
                 {tc("colors")}
-              </h2>
+              </p>
               <div className="mt-3">
                 <ColorSwatches colors={product.colors} colorKeys={product.colorKeys} />
               </div>
@@ -77,13 +77,13 @@ export default async function ProductPage(
 
           {product.features.length > 0 && (
             <div className="mt-8">
-              <h2 className="font-heading text-xs font-semibold uppercase tracking-wide text-brand-grey">
+              <p className="font-heading text-xs font-semibold uppercase tracking-wide text-brand-grey">
                 {tc("features")}
-              </h2>
+              </p>
               <ul className="mt-3 space-y-2">
                 {product.features.map((f) => (
                   <li key={f} className="flex gap-3 text-sm text-brand-grey">
-                    <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-brand-navy" />
+                    <span className="mt-1 h-3 w-1.5 shrink-0 -skew-x-12 bg-brand-ink" />
                     <span>{f}</span>
                   </li>
                 ))}
@@ -91,7 +91,7 @@ export default async function ProductPage(
             </div>
           )}
 
-          <div className="mt-10 rounded-2xl bg-brand-grey-light p-6">
+          <div className="mt-10 border-s-4 border-brand-volt bg-brand-grey-light p-6">
             <p className="text-sm text-brand-grey">{t("quoteIntro")}</p>
             <div className="mt-4">
               <AddToQuoteButton

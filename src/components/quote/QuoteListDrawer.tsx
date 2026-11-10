@@ -132,7 +132,7 @@ export default function QuoteListDrawer() {
                   setSent(false);
                   close();
                 }}
-                className="mt-8 rounded-full bg-brand-navy px-7 py-3 font-heading text-xs font-semibold uppercase tracking-wide text-white"
+                className="mt-8 rounded-sm bg-brand-navy px-7 py-3 font-heading text-xs font-semibold uppercase tracking-wide text-white"
               >
                 {t("close")}
               </button>
@@ -144,7 +144,7 @@ export default function QuoteListDrawer() {
               <Link
                 href="/katalog"
                 onClick={close}
-                className="mt-6 rounded-full bg-brand-navy px-7 py-3 font-heading text-xs font-semibold uppercase tracking-wide text-white"
+                className="mt-6 rounded-sm bg-brand-navy px-7 py-3 font-heading text-xs font-semibold uppercase tracking-wide text-white"
               >
                 {t("browse")}
               </Link>

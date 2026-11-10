@@ -18,7 +18,7 @@ export default async function ContactPage(props: PageProps<"/[locale]/iletisim">
       <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8">
         <div className="grid gap-14 lg:grid-cols-2">
           <div>
-            <h2 className="font-heading text-lg font-bold text-brand-navy">
+            <h2 className="slash slash-navy text-3xl text-brand-navy">
               {c.headOfficeTitle}
             </h2>
             <p className="mt-2 text-brand-grey">{c.headOfficeAddress}</p>
@@ -34,7 +34,7 @@ export default async function ContactPage(props: PageProps<"/[locale]/iletisim">
             </a>
 
             <div className="mt-10">
-              <h2 className="font-heading text-lg font-bold text-brand-navy">{c.branchTitle}</h2>
+              <h2 className="slash slash-navy text-3xl text-brand-navy">{c.branchTitle}</h2>
               <p className="mt-2 text-brand-grey">{c.branchAddress}</p>
               <a
                 href={`tel:${c.branchPhone.replace(/[^\d+]/g, "")}`}
@@ -57,7 +57,7 @@ export default async function ContactPage(props: PageProps<"/[locale]/iletisim">
           </div>
 
           <div>
-            <h2 className="font-heading text-lg font-bold text-brand-navy">{c.formTitle}</h2>
+            <h2 className="slash slash-navy text-3xl text-brand-navy">{c.formTitle}</h2>
             <div className="mt-6">
               <ContactForm
                 fields={c.formFields}

@@ -43,7 +43,7 @@ export default async function AboutPage(props: PageProps<"/[locale]/hakkimizda">
       {/* Misyon / Vizyon kartları */}
       <section className="bg-brand-grey-light py-20">
         <div className="mx-auto grid max-w-7xl gap-8 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
-          <div className="overflow-hidden rounded-3xl bg-white shadow-sm">
+          <div className="overflow-hidden border-b-4 border-brand-ink bg-white shadow-sm">
             <div className="relative aspect-[16/9]">
               <Image
                 src="/blog/Fuar-Blog.webp"
@@ -54,13 +54,13 @@ export default async function AboutPage(props: PageProps<"/[locale]/hakkimizda">
               />
             </div>
             <div className="p-8 sm:p-10">
-              <h2 className="font-heading text-2xl font-extrabold text-brand-navy">
+              <h2 className="slash slash-navy text-4xl text-brand-navy">
                 {c.missionTitle}
               </h2>
               <p className="mt-4 leading-relaxed text-brand-grey">{c.missionText}</p>
             </div>
           </div>
-          <div className="overflow-hidden rounded-3xl bg-white shadow-sm">
+          <div className="overflow-hidden border-b-4 border-brand-ink bg-white shadow-sm">
             <div className="relative aspect-[16/9]">
               <Image
                 src="/images/factory-floor.webp"
@@ -71,7 +71,7 @@ export default async function AboutPage(props: PageProps<"/[locale]/hakkimizda">
               />
             </div>
             <div className="p-8 sm:p-10">
-              <h2 className="font-heading text-2xl font-extrabold text-brand-navy">
+              <h2 className="slash slash-navy text-4xl text-brand-navy">
                 {c.visionTitle}
               </h2>
               <p className="mt-4 leading-relaxed text-brand-grey">{c.visionText}</p>
@@ -82,29 +82,29 @@ export default async function AboutPage(props: PageProps<"/[locale]/hakkimizda">
 
       {/* Prensipler */}
       <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
-        <h2 className="font-heading text-2xl font-extrabold text-brand-navy sm:text-3xl">
+        <h2 className="slash slash-navy max-w-4xl text-3xl text-brand-navy sm:text-5xl">
           {c.principlesTitle}
         </h2>
         <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {c.principles.map((p: string, i: number) => (
-            <div key={p} className="rounded-2xl border border-black/5 p-6">
-              <span className="font-heading text-3xl font-extrabold text-brand-navy/15">
+            <div key={p} className="border-t-4 border-brand-ink bg-brand-grey-light p-6">
+              <span className="font-display text-4xl text-brand-navy/25">
                 0{i + 1}
               </span>
               <p className="mt-3 leading-relaxed text-brand-grey">{p}</p>
             </div>
           ))}
         </div>
-        <div className="mt-12 flex flex-wrap gap-4">
+        <div className="mt-12 flex flex-wrap gap-4 ps-2">
           <Link
             href="/sureclerimiz"
-            className="rounded-full bg-brand-navy px-7 py-3.5 font-heading text-sm font-semibold uppercase tracking-wide text-white transition hover:bg-black"
+            className="btn-sport bg-brand-ink px-8 py-4 font-heading text-sm font-bold uppercase tracking-wide text-white transition hover:bg-brand-volt hover:text-brand-ink"
           >
             {tc("learnMore")}
           </Link>
           <Link
             href="/iletisim"
-            className="rounded-full border border-brand-navy/30 px-7 py-3.5 font-heading text-sm font-semibold uppercase tracking-wide text-brand-navy transition hover:border-brand-navy"
+            className="btn-sport border-2 border-brand-ink px-8 py-[14px] font-heading text-sm font-bold uppercase tracking-wide text-brand-navy transition hover:bg-brand-ink hover:text-white"
           >
             {tc("requestQuote")}
           </Link>

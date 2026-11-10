@@ -6,10 +6,13 @@ export default function StatCounter({
   value,
   label,
   suffix = "",
+  tone = "light",
 }: {
   value: number;
   label: string;
   suffix?: string;
+  /** "dark": koyu zemin üzerinde açık renkli sayı */
+  tone?: "light" | "dark";
 }) {
   const ref = useRef<HTMLDivElement>(null);
   const [display, setDisplay] = useState(0);
@@ -41,11 +44,21 @@ export default function StatCounter({
 
   return (
     <div ref={ref} className="text-center">
-      <div className="font-heading text-4xl font-extrabold text-brand-navy sm:text-5xl">
+      <div
+        className={`font-display text-5xl sm:text-7xl ${
+          tone === "dark" ? "text-brand-volt" : "text-brand-navy"
+        }`}
+      >
         {display.toLocaleString("en-US")}
         {suffix}
       </div>
-      <div className="mt-2 text-sm font-medium text-brand-grey">{label}</div>
+      <div
+        className={`mt-2 font-heading text-xs font-bold uppercase tracking-widest ${
+          tone === "dark" ? "text-white/70" : "text-brand-grey"
+        }`}
+      >
+        {label}
+      </div>
     </div>
   );
 }

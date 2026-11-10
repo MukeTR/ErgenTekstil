@@ -159,7 +159,7 @@ export default function ContactForm({
       <button
         type="submit"
         disabled={submitting}
-        className="rounded-full bg-brand-navy px-8 py-3.5 font-heading text-sm font-semibold uppercase tracking-wide text-white transition hover:bg-black disabled:opacity-60"
+        className="rounded-sm bg-brand-navy px-8 py-3.5 font-heading text-sm font-semibold uppercase tracking-wide text-white transition hover:bg-black disabled:opacity-60"
       >
         {fields.submit}
       </button>

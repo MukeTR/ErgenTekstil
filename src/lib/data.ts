@@ -86,7 +86,41 @@ function mapProduct(row: ProductRow, locale: Locale): Product {
 
 // Katalog, Supabase'den alınmış statik anlık görüntüdür (src/data/products.json).
 // Güncellemek için: scripts/snapshot-products.py
-const rows = (productRows as ProductRow[]).slice().sort((a, b) => a.sort_order - b.sort_order);
+
+/** Ürün kodu, ilk görselin klasöründen okunur: "sb/1510/0-Y1.png.webp" → "1510" */
+function productCode(row: ProductRow): string {
+  return row.images[0]?.match(/^sb\/([^/]+)\//)?.[1] ?? "";
+}
+
+// Vitrin sırası: site spor giyimi öne çıkarır. Önce elle seçilmiş manken çekimli
+// spor ürünleri, sonra diğer tayt/şort/spor büstiyerler, sonra FORMactive spor
+// takımları, en sonda korse ve iç giyim. Grup içinde paneldeki sıra korunur.
+const FEATURED_SPORT_CODES = [
+  "1510", "1550", "1700", "1725", "1430", "1610-1625", "1625", "1525",
+];
+const SPORT_CODES = new Set(["1610", "1710", "2000", "2020", "2135", "1435"]);
+const SPORT_SET_CODES = new Set(["6100-6200", "8100-8200", "8350"]);
+
+function sportRank(row: ProductRow): number {
+  const code = productCode(row);
+  const featured = FEATURED_SPORT_CODES.indexOf(code);
+  if (featured !== -1) return featured;
+  if (SPORT_CODES.has(code)) return 100;
+  if (row.category_keys.some((k) => k === "Tayt" || k === "Şort")) return 100;
+  if (/^1[89]\d\d/.test(code) || SPORT_SET_CODES.has(code)) return 200;
+  return 300;
+}
+
+const rows = (productRows as ProductRow[])
+  .slice()
+  .sort((a, b) => sportRank(a) - sportRank(b) || a.sort_order - b.sort_order);
+
+/** Ana sayfa vitrini: manken çekimli spor ürünleri */
+export async function getFeaturedProducts(locale: Locale): Promise<Product[]> {
+  return rows
+    .filter((r) => FEATURED_SPORT_CODES.includes(productCode(r)))
+    .map((row) => mapProduct(row, locale));
+}
 
 export async function getProducts(locale: Locale): Promise<Product[]> {
   return rows.map((row) => mapProduct(row, locale));
@@ -105,7 +139,13 @@ export function getProductSlugs(): string[] {
 }
 
 export async function getCategoryKeys(): Promise<string[]> {
-  return Array.from(new Set(rows.flatMap((r) => r.category_keys)));
+  const present = new Set(rows.flatMap((r) => r.category_keys));
+  // Süzgeç sırası da spor önce
+  const order = ["Tayt", "Şort", "Genel", "Korse"];
+  return [
+    ...order.filter((k) => present.has(k)),
+    ...Array.from(present).filter((k) => !order.includes(k)),
+  ];
 }
 
 export function getBlogPosts(locale: Locale): BlogPost[] {
