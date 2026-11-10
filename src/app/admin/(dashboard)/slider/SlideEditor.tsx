@@ -14,6 +14,37 @@ const LANGS = [
   { code: "ru", label: "Rusça" },
 ] as const;
 
+// Hazır fabrika görselleri (Ekim 2026 çekimi). Slayt kutuları dikey olduğu için dikey kadrajlar başta.
+const FACTORY_IMAGES = [
+  "/tesis/dikey/dis-cephe.webp",
+  "/tesis/dikey/orme.webp",
+  "/tesis/dikey/dikim.webp",
+  "/tesis/dis-cephe.webp",
+  "/tesis/dis-cephe-genis.webp",
+  "/tesis/orme-salonu.webp",
+  "/tesis/orme-salonu-2.webp",
+  "/tesis/orme-koridor.webp",
+  "/tesis/orme-yakin.webp",
+  "/tesis/arge.webp",
+  "/tesis/kumas-kontrol.webp",
+  "/tesis/kalite-olcum.webp",
+  "/tesis/kesim.webp",
+  "/tesis/kalip.webp",
+  "/tesis/dikim.webp",
+  "/tesis/dikim-2.webp",
+  "/tesis/dikim-3.webp",
+  "/tesis/utu-pres.webp",
+  "/tesis/kalite-kontrol.webp",
+  "/tesis/kalite-masa.webp",
+  "/tesis/paketleme.webp",
+  "/tesis/paketleme-2.webp",
+  "/tesis/etiket.webp",
+  "/tesis/sevkiyat.webp",
+  "/tesis/depo-sayim.webp",
+  "/tesis/depo.webp",
+  "/tesis/iplik.webp",
+];
+
 const input =
   "mt-1 w-full rounded-lg border border-black/10 px-3 py-2 text-sm outline-none focus:border-brand-navy";
 
@@ -33,6 +64,8 @@ export default function SlideEditor({
   const [subtitle, setSubtitle] = useState<Record<string, string>>({ ...(slide?.subtitle ?? {}) });
   const [images, setImages] = useState<string[]>(slide?.images ?? ["", "", ""]);
   const [active, setActive] = useState(slide?.active ?? true);
+  /** Hangi kutu için hazır görsel seçici açık (yoksa null) */
+  const [picker, setPicker] = useState<number | null>(null);
   const [pending, startTransition] = useTransition();
   const [message, setMessage] = useState<{ ok: boolean; text: string } | null>(null);
 
@@ -100,16 +133,48 @@ export default function SlideEditor({
             <div className="relative aspect-[3/4] overflow-hidden rounded-xl bg-brand-grey-light">
               {src && <Image src={src} alt="" fill sizes="200px" className="object-cover" />}
             </div>
-            <div className="mt-2">
+            <div className="mt-2 flex flex-wrap items-center gap-2">
               <ImageUpload
                 label={src ? "Değiştir" : "Görsel yükle"}
                 maxSize={1400}
                 onUploaded={(u) => setImages((prev) => prev.map((p, k) => (k === i ? u : p)))}
               />
+              <button
+                type="button"
+                onClick={() => setPicker(picker === i ? null : i)}
+                className="rounded-full border border-black/10 px-4 py-2 font-heading text-xs font-semibold uppercase tracking-wide text-brand-navy transition hover:border-brand-navy"
+              >
+                {picker === i ? "Kapat" : "Fabrika görsellerinden seç"}
+              </button>
             </div>
           </div>
         ))}
       </div>
+
+      {picker !== null && (
+        <div className="mt-4 rounded-xl bg-brand-grey-light p-4">
+          <p className="text-xs font-semibold text-brand-grey">
+            {picker + 1}. kutu için bir fabrika görseli seçin, sonra &quot;Kaydet&quot;e basın.
+          </p>
+          <div className="mt-3 grid grid-cols-4 gap-2 sm:grid-cols-6 lg:grid-cols-9">
+            {FACTORY_IMAGES.map((src) => (
+              <button
+                key={src}
+                type="button"
+                onClick={() => {
+                  setImages((prev) => prev.map((p, k) => (k === picker ? src : p)));
+                  setPicker(null);
+                }}
+                className={`relative aspect-[3/4] overflow-hidden rounded-lg ring-2 transition hover:ring-brand-navy ${
+                  images[picker] === src ? "ring-brand-navy" : "ring-transparent"
+                }`}
+              >
+                <Image src={src} alt="" fill sizes="120px" className="object-cover" />
+              </button>
+            ))}
+          </div>
+        </div>
+      )}
 
       <div className="mt-6 grid gap-4">
         {LANGS.map((l) => (

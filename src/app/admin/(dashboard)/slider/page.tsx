@@ -16,7 +16,8 @@ export default async function AdminSliderPage() {
     <div>
       <h1 className="font-heading text-2xl font-bold">Ana Sayfa Slider</h1>
       <p className="mt-2 max-w-2xl text-sm text-brand-grey">
-        Slaytlar ana sayfada bu sırayla, 6 saniyede bir döner. Her slaytta 3 görsel olmalı.
+        Slaytlar ana sayfada bu sırayla, 6 saniyede bir döner. Her slaytta 3 görsel olmalı; kendi fotoğrafınızı
+        yükleyebilir ya da hazır fabrika görsellerinden seçebilirsiniz. En altta yeni slayt ekleyebilirsiniz.
         Boş bırakılan dilde Türkçe metin gösterilir. Kaydettiğiniz değişiklik sitede hemen görünür.
       </p>
       {error && <p className="mt-4 text-sm text-red-600">{error.message}</p>}
