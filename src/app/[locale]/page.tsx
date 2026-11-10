@@ -7,6 +7,7 @@ import type { Locale } from "@/i18n/routing";
 import { blogImageUrl, getBlogPosts, getContent } from "@/lib/data";
 import StatCounter from "@/components/StatCounter";
 import Reveal from "@/components/Reveal";
+import Marquee from "@/components/Marquee";
 import AutoVideo from "@/components/AutoVideo";
 import CatalogueDownloadForm from "@/components/CatalogueDownloadForm";
 import NewsletterForm from "@/components/NewsletterForm";
@@ -30,9 +31,9 @@ function buildHeroSlides(c: {
       title: c.heroTitle,
       subtitle: c.heroSubtitle,
       images: [
-        "/images/factory-floor.webp",
-        "/blog/Fuar-Blog.webp",
-        "/sureclerimiz/step-7-dikim.webp",
+        "/tesis/dikey/dis-cephe.webp",
+        "/tesis/dikey/orme.webp",
+        "/tesis/dikey/dikim.webp",
       ],
     },
     {
@@ -63,6 +64,14 @@ const FACILITY_CLIPS = [
   { src: "/video/tesis/paketleme.mp4", poster: "/tesis/paketleme.webp" },
   { src: "/video/tesis/depo.mp4", poster: "/tesis/depo-sayim.webp" },
 ];
+
+// Paneldeki ilk slaytta hâlâ eski stok/yapay görseller kayıtlıysa, yerlerine fabrikamızın
+// kendi çekimleri gösterilir. Panelden yeni görsel yüklenirse o geçerli olur.
+const LEGACY_HERO_IMAGES: Record<string, string> = {
+  "/images/factory-floor.webp": "/tesis/dikey/dis-cephe.webp",
+  "/blog/Fuar-Blog.webp": "/tesis/dikey/orme.webp",
+  "/sureclerimiz/step-7-dikim.webp": "/tesis/dikey/dikim.webp",
+};
 
 // Koleksiyon kutularının sırası; anahtar içerik dosyalarındaki "icon" alanıdır (5 dilde ortak)
 const COLLECTION_ORDER = ["shorts", "tank", "leggings", "bra", "corset"];
@@ -104,7 +113,7 @@ export default async function HomePage(props: PageProps<"/[locale]">) {
     ? slideRows.map((s) => ({
         title: localized(s.title, locale),
         subtitle: localized(s.subtitle, locale),
-        images: s.images,
+        images: s.images.map((src) => LEGACY_HERO_IMAGES[src] ?? src),
       }))
     : buildHeroSlides(c);
 
@@ -113,7 +122,6 @@ export default async function HomePage(props: PageProps<"/[locale]">) {
     const col = (c.collections as Collection[]).find((x) => x.icon === icon);
     return col ? [{ ...col, image: images[`home.collection.${icon}` as SiteImageKey] }] : [];
   });
-  const marquee = [...c.processList, ...c.yarnFeatures] as string[];
 
   return (
     <>
@@ -125,24 +133,8 @@ export default async function HomePage(props: PageProps<"/[locale]">) {
         poster={images["home.heroPoster"]}
       />
 
-      {/* Kayan şerit: süreçler ve kumaş özellikleri */}
-      <div className="overflow-hidden border-b border-black/5 bg-white py-4" aria-hidden="true">
-        <div className="marquee-track">
-          {[0, 1].map((n) => (
-            <div key={n} className="flex shrink-0 items-center">
-              {marquee.map((item) => (
-                <span
-                  key={`${n}-${item}`}
-                  className="flex items-center gap-8 pe-8 font-heading text-sm font-semibold uppercase tracking-[0.18em] text-brand-navy/70"
-                >
-                  {item}
-                  <span className="h-1.5 w-1.5 rounded-full bg-brand-navy/30" />
-                </span>
-              ))}
-            </div>
-          ))}
-        </div>
-      </div>
+      {/* Kayan bant: üretim adımları + kumaş özellikleri */}
+      <Marquee primary={c.processList as string[]} secondary={c.yarnFeatures as string[]} />
 
       {/* Hakkımızda + rakamlar */}
       <section className="mx-auto max-w-7xl px-4 py-24 sm:px-6 lg:px-8">
