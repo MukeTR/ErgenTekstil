@@ -11,6 +11,7 @@
     "aboutText": "Ergen Tekstil wurde 2004 als integrierter Betrieb mit Strick- und Konfektionsanlagen zur Herstellung von Seamless-Bekleidung gegründet. Heute zählt das Unternehmen mit einer Produktionskapazität von 200.000 Teilen/Monat zu den führenden Qualitätsherstellern seiner Branche. Durch den effektiven Einsatz von Technologie und einen innovativen Ansatz wissen wir, dass die schnelle Anpassung an eine sich wandelnde Welt und Innovation zu unseren wichtigsten Werten gehören.",
     "processSteps": [
       "Stricken",
+      "Färben",
       "Nähen",
       "Verpacken"
     ],
@@ -50,6 +51,7 @@
       "Nähen",
       "Bügeln & Verpacken",
       "F&E",
+      "Färben",
       "Qualitätskontrolle"
     ],
     "cataloguesTitle": "Produktkataloge",
@@ -161,6 +163,11 @@
         "title": "Qualitätskontrolle",
         "text": "Die produzierten Stoffe durchlaufen eine detaillierte Qualitätskontrolle, um die Einhaltung der Qualitätsstandards zu prüfen. Werden Mängel festgestellt, werden fehlerhafte Teile korrigiert oder aussortiert.",
         "image": "step-5-kalite-kontrol.webp"
+      },
+      {
+        "title": "Färben und Veredeln",
+        "text": "Die Stoffe werden in den gewünschten Farben und Mustern gefärbt und veredelt. Dieser Schritt verbessert die ästhetischen und funktionalen Eigenschaften des Produkts.",
+        "image": "step-6-boyama.webp"
       },
       {
         "title": "Zuschnitt und Seamless-Fertigung",

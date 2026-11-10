@@ -43,8 +43,9 @@ export const SITE_IMAGE_SLOTS = [
   { key: "process.step-3", page: "Süreçlerimiz", label: "3. adım", fallback: "/tesis/iplik.webp" },
   { key: "process.step-4", page: "Süreçlerimiz", label: "4. adım", fallback: "/tesis/orme-yakin.webp" },
   { key: "process.step-5", page: "Süreçlerimiz", label: "5. adım", fallback: "/tesis/kalite-olcum.webp" },
-  { key: "process.step-6", page: "Süreçlerimiz", label: "6. adım", fallback: "/tesis/dikim.webp" },
-  { key: "process.step-7", page: "Süreçlerimiz", label: "7. adım", fallback: "/tesis/paketleme.webp" },
+  { key: "process.step-6", page: "Süreçlerimiz", label: "6. adım (Boyama ve Terbiye)", fallback: "/blog/colors.webp" },
+  { key: "process.step-7", page: "Süreçlerimiz", label: "7. adım", fallback: "/tesis/dikim.webp" },
+  { key: "process.step-8", page: "Süreçlerimiz", label: "8. adım", fallback: "/tesis/paketleme.webp" },
 ] as const;
 
 export type SiteImageKey = (typeof SITE_IMAGE_SLOTS)[number]["key"];
