@@ -1,116 +1,77 @@
-import Image from "next/image";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import type { Locale } from "@/i18n/routing";
 import { getContent } from "@/lib/data";
 import PageHero from "@/components/PageHero";
 import StatCounter from "@/components/StatCounter";
+import Reveal from "@/components/Reveal";
+import AboutStory, { type StoryChapter } from "@/components/AboutStory";
 import { getSiteImages } from "@/lib/site-media";
 
 export default async function AboutPage(props: PageProps<"/[locale]/hakkimizda">) {
   const { locale } = (await props.params) as { locale: Locale };
   setRequestLocale(locale);
-  const c = getContent(locale).about;
-  const process = getContent(locale).process;
-  const tc = await getTranslations({ locale, namespace: "common" });
+  const content = getContent(locale);
+  const c = content.about;
+  const tn = await getTranslations({ locale, namespace: "nav" });
   const images = await getSiteImages();
+
+  // Kaydırmalı hikâye: kuruluştan bugüne. Metinlerin tamamı içerik dosyalarından gelir.
+  const chapters: StoryChapter[] = [
+    { mark: "2004", title: c.badge, text: c.intro, image: images["about.intro"] },
+    { mark: "01", title: c.missionTitle, text: c.missionText, image: images["about.mission"] },
+    { mark: "02", title: c.visionTitle, text: c.visionText, image: images["about.vision"] },
+    {
+      mark: "03",
+      title: content.home.facilityTitle,
+      text: content.home.facilityText,
+      image: images["about.facility"],
+    },
+    { mark: "04", title: c.principlesTitle, list: c.principles, image: images["about.principles"] },
+  ];
 
   return (
     <>
       <PageHero title={c.title} subtitle={c.badge} image={images.pageHero} />
 
-      {/* Giriş + fotoğraf */}
-      <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
-        <div className="grid items-center gap-12 lg:grid-cols-2">
-          <div>
-            <p className="text-lg leading-relaxed text-brand-grey sm:text-xl">{c.intro}</p>
-            <div className="mt-10 grid grid-cols-3 gap-4 border-t border-black/5 pt-8">
-              {process.stats.map((s: { value: number; suffix: string; label: string }) => (
-                <StatCounter key={s.label} value={s.value} suffix={s.suffix} label={s.label} />
-              ))}
-            </div>
-          </div>
-          <div className="relative aspect-[4/3] overflow-hidden rounded-3xl shadow-xl">
-            <Image
-              src={images["about.intro"]}
-              alt=""
-              fill
-              sizes="(max-width: 1024px) 100vw, 50vw"
-              className="object-cover"
-            />
-          </div>
-        </div>
-      </section>
-
-      {/* Misyon / Vizyon kartları */}
-      <section className="bg-brand-grey-light py-20">
-        <div className="mx-auto grid max-w-7xl gap-8 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
-          <div className="overflow-hidden rounded-3xl bg-white shadow-sm">
-            <div className="relative aspect-[16/9]">
-              <Image
-                src={images["about.mission"]}
-                alt=""
-                fill
-                sizes="(max-width: 1024px) 100vw, 50vw"
-                className="object-cover"
-              />
-            </div>
-            <div className="p-8 sm:p-10">
-              <h2 className="font-heading text-2xl font-extrabold text-brand-navy">
-                {c.missionTitle}
-              </h2>
-              <p className="mt-4 leading-relaxed text-brand-grey">{c.missionText}</p>
-            </div>
-          </div>
-          <div className="overflow-hidden rounded-3xl bg-white shadow-sm">
-            <div className="relative aspect-[16/9]">
-              <Image
-                src={images["about.vision"]}
-                alt=""
-                fill
-                sizes="(max-width: 1024px) 100vw, 50vw"
-                className="object-cover"
-              />
-            </div>
-            <div className="p-8 sm:p-10">
-              <h2 className="font-heading text-2xl font-extrabold text-brand-navy">
-                {c.visionTitle}
-              </h2>
-              <p className="mt-4 leading-relaxed text-brand-grey">{c.visionText}</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Prensipler */}
-      <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
-        <h2 className="font-heading text-2xl font-extrabold text-brand-navy sm:text-3xl">
-          {c.principlesTitle}
-        </h2>
-        <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {c.principles.map((p: string, i: number) => (
-            <div key={p} className="rounded-2xl border border-black/5 p-6">
-              <span className="font-heading text-3xl font-extrabold text-brand-navy/15">
-                0{i + 1}
-              </span>
-              <p className="mt-3 leading-relaxed text-brand-grey">{p}</p>
-            </div>
+      {/* Rakamlar */}
+      <section className="border-b border-black/5 bg-white py-14">
+        <Reveal className="mx-auto grid max-w-5xl grid-cols-3 gap-6 px-4 sm:px-6 lg:px-8">
+          {content.process.stats.map((s: { value: number; suffix?: string; label: string }) => (
+            <StatCounter key={s.label} value={s.value} suffix={s.suffix} label={s.label} />
           ))}
-        </div>
-        <div className="mt-12 flex flex-wrap gap-4">
-          <Link
-            href="/sureclerimiz"
-            className="rounded-full bg-brand-navy px-7 py-3.5 font-heading text-sm font-semibold uppercase tracking-wide text-white transition hover:bg-black"
-          >
-            {tc("learnMore")}
-          </Link>
-          <Link
-            href="/iletisim"
-            className="rounded-full border border-brand-navy/30 px-7 py-3.5 font-heading text-sm font-semibold uppercase tracking-wide text-brand-navy transition hover:border-brand-navy"
-          >
-            {tc("requestQuote")}
-          </Link>
-        </div>
+        </Reveal>
+      </section>
+
+      {/* Kaydırmalı hikâye */}
+      <div className="py-10 lg:py-0">
+        <AboutStory chapters={chapters} />
+      </div>
+
+      {/* Devam */}
+      <section className="bg-brand-navy py-20 text-white">
+        <Reveal className="mx-auto flex max-w-7xl flex-col items-start justify-between gap-8 px-4 sm:px-6 lg:flex-row lg:items-center lg:px-8">
+          <div className="max-w-2xl">
+            <h2 className="font-heading text-3xl font-extrabold tracking-tight sm:text-4xl">
+              {content.facility.ctaTitle}
+            </h2>
+            <p className="mt-4 text-white/70">{content.facility.ctaText}</p>
+          </div>
+          <div className="flex shrink-0 flex-wrap gap-4">
+            <Link
+              href="/tesisimiz"
+              className="rounded-full bg-white px-8 py-4 font-heading text-sm font-semibold uppercase tracking-wide text-brand-navy transition hover:bg-white/90"
+            >
+              {tn("facility")}
+            </Link>
+            <Link
+              href="/iletisim"
+              className="rounded-full border border-white/40 px-8 py-4 font-heading text-sm font-semibold uppercase tracking-wide text-white transition hover:border-white"
+            >
+              {tn("contact")}
+            </Link>
+          </div>
+        </Reveal>
       </section>
     </>
   );

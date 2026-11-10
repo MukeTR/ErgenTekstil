@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import type { Locale } from "@/i18n/routing";
+import { FACTORY_MAP_EMBED } from "@/lib/location";
 import { getContent } from "@/lib/data";
 import { SITE_URL } from "@/lib/seo";
 import { getSiteImages, type SiteImageKey } from "@/lib/site-media";
@@ -181,6 +182,19 @@ export default async function FacilityPage(props: PageProps<"/[locale]/tesisimiz
           <Reveal delay={150}>
             <h2 className={`${H2} text-brand-navy`}>{c.warehouseTitle}</h2>
             <p className="mt-6 text-lg leading-relaxed text-brand-grey">{c.warehouseText}</p>
+            <div className="mt-8 grid grid-cols-2 gap-3">
+              {["/tesis/sevkiyat.webp", "/tesis/depo.webp"].map((src) => (
+                <div key={src} className="group relative aspect-[4/3] overflow-hidden rounded-2xl">
+                  <Image
+                    src={src}
+                    alt={c.warehouseTitle}
+                    fill
+                    sizes="(max-width: 1024px) 50vw, 20vw"
+                    className="object-cover transition duration-700 group-hover:scale-105"
+                  />
+                </div>
+              ))}
+            </div>
           </Reveal>
         </div>
       </section>
@@ -201,9 +215,7 @@ export default async function FacilityPage(props: PageProps<"/[locale]/tesisimiz
                 title="map"
                 className="h-80 w-full border-0"
                 loading="lazy"
-                src={`https://www.google.com/maps?q=${encodeURIComponent(
-                  content.contact.headOfficeAddress
-                )}&output=embed`}
+                src={FACTORY_MAP_EMBED}
               />
             </div>
           </Reveal>

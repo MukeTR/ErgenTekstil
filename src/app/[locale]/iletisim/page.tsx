@@ -1,5 +1,6 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import type { Locale } from "@/i18n/routing";
+import { FACTORY_MAP_EMBED } from "@/lib/location";
 import { getContent } from "@/lib/data";
 import PageHero from "@/components/PageHero";
 import ContactForm from "@/components/ContactForm";
@@ -50,9 +51,7 @@ export default async function ContactPage(props: PageProps<"/[locale]/iletisim">
                 title="map"
                 className="h-72 w-full border-0"
                 loading="lazy"
-                src={`https://www.google.com/maps?q=${encodeURIComponent(
-                  c.headOfficeAddress
-                )}&output=embed`}
+                src={FACTORY_MAP_EMBED}
               />
             </div>
           </div>
