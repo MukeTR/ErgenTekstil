@@ -5,7 +5,7 @@ import { Link } from "@/i18n/navigation";
 import type { Locale } from "@/i18n/routing";
 import { FACTORY_MAP_EMBED } from "@/lib/location";
 import { getContent } from "@/lib/data";
-import { SITE_URL } from "@/lib/seo";
+import { pageMetadata } from "@/lib/seo";
 import { getSiteImages, type SiteImageKey } from "@/lib/site-media";
 import StatCounter from "@/components/StatCounter";
 import Reveal from "@/components/Reveal";
@@ -27,11 +27,7 @@ export async function generateMetadata(
 ): Promise<Metadata> {
   const { locale } = (await props.params) as { locale: Locale };
   const c = getContent(locale).facility;
-  return {
-    title: c.title,
-    description: c.subtitle,
-    alternates: { canonical: `${SITE_URL}/${locale}/tesisimiz/` },
-  };
+  return pageMetadata(locale, "/tesisimiz/", c.title, c.subtitle);
 }
 
 export default async function FacilityPage(props: PageProps<"/[locale]/tesisimiz">) {

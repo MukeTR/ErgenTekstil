@@ -1,3 +1,5 @@
+import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import { getTranslations, setRequestLocale } from "next-intl/server";
@@ -13,10 +15,13 @@ export function generateStaticParams() {
 
 export async function generateMetadata(
   props: PageProps<"/[locale]/blog/[slug]">
-) {
+): Promise<Metadata> {
   const { locale, slug } = (await props.params) as { locale: Locale; slug: string };
   const post = getBlogPost(locale, slug);
-  return { title: post?.title ?? "Ergen Tekstil" };
+  if (!post) return { title: "Ergen Tekstil" };
+  const firstParagraph = post.content?.find((b) => b.tag === "p")?.text;
+  const description = firstParagraph || (post.features ?? []).join(", ") || post.title;
+  return pageMetadata(locale, `/blog/${slug}/`, post.title, description);
 }
 
 export default async function BlogPostPage(

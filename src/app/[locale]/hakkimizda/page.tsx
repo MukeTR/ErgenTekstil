@@ -1,3 +1,5 @@
+import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import type { Locale } from "@/i18n/routing";
@@ -7,6 +9,14 @@ import StatCounter from "@/components/StatCounter";
 import Reveal from "@/components/Reveal";
 import AboutStory, { type StoryChapter } from "@/components/AboutStory";
 import { getSiteImages } from "@/lib/site-media";
+
+export async function generateMetadata(
+  props: PageProps<"/[locale]/hakkimizda">
+): Promise<Metadata> {
+  const { locale } = (await props.params) as { locale: Locale };
+  const c = getContent(locale).about;
+  return pageMetadata(locale, "/hakkimizda/", c.title, c.intro);
+}
 
 export default async function AboutPage(props: PageProps<"/[locale]/hakkimizda">) {
   const { locale } = (await props.params) as { locale: Locale };

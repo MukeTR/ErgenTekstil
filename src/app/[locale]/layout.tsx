@@ -9,6 +9,9 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import MetaPixel from "@/components/MetaPixel";
+import JsonLd from "@/components/JsonLd";
+import { getContent } from "@/lib/data";
+import { FACTORY_COORDS } from "@/lib/location";
 import "../globals.css";
 
 const montserrat = Montserrat({
@@ -78,6 +81,57 @@ export default async function LocaleLayout(props: LayoutProps<"/[locale]">) {
 
   setRequestLocale(locale);
   const dir = locale === "ar" ? "rtl" : "ltr";
+  const seo = SEO[locale as Locale] ?? SEO.tr;
+  const contact = getContent(locale as Locale).contact;
+  const organization = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": ["Organization", "Manufacturer"],
+        "@id": `${SITE_URL}/#organization`,
+        name: "Ergen Tekstil",
+        legalName: "Ergen Tekstil ve İnşaat Sanayi Ticaret Limited Şirketi",
+        url: `${SITE_URL}/${locale}/`,
+        logo: `${SITE_URL}/marka/logo-renkli.png`,
+        image: `${SITE_URL}/tesis/dis-cephe.webp`,
+        description: seo.description,
+        foundingDate: "2004",
+        email: contact.email,
+        telephone: contact.phones[0],
+        brand: { "@type": "Brand", name: "FORMactive" },
+        address: {
+          "@type": "PostalAddress",
+          streetAddress: "Karaağaç OSB, Eski Bağlar Caddesi No:6",
+          addressLocality: "Kapaklı",
+          addressRegion: "Tekirdağ",
+          postalCode: "59510",
+          addressCountry: "TR",
+        },
+        geo: {
+          "@type": "GeoCoordinates",
+          latitude: FACTORY_COORDS.lat,
+          longitude: FACTORY_COORDS.lng,
+        },
+        areaServed: ["Europe", "Africa", "Asia"],
+        knowsAbout: seo.keywords,
+        contactPoint: {
+          "@type": "ContactPoint",
+          contactType: "sales",
+          email: contact.email,
+          telephone: contact.phones[0],
+          availableLanguage: ["tr", "en", "ar", "de", "ru"],
+        },
+      },
+      {
+        "@type": "WebSite",
+        "@id": `${SITE_URL}/#website`,
+        url: `${SITE_URL}/`,
+        name: "Ergen Tekstil",
+        inLanguage: locale,
+        publisher: { "@id": `${SITE_URL}/#organization` },
+      },
+    ],
+  };
 
   return (
     <html
@@ -92,6 +146,7 @@ export default async function LocaleLayout(props: LayoutProps<"/[locale]">) {
           <Footer locale={locale} />
           <WhatsAppButton locale={locale} />
           <MetaPixel />
+          <JsonLd data={organization} />
         </NextIntlClientProvider>
       </body>
     </html>

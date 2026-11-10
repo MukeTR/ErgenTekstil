@@ -12,7 +12,8 @@ export default function StatCounter({
   suffix?: string;
 }) {
   const ref = useRef<HTMLDivElement>(null);
-  const [display, setDisplay] = useState(0);
+  // Sunucu çıktısında gerçek değer yer alır (arama motorları "0" görmesin); ekrana girince 0'dan sayar
+  const [display, setDisplay] = useState(value);
 
   useEffect(() => {
     const el = ref.current;

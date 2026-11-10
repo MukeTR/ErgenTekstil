@@ -2,7 +2,10 @@ import { notFound } from "next/navigation";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import type { Locale } from "@/i18n/routing";
-import { getProduct } from "@/lib/data";
+import type { Metadata } from "next";
+import { getProduct, productImageUrl } from "@/lib/data";
+import { PRODUCT_META_SUFFIX, SITE_URL, pageMetadata } from "@/lib/seo";
+import JsonLd from "@/components/JsonLd";
 import ProductGallery from "@/components/ProductGallery";
 import ColorSwatches from "@/components/ColorSwatches";
 import MetaViewContent from "@/components/MetaViewContent";
@@ -12,10 +15,20 @@ export const dynamic = "force-dynamic";
 
 export async function generateMetadata(
   props: PageProps<"/[locale]/katalog/[slug]">
-) {
+): Promise<Metadata> {
   const { locale, slug } = (await props.params) as { locale: Locale; slug: string };
   const product = await getProduct(locale, slug);
-  return { title: product?.name ?? "Ergen Tekstil" };
+  if (!product) return { title: "Ergen Tekstil" };
+  const description = [
+    product.categoryKeys[0] === "Genel" ? "" : product.categories[0],
+    product.features.slice(0, 4).join(", "),
+    PRODUCT_META_SUFFIX[locale],
+  ]
+    .filter(Boolean)
+    .join(". ");
+  const meta = pageMetadata(locale, `/katalog/${slug}/`, product.name, description);
+  const image = product.images[0] ? productImageUrl(product.images[0]) : undefined;
+  return { ...meta, openGraph: { ...meta.openGraph, images: image ? [{ url: image }] : undefined } };
 }
 
 export default async function ProductPage(
@@ -31,8 +44,35 @@ export default async function ProductPage(
   const tc = await getTranslations({ locale, namespace: "common" });
   const tn = await getTranslations({ locale, namespace: "nav" });
 
+  const pageUrl = `${SITE_URL}/${locale}/katalog/${product.slug}/`;
+  const absolute = (src: string) => (src.startsWith("http") ? src : `${SITE_URL}${src}`);
+  const structured = [
+    {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      name: product.name,
+      url: pageUrl,
+      image: product.images.slice(0, 6).map((i) => absolute(productImageUrl(i))),
+      description: product.features.join(", "),
+      category: product.categories.join(", "),
+      color: product.colors.join(", ") || undefined,
+      brand: { "@type": "Brand", name: "FORMactive" },
+      manufacturer: { "@id": `${SITE_URL}/#organization` },
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: tn("home"), item: `${SITE_URL}/${locale}/` },
+        { "@type": "ListItem", position: 2, name: tn("catalog"), item: `${SITE_URL}/${locale}/katalog/` },
+        { "@type": "ListItem", position: 3, name: product.name, item: pageUrl },
+      ],
+    },
+  ];
+
   return (
     <section className="mx-auto max-w-6xl px-4 py-12 sm:px-6 lg:px-8">
+      <JsonLd data={structured} />
       <MetaViewContent
         contentId={product.slug}
         contentName={product.name}

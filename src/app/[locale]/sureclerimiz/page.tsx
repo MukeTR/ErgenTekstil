@@ -1,3 +1,5 @@
+import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 import Image from "next/image";
 import { setRequestLocale } from "next-intl/server";
 import type { Locale } from "@/i18n/routing";
@@ -6,6 +8,14 @@ import PageHero from "@/components/PageHero";
 import StatCounter from "@/components/StatCounter";
 import Reveal from "@/components/Reveal";
 import { getSiteImages, type SiteImageKey } from "@/lib/site-media";
+
+export async function generateMetadata(
+  props: PageProps<"/[locale]/sureclerimiz">
+): Promise<Metadata> {
+  const { locale } = (await props.params) as { locale: Locale };
+  const c = getContent(locale).process;
+  return pageMetadata(locale, "/sureclerimiz/", c.title, c.intro);
+}
 
 export default async function ProcessPage(props: PageProps<"/[locale]/sureclerimiz">) {
   const { locale } = (await props.params) as { locale: Locale };

@@ -1,9 +1,19 @@
+import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import type { Locale } from "@/i18n/routing";
 import { FACTORY_MAP_EMBED } from "@/lib/location";
 import { getContent } from "@/lib/data";
 import PageHero from "@/components/PageHero";
 import ContactForm from "@/components/ContactForm";
+
+export async function generateMetadata(
+  props: PageProps<"/[locale]/iletisim">
+): Promise<Metadata> {
+  const { locale } = (await props.params) as { locale: Locale };
+  const c = getContent(locale).contact;
+  return pageMetadata(locale, "/iletisim/", c.title, `Ergen Tekstil — ${c.headOfficeAddress}. ${c.phones[0]} · ${c.email}`);
+}
 
 export default async function ContactPage(props: PageProps<"/[locale]/iletisim">) {
   const { locale } = (await props.params) as { locale: Locale };

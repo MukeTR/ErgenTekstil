@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Link } from "@/i18n/navigation";
 import type { Locale } from "@/i18n/routing";
 import { getContent } from "@/lib/data";
+import { LEGGINGS_LANDING } from "@/data/landing-leggings";
 
 const LEGAL_LABELS: Record<Locale, { privacy: string; cookies: string; terms: string }> = {
   tr: { privacy: "Gizlilik Politikası", cookies: "Çerez Politikası", terms: "Kullanım Koşulları" },
@@ -25,6 +26,7 @@ export default async function Footer({ locale }: { locale: Locale }) {
     { href: "/tesisimiz", label: t("facility") },
     { href: "/sureclerimiz", label: t("process") },
     { href: "/katalog", label: t("catalog") },
+    { href: "/seamless-tayt-ureticisi", label: LEGGINGS_LANDING[locale].navLabel },
     { href: "/blog", label: t("blog") },
     { href: "/iletisim", label: t("contact") },
   ];

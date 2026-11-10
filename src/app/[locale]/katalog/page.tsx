@@ -1,3 +1,5 @@
+import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import type { Locale } from "@/i18n/routing";
 import { getCategoryKeys, getProducts } from "@/lib/data";
@@ -6,6 +8,14 @@ import CatalogGrid from "@/components/CatalogGrid";
 
 // Ürünler her istekte Supabase'den okunur: panelden yapılan değişiklik anında yansır
 export const dynamic = "force-dynamic";
+
+export async function generateMetadata(
+  props: PageProps<"/[locale]/katalog">
+): Promise<Metadata> {
+  const { locale } = (await props.params) as { locale: Locale };
+  const t = await getTranslations({ locale, namespace: "catalog" });
+  return pageMetadata(locale, "/katalog/", t("title"), t("subtitle"));
+}
 
 export default async function CatalogPage(props: PageProps<"/[locale]/katalog">) {
   const { locale } = (await props.params) as { locale: Locale };

@@ -115,3 +115,28 @@ export function languageAlternates(path = "") {
     },
   };
 }
+
+/**
+ * Bir iç sayfanın meta verisi: başlık, açıklama, kendi diline canonical ve tüm diller için hreflang.
+ * `path` dil önekinden sonraki yoldur ve eğik çizgiyle biter: "/hakkimizda/".
+ */
+export function pageMetadata(locale: Locale, path: string, title: string, description: string) {
+  const clean = description.replace(/\s+/g, " ").trim();
+  const short = clean.length > 160 ? `${clean.slice(0, 157).trimEnd()}…` : clean;
+  const url = `${SITE_URL}/${locale}${path}`;
+  return {
+    title,
+    description: short,
+    alternates: { canonical: url, languages: languageAlternates(path).languages },
+    openGraph: { title, description: short, url, type: "website" as const },
+  };
+}
+
+/** Ürün sayfası açıklamasının dile göre kapanış cümlesi */
+export const PRODUCT_META_SUFFIX: Record<Locale, string> = {
+  tr: "Ergen Tekstil dikişsiz (seamless) üretim; toptan ve özel marka (private label) için teklif alın.",
+  en: "Seamless production by Ergen Tekstil; wholesale and private label, request a quote.",
+  ar: "إنتاج بلا خياطة من أرجن تكستيل؛ بالجملة وبعلامتك الخاصة، اطلب عرض سعر.",
+  de: "Seamless-Fertigung von Ergen Tekstil; Großhandel und Private Label, Angebot anfordern.",
+  ru: "Бесшовное производство Ergen Tekstil; опт и private label, запросите предложение.",
+};

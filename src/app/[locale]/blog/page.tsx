@@ -1,8 +1,16 @@
+import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import type { Locale } from "@/i18n/routing";
 import { getBlogPosts } from "@/lib/data";
 import PageHero from "@/components/PageHero";
 import BlogGrid from "@/components/BlogGrid";
+
+export async function generateMetadata(props: PageProps<"/[locale]/blog">): Promise<Metadata> {
+  const { locale } = (await props.params) as { locale: Locale };
+  const t = await getTranslations({ locale, namespace: "blog" });
+  return pageMetadata(locale, "/blog/", t("title"), t("subtitle"));
+}
 
 export default async function BlogIndexPage(props: PageProps<"/[locale]/blog">) {
   const { locale } = (await props.params) as { locale: Locale };
