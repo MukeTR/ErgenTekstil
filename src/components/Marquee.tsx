@@ -13,7 +13,7 @@ export default function Marquee({ primary, secondary }: { primary: string[]; sec
                 <span key={`${n}-${item}`} className="flex items-center">
                   <span
                     className={`whitespace-nowrap px-6 font-heading text-2xl font-extrabold tracking-tight sm:px-9 sm:text-4xl ${
-                      i % 2 === 1 ? "marquee-outline" : ""
+                      i % 2 === 1 ? "text-white/45" : ""
                     }`}
                   >
                     {item}
