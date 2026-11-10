@@ -1,6 +1,6 @@
 # Ergen Tekstil
 
-> Ergen Tekstil is a Turkish manufacturer of seamless (dikişsiz) apparel founded in 2004: leggings, shapewear, shorts, activewear, underwear and thermal wear. It integrates knitting, dyeing, sewing and packaging, has a production capacity of 200,000 pieces per month, produces private-label for brands and exports to Europe, Africa and Asia. It is a B2B / wholesale manufacturer: products have no retail prices; buyers request a quote.
+> Ergen Tekstil is a Turkish manufacturer of seamless (dikişsiz) apparel founded in 2004: leggings, shapewear, shorts, activewear, underwear and thermal wear. It integrates knitting, sewing, quality control and packaging, has a production capacity of 200,000 pieces per month, produces private-label for brands and exports to Europe, Africa and Asia. It is a B2B / wholesale manufacturer: products have no retail prices; buyers request a quote.
 
 ## Key facts
 
@@ -37,9 +37,8 @@ In line with our growth targets, the construction of our own factory in the Teki
 3. Material Selection and Preparation
 4. Knitting Process
 5. Quality Control
-6. Dyeing and Finishing
-7. Cutting and Seamless Manufacturing
-8. Packaging and Distribution
+6. Cutting and Seamless Manufacturing
+7. Packaging and Distribution
 
 Details: [Our processes](https://www.ergentekstil.com/en/sureclerimiz/)
 

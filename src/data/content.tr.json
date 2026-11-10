@@ -11,7 +11,6 @@
     "aboutText": "Ergen Tekstil, 2004 yılında dikişsiz giyim üretimi yapmak üzere örgü ve konfeksiyon tesisleri ile entegre olarak kurulan bir firmadır. Bugün 200.000 parça/ay üretim kapasitesi ile kendi alanındaki kaliteli üreticilerden biridir. Teknolojinin etkin kullanımı ve yenilikçi yaklaşımı ile, değişen dünya dinamiklerine hızlı uyum sağlamanın ve yenilikçiliğin öncelikli değerler olduğunun bilincindeyiz.",
     "processSteps": [
       "Örgü",
-      "Boyama",
       "Dikim",
       "Paketleme"
     ],
@@ -51,7 +50,6 @@
       "Dikim",
       "Ütü ve Paketleme",
       "Ar-Ge",
-      "Boyama",
       "Kalite Kontrol"
     ],
     "cataloguesTitle": "Ürün Katalogları",
@@ -163,11 +161,6 @@
         "title": "Kalite Kontrol",
         "text": "Üretilen kumaşlar, kalite standartlarına uygunluğu kontrol etmek için detaylı bir kalite kontrol sürecinden geçer. Herhangi bir kusur tespit edildiğinde, sorunlu parçalar düzeltilir veya reddedilir.",
         "image": "step-5-kalite-kontrol.webp"
-      },
-      {
-        "title": "Boyama ve Terbiye",
-        "text": "Kumaşlar, istenilen renk ve desenlere boyanır ve terbiye edilir. Bu adım, ürünün estetik ve fonksiyonel özelliklerini iyileştirir.",
-        "image": "step-6-boyama.webp"
       },
       {
         "title": "Kesim ve Dikişsiz İmalat",

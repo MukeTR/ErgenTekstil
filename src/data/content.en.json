@@ -11,7 +11,6 @@
     "aboutText": "Ergen Tekstil is a company founded in 2004, integrating knitting and garment facilities to produce seamless apparel. Today, with a production capacity of 200,000 pieces/month, it is one of the leading quality manufacturers in its field. Through the effective use of technology and an innovative approach, we recognize that adapting quickly to a changing world and prioritizing innovation are essential values.",
     "processSteps": [
       "Knitting",
-      "Dyeing",
       "Sewing",
       "Packaging"
     ],
@@ -51,7 +50,6 @@
       "Sewing",
       "Ironing & Packaging",
       "R&D",
-      "Dyeing",
       "Quality Control"
     ],
     "cataloguesTitle": "Product Catalogues",
@@ -163,11 +161,6 @@
         "title": "Quality Control",
         "text": "The fabrics produced undergo a detailed quality control process to verify compliance with quality standards. If any defect is detected, faulty parts are corrected or rejected.",
         "image": "step-5-kalite-kontrol.webp"
-      },
-      {
-        "title": "Dyeing and Finishing",
-        "text": "Fabrics are dyed and finished in the desired colours and patterns. This step improves the aesthetic and functional properties of the product.",
-        "image": "step-6-boyama.webp"
       },
       {
         "title": "Cutting and Seamless Manufacturing",

@@ -14,6 +14,7 @@ export default async function AboutPage(props: PageProps<"/[locale]/hakkimizda">
   const content = getContent(locale);
   const c = content.about;
   const tn = await getTranslations({ locale, namespace: "nav" });
+  const tc = await getTranslations({ locale, namespace: "common" });
   const images = await getSiteImages();
 
   // Kaydırmalı hikâye (giriş yazısından sonra başlar). Metinlerin tamamı içerik dosyalarından gelir.
@@ -33,21 +34,28 @@ export default async function AboutPage(props: PageProps<"/[locale]/hakkimizda">
     <>
       <PageHero title={c.title} subtitle={c.badge} image={images.pageHero} />
 
-      {/* Önce yazı: kim olduğumuz */}
-      <section className="mx-auto max-w-4xl px-4 pb-16 pt-20 text-center sm:px-6 sm:pt-28 lg:px-8">
-        <Reveal>
-          <span className="font-heading text-xs font-bold uppercase tracking-[0.25em] text-brand-navy/50">
-            2004 · {c.badge}
-          </span>
-          <p className="mt-6 font-heading text-2xl font-bold leading-snug tracking-tight text-brand-navy sm:text-4xl sm:leading-tight">
-            {c.intro}
-          </p>
-        </Reveal>
-        <Reveal delay={150}>
-          <p className="mx-auto mt-8 max-w-3xl text-lg leading-relaxed text-brand-grey">
-            {content.home.aboutText}
-          </p>
-        </Reveal>
+      {/* Önce yazı: kurumsal tanıtım, iki sütun */}
+      <section className="mx-auto max-w-7xl px-4 pb-20 pt-20 sm:px-6 sm:pt-24 lg:px-8">
+        <div className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:gap-20">
+          <Reveal>
+            <span className="font-heading text-xs font-bold uppercase tracking-[0.25em] text-brand-navy/50">
+              {c.badge}
+            </span>
+            <h2 className="mt-4 font-heading text-3xl font-extrabold tracking-tight text-brand-navy sm:text-4xl">
+              {tc("company")}
+            </h2>
+            <div className="mt-6 h-px w-16 bg-brand-navy" />
+            <p className="mt-6 font-heading text-sm font-semibold uppercase tracking-[0.2em] text-brand-navy/60">
+              2004
+            </p>
+          </Reveal>
+          <Reveal delay={150}>
+            <p className="text-xl leading-relaxed text-brand-navy sm:text-2xl sm:leading-relaxed">
+              {c.intro}
+            </p>
+            <p className="mt-6 text-lg leading-relaxed text-brand-grey">{content.home.aboutText}</p>
+          </Reveal>
+        </div>
       </section>
 
       {/* Rakamlar */}
