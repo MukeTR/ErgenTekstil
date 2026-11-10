@@ -16,9 +16,8 @@ export default async function AboutPage(props: PageProps<"/[locale]/hakkimizda">
   const tn = await getTranslations({ locale, namespace: "nav" });
   const images = await getSiteImages();
 
-  // Kaydırmalı hikâye: kuruluştan bugüne. Metinlerin tamamı içerik dosyalarından gelir.
+  // Kaydırmalı hikâye (giriş yazısından sonra başlar). Metinlerin tamamı içerik dosyalarından gelir.
   const chapters: StoryChapter[] = [
-    { mark: "2004", title: c.badge, text: c.intro, image: images["about.intro"] },
     { mark: "01", title: c.missionTitle, text: c.missionText, image: images["about.mission"] },
     { mark: "02", title: c.visionTitle, text: c.visionText, image: images["about.vision"] },
     {
@@ -34,8 +33,25 @@ export default async function AboutPage(props: PageProps<"/[locale]/hakkimizda">
     <>
       <PageHero title={c.title} subtitle={c.badge} image={images.pageHero} />
 
+      {/* Önce yazı: kim olduğumuz */}
+      <section className="mx-auto max-w-4xl px-4 pb-16 pt-20 text-center sm:px-6 sm:pt-28 lg:px-8">
+        <Reveal>
+          <span className="font-heading text-xs font-bold uppercase tracking-[0.25em] text-brand-navy/50">
+            2004 · {c.badge}
+          </span>
+          <p className="mt-6 font-heading text-2xl font-bold leading-snug tracking-tight text-brand-navy sm:text-4xl sm:leading-tight">
+            {c.intro}
+          </p>
+        </Reveal>
+        <Reveal delay={150}>
+          <p className="mx-auto mt-8 max-w-3xl text-lg leading-relaxed text-brand-grey">
+            {content.home.aboutText}
+          </p>
+        </Reveal>
+      </section>
+
       {/* Rakamlar */}
-      <section className="border-b border-black/5 bg-white py-14">
+      <section className="border-y border-black/5 bg-brand-grey-light py-14">
         <Reveal className="mx-auto grid max-w-5xl grid-cols-3 gap-6 px-4 sm:px-6 lg:px-8">
           {content.process.stats.map((s: { value: number; suffix?: string; label: string }) => (
             <StatCounter key={s.label} value={s.value} suffix={s.suffix} label={s.label} />
