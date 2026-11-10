@@ -51,3 +51,65 @@ h1, h2, h3, h4, h5, h6 {
 .hero-fade {
   animation: hero-fade-in 0.7s ease-out both;
 }
+
+/* Kaydırınca beliren içerik (Reveal bileşeni) */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition:
+    opacity 0.8s cubic-bezier(0.2, 0.7, 0.2, 1),
+    transform 0.8s cubic-bezier(0.2, 0.7, 0.2, 1);
+  transition-delay: var(--reveal-delay, 0ms);
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* Yavaş yakınlaşan görsel (hero / bant arka planları) */
+@keyframes slow-zoom {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.08);
+  }
+}
+
+.slow-zoom {
+  animation: slow-zoom 18s ease-out both alternate infinite;
+}
+
+/* Kayan şerit */
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee 45s linear infinite;
+}
+
+[dir="rtl"] .marquee-track {
+  animation-direction: reverse;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  .slow-zoom,
+  .marquee-track,
+  .hero-fade {
+    animation: none;
+  }
+}

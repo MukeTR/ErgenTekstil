@@ -4,18 +4,17 @@ import { Link } from "@/i18n/navigation";
 import type { Locale } from "@/i18n/routing";
 import MobileNav from "./MobileNav";
 import LanguageSwitcher from "./LanguageSwitcher";
-import { QuoteListHeaderButton } from "./quote/QuoteListButton";
 import { getSiteImages } from "@/lib/site-media";
 
 export default async function Header({ locale }: { locale: Locale }) {
   const t = await getTranslations({ locale, namespace: "nav" });
   const tc = await getTranslations({ locale, namespace: "common" });
-  const tq = await getTranslations({ locale, namespace: "quoteList" });
   const images = await getSiteImages();
 
   const links = [
     { href: "/", label: t("home") },
     { href: "/hakkimizda", label: t("about") },
+    { href: "/tesisimiz", label: t("facility") },
     { href: "/sureclerimiz", label: t("process") },
     { href: "/katalog", label: t("catalog") },
     { href: "/blog", label: t("blog") },
@@ -40,7 +39,9 @@ export default async function Header({ locale }: { locale: Locale }) {
         </Link>
 
         <nav className="hidden items-center gap-5 xl:flex 2xl:gap-7">
-          {links.map((l) => (
+          {links
+            .filter((l) => l.href !== "/iletisim")
+            .map((l) => (
             <Link
               key={l.href}
               href={l.href}
@@ -52,25 +53,22 @@ export default async function Header({ locale }: { locale: Locale }) {
         </nav>
 
         <div className="hidden items-center gap-3 xl:flex">
-          <QuoteListHeaderButton />
           <LanguageSwitcher locale={locale} />
           <Link
             href="/iletisim"
             className="whitespace-nowrap rounded-full bg-brand-navy px-5 py-2.5 font-heading text-[12px] font-semibold uppercase tracking-wide text-white transition hover:bg-black"
           >
-            {tc("requestQuote")}
+            {t("contact")}
           </Link>
         </div>
 
         <div className="flex items-center gap-2 xl:hidden">
-          <QuoteListHeaderButton hideWhenEmpty />
           <MobileNav
             links={links}
             locale={locale}
-            ctaLabel={tc("requestQuote")}
+            ctaLabel={t("contact")}
             menuLabel={t("menu")}
             closeLabel={t("close")}
-            quoteListLabel={tq("title")}
             cardTitle={t("menuCardTitle")}
             cardText={t("menuCardText")}
             cardImage={images["mobileNav.card"]}

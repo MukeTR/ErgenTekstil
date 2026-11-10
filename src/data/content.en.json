@@ -27,8 +27,7 @@
       {
         "icon": "bra",
         "title": "Underwear",
-        "description": "Our underwear products bring together all-day comfort and elegance, making you feel special at every moment.",
-        "highlight": true
+        "description": "Our underwear products bring together all-day comfort and elegance, making you feel special at every moment."
       },
       {
         "icon": "corset",
@@ -39,11 +38,6 @@
         "icon": "tank",
         "title": "Women's Active Sportswear",
         "description": "Our women's collection blends elegance and style with modern designs, created to add a touch of style to every moment."
-      },
-      {
-        "icon": "polo",
-        "title": "Men's Active Sportswear",
-        "description": "Our men's collection, with modern and stylish designs, helps you feel comfortable and confident in every setting."
       },
       {
         "icon": "leggings",
@@ -119,7 +113,9 @@
     "newsletterText": "Join our mailing list to be the first to hear about new collections and wholesale opportunities.",
     "newsletterPlaceholder": "Your email address",
     "newsletterButton": "Subscribe",
-    "newsletterSuccess": "Thank you! You've been added to our list."
+    "newsletterSuccess": "Thank you! You've been added to our list.",
+    "facilityTitle": "The heart of production: our factory in Kapaklı",
+    "facilityText": "Knitting, sewing, quality control and packaging under one roof. Take a closer look at our factory and departments."
   },
   "about": {
     "title": "About Us",
@@ -242,5 +238,56 @@
     "contactTitle": "Get in Touch",
     "address": "Karaağaç OIZ, Eski Bağlar Caddesi No:6 59510 Kapaklı / TEKİRDAĞ, Türkiye",
     "copyright": "Ergen Tekstil"
+  },
+  "facility": {
+    "title": "Our Facility",
+    "subtitle": "From yarn to carton, every step of seamless production takes place under one roof in our own factory in Kapaklı, Tekirdağ.",
+    "introBadge": "Kapaklı OIZ, Tekirdağ",
+    "introTitle": "Integrated production, one campus",
+    "introText": "Ergen Tekstil has been manufacturing seamless garments since 2004. Our knitting and garment units work as one integrated operation; from knitting to sewing, quality control and packaging, the entire process runs in our own factory in the Kapaklı Organized Industrial Zone, Tekirdağ. With a capacity of 200,000 pieces per month, we manufacture for brands in European, African and Asian markets.",
+    "filmTitle": "Inside our factory",
+    "filmText": "A short film of a day in our production, from the knitting hall to shipping.",
+    "departmentsTitle": "Our Departments",
+    "departmentsText": "Each department hands over to the next under the same roof; the product is finished before it leaves the factory.",
+    "departments": [
+      {
+        "title": "R&D and Design",
+        "text": "We turn customer requests into knit patterns and production-ready designs."
+      },
+      {
+        "title": "Seamless Knitting",
+        "text": "Our circular knitting machines knit the garment in one piece, without seams."
+      },
+      {
+        "title": "Fabric Inspection",
+        "text": "Every knitted piece is checked for weight, measurements and defects."
+      },
+      {
+        "title": "Cutting and Pattern",
+        "text": "Pieces are marked to pattern and prepared for sewing."
+      },
+      {
+        "title": "Sewing",
+        "text": "Waistbands, hems and detail stitching are completed by our experienced team."
+      },
+      {
+        "title": "Quality Control",
+        "text": "Finished garments are inspected one by one; defective pieces are never shipped."
+      },
+      {
+        "title": "Ironing and Packaging",
+        "text": "Garments are pressed into shape, folded and bagged."
+      },
+      {
+        "title": "Warehouse and Shipping",
+        "text": "Counted and boxed goods are prepared for domestic and export shipments."
+      }
+    ],
+    "warehouseTitle": "Counted, boxed, shipped",
+    "warehouseText": "Finished goods are counted in our warehouse by style, colour and size; orders are shipped from here to our partners on three continents.",
+    "locationTitle": "Location",
+    "locationText": "Our factory and headquarters are in the Karaağaç Organized Industrial Zone in Kapaklı, Tekirdağ.",
+    "ctaTitle": "Get to know our facility",
+    "ctaText": "Contact us to learn more about our production processes and private label manufacturing."
   }
 }

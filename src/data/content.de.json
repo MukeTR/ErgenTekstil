@@ -27,8 +27,7 @@
       {
         "icon": "bra",
         "title": "Unterwäsche",
-        "description": "Unsere Unterwäsche vereint ganztägigen Komfort mit Eleganz und lässt Sie sich in jedem Moment besonders fühlen.",
-        "highlight": true
+        "description": "Unsere Unterwäsche vereint ganztägigen Komfort mit Eleganz und lässt Sie sich in jedem Moment besonders fühlen."
       },
       {
         "icon": "corset",
@@ -39,11 +38,6 @@
         "icon": "tank",
         "title": "Aktive Sportbekleidung für Damen",
         "description": "Unsere Damenkollektion verbindet Eleganz und Stil mit modernen Designs, die jedem Moment eine stilvolle Note verleihen."
-      },
-      {
-        "icon": "polo",
-        "title": "Aktive Sportbekleidung für Herren",
-        "description": "Unsere Herrenkollektion mit modernen, stilvollen Designs sorgt dafür, dass Sie sich in jeder Umgebung wohl und selbstbewusst fühlen."
       },
       {
         "icon": "leggings",
@@ -119,7 +113,9 @@
     "newsletterText": "Tragen Sie sich in unsere Mailingliste ein und erfahren Sie als Erste von neuen Kollektionen und Großhandelsangeboten.",
     "newsletterPlaceholder": "Ihre E-Mail-Adresse",
     "newsletterButton": "Abonnieren",
-    "newsletterSuccess": "Vielen Dank! Sie wurden in unsere Liste aufgenommen."
+    "newsletterSuccess": "Vielen Dank! Sie wurden in unsere Liste aufgenommen.",
+    "facilityTitle": "Das Herz der Produktion: unser Werk in Kapaklı",
+    "facilityText": "Stricken, Nähen, Qualitätskontrolle und Verpackung unter einem Dach. Werfen Sie einen Blick in unser Werk und unsere Abteilungen."
   },
   "about": {
     "title": "Über uns",
@@ -242,5 +238,56 @@
     "contactTitle": "Kontakt",
     "address": "Karaağaç OSB, Eski Bağlar Caddesi No:6 59510 Kapaklı / TEKİRDAĞ, Türkei",
     "copyright": "Ergen Tekstil"
+  },
+  "facility": {
+    "title": "Unser Werk",
+    "subtitle": "Vom Garn bis zum Karton: Jeder Schritt der Seamless-Produktion findet unter einem Dach in unserem eigenen Werk in Kapaklı, Tekirdağ, statt.",
+    "introBadge": "Industriegebiet Kapaklı, Tekirdağ",
+    "introTitle": "Integrierte Produktion an einem Standort",
+    "introText": "Ergen Tekstil fertigt seit 2004 nahtlose Bekleidung. Strickerei und Konfektion arbeiten integriert; vom Stricken über das Nähen und die Qualitätskontrolle bis zur Verpackung läuft der gesamte Prozess in unserem eigenen Werk im Organisierten Industriegebiet Kapaklı, Tekirdağ. Mit einer Kapazität von 200.000 Teilen pro Monat produzieren wir für Marken in Europa, Afrika und Asien.",
+    "filmTitle": "Einblicke in unser Werk",
+    "filmText": "Ein kurzer Film über einen Produktionstag, vom Stricksaal bis zum Versand.",
+    "departmentsTitle": "Unsere Abteilungen",
+    "departmentsText": "Jede Abteilung übergibt unter demselben Dach an die nächste; das Produkt wird fertiggestellt, bevor es das Werk verlässt.",
+    "departments": [
+      {
+        "title": "F&E und Design",
+        "text": "Wir setzen Kundenwünsche in Strickmuster und produktionsreife Entwürfe um."
+      },
+      {
+        "title": "Seamless-Strickerei",
+        "text": "Unsere Rundstrickmaschinen stricken das Kleidungsstück in einem Stück, ohne Nähte."
+      },
+      {
+        "title": "Warenkontrolle",
+        "text": "Jedes gestrickte Teil wird auf Gewicht, Maße und Fehler geprüft."
+      },
+      {
+        "title": "Zuschnitt und Schnittmuster",
+        "text": "Die Teile werden nach Schnittmuster markiert und für das Nähen vorbereitet."
+      },
+      {
+        "title": "Näherei",
+        "text": "Bund, Säume und Detailnähte werden von unserem erfahrenen Team ausgeführt."
+      },
+      {
+        "title": "Qualitätskontrolle",
+        "text": "Fertige Teile werden einzeln geprüft; fehlerhafte Ware wird nicht ausgeliefert."
+      },
+      {
+        "title": "Bügeln und Verpackung",
+        "text": "Die Teile werden in Form gebügelt, gefaltet und verpackt."
+      },
+      {
+        "title": "Lager und Versand",
+        "text": "Gezählte und kartonierte Ware wird für Inlands- und Exportlieferungen vorbereitet."
+      }
+    ],
+    "warehouseTitle": "Gezählt, verpackt, versandt",
+    "warehouseText": "Fertige Ware wird in unserem Lager nach Modell, Farbe und Größe gezählt; von hier aus gehen die Aufträge an unsere Partner auf drei Kontinenten.",
+    "locationTitle": "Standort",
+    "locationText": "Unser Werk und unsere Zentrale befinden sich im Organisierten Industriegebiet Karaağaç in Kapaklı, Tekirdağ.",
+    "ctaTitle": "Lernen Sie unser Werk kennen",
+    "ctaText": "Kontaktieren Sie uns für weitere Informationen zu unseren Produktionsprozessen und zur Private-Label-Fertigung."
   }
 }

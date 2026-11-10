@@ -122,6 +122,66 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ergentekstil.com/tr/katalog/"/>
   </url>
   <url>
+    <loc>https://www.ergentekstil.com/tr/tesisimiz/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.ergentekstil.com/tr/tesisimiz/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ergentekstil.com/en/tesisimiz/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.ergentekstil.com/ar/tesisimiz/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.ergentekstil.com/de/tesisimiz/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ergentekstil.com/ru/tesisimiz/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ergentekstil.com/tr/tesisimiz/"/>
+  </url>
+  <url>
+    <loc>https://www.ergentekstil.com/en/tesisimiz/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.ergentekstil.com/tr/tesisimiz/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ergentekstil.com/en/tesisimiz/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.ergentekstil.com/ar/tesisimiz/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.ergentekstil.com/de/tesisimiz/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ergentekstil.com/ru/tesisimiz/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ergentekstil.com/tr/tesisimiz/"/>
+  </url>
+  <url>
+    <loc>https://www.ergentekstil.com/ar/tesisimiz/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.ergentekstil.com/tr/tesisimiz/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ergentekstil.com/en/tesisimiz/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.ergentekstil.com/ar/tesisimiz/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.ergentekstil.com/de/tesisimiz/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ergentekstil.com/ru/tesisimiz/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ergentekstil.com/tr/tesisimiz/"/>
+  </url>
+  <url>
+    <loc>https://www.ergentekstil.com/de/tesisimiz/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.ergentekstil.com/tr/tesisimiz/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ergentekstil.com/en/tesisimiz/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.ergentekstil.com/ar/tesisimiz/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.ergentekstil.com/de/tesisimiz/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ergentekstil.com/ru/tesisimiz/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ergentekstil.com/tr/tesisimiz/"/>
+  </url>
+  <url>
+    <loc>https://www.ergentekstil.com/ru/tesisimiz/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.ergentekstil.com/tr/tesisimiz/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ergentekstil.com/en/tesisimiz/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.ergentekstil.com/ar/tesisimiz/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.ergentekstil.com/de/tesisimiz/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ergentekstil.com/ru/tesisimiz/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ergentekstil.com/tr/tesisimiz/"/>
+  </url>
+  <url>
     <loc>https://www.ergentekstil.com/tr/sureclerimiz/</loc>
     <lastmod>2026-09-25</lastmod>
     <changefreq>monthly</changefreq>

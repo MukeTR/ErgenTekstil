@@ -27,8 +27,7 @@
       {
         "icon": "bra",
         "title": "İç Giyim",
-        "description": "İç giyim ürünlerimiz, gün boyu süren rahatlık ve zarafeti bir araya getirerek, kendinizi her an özel hissetmenizi sağlar.",
-        "highlight": true
+        "description": "İç giyim ürünlerimiz, gün boyu süren rahatlık ve zarafeti bir araya getirerek, kendinizi her an özel hissetmenizi sağlar."
       },
       {
         "icon": "corset",
@@ -39,11 +38,6 @@
         "icon": "tank",
         "title": "Kadın Aktif Spor Giyim",
         "description": "Kadın giyim koleksiyonumuz, zarafet ve şıklığı modern tasarımlarla buluşturarak her anınıza stil katmak için yaratıldı."
-      },
-      {
-        "icon": "polo",
-        "title": "Erkek Aktif Spor Giyim",
-        "description": "Erkek giyim koleksiyonumuz, modern ve şık tasarımlarla her ortamda kendinizi rahat ve özgüvenli hissetmenizi sağlar."
       },
       {
         "icon": "leggings",
@@ -119,7 +113,9 @@
     "newsletterText": "E-posta listemize katılın, yeni koleksiyonlardan ve toptan fırsatlardan ilk siz haberdar olun.",
     "newsletterPlaceholder": "E-posta adresiniz",
     "newsletterButton": "Abone Ol",
-    "newsletterSuccess": "Teşekkürler! Listemize eklendiniz."
+    "newsletterSuccess": "Teşekkürler! Listemize eklendiniz.",
+    "facilityTitle": "Üretimin merkezi: Kapaklı'daki fabrikamız",
+    "facilityText": "Örme, dikim, kalite kontrol ve paketleme aynı çatı altında. Fabrikamızı ve bölümlerimizi yakından görün."
   },
   "about": {
     "title": "Hakkımızda",
@@ -242,5 +238,56 @@
     "contactTitle": "Bize Ulaşın",
     "address": "Karaağaç OSB. Eski Bağlar Caddesi No:6 59510 Kapaklı / TEKİRDAĞ",
     "copyright": "Ergen Tekstil"
+  },
+  "facility": {
+    "title": "Tesisimiz",
+    "subtitle": "İplikten kolilemeye, dikişsiz üretimin her adımı Tekirdağ Kapaklı'daki kendi fabrikamızda, tek çatı altında.",
+    "introBadge": "Kapaklı OSB, Tekirdağ",
+    "introTitle": "Entegre üretim, tek yerleşke",
+    "introText": "Ergen Tekstil 2004'ten bu yana dikişsiz giyim üretiyor. Örgü ve konfeksiyon birimlerimiz entegre çalışır; örmeden dikime, kalite kontrolden paketlemeye kadar tüm süreç Tekirdağ Kapaklı Organize Sanayi Bölgesi'ndeki kendi fabrikamızda yürütülür. Aylık 200.000 parça üretim kapasitemizle Avrupa, Afrika ve Asya pazarlarındaki markalar için üretim yapıyoruz.",
+    "filmTitle": "Fabrikamızdan görüntüler",
+    "filmText": "Örme salonundan sevkiyata, üretimimizin bir gününden kısa bir film.",
+    "departmentsTitle": "Bölümlerimiz",
+    "departmentsText": "Her bölüm bir sonrakine aynı çatı altında bağlanır; ürün fabrikadan çıkmadan tamamlanır.",
+    "departments": [
+      {
+        "title": "Ar-Ge ve Tasarım",
+        "text": "Müşteri taleplerini örgü desenine ve üretilebilir kalıba dönüştürüyoruz."
+      },
+      {
+        "title": "Dikişsiz Örme",
+        "text": "Dairesel örme makinelerimiz ürünü tek parça hâlinde, dikişsiz örer."
+      },
+      {
+        "title": "Kumaş Kontrolü",
+        "text": "Örgüden çıkan her parça gramaj, ölçü ve hata açısından kontrol edilir."
+      },
+      {
+        "title": "Kesim ve Kalıp",
+        "text": "Parçalar kalıba göre işaretlenir ve dikime hazırlanır."
+      },
+      {
+        "title": "Dikim",
+        "text": "Bel, paça ve detay dikişleri deneyimli ekibimizce tamamlanır."
+      },
+      {
+        "title": "Kalite Kontrol",
+        "text": "Bitmiş ürünler tek tek gözden geçirilir; kusurlu parça sevk edilmez."
+      },
+      {
+        "title": "Ütü ve Paketleme",
+        "text": "Ürünler form verilerek ütülenir, katlanır ve poşetlenir."
+      },
+      {
+        "title": "Depo ve Sevkiyat",
+        "text": "Sayılan ve kolilenen ürünler yurt içi ve ihracat sevkiyatına hazırlanır."
+      }
+    ],
+    "warehouseTitle": "Sayılır, kolilenir, yola çıkar",
+    "warehouseText": "Biten ürünler depomuzda model, renk ve beden bazında sayılır; siparişler buradan üç kıtadaki iş ortaklarımıza sevk edilir.",
+    "locationTitle": "Konum",
+    "locationText": "Fabrikamız ve genel merkezimiz Tekirdağ Kapaklı'da, Karaağaç Organize Sanayi Bölgesi'ndedir.",
+    "ctaTitle": "Tesisimizi yakından tanıyın",
+    "ctaText": "Üretim süreçlerimiz ve özel marka üretimi hakkında bilgi almak için bize ulaşın."
   }
 }

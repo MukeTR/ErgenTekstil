@@ -2,6 +2,9 @@ import { cache } from "react";
 import { supabasePublic } from "@/lib/supabase/public";
 import type { Locale } from "@/i18n/routing";
 
+const PRODUCT_IMAGES =
+  "https://mxjyyywiooxikcwfylys.supabase.co/storage/v1/object/public/product-images";
+
 /**
  * Panelden değiştirilebilen sabit görsel yuvaları. Supabase'de (site_images) satır yoksa
  * `fallback` kullanılır; yani panelde hiçbir şey yapılmadıysa site bugünkü gibi görünür.
@@ -12,6 +15,24 @@ export const SITE_IMAGE_SLOTS = [
   { key: "home.heroPoster", page: "Ana sayfa", label: "Slider arka plan videosu yüklenirken görünen görsel", fallback: "/images/factory-floor.webp" },
   { key: "home.color", page: "Ana sayfa", label: "Renk bölümü arka planı", fallback: "/marka/bg-sidea.webp" },
   { key: "home.growth", page: "Ana sayfa", label: "Büyüme / vizyon bölümü arka planı", fallback: "/images/factory-floor.webp" },
+  { key: "home.collection.shorts", page: "Ana sayfa", label: "Koleksiyon kutusu: Aktif Giyim", fallback: `${PRODUCT_IMAGES}/1510/0-Y1.png.webp` },
+  { key: "home.collection.tank", page: "Ana sayfa", label: "Koleksiyon kutusu: Kadın Aktif Spor Giyim", fallback: `${PRODUCT_IMAGES}/1550/0-ATOS6988.jpg.webp` },
+  { key: "home.collection.leggings", page: "Ana sayfa", label: "Koleksiyon kutusu: Fonksiyonel Tekstiller", fallback: `${PRODUCT_IMAGES}/1700/0-ATOS0799.jpg.webp` },
+  { key: "home.collection.bra", page: "Ana sayfa", label: "Koleksiyon kutusu: İç Giyim", fallback: `${PRODUCT_IMAGES}/2020/0-FAC_2900.jpg.webp` },
+  { key: "home.collection.corset", page: "Ana sayfa", label: "Koleksiyon kutusu: Korse", fallback: `${PRODUCT_IMAGES}/1060/0-FAC_2166.jpg.webp` },
+  { key: "home.facility", page: "Ana sayfa", label: "Tesisimiz bölümü büyük görseli", fallback: "/tesis/dis-cephe.webp" },
+  { key: "facility.hero", page: "Tesisimiz", label: "Sayfa başı videosu yüklenirken görünen görsel", fallback: "/tesis/hero-poster.webp" },
+  { key: "facility.intro", page: "Tesisimiz", label: "Giriş fotoğrafı (fabrika dış cephe)", fallback: "/tesis/dis-cephe.webp" },
+  { key: "facility.film", page: "Tesisimiz", label: "Fabrika filmi kapak görseli", fallback: "/tesis/orme-bant.webp" },
+  { key: "facility.dept-1", page: "Tesisimiz", label: "Bölüm 1: Ar-Ge ve Tasarım", fallback: "/tesis/arge.webp" },
+  { key: "facility.dept-2", page: "Tesisimiz", label: "Bölüm 2: Dikişsiz Örme", fallback: "/tesis/orme-salonu.webp" },
+  { key: "facility.dept-3", page: "Tesisimiz", label: "Bölüm 3: Kumaş Kontrolü", fallback: "/tesis/kumas-kontrol.webp" },
+  { key: "facility.dept-4", page: "Tesisimiz", label: "Bölüm 4: Kesim ve Kalıp", fallback: "/tesis/kesim.webp" },
+  { key: "facility.dept-5", page: "Tesisimiz", label: "Bölüm 5: Dikim", fallback: "/tesis/dikim.webp" },
+  { key: "facility.dept-6", page: "Tesisimiz", label: "Bölüm 6: Kalite Kontrol", fallback: "/tesis/kalite-kontrol.webp" },
+  { key: "facility.dept-7", page: "Tesisimiz", label: "Bölüm 7: Ütü ve Paketleme", fallback: "/tesis/paketleme.webp" },
+  { key: "facility.dept-8", page: "Tesisimiz", label: "Bölüm 8: Depo ve Sevkiyat", fallback: "/tesis/sevkiyat.webp" },
+  { key: "facility.warehouse", page: "Tesisimiz", label: "Depo bandı (ürün sayımı)", fallback: "/tesis/depo-sayim.webp" },
   { key: "about.intro", page: "Hakkımızda", label: "Giriş fotoğrafı", fallback: "/sureclerimiz/step-2-orme-teknolojisi.webp" },
   { key: "about.mission", page: "Hakkımızda", label: "Misyon kartı", fallback: "/blog/Fuar-Blog.webp" },
   { key: "about.vision", page: "Hakkımızda", label: "Vizyon kartı", fallback: "/images/factory-floor.webp" },

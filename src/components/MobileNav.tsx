@@ -6,7 +6,6 @@ import Image from "next/image";
 import { Link } from "@/i18n/navigation";
 import type { Locale } from "@/i18n/routing";
 import LanguageSwitcher from "./LanguageSwitcher";
-import { useQuoteList } from "./quote/QuoteListProvider";
 
 export default function MobileNav({
   links,
@@ -14,7 +13,6 @@ export default function MobileNav({
   ctaLabel,
   menuLabel,
   closeLabel,
-  quoteListLabel,
   cardTitle,
   cardText,
   cardImage,
@@ -24,15 +22,12 @@ export default function MobileNav({
   ctaLabel: string;
   menuLabel: string;
   closeLabel: string;
-  quoteListLabel: string;
   cardTitle: string;
   cardText: string;
   cardImage: string;
 }) {
   const [open, setOpen] = useState(false);
   const [mounted, setMounted] = useState(false);
-  const { items, open: openQuoteList, hydrated } = useQuoteList();
-  const count = hydrated ? items.length : 0;
 
   useEffect(() => setMounted(true), []);
 
@@ -97,27 +92,6 @@ export default function MobileNav({
               {l.label}
             </Link>
           ))}
-          <button
-            type="button"
-            onClick={() => {
-              close();
-              openQuoteList();
-            }}
-            className="flex items-center justify-between border-b border-black/5 py-4 text-start font-heading text-base font-semibold text-brand-navy"
-          >
-            <span className="flex items-center gap-3">
-              <svg viewBox="0 0 24 24" className="h-5 w-5" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M9 6h11M9 12h11M9 18h11" />
-                <path d="M4 6h.01M4 12h.01M4 18h.01" strokeWidth="2.6" />
-              </svg>
-              {quoteListLabel}
-            </span>
-            {count > 0 && (
-              <span className="flex h-6 min-w-6 items-center justify-center rounded-full bg-brand-navy px-2 text-xs font-bold text-white">
-                {count}
-              </span>
-            )}
-          </button>
         </nav>
 
         <div className="mt-6">

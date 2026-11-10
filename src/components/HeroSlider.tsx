@@ -14,12 +14,12 @@ export type HeroSlide = {
 export default function HeroSlider({
   slides,
   allProductsLabel,
-  requestQuoteLabel,
+  facilityLabel,
   poster,
 }: {
   slides: HeroSlide[];
   allProductsLabel: string;
-  requestQuoteLabel: string;
+  facilityLabel: string;
   poster: string;
 }) {
   const [active, setActive] = useState(0);
@@ -35,17 +35,20 @@ export default function HeroSlider({
 
   return (
     <section className="relative overflow-hidden bg-brand-navy text-white">
-      {/* Aktif arka plan: örgü makinesi videosu */}
+      {/* Arka plan: fabrikamızdan sessiz video döngüsü (Ekim 2026 çekimi) */}
       <video
         autoPlay
         muted
         loop
         playsInline
-        preload="auto"
+        preload="metadata"
         poster={poster}
-        src="/video/hero.mp4"
         className="absolute inset-0 h-full w-full object-cover"
-      />
+      >
+        <source src="/video/tesis/hero-loop-mobil.mp4" type="video/mp4" media="(max-width: 767px)" />
+        <source src="/video/tesis/hero-loop.webm" type="video/webm" />
+        <source src="/video/tesis/hero-loop.mp4" type="video/mp4" />
+      </video>
       <div className="absolute inset-0 bg-gradient-to-r from-brand-navy/95 via-brand-navy/70 to-brand-navy/40" />
       <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-brand-navy/80 to-transparent" />
 
@@ -65,10 +68,10 @@ export default function HeroSlider({
               {allProductsLabel}
             </Link>
             <Link
-              href="/iletisim"
+              href="/tesisimiz"
               className="rounded-full border border-white/40 px-7 py-3.5 font-heading text-sm font-semibold uppercase tracking-wide text-white transition hover:border-white hover:bg-white/10"
             >
-              {requestQuoteLabel}
+              {facilityLabel}
             </Link>
           </div>
         </div>

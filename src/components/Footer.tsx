@@ -22,6 +22,7 @@ export default async function Footer({ locale }: { locale: Locale }) {
   const links = [
     { href: "/", label: t("home") },
     { href: "/hakkimizda", label: t("about") },
+    { href: "/tesisimiz", label: t("facility") },
     { href: "/sureclerimiz", label: t("process") },
     { href: "/katalog", label: t("catalog") },
     { href: "/blog", label: t("blog") },
