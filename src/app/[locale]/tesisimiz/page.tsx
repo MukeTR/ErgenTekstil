@@ -14,8 +14,8 @@ import AutoVideo from "@/components/AutoVideo";
 const CLIPS = [
   { src: "/video/tesis/dis-cephe.mp4", poster: "/tesis/dis-cephe.webp" },
   { src: "/video/tesis/orme.mp4", poster: "/tesis/orme-salonu.webp" },
-  { src: "/video/tesis/kesim.mp4", poster: "/tesis/kesim.webp" },
   { src: "/video/tesis/dikim.mp4", poster: "/tesis/dikim-2.webp" },
+  { src: "/video/tesis/depo-donus.mp4", poster: "/tesis/depo.webp" },
 ];
 
 const H2 = "font-heading text-3xl font-extrabold tracking-tight sm:text-4xl";
@@ -166,30 +166,21 @@ export default async function FacilityPage(props: PageProps<"/[locale]/tesisimiz
         </div>
       </section>
 
-      {/* Depo ve sevkiyat */}
+      {/* Depo ve sevkiyat: tek görsel, depoda sayım yapan ekibimizin videosu */}
       <section className="bg-brand-grey-light py-24">
-        <div className="mx-auto grid max-w-7xl gap-12 px-4 sm:px-6 lg:grid-cols-[1.15fr_0.85fr] lg:items-center lg:px-8">
+        <div className="mx-auto grid max-w-7xl gap-12 px-4 sm:px-6 lg:grid-cols-[1.25fr_0.75fr] lg:items-center lg:px-8">
           <Reveal>
-            <div className="relative aspect-[16/10] overflow-hidden rounded-3xl shadow-xl">
-              <Image
-                src={images["facility.warehouse"]}
-                alt={c.warehouseTitle}
-                fill
-                sizes="(max-width: 1024px) 100vw, 55vw"
-                className="slow-zoom object-cover"
+            <div className="relative aspect-video overflow-hidden rounded-3xl shadow-xl">
+              <AutoVideo
+                src="/video/tesis/depo.mp4"
+                poster={images["facility.warehouse"]}
+                className="h-full w-full object-cover"
               />
             </div>
           </Reveal>
           <Reveal delay={150}>
             <h2 className={`${H2} text-brand-navy`}>{c.warehouseTitle}</h2>
             <p className="mt-6 text-lg leading-relaxed text-brand-grey">{c.warehouseText}</p>
-            <div className="relative mt-8 aspect-[16/9] overflow-hidden rounded-2xl">
-              <AutoVideo
-                src="/video/tesis/depo.mp4"
-                poster="/tesis/depo.webp"
-                className="h-full w-full object-cover"
-              />
-            </div>
           </Reveal>
         </div>
       </section>
