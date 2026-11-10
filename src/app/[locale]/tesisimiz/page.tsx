@@ -13,7 +13,7 @@ import AutoVideo from "@/components/AutoVideo";
 
 // Fabrikamızdan kısa, sessiz döngüler (Ekim 2026 çekimi)
 const CLIPS = [
-  { src: "/video/tesis/dis-cephe.mp4", poster: "/tesis/dis-cephe.webp" },
+  { src: "/video/tesis/dis-cephe.mp4", poster: "/tesis/dis-cephe-ozgun.webp" },
   { src: "/video/tesis/orme.mp4", poster: "/tesis/orme-salonu.webp" },
   { src: "/video/tesis/dikim.mp4", poster: "/tesis/dikim-2.webp" },
   { src: "/video/tesis/depo-donus.mp4", poster: "/tesis/depo.webp" },
