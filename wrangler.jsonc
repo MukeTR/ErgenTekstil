@@ -19,6 +19,10 @@
   "vars": {
     // Form talepleri Supabase'e yazıldıktan sonra e-posta + CSV için cPanel'deki uç noktaya da iletilir.
     // Çıplak alan adı Güzel Hosting'de kalır (www Worker'a geçse de).
-    "LEAD_MAIL_BRIDGE_URL": "https://ergentekstil.com/api/lead.php"
+    "LEAD_MAIL_BRIDGE_URL": "https://ergentekstil.com/api/lead.php",
+    // Katalog formu: indirme bağlantısı ziyaretçiye Resend ile gider (src/lib/mail/catalogue-mail.ts).
+    // Anahtar sır olarak girilir: `wrangler secret put RESEND_API_KEY`. Sır yoksa e-posta atlanır, talep yine kaydedilir.
+    "CATALOGUE_MAIL_FROM": "Ergen Tekstil <info@ergentekstil.com>",
+    "CATALOGUE_MAIL_REPLY_TO": "info@ergentekstil.com"
   }
 }

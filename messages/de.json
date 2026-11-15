@@ -54,13 +54,15 @@
   },
   "contactForm": {
     "success": "Vielen Dank für Ihre Nachricht, wir melden uns in Kürze bei Ihnen.",
-    "required": "Pflichtfeld"
+    "required": "Pflichtfeld",
+    "directions": "Route planen"
   },
   "catalogues": {
     "title": "Produktkataloge",
     "emailPlaceholder": "Ihre E-Mail-Adresse",
     "download": "Herunterladen",
-    "success": "Vielen Dank, wir senden Ihnen den Katalog in Kürze per E-Mail."
+    "success": "Vielen Dank, wir senden Ihnen den Katalog in Kürze per E-Mail.",
+    "sent": "Wir haben Ihnen den Kataloglink per E-Mail gesendet. Bitte prüfen Sie Ihren Posteingang."
   },
   "homeBlog": {
     "title": "Blog",

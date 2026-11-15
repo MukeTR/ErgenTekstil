@@ -2,7 +2,12 @@ import type { Metadata } from "next";
 import { pageMetadata } from "@/lib/seo";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import type { Locale } from "@/i18n/routing";
-import { FACTORY_MAP_EMBED } from "@/lib/location";
+import {
+  FACTORY_MAP_EMBED,
+  FACTORY_MAP_LINK,
+  STORE_MAP_EMBED,
+  STORE_MAP_LINK,
+} from "@/lib/location";
 import { getContent } from "@/lib/data";
 import PageHero from "@/components/PageHero";
 import ContactForm from "@/components/ContactForm";
@@ -44,6 +49,7 @@ export default async function ContactPage(props: PageProps<"/[locale]/iletisim">
             <a href={`mailto:${c.email}`} className="mt-1 block text-brand-grey hover:text-brand-navy">
               {c.email}
             </a>
+            <LocationMap title={c.headOfficeTitle} embed={FACTORY_MAP_EMBED} link={FACTORY_MAP_LINK} label={t("directions")} />
 
             <div className="mt-10">
               <h2 className="font-heading text-lg font-bold text-brand-navy">{c.branchTitle}</h2>
@@ -54,15 +60,7 @@ export default async function ContactPage(props: PageProps<"/[locale]/iletisim">
               >
                 {c.branchPhone}
               </a>
-            </div>
-
-            <div className="mt-10 overflow-hidden rounded-2xl">
-              <iframe
-                title="map"
-                className="h-72 w-full border-0"
-                loading="lazy"
-                src={FACTORY_MAP_EMBED}
-              />
+              <LocationMap title={c.branchTitle} embed={STORE_MAP_EMBED} link={STORE_MAP_LINK} label={t("directions")} />
             </div>
           </div>
 
@@ -80,5 +78,35 @@ export default async function ContactPage(props: PageProps<"/[locale]/iletisim">
         </div>
       </section>
     </>
+  );
+}
+
+/** Adresin hemen altında duran harita + yol tarifi bağlantısı (fabrika ve mağaza için ayrı ayrı). */
+function LocationMap({
+  title,
+  embed,
+  link,
+  label,
+}: {
+  title: string;
+  embed: string;
+  link: string;
+  label: string;
+}) {
+  return (
+    <div className="mt-5">
+      <div className="overflow-hidden rounded-2xl">
+        <iframe title={title} className="h-56 w-full border-0" loading="lazy" src={embed} />
+      </div>
+      <a
+        href={link}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="mt-3 inline-flex items-center gap-1.5 font-heading text-xs font-semibold uppercase tracking-wide text-brand-navy hover:underline"
+      >
+        {label}
+        <span aria-hidden="true" className="rtl:-scale-x-100">→</span>
+      </a>
+    </div>
   );
 }

@@ -54,13 +54,15 @@
   },
   "contactForm": {
     "success": "Mesajınız için teşekkür ederiz, en kısa sürede dönüş yapacağız.",
-    "required": "zorunlu alan"
+    "required": "zorunlu alan",
+    "directions": "Yol tarifi al"
   },
   "catalogues": {
     "title": "Ürün Katalogları",
     "emailPlaceholder": "E-posta adresiniz",
     "download": "İndir",
-    "success": "Teşekkürler, kataloğu e-posta adresinize en kısa sürede göndereceğiz."
+    "success": "Teşekkürler, kataloğu e-posta adresinize en kısa sürede göndereceğiz.",
+    "sent": "Katalog bağlantısını e-posta adresinize gönderdik. Gelen kutunuzu kontrol edin."
   },
   "homeBlog": {
     "title": "Blog",

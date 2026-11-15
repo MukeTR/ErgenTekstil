@@ -54,13 +54,15 @@
   },
   "contactForm": {
     "success": "Thank you for your message, we'll get back to you shortly.",
-    "required": "required field"
+    "required": "required field",
+    "directions": "Get directions"
   },
   "catalogues": {
     "title": "Product Catalogues",
     "emailPlaceholder": "Your email address",
     "download": "Download",
-    "success": "Thank you, we'll email the catalogue to you shortly."
+    "success": "Thank you, we'll email the catalogue to you shortly.",
+    "sent": "We have emailed you the catalogue link. Please check your inbox."
   },
   "homeBlog": {
     "title": "Blog",

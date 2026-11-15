@@ -2,24 +2,32 @@
 
 import { useState } from "react";
 import { useParams } from "next/navigation";
-import { submitLead } from "@/lib/actions/submit-lead";
+import { requestCatalogue } from "@/lib/actions/request-catalogue";
 import { trackMetaEvent } from "@/lib/meta/pixel";
 
 export default function CatalogueDownloadForm({
   catalogueName,
+  catalogueIndex,
   placeholder,
   buttonLabel,
+  sentMessage,
   successMessage,
 }: {
   catalogueName: string;
+  /** home.catalogues içindeki sıra; sunucu PDF'i buna göre seçer */
+  catalogueIndex: number;
   placeholder: string;
   buttonLabel: string;
+  /** E-posta gönderildiğinde gösterilir */
+  sentMessage: string;
+  /** E-posta gönderilemediyse (talep yine kayıtlı) gösterilir */
   successMessage: string;
 }) {
   const params = useParams();
   const locale = (params.locale as string) ?? "tr";
   const [email, setEmail] = useState("");
   const [sent, setSent] = useState(false);
+  const [mailed, setMailed] = useState(false);
   const [submitting, setSubmitting] = useState(false);
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
@@ -29,23 +37,25 @@ export default function CatalogueDownloadForm({
       content_name: catalogueName,
       content_category: "catalogue_download",
     });
-    await submitLead({
-      fullName: email,
-      email,
-      subject: `Katalog Talebi: ${catalogueName}`,
-      message: `${catalogueName} için katalog talebi.`,
-      productName: catalogueName,
-      locale,
-      metaEventId,
-      metaEventName: "Lead",
-      sourceUrl: window.location.href,
-    });
+    let result = { ok: false, mailed: false };
+    try {
+      result = await requestCatalogue({
+        email,
+        catalogueIndex,
+        locale,
+        metaEventId,
+        sourceUrl: window.location.href,
+      });
+    } catch (err) {
+      console.error("catalogue request failed:", err);
+    }
+    setMailed(result.mailed);
     setSubmitting(false);
     setSent(true);
   }
 
   if (sent) {
-    return <p className="mt-4 text-sm text-white/80">{successMessage}</p>;
+    return <p className="mt-4 text-sm text-white/80">{mailed ? sentMessage : successMessage}</p>;
   }
 
   return (

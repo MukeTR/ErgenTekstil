@@ -339,8 +339,10 @@ export default async function HomePage(props: PageProps<"/[locale]">) {
                   <h3 className="font-heading text-base font-bold">{name}</h3>
                   <CatalogueDownloadForm
                     catalogueName={name}
+                    catalogueIndex={i}
                     placeholder={tcat("emailPlaceholder")}
                     buttonLabel={tcat("download")}
+                    sentMessage={tcat("sent")}
                     successMessage={tcat("success")}
                   />
                 </div>
