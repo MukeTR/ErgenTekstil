@@ -3,7 +3,12 @@ import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import type { Locale } from "@/i18n/routing";
-import { FACTORY_MAP_EMBED } from "@/lib/location";
+import {
+  FACTORY_MAP_EMBED,
+  FACTORY_MAP_LINK,
+  STORE_MAP_EMBED,
+  STORE_MAP_LINK,
+} from "@/lib/location";
 import { getContent } from "@/lib/data";
 import { pageMetadata } from "@/lib/seo";
 import { getSiteImages, type SiteImageKey } from "@/lib/site-media";
@@ -38,7 +43,24 @@ export default async function FacilityPage(props: PageProps<"/[locale]/tesisimiz
   const c = content.facility;
   const tn = await getTranslations({ locale, namespace: "nav" });
   const tc = await getTranslations({ locale, namespace: "common" });
+  const tform = await getTranslations({ locale, namespace: "contactForm" });
   const images = await getSiteImages();
+
+  // Konum: fabrika + genel merkez (Kapaklı) ve satış mağazası (İstanbul)
+  const locations = [
+    {
+      title: content.contact.headOfficeTitle,
+      address: content.contact.headOfficeAddress,
+      embed: FACTORY_MAP_EMBED,
+      link: FACTORY_MAP_LINK,
+    },
+    {
+      title: content.contact.branchTitle,
+      address: content.contact.branchAddress,
+      embed: STORE_MAP_EMBED,
+      link: STORE_MAP_LINK,
+    },
+  ];
 
   return (
     <>
@@ -195,26 +217,38 @@ export default async function FacilityPage(props: PageProps<"/[locale]/tesisimiz
         </div>
       </section>
 
-      {/* Konum */}
+      {/* Konum: fabrika ve satış mağazası, her biri kendi haritası ve yol tarifiyle */}
       <section className="mx-auto max-w-7xl px-4 py-24 sm:px-6 lg:px-8">
-        <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
-          <Reveal>
-            <h2 className={`${H2} text-brand-navy`}>{c.locationTitle}</h2>
-            <p className="mt-6 text-lg leading-relaxed text-brand-grey">{c.locationText}</p>
-            <p className="mt-4 font-heading text-sm font-semibold text-brand-navy">
-              {content.contact.headOfficeAddress}
-            </p>
-          </Reveal>
-          <Reveal delay={150}>
-            <div className="overflow-hidden rounded-3xl shadow-lg">
-              <iframe
-                title="map"
-                className="h-80 w-full border-0"
-                loading="lazy"
-                src={FACTORY_MAP_EMBED}
-              />
-            </div>
-          </Reveal>
+        <Reveal>
+          <h2 className={`${H2} text-brand-navy`}>{c.locationTitle}</h2>
+          <p className="mt-4 max-w-2xl text-lg leading-relaxed text-brand-grey">{c.locationText}</p>
+        </Reveal>
+        <div className="mt-12 grid gap-8 lg:grid-cols-2">
+          {locations.map((loc, i) => (
+            <Reveal key={loc.title} delay={i * 120}>
+              <div className="h-full overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-black/5">
+                <iframe
+                  title={loc.title}
+                  className="h-72 w-full border-0"
+                  loading="lazy"
+                  src={loc.embed}
+                />
+                <div className="p-6 sm:p-8">
+                  <h3 className="font-heading text-lg font-bold text-brand-navy">{loc.title}</h3>
+                  <p className="mt-2 leading-relaxed text-brand-grey">{loc.address}</p>
+                  <a
+                    href={loc.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-5 inline-flex items-center gap-1.5 font-heading text-xs font-semibold uppercase tracking-wide text-brand-navy hover:underline"
+                  >
+                    {tform("directions")}
+                    <span aria-hidden="true" className="rtl:-scale-x-100">→</span>
+                  </a>
+                </div>
+              </div>
+            </Reveal>
+          ))}
         </div>
       </section>
 
