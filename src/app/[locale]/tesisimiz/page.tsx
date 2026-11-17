@@ -42,7 +42,7 @@ export default async function FacilityPage(props: PageProps<"/[locale]/tesisimiz
 
   return (
     <>
-      {/* Başlık: fabrikadan video döngüsü */}
+      {/* Başlık: yalnız tesisin göründüğü drone döngüsü */}
       <section className="relative flex min-h-[72vh] items-end overflow-hidden bg-brand-navy text-white">
         <video
           autoPlay
@@ -54,12 +54,12 @@ export default async function FacilityPage(props: PageProps<"/[locale]/tesisimiz
           className="absolute inset-0 h-full w-full object-cover"
         >
           <source
-            src="/video/tesis/hero-loop-mobil.mp4"
+            src="/video/tesis/hero-tesis-mobil.mp4"
             type="video/mp4"
             media="(max-width: 767px)"
           />
-          <source src="/video/tesis/hero-loop.webm" type="video/webm" />
-          <source src="/video/tesis/hero-loop.mp4" type="video/mp4" />
+          <source src="/video/tesis/hero-tesis.webm" type="video/webm" />
+          <source src="/video/tesis/hero-tesis.mp4" type="video/mp4" />
         </video>
         <div className="absolute inset-0 bg-gradient-to-t from-brand-navy via-brand-navy/50 to-brand-navy/10" />
         <div className="hero-fade relative mx-auto w-full max-w-7xl px-4 pb-16 pt-40 sm:px-6 sm:pb-20 lg:px-8">

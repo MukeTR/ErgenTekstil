@@ -35,7 +35,7 @@ export default function HeroSlider({
 
   return (
     <section className="relative overflow-hidden bg-brand-navy text-white">
-      {/* Arka plan: fabrikamızdan sessiz video döngüsü (Ekim 2026 çekimi) */}
+      {/* Arka plan: yalnız tesisin göründüğü sessiz drone döngüsü (Ekim 2026 çekimi), ağır çekim */}
       <video
         autoPlay
         muted
@@ -45,9 +45,9 @@ export default function HeroSlider({
         poster={poster}
         className="absolute inset-0 h-full w-full object-cover"
       >
-        <source src="/video/tesis/hero-loop-mobil.mp4" type="video/mp4" media="(max-width: 767px)" />
-        <source src="/video/tesis/hero-loop.webm" type="video/webm" />
-        <source src="/video/tesis/hero-loop.mp4" type="video/mp4" />
+        <source src="/video/tesis/hero-tesis-mobil.mp4" type="video/mp4" media="(max-width: 767px)" />
+        <source src="/video/tesis/hero-tesis.webm" type="video/webm" />
+        <source src="/video/tesis/hero-tesis.mp4" type="video/mp4" />
       </video>
       <div className="absolute inset-0 bg-gradient-to-r from-brand-navy/95 via-brand-navy/70 to-brand-navy/40" />
       <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-brand-navy/80 to-transparent" />

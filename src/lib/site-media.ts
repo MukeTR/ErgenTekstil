@@ -12,7 +12,7 @@ const PRODUCT_IMAGES =
 export const SITE_IMAGE_SLOTS = [
   { key: "pageHero", page: "Genel", label: "Sayfa başlık bandı (Hakkımızda, Süreçler, Katalog, Blog, İletişim)", fallback: "/tesis/orme-koridor.webp" },
   { key: "mobileNav.card", page: "Genel", label: "Mobil menüdeki iletişim kartı", fallback: "/tesis/dis-cephe.webp" },
-  { key: "home.heroPoster", page: "Ana sayfa", label: "Slider arka plan videosu yüklenirken görünen görsel", fallback: "/tesis/hero-poster.webp" },
+  { key: "home.heroPoster", page: "Ana sayfa", label: "Slider arka plan videosu yüklenirken görünen görsel", fallback: "/tesis/hero-tesis-poster.webp" },
   { key: "home.growth", page: "Ana sayfa", label: "Büyüme / vizyon bölümü arka planı", fallback: "/tesis/dis-cephe-genis.webp" },
   { key: "home.collection.shorts", page: "Ana sayfa", label: "Koleksiyon kutusu: Aktif Giyim", fallback: `${PRODUCT_IMAGES}/1510/0-Y1.png.webp` },
   { key: "home.collection.tank", page: "Ana sayfa", label: "Koleksiyon kutusu: Kadın Aktif Spor Giyim", fallback: `${PRODUCT_IMAGES}/1550/0-ATOS6988.jpg.webp` },
@@ -20,7 +20,7 @@ export const SITE_IMAGE_SLOTS = [
   { key: "home.collection.bra", page: "Ana sayfa", label: "Koleksiyon kutusu: İç Giyim", fallback: `${PRODUCT_IMAGES}/2020/0-FAC_2900.jpg.webp` },
   { key: "home.collection.corset", page: "Ana sayfa", label: "Koleksiyon kutusu: Korse", fallback: `${PRODUCT_IMAGES}/1060/0-FAC_2166.jpg.webp` },
   { key: "home.facility", page: "Ana sayfa", label: "Tesisimiz bölümü büyük görseli", fallback: "/tesis/dis-cephe.webp" },
-  { key: "facility.hero", page: "Tesisimiz", label: "Sayfa başı videosu yüklenirken görünen görsel", fallback: "/tesis/hero-poster.webp" },
+  { key: "facility.hero", page: "Tesisimiz", label: "Sayfa başı videosu yüklenirken görünen görsel", fallback: "/tesis/hero-tesis-poster.webp" },
   { key: "facility.intro", page: "Tesisimiz", label: "Giriş fotoğrafı (fabrika dış cephe)", fallback: "/tesis/dis-cephe.webp" },
   { key: "facility.film", page: "Tesisimiz", label: "Fabrika filmi kapak görseli", fallback: "/tesis/orme-bant.webp" },
   { key: "facility.dept-1", page: "Tesisimiz", label: "Bölüm 1: Ar-Ge ve Tasarım", fallback: "/tesis/arge-sirt.webp" },
