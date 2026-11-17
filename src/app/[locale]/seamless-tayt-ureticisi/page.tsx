@@ -16,6 +16,18 @@ const H2 = "font-heading text-3xl font-extrabold tracking-tight sm:text-4xl";
 // Ürünler her istekte Supabase'den okunur
 export const dynamic = "force-dynamic";
 
+// Ürün vitrini sırası: spor ve korse etkili modeller karışık, renk ve kesim çeşitliliğiyle
+const SHOWCASE_SLUGS = [
+  "cift-katli-toparlayici-fitilli-tayt-1550",
+  "seamless-tayt-1430",
+  "agrafli-yuksek-bel-korse-tayt-1452",
+  "fitilli-biker-sort-1525",
+  "melanjli-tayt-1700",
+  "seamless-kapri-1435",
+  "toparlayici-biker-s-ort",
+  "fitilli-crop-top-1510",
+];
+
 export async function generateMetadata(
   props: PageProps<"/[locale]/seamless-tayt-ureticisi">
 ): Promise<Metadata> {
@@ -34,9 +46,18 @@ export default async function LeggingsManufacturerPage(
   const content = getContent(locale);
   const tn = await getTranslations({ locale, namespace: "nav" });
   const tc = await getTranslations({ locale, namespace: "common" });
-  const products = (await getProducts(locale))
-    .filter((p) => p.categoryKeys.some((k) => k === "Tayt" || k === "Şort"))
-    .slice(0, 8);
+  // Vitrin: farklı seriler bir arada dursun (renkli fitilli, seamless, korse etkili, melanj,
+  // kapri, biker şort, üst). Listede olmayan ya da yayından kalkan ürünün yerini sıradaki
+  // tayt/şort ürünü alır.
+  const allProducts = await getProducts(locale);
+  const bySlug = new Map(allProducts.map((p) => [p.slug, p]));
+  const picked = SHOWCASE_SLUGS.flatMap((slug) => bySlug.get(slug) ?? []);
+  const products = [
+    ...picked,
+    ...allProducts.filter(
+      (p) => !picked.includes(p) && p.categoryKeys.some((k) => k === "Tayt" || k === "Şort")
+    ),
+  ].slice(0, 8);
 
   const url = `${SITE_URL}/${locale}${PATH}`;
   const structured = [

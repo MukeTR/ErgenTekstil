@@ -28,6 +28,11 @@ export default async function AdminProductsPage() {
         </Link>
       </div>
 
+      <p className="mt-3 max-w-3xl text-sm text-brand-grey">
+        Katalog bu listedeki sırayla görünür. Çok satan bir ürünü ilk sayfaya taşımak için satırındaki
+        “Başa al” bağlantısını kullanın; en son başa alınan ürün en üstte durur.
+      </p>
+
       {error && <p className="mt-4 text-sm text-red-600">{error.message}</p>}
 
       <div className="mt-6 overflow-hidden rounded-2xl bg-white shadow-sm">

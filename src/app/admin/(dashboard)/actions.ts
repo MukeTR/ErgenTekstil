@@ -77,6 +77,31 @@ export async function toggleProductActive(id: string, active: boolean) {
   revalidatePath("/[locale]", "page");
 }
 
+/**
+ * Ürünü kataloğun en başına alır (sort_order = en küçük sıra - 1).
+ * Çok satan ürünleri ilk sayfada göstermek için.
+ */
+export async function moveProductToTop(id: string) {
+  const supabase = await createClient();
+  const { data, error: readError } = await supabase
+    .from("products")
+    .select("sort_order")
+    .order("sort_order", { ascending: true })
+    .limit(1);
+  if (readError) throw new Error(readError.message);
+  const first = data?.[0]?.sort_order ?? 0;
+
+  const { error } = await supabase
+    .from("products")
+    .update({ sort_order: first - 1 })
+    .eq("id", id);
+  if (error) throw new Error(error.message);
+
+  revalidatePath("/admin/urunler");
+  revalidatePath("/[locale]/katalog", "page");
+  revalidatePath("/[locale]", "page");
+}
+
 export async function uploadProductImage(formData: FormData) {
   const supabase = await createClient();
   const file = formData.get("file") as File;

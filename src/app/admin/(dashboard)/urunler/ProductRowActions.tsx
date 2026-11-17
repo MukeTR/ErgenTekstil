@@ -2,7 +2,7 @@
 
 import { useTransition } from "react";
 import Link from "next/link";
-import { deleteProduct, toggleProductActive } from "../actions";
+import { deleteProduct, moveProductToTop, toggleProductActive } from "../actions";
 
 export default function ProductRowActions({
   id,
@@ -15,6 +15,15 @@ export default function ProductRowActions({
 
   return (
     <div className="flex justify-end gap-3 text-xs font-semibold uppercase tracking-wide">
+      <button
+        type="button"
+        disabled={isPending}
+        title="Ürünü kataloğun ilk sırasına taşır"
+        onClick={() => startTransition(() => moveProductToTop(id))}
+        className="text-brand-navy underline disabled:opacity-50"
+      >
+        Başa al
+      </button>
       <button
         type="button"
         disabled={isPending}

@@ -37,7 +37,19 @@ export default async function AboutPage(props: PageProps<"/[locale]/hakkimizda">
       text: content.home.facilityText,
       image: images["about.facility"],
     },
-    { mark: "04", title: c.principlesTitle, list: c.principles, image: images["about.principles"] },
+    {
+      mark: "04",
+      title: c.principlesTitle,
+      list: c.principles,
+      image: images["about.principles-1"],
+      // Dörtlü görsel: örme, boyama, dikim, sevkiyat (adlar içerik dosyalarından)
+      tiles: [
+        { image: images["about.principles-1"], label: content.home.processSteps[0] },
+        { image: images["about.principles-2"], label: content.home.processSteps[1] },
+        { image: images["about.principles-3"], label: content.home.processSteps[2] },
+        { image: images["about.principles-4"], label: content.facility.departments[7].title },
+      ],
+    },
   ];
 
   return (

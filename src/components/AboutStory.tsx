@@ -10,7 +10,26 @@ export type StoryChapter = {
   text?: string;
   list?: string[];
   image: string;
+  /** Verilirse tek görsel yerine 2×2 dörtlü görsel gösterilir (ör. üretim süreçleri) */
+  tiles?: { image: string; label: string }[];
 };
+
+/** 2×2 dörtlü görsel: her karenin sol üstünde kısa adı yazar */
+function StoryTiles({ tiles, sizes }: { tiles: NonNullable<StoryChapter["tiles"]>; sizes: string }) {
+  return (
+    <div className="absolute inset-0 grid grid-cols-2 grid-rows-2 gap-1 bg-white">
+      {tiles.slice(0, 4).map((tile) => (
+        <div key={tile.label} className="relative overflow-hidden">
+          <Image src={tile.image} alt={tile.label} fill sizes={sizes} className="object-cover" />
+          <div className="absolute inset-x-0 top-0 h-20 bg-gradient-to-b from-brand-navy/70 to-transparent" />
+          <span className="absolute start-4 top-3 font-heading text-[11px] font-bold uppercase tracking-[0.18em] text-white">
+            {tile.label}
+          </span>
+        </div>
+      ))}
+    </div>
+  );
+}
 
 /**
  * Kaydırmalı hikâye: solda sabit duran görsel, sağda akan bölümler. Hangi bölüm
@@ -62,19 +81,30 @@ export default function AboutStory({ chapters }: { chapters: StoryChapter[] }) {
         <div className="hidden lg:block">
           <div className="sticky top-24 flex h-[calc(100vh-8rem)] items-center">
             <div className="relative h-[78%] w-full overflow-hidden rounded-3xl bg-brand-navy shadow-2xl">
-              {chapters.map((ch, i) => (
-                <Image
-                  key={ch.image + i}
-                  src={ch.image}
-                  alt=""
-                  fill
-                  sizes="50vw"
-                  priority={i === 0}
-                  className={`object-cover transition-all duration-1000 ease-out ${
-                    i === active ? "scale-100 opacity-100" : "scale-110 opacity-0"
-                  }`}
-                />
-              ))}
+              {chapters.map((ch, i) =>
+                ch.tiles ? (
+                  <div
+                    key={ch.image + i}
+                    className={`absolute inset-0 transition-all duration-1000 ease-out ${
+                      i === active ? "scale-100 opacity-100" : "scale-105 opacity-0"
+                    }`}
+                  >
+                    <StoryTiles tiles={ch.tiles} sizes="25vw" />
+                  </div>
+                ) : (
+                  <Image
+                    key={ch.image + i}
+                    src={ch.image}
+                    alt=""
+                    fill
+                    sizes="50vw"
+                    priority={i === 0}
+                    className={`object-cover transition-all duration-1000 ease-out ${
+                      i === active ? "scale-100 opacity-100" : "scale-110 opacity-0"
+                    }`}
+                  />
+                )
+              )}
               <div className="absolute inset-0 bg-gradient-to-t from-brand-navy/70 via-transparent to-transparent" />
               <div className="absolute inset-x-0 bottom-0 flex items-end justify-between p-7 text-white">
                 <span
@@ -110,8 +140,16 @@ export default function AboutStory({ chapters }: { chapters: StoryChapter[] }) {
               data-index={i}
               className="flex min-h-0 flex-col justify-center py-12 lg:min-h-[86vh] lg:py-0 lg:ps-12"
             >
-              <div className="relative mb-6 aspect-[16/10] overflow-hidden rounded-2xl lg:hidden">
-                <Image src={ch.image} alt="" fill sizes="100vw" className="object-cover" />
+              <div
+                className={`relative mb-6 overflow-hidden rounded-2xl lg:hidden ${
+                  ch.tiles ? "aspect-[4/3]" : "aspect-[16/10]"
+                }`}
+              >
+                {ch.tiles ? (
+                  <StoryTiles tiles={ch.tiles} sizes="50vw" />
+                ) : (
+                  <Image src={ch.image} alt="" fill sizes="100vw" className="object-cover" />
+                )}
               </div>
               <div
                 className={`transition-all duration-700 ease-out ${

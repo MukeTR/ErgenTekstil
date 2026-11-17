@@ -12,6 +12,7 @@ import MetaPixel from "@/components/MetaPixel";
 import JsonLd from "@/components/JsonLd";
 import { getContent } from "@/lib/data";
 import { FACTORY_COORDS } from "@/lib/location";
+import { SOCIAL_LINKS } from "@/lib/social";
 import "../globals.css";
 
 const montserrat = Montserrat({
@@ -99,6 +100,7 @@ export default async function LocaleLayout(props: LayoutProps<"/[locale]">) {
         email: contact.email,
         telephone: contact.phones[0],
         brand: { "@type": "Brand", name: "FORMactive" },
+        sameAs: SOCIAL_LINKS.map((s) => s.href),
         address: {
           "@type": "PostalAddress",
           streetAddress: "Karaağaç OSB, Eski Bağlar Caddesi No:6",

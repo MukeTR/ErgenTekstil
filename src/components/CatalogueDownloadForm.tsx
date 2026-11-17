@@ -12,6 +12,8 @@ export default function CatalogueDownloadForm({
   buttonLabel,
   sentMessage,
   successMessage,
+  readyMessage,
+  openLabel,
 }: {
   catalogueName: string;
   /** home.catalogues içindeki sıra; sunucu PDF'i buna göre seçer */
@@ -20,14 +22,19 @@ export default function CatalogueDownloadForm({
   buttonLabel: string;
   /** E-posta gönderildiğinde gösterilir */
   sentMessage: string;
-  /** E-posta gönderilemediyse (talep yine kayıtlı) gösterilir */
+  /** Ne e-posta gitti ne indirme adresi döndüyse gösterilir */
   successMessage: string;
+  /** E-posta gitmedi ama indirme düğmesi gösteriliyorsa */
+  readyMessage: string;
+  /** İndirme düğmesinin yazısı */
+  openLabel: string;
 }) {
   const params = useParams();
   const locale = (params.locale as string) ?? "tr";
   const [email, setEmail] = useState("");
   const [sent, setSent] = useState(false);
   const [mailed, setMailed] = useState(false);
+  const [download, setDownload] = useState<{ url: string; sizeMb?: number } | null>(null);
   const [submitting, setSubmitting] = useState(false);
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
@@ -37,7 +44,10 @@ export default function CatalogueDownloadForm({
       content_name: catalogueName,
       content_category: "catalogue_download",
     });
-    let result = { ok: false, mailed: false };
+    let result: { ok: boolean; mailed: boolean; url?: string; sizeMb?: number } = {
+      ok: false,
+      mailed: false,
+    };
     try {
       result = await requestCatalogue({
         email,
@@ -50,8 +60,30 @@ export default function CatalogueDownloadForm({
       console.error("catalogue request failed:", err);
     }
     setMailed(result.mailed);
+    setDownload(result.url ? { url: result.url, sizeMb: result.sizeMb } : null);
     setSubmitting(false);
     setSent(true);
+  }
+
+  if (sent && download) {
+    return (
+      <div className="mt-4">
+        <a
+          href={download.url}
+          target="_blank"
+          rel="noopener"
+          className="inline-flex items-center gap-2 rounded-full bg-white px-5 py-2.5 font-heading text-xs font-semibold uppercase tracking-wide text-brand-navy transition hover:bg-white/90"
+        >
+          {openLabel}
+          {download.sizeMb ? (
+            <span className="ltr-only font-normal normal-case tracking-normal text-brand-navy/60">
+              PDF · {download.sizeMb} MB
+            </span>
+          ) : null}
+        </a>
+        <p className="mt-3 text-sm text-white/75">{mailed ? sentMessage : readyMessage}</p>
+      </div>
+    );
   }
 
   if (sent) {

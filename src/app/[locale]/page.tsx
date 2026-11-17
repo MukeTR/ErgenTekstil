@@ -13,6 +13,7 @@ import CatalogueDownloadForm from "@/components/CatalogueDownloadForm";
 import NewsletterForm from "@/components/NewsletterForm";
 import HeroSlider, { type HeroSlide } from "@/components/HeroSlider";
 import { getActiveHeroSlides, getSiteImages, localized, type SiteImageKey } from "@/lib/site-media";
+import { COLOR_HEX, colorLabel, type ColorKey } from "@/lib/catalog-taxonomy";
 
 const HERO_PRODUCT_IMAGE_BASE =
   "https://mxjyyywiooxikcwfylys.supabase.co/storage/v1/object/public/product-images";
@@ -57,12 +58,20 @@ function buildHeroSlides(c: {
   ];
 }
 
-// Fabrikamızdan kısa, sessiz döngüler (Ekim 2026 çekimi)
+// Fabrikamızdan kısa, sessiz döngüler (Ekim 2026 çekimi). Geniş açı ve ürün odaklı
+// kadrajlar; çalışanların yüzü görünmez.
 const FACILITY_CLIPS = [
-  { src: "/video/tesis/orme.mp4", poster: "/tesis/orme-salonu.webp" },
-  { src: "/video/tesis/dikim.mp4", poster: "/tesis/dikim-2.webp" },
-  { src: "/video/tesis/paketleme.mp4", poster: "/tesis/paketleme.webp" },
-  { src: "/video/tesis/depo.mp4", poster: "/tesis/depo-sayim.webp" },
+  { src: "/video/tesis/orme-genis.mp4", poster: "/tesis/orme-genis.webp" },
+  { src: "/video/tesis/dikim-el.mp4", poster: "/tesis/dikim.webp" },
+  { src: "/video/tesis/paketleme-yakin.mp4", poster: "/tesis/paketleme-yakin.webp" },
+  { src: "/video/tesis/depo-genis.mp4", poster: "/tesis/depo-duz.webp" },
+];
+
+// Renk bölümündeki kartela: katalogdaki ürün renkleri, tondan tona sıralı
+const COLOR_CARD: ColorKey[] = [
+  "Kırmızı", "Vişne", "Kremit", "Turuncu", "Hardal", "Sarı", "Camel", "Ten", "Kahve",
+  "Koyu Kahve", "Haki", "Koyu Yeşil", "Yeşil", "Mint Yeşil", "Buz Mavisi", "Bebe Mavisi",
+  "Mavi", "İndigo", "Lacivert", "Lila", "Pembe", "Beyaz", "Gri", "Füme", "Antrasit", "Siyah",
 ];
 
 // Paneldeki ilk slaytta hâlâ eski stok/yapay görseller kayıtlıysa, yerlerine fabrikamızın
@@ -344,6 +353,8 @@ export default async function HomePage(props: PageProps<"/[locale]">) {
                     buttonLabel={tcat("download")}
                     sentMessage={tcat("sent")}
                     successMessage={tcat("success")}
+                    readyMessage={tcat("ready")}
+                    openLabel={tcat("open")}
                   />
                 </div>
               </Reveal>
@@ -352,12 +363,26 @@ export default async function HomePage(props: PageProps<"/[locale]">) {
         </div>
       </section>
 
-      {/* Renkler */}
-      <section className="relative overflow-hidden bg-brand-navy py-24 text-white">
-        <Image src={images["home.color"]} alt="" fill className="object-cover opacity-20" />
-        <Reveal className="relative mx-auto max-w-3xl px-4 text-center sm:px-6 lg:px-8">
-          <h2 className={H2}>{c.colorTitle}</h2>
-          <p className="mt-4 text-white/70">{c.colorText}</p>
+      {/* Renkler: katalogdaki ürün renklerinden kartela */}
+      <section className="relative overflow-hidden bg-brand-navy">
+        <div className="absolute inset-0 flex" aria-hidden="true">
+          {COLOR_CARD.map((key) => (
+            <span
+              key={key}
+              title={colorLabel(locale, key)}
+              className="h-full flex-1"
+              style={{ backgroundColor: COLOR_HEX[key] }}
+            />
+          ))}
+        </div>
+        <Reveal className="relative mx-auto max-w-3xl px-4 py-20 sm:px-6 sm:py-24 lg:px-8">
+          <div className="rounded-3xl bg-white px-6 py-12 text-center shadow-2xl sm:px-12 sm:py-14">
+            <h2 className={`${H2} text-brand-navy`}>{c.colorTitle}</h2>
+            <p className="mt-4 text-brand-grey">{c.colorText}</p>
+            <Link href="/katalog" className={`${LINK} mt-8 text-brand-navy`}>
+              {tc("allProducts")} →
+            </Link>
+          </div>
         </Reveal>
       </section>
 

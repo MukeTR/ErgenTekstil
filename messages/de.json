@@ -62,7 +62,9 @@
     "emailPlaceholder": "Ihre E-Mail-Adresse",
     "download": "Herunterladen",
     "success": "Vielen Dank, wir senden Ihnen den Katalog in Kürze per E-Mail.",
-    "sent": "Wir haben Ihnen den Kataloglink per E-Mail gesendet. Bitte prüfen Sie Ihren Posteingang."
+    "sent": "Wir haben Ihnen den Kataloglink per E-Mail gesendet. Bitte prüfen Sie Ihren Posteingang.",
+    "ready": "Wir haben Ihre Anfrage erhalten. Sie können den Katalog sofort über die Schaltfläche oben herunterladen.",
+    "open": "Katalog herunterladen"
   },
   "homeBlog": {
     "title": "Blog",

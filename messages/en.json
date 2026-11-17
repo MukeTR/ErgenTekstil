@@ -62,7 +62,9 @@
     "emailPlaceholder": "Your email address",
     "download": "Download",
     "success": "Thank you, we'll email the catalogue to you shortly.",
-    "sent": "We have emailed you the catalogue link. Please check your inbox."
+    "sent": "We have emailed you the catalogue link. Please check your inbox.",
+    "ready": "We have received your request. You can download the catalogue right away with the button above.",
+    "open": "Download catalogue"
   },
   "homeBlog": {
     "title": "Blog",

@@ -4,6 +4,22 @@ import { Link } from "@/i18n/navigation";
 import type { Locale } from "@/i18n/routing";
 import { getContent } from "@/lib/data";
 import { LEGGINGS_LANDING } from "@/data/landing-leggings";
+import { SOCIAL_LINKS, type SocialKey } from "@/lib/social";
+
+const SOCIAL_ICONS: Record<SocialKey, React.ReactNode> = {
+  instagram: (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="h-5 w-5" aria-hidden="true">
+      <rect x="3" y="3" width="18" height="18" rx="5" />
+      <circle cx="12" cy="12" r="4.2" />
+      <circle cx="17.4" cy="6.6" r="1" fill="currentColor" stroke="none" />
+    </svg>
+  ),
+  linkedin: (
+    <svg viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5" aria-hidden="true">
+      <path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9.75h4v11.25H3V9.75Zm6.5 0h3.83v1.54h.05c.53-1 1.84-1.79 3.78-1.79 4.04 0 4.84 2.42 4.84 5.86V21h-4v-4.98c0-1.3-.03-2.97-1.86-2.97-1.86 0-2.14 1.4-2.14 2.87V21h-4V9.75Z" />
+    </svg>
+  ),
+};
 
 const LEGAL_LABELS: Record<Locale, { privacy: string; cookies: string; terms: string }> = {
   tr: { privacy: "Gizlilik Politikası", cookies: "Çerez Politikası", terms: "Kullanım Koşulları" },
@@ -96,6 +112,21 @@ export default async function Footer({ locale }: { locale: Locale }) {
             >
               {content.contact.email}
             </a>
+            <div className="mt-5 flex gap-3">
+              {SOCIAL_LINKS.map((s) => (
+                <a
+                  key={s.key}
+                  href={s.href}
+                  target="_blank"
+                  rel="noopener"
+                  aria-label={s.label}
+                  title={s.label}
+                  className="flex h-10 w-10 items-center justify-center rounded-full border border-white/20 text-white/70 transition hover:border-white hover:text-white"
+                >
+                  {SOCIAL_ICONS[s.key]}
+                </a>
+              ))}
+            </div>
           </div>
         </div>
 

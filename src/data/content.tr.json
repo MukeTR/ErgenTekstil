@@ -6,7 +6,7 @@
     "heroText": "Spor giyim, iç giyim ve şekillendirici giyim ürünlerinde yüksek kalite ve iddialı tasarımlarımız ile yüksek pazar payımız ile hizmet veriyoruz.",
     "heroTagline": "Kendine Güven, Rahat Hisset",
     "heroTaglineSub": "Kusursuz Kalıplar, Şık Tasarımlar, Rahat Dokularla İç Giyimin En Güzel Hali",
-    "aboutBadge": "20 YILLIK TECRÜBE",
+    "aboutBadge": "22 YILLIK TECRÜBE",
     "aboutTitle": "Geniş Üretim ve Ulusal Destek Ağı",
     "aboutText": "Ergen Tekstil, 2004 yılında dikişsiz giyim üretimi yapmak üzere örgü ve konfeksiyon tesisleri ile entegre olarak kurulan bir firmadır. Bugün 200.000 parça/ay üretim kapasitesi ile kendi alanındaki kaliteli üreticilerden biridir. Teknolojinin etkin kullanımı ve yenilikçi yaklaşımı ile, değişen dünya dinamiklerine hızlı uyum sağlamanın ve yenilikçiliğin öncelikli değerler olduğunun bilincindeyiz.",
     "processSteps": [
@@ -86,7 +86,7 @@
       "Ekstra Esneme",
       "Mikro Kapsül Uygulamaları"
     ],
-    "valuesBadge": "20 YILLIK TECRÜBE",
+    "valuesBadge": "22 YILLIK TECRÜBE",
     "valuesText": "Ergen Tekstil olarak, kurumsal hizmet anlayışımızla müşteri memnuniyetini en üst seviyede tutmayı amaçlıyoruz.",
     "values": [
       {
@@ -107,7 +107,7 @@
       }
     ],
     "growthBadge": "TEKİRDAĞ KAPAKLI OSB",
-    "growthTitle": "Artık kendi fabrikamızdayız",
+    "growthTitle": "Yeni fabrikamızda daha kaliteli üretim, daha hızlı sevkiyat",
     "growthLinkLabel": "Hakkımızda",
     "newsletterTitle": "İlk Siz Haberdar Olun!",
     "newsletterText": "E-posta listemize katılın, yeni koleksiyonlardan ve toptan fırsatlardan ilk siz haberdar olun.",
@@ -115,7 +115,7 @@
     "newsletterButton": "Abone Ol",
     "newsletterSuccess": "Teşekkürler! Listemize eklendiniz.",
     "facilityTitle": "Üretimin merkezi: Kapaklı'daki fabrikamız",
-    "facilityText": "Örme, dikim, kalite kontrol ve paketleme aynı çatı altında. Fabrikamızı ve bölümlerimizi yakından görün."
+    "facilityText": "Örme, dikim, baskı, kalite kontrol ve paketleme aynı çatı altında. Fabrikamızı ve bölümlerimizi yakından görün."
   },
   "about": {
     "title": "Hakkımızda",
@@ -124,7 +124,7 @@
     "missionTitle": "Misyonumuz",
     "missionText": "Ergen Tekstil, 2004 yılında dikişsiz giyim üretimi yapmak üzere örgü ve konfeksiyon tesisleri ile entegre olarak kurulan bir firmadır. Bugün 200.000 parça/ay üretim kapasitesi ile kendi alanındaki kaliteli üreticilerden biridir. Teknolojinin etkin kullanımı ve yenilikçi yaklaşımı ile, değişen dünya dinamiklerine hızlı uyum sağlamanın ve yenilikçiliğin öncelikli değerler olduğunun bilincindeyiz.",
     "visionTitle": "Vizyonumuz",
-    "visionText": "Tekirdağ Kapaklı Organize Sanayi Bölgesi'nde inşa ettiğimiz kendi fabrikamıza taşındık. Uzun süre bir hedef olarak anlattığımız bu yatırım bugün üretimimizin merkezi. Sıradaki hedefimiz, artan kapasitemizle uluslararası yeni pazarlarda üretici bir marka olarak daha güçlü yer almak. Bunu sürekli öğrenen ekibimizle, sürdürülebilir üretim yöntemleriyle ve iş ortaklarımızla açık iletişimle yapıyoruz; ekibimizde sahiplik duygusunu, özgüveni ve birlikte çalışmanın keyfini korumaya önem veriyoruz.",
+    "visionText": "Tekirdağ Kapaklı Organize Sanayi Bölgesi'nde, sürdürülebilirliğe önem vererek kurduğumuz yeni fabrikamızda üretimdeyiz. Yeni tesisimizde daha kaliteli üretiyor, daha hızlı sevk ediyoruz. Sıradaki hedefimiz, artan kapasitemizle uluslararası yeni pazarlarda üretici bir marka olarak daha güçlü yer almak. Bunu sürekli öğrenen ekibimizle, sürdürülebilir üretim yöntemleriyle ve iş ortaklarımızla açık iletişimle yapıyoruz; ekibimizde sahiplik duygusunu, özgüveni ve birlikte çalışmanın keyfini korumaya önem veriyoruz.",
     "principlesTitle": "Ergen Tekstil'i yönlendiren temel prensipler şunlardır:",
     "principles": [
       "Takım üyelerinin işlerine sahip olma hissini güçlendirmek.",
@@ -185,7 +185,7 @@
     "statsText": "Sürekli güncel teknoloji ve trendleri takip ederek müşterilerimizin ihtiyaçlarına yönelik çözümler ortaya koyuyoruz.",
     "stats": [
       {
-        "value": 20,
+        "value": 22,
         "suffix": "",
         "label": "Yıllık Tecrübe"
       },

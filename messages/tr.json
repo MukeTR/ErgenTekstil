@@ -62,7 +62,9 @@
     "emailPlaceholder": "E-posta adresiniz",
     "download": "İndir",
     "success": "Teşekkürler, kataloğu e-posta adresinize en kısa sürede göndereceğiz.",
-    "sent": "Katalog bağlantısını e-posta adresinize gönderdik. Gelen kutunuzu kontrol edin."
+    "sent": "Katalog bağlantısını e-posta adresinize gönderdik. Gelen kutunuzu kontrol edin.",
+    "ready": "Talebinizi aldık. Kataloğu yukarıdaki düğmeden hemen indirebilirsiniz.",
+    "open": "Kataloğu indir"
   },
   "homeBlog": {
     "title": "Blog",

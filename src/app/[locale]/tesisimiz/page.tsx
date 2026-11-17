@@ -14,9 +14,9 @@ import AutoVideo from "@/components/AutoVideo";
 // Fabrikamızdan kısa, sessiz döngüler (Ekim 2026 çekimi)
 const CLIPS = [
   { src: "/video/tesis/dis-cephe.mp4", poster: "/tesis/dis-cephe-ozgun.webp" },
-  { src: "/video/tesis/orme.mp4", poster: "/tesis/orme-salonu.webp" },
-  { src: "/video/tesis/dikim.mp4", poster: "/tesis/dikim-2.webp" },
-  { src: "/video/tesis/depo-donus.mp4", poster: "/tesis/depo.webp" },
+  { src: "/video/tesis/orme-genis.mp4", poster: "/tesis/orme-genis.webp" },
+  { src: "/video/tesis/dikim-el.mp4", poster: "/tesis/dikim.webp" },
+  { src: "/video/tesis/depo-donus.mp4", poster: "/tesis/depo-duz.webp" },
 ];
 
 const H2 = "font-heading text-3xl font-extrabold tracking-tight sm:text-4xl";
@@ -179,7 +179,7 @@ export default async function FacilityPage(props: PageProps<"/[locale]/tesisimiz
             <h2 className={`${H2} text-brand-navy`}>{c.warehouseTitle}</h2>
             <p className="mt-6 text-lg leading-relaxed text-brand-grey">{c.warehouseText}</p>
             <div className="mt-8 grid grid-cols-2 gap-3">
-              {["/tesis/sevkiyat.webp", "/tesis/depo.webp"].map((src) => (
+              {["/tesis/sevkiyat-duz.webp", "/tesis/depo-duz.webp"].map((src) => (
                 <div key={src} className="group relative aspect-[4/3] overflow-hidden rounded-2xl">
                   <Image
                     src={src}
