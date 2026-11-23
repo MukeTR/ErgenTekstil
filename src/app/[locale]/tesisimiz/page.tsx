@@ -21,7 +21,7 @@ const CLIPS = [
   { src: "/video/tesis/dis-cephe.mp4", poster: "/tesis/dis-cephe-ozgun.webp" },
   { src: "/video/tesis/orme-genis.mp4", poster: "/tesis/orme-genis.webp" },
   { src: "/video/tesis/dikim-el.mp4", poster: "/tesis/dikim.webp" },
-  { src: "/video/tesis/depo-donus.mp4", poster: "/tesis/depo-duz.webp" },
+  { src: "/video/tesis/depo-genis.mp4", poster: "/tesis/depo-duz.webp" },
 ];
 
 const H2 = "font-heading text-3xl font-extrabold tracking-tight sm:text-4xl";

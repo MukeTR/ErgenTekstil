@@ -62,7 +62,7 @@ function buildHeroSlides(c: {
 // kadrajlar; çalışanların yüzü görünmez.
 const FACILITY_CLIPS = [
   { src: "/video/tesis/orme-genis.mp4", poster: "/tesis/orme-genis.webp" },
-  { src: "/video/tesis/dikim-el.mp4", poster: "/tesis/dikim.webp" },
+  { src: "/video/tesis/boyama.mp4", poster: "/tesis/boyama.webp" },
   { src: "/video/tesis/paketleme-yakin.mp4", poster: "/tesis/paketleme-yakin.webp" },
   { src: "/video/tesis/depo-genis.mp4", poster: "/tesis/depo-duz.webp" },
 ];
